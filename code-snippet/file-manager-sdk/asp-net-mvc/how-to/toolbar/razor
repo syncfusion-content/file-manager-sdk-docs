@@ -1,0 +1,45 @@
+
+<div class="control-section">
+    <div class="sample-container">
+        <!--  Filemanager control declaration -->
+        @Html.EJS().FileManager("filemanager").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings()
+        {
+            Url = "/Home/FileOperations",
+            GetImageUrl = "/Home/GetImage",
+            UploadUrl = "/Home/Upload",
+            DownloadUrl = "/Home/Download"
+        }).ToolbarItems(new List<FileManagerToolbarItem> {
+                new FileManagerToolbarItem { Name= "NewFolder" },
+                new FileManagerToolbarItem { Name= "Upload" },
+                new FileManagerToolbarItem { Name= "SortBy" },
+                new FileManagerToolbarItem { Name= "Refresh" },
+                new FileManagerToolbarItem { Name= "Cut" },
+                new FileManagerToolbarItem { Name= "Copy" },
+                new FileManagerToolbarItem { Name= "Paste" },
+                new FileManagerToolbarItem { Name= "Delete" },
+                new FileManagerToolbarItem { Name= "Download" },
+                new FileManagerToolbarItem { Name= "Rename" },
+                new FileManagerToolbarItem { Template= "#checkboxTemplate", Name= "Select" },
+                new FileManagerToolbarItem { Name= "Selection" },
+                new FileManagerToolbarItem { Name= "View" },
+                new FileManagerToolbarItem { Name= "Details" }
+              }).Render()
+        <!-- end of filemanager control -->
+        @Html.EJS().CheckBox("checkboxTemplate").Change("onChange").Checked(false).Label("Select All").Render()
+    </div>
+</div>
+
+<script>
+    function onChange(args) {
+        var filemanagerInstance = document.getElementById("filemanager").ej2_instances[0];
+        var checkboxInstance = document.getElementById("checkBoxTemplate").ej2_instances[0];
+        if (args.checked) {
+            filemanagerInstance.selectAll(); 
+            checkboxInstance.label = 'Unselect All';
+        }
+        else {
+            filemanagerInstance.clearSelection();
+            checkboxInstance.label = 'Select All';
+        }
+    }
+</script>

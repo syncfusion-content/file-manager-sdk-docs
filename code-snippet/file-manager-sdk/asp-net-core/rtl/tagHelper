@@ -1,0 +1,11 @@
+<div class=" control-section">
+    <div class="sample-container">
+        <ejs-filemanager id="filemanager" enableRtl="true">
+            <e-filemanager-ajaxsettings  url="/Home/FileOperations"
+                                        downloadUrl="/Home/Download"
+                                        uploadUrl="/Home/Upload"
+                                        getImageUrl="/Home/GetImage">
+            </e-filemanager-ajaxsettings>
+        </ejs-filemanager>
+    </div>
+</div>

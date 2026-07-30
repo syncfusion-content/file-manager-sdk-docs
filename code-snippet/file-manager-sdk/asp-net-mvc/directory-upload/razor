@@ -1,0 +1,42 @@
+<div class="control-section">
+    <div class="sample-container">
+        <!--  Filemanager control declaration -->
+        @Html.EJS().FileManager("file").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
+           {
+               Url = "/Home/FileOperations",
+               GetImageUrl = "/Home/GetImage",
+               UploadUrl = "/Home/Upload",
+               DownloadUrl = "/Home/Download"
+           }).Success("onSuccess").Created("onCreated").Render()
+                <!-- end of File Manager control -->
+    </div>
+</div>
+
+<script>
+    function onSuccess(args) {
+        document.getElementById('file_tb_upload').onclick = function (args) {
+            args.stopPropagation();
+        };
+    }
+    function onCreated(args) {
+        var fileObject = document.getElementById("file").ej2_instances[0];
+        var items = [{ text: 'Folder' }, { text: 'Files' }];
+        var drpDownBtn = new ej.splitbuttons.DropDownButton(
+            {
+                items: items,
+                select: (args) => {
+                    if (args.item.text === 'Folder') {
+                        fileObject.uploadSettings.directoryUpload = true;
+                    } else {
+                        fileObject.uploadSettings.directoryUpload = false;
+                    }
+                    setTimeout(function () {
+                        let uploadBtn = document.querySelector('.e-file-select-wrap button');
+                        uploadBtn.click();
+                    }, 100);
+                }
+            },
+            '#file_tb_upload'
+        );
+    }
+</script>

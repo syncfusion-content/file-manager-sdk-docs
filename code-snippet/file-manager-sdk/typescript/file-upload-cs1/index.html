@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Essential JS 2 File Manager</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Essential JS 2 File Manager Control" />
+    <meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/styles/fluent2.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/styles/fluent2.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-popups/styles/fluent2.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/styles/fluent2.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-splitbuttons/styles/fluent2.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-layouts/styles/fluent2.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-navigations/styles/fluent2.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-grids/styles/fluent2.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-filemanager/styles/fluent2.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+
+<body>
+    <div id='loader'>Loading....</div>
+    <div id="container">
+        <div class="control-section">
+            <div id="upload-wrapper" class="fileupload">
+                <span id="drop"> <button id="openBtn" class="dlgbtn" type="button">Browse...</button> </span>
+                <input type="file" id="fileupload" name="UploadFiles" />
+            </div>
+            <div id='target' class="control-section">
+                <div id='dialog'>
+                    <div id="filemanager"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .fileupload {
+            max-width: 500px;
+            margin: auto;
+        }
+
+
+        #target {
+            height: 380px;
+        }
+
+        /* csslint ignore:start */
+        #dialog {
+            top: 20px !important;
+            max-height: 500px !important;
+        }
+
+        /* csslint ignore:end */
+
+        .e-upload {
+            width: 100%;
+        }
+
+        .e-file-select-wrap {
+            display: none;
+        }
+
+        .e-upload {
+            border: none;
+            margin-top: 15px;
+        }
+
+        #drop {
+            padding-left: 5%;
+        }
+
+        #upload-wrapper {
+            min-height: 18px;
+            border: 1px dashed #c3c3cc;
+            padding: 15px 0;
+            margin: 0 auto;
+            width: 440px;
+        }
+    </style>
+</body>
+
+</html>

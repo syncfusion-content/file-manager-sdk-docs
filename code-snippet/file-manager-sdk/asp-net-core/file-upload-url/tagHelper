@@ -1,0 +1,9 @@
+<div class="control-section">
+    <div class="sample-container" style="padding:10px">
+        <ejs-filemanager id="file">
+            <e-filemanager-ajaxsettings url="/Home/FileOperations"
+                                        uploadUrl="/Home/Upload">
+            </e-filemanager-ajaxsettings>
+        </ejs-filemanager>
+    </div>
+</div>
