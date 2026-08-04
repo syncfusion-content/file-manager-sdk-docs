@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Vue File Manager component | Syncfusion
-description:  Checkout and learn about Getting started with Vue File Manager component of Syncfusion Essential JS 2 and more details.
+description: Check out and learn about getting started with the Vue File Manager component of Syncfusion Essential JS 2 and more details.
 control: File Manager 
 platform: file-manager-sdk
 documentation: ug
@@ -124,7 +124,6 @@ Replace the default contents of the **src/App.vue** file with the following code
 
 To enable file operation functionality in the File Manager, configure the [url](https://ej2.syncfusion.com/vue/documentation/api/file-manager/ajaxsettingsmodel#url) property within the [ajaxSettings](https://ej2.syncfusion.com/vue/documentation/api/file-manager/ajaxsettings). This URL handles the file operation requests from the server.
 
-
 {% tabs %}
 {% highlight html tabtitle="~/src/App.vue" %}
 {% include code-snippet/file-manager-sdk/vue/vue/getting-started-cs1/app.vue %}
@@ -168,6 +167,8 @@ or
 ```bash
 yarn run serve
 ```
+
+N> Looking for the full Vue File Manager component overview, features, pricing, and documentation? Visit the [Vue File Manager](https://www.syncfusion.com/vue-components/vue-file-manager) page.
 
 ## Production build
 
