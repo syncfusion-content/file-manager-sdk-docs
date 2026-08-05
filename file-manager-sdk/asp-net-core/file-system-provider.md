@@ -1,15 +1,15 @@
 ---
 layout: post
-title: File System Provider in ASP.NET Core File Manager Control | Syncfusion
-description: Learn here all about File System Provider in ASP.NET Core File Manager control of Syncfusion Essential JS 2 and more.
+title: File System Provider in ASP.NET Core File Manager | Syncfusion
+description: Learn how to connect the ASP.NET Core File Manager to physical, Azure, Amazon S3, Google Drive, Firebase, and other file system providers.
+control: File Manager
 platform: file-manager-sdk
-control: File System Provider
 publishingplatform: file-manager-sdk
 documentation: ug
 ---
 
 
-# File system provider
+# File System Provider in ASP.NET Core File Manager
 
 The file system provider allows the File Manager control to manage the files and folders in a physical or cloud-based file system. It provides the methods for performing various file actions like creating a new folder, copying and moving of files or folders, deleting, uploading, and downloading the files or folders in the file system.
 

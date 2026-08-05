@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Upload in TypeScript File Manager component | Syncfusion
-description: Learn here all about Upload in TypeScript File Manager component of Syncfusion Essential JS 2 and more
-platform: file-manager-sdk
+title: Upload in TypeScript File Manager | Syncfusion
+description: Learn how to upload files in the TypeScript File Manager with chunk uploads, directory uploads, and drag-and-drop support.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Upload in TypeScript File Manager component
+# Upload in TypeScript File Manager
 
 The TypeScript File Manager component provides an [`uploadSettings`](../api/file-manager/uploadsettings) property with options to control file uploads, including file size limits, allowed extensions, directory uploads, sequential and chunked uploads, auto-close behavior, and more.
 

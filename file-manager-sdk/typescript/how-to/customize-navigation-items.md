@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Customize Navigation in TypeScript File Manager | Syncfusion
-description: Learn how to customize the Navigation Pane in the TypeScript File Manager component of Syncfusion Essential JS 2 and more.
-platform: file-manager-sdk
+title: Customize the navigation pane in TypeScript File Manager | Syncfusion
+description: Learn how to customize the navigation pane in the TypeScript File Manager by templating each folder node to show extra metadata or custom icons.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Customize the navigation pane in TypeScript File Manager component
+# How to customize the navigation pane in TypeScript File Manager
 
 The navigation pane displays the folder hierarchy in a tree structure. Use the `navigationPaneTemplate` property to customize the layout of each folder node. This template enables showing additional metadata, custom icons, or other UI elements alongside the folder name to match application requirements.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Nested Items in ASP.NET Core File Manager Control | Syncfusion
-description: Learn here all about Nested Items in ASP.NET Core File Manager control of Syncfusion Essential JS 2 and more.
+title: Use nested File Manager in ASP.NET Core | Syncfusion
+description: Learn how to integrate the ASP.NET Core File Manager within components such as Tab and Dialog to build flexible and interactive application layouts.
+control: File Manager
 platform: file-manager-sdk
-control: Nested Items
 publishingplatform: file-manager-sdk
 documentation: ug
 ---
 
-# Nested File Manager in ASP.NET Core
+# Nested items in ASP.NET Core File Manager component
 
 File Manager can be rendered inside other controls like Tab, Dialog, and more.
 

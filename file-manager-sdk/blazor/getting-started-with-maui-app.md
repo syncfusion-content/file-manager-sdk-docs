@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with FileManager in Blazor MAUI App | Syncfusion®
-description: Checkout and learn about the documentation for getting started with Blazor FileManager Component in Blazor MAUI App.
+title: Getting Started with File Manager in Blazor MAUI App | Syncfusion
+description: Learn how to get started with the Blazor File Manager component in a Blazor MAUI App using Visual Studio, VS Code, or the .NET CLI.
+control: File Manager
 platform: file-manager-sdk
-control: FileManager
 documentation: ug
 ---
 
-# Getting Started with Blazor FileManager component
+# Getting Started with File Manager in Blazor MAUI App
 
 This section explains you through the step-by-step process of integrating the [Blazor FileManager](https://www.syncfusion.com/blazor-components/blazor-file-manager) component into your Blazor MAUI application using both [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
 

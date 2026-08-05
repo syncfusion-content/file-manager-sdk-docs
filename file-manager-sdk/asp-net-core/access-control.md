@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Access Control in Syncfusion ASP.NET Core File Manager | Syncfusion
-description: Learn here all about Access Control in ASP.NET Core File Manager control of Syncfusion Essential JS 2 and more.
+title: Access Control in ASP.NET Core File Manager | Syncfusion
+description: Learn how to configure access control in the ASP.NET Core File Manager with role-based permissions and restricted file operations.
+control: File Manager
 platform: file-manager-sdk
-control: Access Control
 publishingplatform: file-manager-sdk
 documentation: ug
 ---
 
 
-# Access Control in File Manager control
+# Access Control in ASP.NET Core File Manager
 
 The File Manager allows you to define access permissions for folders and files using a set of access rules for user(s).
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: User interface in TypeScript File Manager component | Syncfusion
-description: Learn about the File Manager component UI features including its toolbar, navigation pane, breadcrumb, views, context menu and customization options.
-platform: file-manager-sdk
+title: User Interface in TypeScript File Manager | Syncfusion
+description: Learn how to use the TypeScript File Manager UI with view, toolbar, breadcrumb, context menu, and navigation pane modules for file browsing.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# User interface in TypeScript File Manager component
+# User Interface in TypeScript File Manager
 
 The File Manager component UI consists of several sections: view area, toolbar, breadcrumb, context menu, navigation pane, and more. The UI is enhanced by injectable modules such as Details View (grid-based browsing), Navigation Pane (folder navigation), and Toolbar (file operations). A full-featured File Manager includes these sections:
 

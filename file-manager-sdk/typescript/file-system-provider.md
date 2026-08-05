@@ -1,15 +1,15 @@
 ---
 layout: post
-title: File providers for TypeScript File Manager component | Syncfusion
-description: Learn how to configure and use various file system providers with the TypeScript File Manager component.
-platform: file-manager-sdk
+title: File System Provider in TypeScript File Manager | Syncfusion
+description: Learn how to connect the TypeScript File Manager to physical, Azure, Amazon S3, Google Drive, Firebase, and other file system providers.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# File system providers in TypeScript File Manager component
+# File System Provider in TypeScript File Manager
 
 The file system provider allows the File Manager component to manage files and folders in a physical or cloud-based file system. Providers implement methods for operations such as create, copy, move, delete, upload, and download.
 

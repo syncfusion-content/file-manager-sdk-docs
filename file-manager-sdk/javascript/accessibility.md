@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Accessibility in JavaScript File Manager component | Syncfusion
-description: Learn how the JavaScript File Manager component meets accessibility standards with keyboard, screen reader, and RTL support.
+title: Accessibility in JavaScript File Manager | Syncfusion
+description: Learn about the accessibility support in the JavaScript File Manager, including WCAG 2.2, Section 508, ADA, and WAI-ARIA role compliance.
+control: File Manager
 platform: file-manager-sdk
-control: File Manager 
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Accessibility in JavaScript File Manager component
+# Accessibility in JavaScript File Manager
 
 The File Manager component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles), which are commonly used to evaluate accessibility.
 

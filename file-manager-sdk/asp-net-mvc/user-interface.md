@@ -1,15 +1,15 @@
 ---
 layout: post
-title: User Interface in ASP.NET MVC File Manager Control | Syncfusion
-description: Learn here all about User Interface in ASP.NET MVC File Manager control of Syncfusion Essential JS 2 and more.
+title: User Interface in ASP.NET MVC File Manager | Syncfusion
+description: Learn how to use the ASP.NET MVC File Manager UI with view, toolbar, breadcrumb, context menu, and navigation pane modules for file browsing.
+control: File Manager
 platform: file-manager-sdk
-control: User Interface
 publishingplatform: file-manager-sdk
 documentation: ug
 ---
 
 
-# User Interface Structure
+# User Interface in ASP.NET MVC File Manager
 
 The File Manager UI comprises several sections such as view, toolbar, breadcrumb, context menu, and more. The UI of the File Manager is enhanced with injectable modules like `Details View` for browsing files and folders in a grid, `Navigation Pane` for folder navigation, and `Toolbar` for file operations. The File Manager with all feature modules have the following sections in its UI.
 

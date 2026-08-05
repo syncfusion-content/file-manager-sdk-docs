@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Flat data in TypeScript File Manager component | Syncfusion
-description: Learn how to render flat data using the TypeScript File Manager component and how to integrate cloud services (Google Drive) via action events.
-platform: file-manager-sdk
+title: Flat Data in TypeScript File Manager | Syncfusion
+description: Learn how to load flat JSON data in the TypeScript File Manager without a service provider, using local data structures to render folders and files.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Rendering flat JSON data in the TypeScript File Manager component
+# Flat Data in TypeScript File Manager
 
 The File Manager uses a flat data object as an array of JavaScript objects for rendering, eliminating the need to define [`ajaxSettings`](../api/file-manager#ajaxsettings) url. To load a folder data as an array of JavaScript objects, use the File Manager control's [`fileSystemData`](../api/file-manager#filesystemdata) property with a type of [`fileData`](../api/file-manager/fileData) interface. This means you no longer need to use a separate service provider, as you can integrate services like Google, Amazon, Azure, and others directly into your JavaScript code using the FileManager's action events. For example, you can integrate Google Drive by following the [Google Drive API Quickstart guide for JavaScript](https://developers.google.com/drive/api/quickstart/js).
 

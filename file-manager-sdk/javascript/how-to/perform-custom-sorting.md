@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Custom Sorting in JavaScript File Manager | Syncfusion
-description: Learn how to implement custom sorting in the JavaScript File Manager component of Syncfusion Essential JS 2 and more.
-platform: file-manager-sdk
+title: Perform custom sorting in JavaScript File Manager | Syncfusion
+description: Learn how to perform custom sorting in the JavaScript File Manager for the Large Icons view and Details view columns, with examples for natural sorting.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Perform custom sorting in JavaScript File Manager component
+# How to perform custom sorting in JavaScript File Manager
 
 The File Manager component provides a way to customize the default sort action for the LargeIconsView by defining the [`sortComparer`](../../api/file-manager#sortcomparer) property and for sorting individual columns in the DetailsView by defining the [`sortComparer`](../../api/file-manager/column#sortcomparer) property in the [`columns`](../../api/file-manager/column) property.
 
