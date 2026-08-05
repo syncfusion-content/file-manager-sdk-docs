@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting started with JavaScript File Manager control | Syncfusion
-description: Learn how to get started with the ES5 JavaScript File Manager component using Syncfusion Essential JS 2.
-platform: file-manager-sdk
+title: Getting Started with JavaScript File Manager | Syncfusion
+description: Learn how to get started with the JavaScript File Manager and explore setup, configuration, and core feature examples.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Getting started with JavaScript File Manager control
+# Getting Started with JavaScript File Manager
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 File Manager and demonstrate the basic usage of the File Manager control in a JavaScript application.
 

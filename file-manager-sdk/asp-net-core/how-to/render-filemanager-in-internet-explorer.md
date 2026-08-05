@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Render ASP.NET Core File Manager in Internet Explorer | Syncfusion
-description: Learn here all about Render File Manager In Internet Explorer in ASP.NET Core File Manager control of syncfusion and more.
+description: Learn how to render the ASP.NET Core File Manager in Internet Explorer by adding the required polyfill script before the component scripts.
+control: File Manager
 platform: file-manager-sdk
-control: Render File Manager In Internet Explorer
 publishingplatform: file-manager-sdk
 documentation: ug
 ---

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Add custom item to toolbar in JavaScript File Manager | Syncfusion
-description: Learn how to add and customize toolbar items in the JavaScript File Manager control to support custom commands and actions.
-platform: file-manager-sdk
+title: Add a custom item to the toolbar in JavaScript File Manager | Syncfusion
+description: Learn how to add a custom item to the toolbar in the JavaScript File Manager to extend built-in actions with custom controls.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Add Custom Toolbar Item in JavaScript File Manager
+# How to add a custom item to the toolbar in JavaScript File Manager
 
 Use the [`toolbarItems`](../../api/file-manager#toolbaritems) API to modify the items displayed in the toolbar. When combining default and custom items, assign a unique `name` to each item so they can be managed independently. Default items can be customized by setting properties such as `tooltipText`, `iconCss`, `text`, `suffixIcon`, and `template`.
 

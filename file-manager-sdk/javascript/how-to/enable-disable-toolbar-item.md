@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Manage Toolbar Items in JavaScript File Manager | Syncfusion
-description: Learn how to enable or disable toolbar items in the JavaScript File Manager control to customize available user actions.
-platform: file-manager-sdk
+title: Enable or disable a toolbar item in JavaScript File Manager | Syncfusion
+description: Learn how to enable or disable a toolbar item in the JavaScript File Manager at runtime based on user actions or selection state.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Enable or Disable Toolbar Item in JavaScript File Manager
+# How to enable or disable a toolbar item in JavaScript File Manager
 
 Toolbar items can be enabled or disabled using the [`enableToolbarItems`](../../api/file-manager#enabletoolbaritems) and [`disableToolbarItems`](../../api/file-manager#disabletoolbaritems) methods.
 

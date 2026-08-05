@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Upload in Angular File Manager component | Syncfusion
-description: Learn how to configure and customize file upload operations in Angular File Manager with controls for size limits, file types, and chunk uploads.
-platform: file-manager-sdk
+title: Upload in Angular File Manager | Syncfusion
+description: Learn how to upload files in the Angular File Manager with chunk uploads, directory uploads, and drag-and-drop support.
 control: File Manager
+platform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Upload in Angular File Manager component
+# Upload in Angular File Manager
 
 The [Angular File Manager](https://www.syncfusion.com/angular-components/angular-file-manager) component provides a [uploadSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/uploadsettings) property with various options to customize how files are uploaded, including controlling file size, restricting file types, checking for excessively large and empty files, and enabling chunk uploads.
 

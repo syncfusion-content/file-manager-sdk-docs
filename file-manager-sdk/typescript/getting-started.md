@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting started with TypeScript File Manager control | Syncfusion
-description: Learn how to get started with the TypeScript File Manager component using Syncfusion Essential JS 2.
-platform: file-manager-sdk
+title: Getting Started with TypeScript File Manager | Syncfusion
+description: Learn how to get started with the TypeScript File Manager and explore setup, configuration, and core feature examples.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Getting started with TypeScript File Manager control
+# Getting Started with TypeScript File Manager
 
 This section explains the steps to create a simple File Manager and demonstrates the basic usage of the File Manager component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2
 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.

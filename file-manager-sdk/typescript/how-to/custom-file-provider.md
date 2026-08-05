@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Custom Service Provider in TypeScript File Manager | Syncfusion
-description: Learn how to implement a custom service provider in the TypeScript File Manager control to manage file operations and data processing
-platform: file-manager-sdk
+title: Implement a custom file provider in TypeScript File Manager | Syncfusion
+description: Learn how to implement a custom file provider in the TypeScript File Manager using Node.js with Azure Blob Storage as the data source.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Create the custom file provider using Node JS
+# How to implement a custom file provider in TypeScript File Manager
 
 Here we manipulate the Azure Blob Storage to supply the necessary data for the File Manager. We achieve this by utilizing Node JS to fetch the required data from the Azure blob storage.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Views in ASP.NET MVC File Manager Control | Syncfusion
-description: Learn here all about Views in ASP.NET MVC File Manager control of Syncfusion Essential JS 2 and more.
+title: Views in ASP.NET MVC File Manager | Syncfusion
+description: Learn how to switch between Large Icons and Details views in the ASP.NET MVC File Manager for flexible file browsing.
+control: File Manager
 platform: file-manager-sdk
-control: Views
 publishingplatform: file-manager-sdk
 documentation: ug
 ---
 
 
-# Views in File Manager Control
+# Views in ASP.NET MVC File Manager
 
 The view section displays files and folders for user browsing. The `view` API can also be used to change the initial view of the File Manager.
 

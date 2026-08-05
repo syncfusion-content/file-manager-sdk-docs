@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style customize in TypeScript File Manager component | Syncfusion
-description: Learn how to customize styles and appearance in the TypeScript File Manager component using CSS selectors.
-platform: file-manager-sdk
+title: Style and Appearance in TypeScript File Manager | Syncfusion
+description: Learn how to customize the appearance of the TypeScript File Manager by overriding CSS selectors for the navigation pane, layout, and toolbar.
 control: File Manager
+platform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# How to customize style and appearance in TypeScript File Manager
+# Style and Appearance in TypeScript File Manager
 
 The following CSS structure can be used to customize the component's appearance based on user preference.
 

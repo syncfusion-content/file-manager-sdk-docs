@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with React File Manager component | Syncfusion
-description: Check out and learn about getting started with React File Manager component of Syncfusion Essential JS 2 and more details.
-control: Getting started 
+title: Getting Started with React File Manager | Syncfusion
+description: Learn how to get started with the React File Manager and explore setup, configuration, and core feature examples.
+control: File Manager
 platform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Getting Started with React File Manager Component
+# Getting Started with React File Manager
 
 This section explains how to create and configure the **File Manager** component in a React application.
 

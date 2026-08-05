@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Access control in Angular File Manager component | Syncfusion
-description: Learn here all about Access control in Angular File Manager component of Syncfusion Essential JS 2 and more.
-platform: file-manager-sdk
+title: Access Control in Angular File Manager | Syncfusion
+description: Learn how to configure access control in the Angular File Manager with role-based permissions and restricted file operations.
 control: File Manager
+platform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Access control in Angular File Manager component
+# Access Control in Angular File Manager
 
 Access control in the File Manager allows you to restrict user actions by defining permissions for files and folders. This security feature lets you control who can read, write, download, upload, or copy specific content based on user roles.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Customization in ASP.NET Core File Manager Control | Syncfusion
-description: Learn here all about Customization in ASP.NET Core File Manager control of Syncfusion Essential JS 2 and more.
+title: Customization in ASP.NET Core File Manager | Syncfusion
+description: Learn how to customize the ASP.NET Core File Manager context menu, toolbar, navigation pane, upload, and tooltip using built-in APIs.
+control: File Manager
 platform: file-manager-sdk
-control: Customization
 publishingplatform: file-manager-sdk
 documentation: ug
 ---
 
 
-# Customizing File Manager functionalities
+# Customization in ASP.NET Core File Manager
 
 The File Manager control allows customizing its functionalities such as context menu, searching, uploading, and toolbar using APIs. Given below are some of the functionalities that can be customized in the File Manager,
 

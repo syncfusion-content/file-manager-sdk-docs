@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Accessibility in ASP.NET MVC File Manager Control | Syncfusion
-description: Learn here all about Accessibility in ASP.NET MVC File Manager control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ASP.NET MVC File Manager | Syncfusion
+description: Learn about the accessibility support in the ASP.NET MVC File Manager, including WCAG 2.2, Section 508, ADA, and WAI-ARIA role compliance.
+control: File Manager
 platform: file-manager-sdk
-control: Accessibility
 publishingplatform: file-manager-sdk
 documentation: ug
 ---
 
 
-# Accessibility in File Manager Control
+# Accessibility in ASP.NET MVC File Manager
 
 The File Manager control has been designed with keeping the `WAI-ARIA` specifications in mind, and applying the `WAI-ARIA` roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support, which makes navigation easy for people who use assistive technologies (AT) or for users who completely rely on keyboard navigation.
 

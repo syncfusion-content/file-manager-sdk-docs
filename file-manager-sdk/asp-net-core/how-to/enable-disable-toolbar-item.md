@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Enable and Disable Toolbar Items in File Manager | Syncfusion
-description: Learn here all about Enable Disable Toolbar Item in ASP.NET Core File Manager control of Syncfusion Essential JS 2 and more.
+title: Enable or disable a toolbar item in ASP.NET Core File Manager | Syncfusion
+description: Learn how to enable or disable a toolbar item in the ASP.NET Core File Manager at runtime based on user actions or selection state.
+control: File Manager
 platform: file-manager-sdk
-control: Enable Disable Toolbar Item
 publishingplatform: file-manager-sdk
 documentation: ug
 ---
 
-# How to enable/disable toolbar item/items
+# How to enable or disable a toolbar item in ASP.NET Core File Manager
 
 The toolbar items can be enabled or disabled by specifying them in the `enableToolbarItems` or `disableToolbarItems` methods, respectively.
 

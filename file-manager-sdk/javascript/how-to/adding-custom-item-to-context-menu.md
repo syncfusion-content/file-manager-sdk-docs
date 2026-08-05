@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Add Custom Menu Item in JavaScript File Manager | Syncfusion
-description: Learn how to add custom items to the context menu in the JavaScript File Manager control and handle custom actions effectively.
-platform: file-manager-sdk
+title: Adding custom item to context menu in JavaScript File Manager | Syncfusion
+description: Learn how to add a custom item to the context menu in the JavaScript File Manager with custom icons and click handlers.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Add Custom Context Menu Item in JavaScript File Manager
+# How to add custom item to context menu in JavaScript File Manager
 
 The context menu can be customized using the [`contextMenuSettings`](../../api/file-manager#contextmenusettings), [`menuOpen`](../../api/file-manager#menuopen), and [`menuClick`](../../api/file-manager#menuclick) events.
 

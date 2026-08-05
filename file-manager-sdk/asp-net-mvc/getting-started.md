@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC File Manager Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET MVC File Manager control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC File Manager | Syncfusion
+description: Learn how to get started with the ASP.NET MVC File Manager and explore setup, configuration, and core feature examples.
+control: File Manager
 platform: file-manager-sdk
-control: Getting Started
 publishingplatform: file-manager-sdk
 documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC File Manager Control
+# Getting Started with ASP.NET MVC File Manager
 
 This section briefly explains about how to include the [ASP.NET MVC File Manager](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-manager) control in your ASP.NET MVC application using Visual Studio.
 

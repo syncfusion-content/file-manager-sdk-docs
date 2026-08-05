@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize Thumbnails in ASP.NET MVC File Manager | Syncfusion
-description: Learn here all about Customize Custom Thumbnail in ASP.NET MVC File Manager control of Syncfusion Essential JS 2 and more.
+title: Customize thumbnails in ASP.NET MVC File Manager | Syncfusion
+description: Learn how to customize thumbnails in the ASP.NET MVC File Manager by adding your own icons for file types and folders in the LargeIcons view.
+control: File Manager
 platform: file-manager-sdk
-control: Customize Custom Thumbnail
 publishingplatform: file-manager-sdk
 documentation: ug
 ---
 
-# How to add custom thumbnail in File Manager
+# How to customize thumbnails in ASP.NET MVC File Manager
 
 The default appearance of the File Manager can be customized with your own icon by using the `showThumbnail` property.
 
