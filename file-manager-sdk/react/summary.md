@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Summary in React File Manager component | Syncfusion
-description: Learn how to use the Summary feature in Syncfusion React File Manager, with configuration details, usage guidance, and practical examples.
-control: Summary 
+title: Summary in React File Manager | Syncfusion
+description: Find quick links to all React File Manager guides, including setup, file operations, views, customization, and accessibility topics.
+control: File Manager
 platform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Summary in React File Manager component
+# Summary in React File Manager
 
 * [Getting Started](file-manager/getting-started.md)
 * [User Interface](file-manager/user-interface.md)

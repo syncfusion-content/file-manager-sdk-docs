@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Enable Virtualization in ASP.NET MVC File Manager | Syncfusion
-description: Learn here all about Virtualization in ASP.NET MVC File Manager control of Syncfusion Essential JS 2 and more.
+title: Virtualization in ASP.NET MVC File Manager | Syncfusion
+description: Learn how to enable virtualization in the ASP.NET MVC File Manager for dynamically loading large folders in Details and Large Icons views without performance loss.
+control: File Manager
 platform: file-manager-sdk
-control: Virtualization
 publishingplatform: file-manager-sdk
 documentation: ug
 ---
 
 
-# Virtualization in File Manager Control
+# Virtualization in ASP.NET MVC File Manager
 
 File Manager's UI virtualization allows for the dynamic loading of a large number of directories and files in both the detailsView and largeIconsView without degrading performance.
 

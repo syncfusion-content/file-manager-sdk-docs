@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  Custom Service Provider in ASP.NET Core File Manager | Syncfusion
-description: Learn here all about implementation own service provider in ASP.NET Core File Manager control of Syncfusion Essential JS 2 and more.
+title: Implement a custom file provider in ASP.NET Core File Manager | Syncfusion
+description: Learn how to implement a custom file provider in the ASP.NET Core File Manager using Node.js with Azure Blob Storage as the data source.
+control: File Manager
 platform: file-manager-sdk
-control: Implement own service provider
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Create the custom file provider using NodeJS
+# How to implement a custom file provider in ASP.NET Core File Manager
 
 In this guide, we will manipulate Azure Blob Storage to supply the necessary data for the File Manager. We achieve this by utilizing NodeJS to fetch the required data from the Azure blob storage.
 

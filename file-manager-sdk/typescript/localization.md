@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Localization in TypeScript File Manager component | Syncfusion
-description: Learn how to localize the TypeScript File Manager component by providing culture-specific texts and messages.
-platform: file-manager-sdk
+title: Localization in TypeScript File Manager | Syncfusion
+description: Learn how to localize the TypeScript File Manager to any culture by defining locale-specific texts and messages beyond the default English locale.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Localization in TypeScript File Manager component
+# Localization in TypeScript File Manager
 
 The File Manager component supports localization by providing culture-specific texts and messages. The default [`locale`](../api/file-manager#locale) is `en` (English). To localize the component, supply translations for the keys listed below for your target culture and register them with the localization framework.
 

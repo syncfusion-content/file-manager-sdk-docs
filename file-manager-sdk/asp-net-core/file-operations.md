@@ -1,15 +1,15 @@
 ---
 layout: post
-title: File Operations in ASP.NET Core File Manager Control | Syncfusion
-description: Learn here all about File Operations in ASP.NET Core File Manager control of Syncfusion Essential JS 2 and more.
+title: File Operations in ASP.NET Core File Manager | Syncfusion
+description: Learn how to perform file operations in the ASP.NET Core File Manager, including read, create, delete, rename, copy, move, upload, and download.
+control: File Manager
 platform: file-manager-sdk
-control: File Operations
 publishingplatform: file-manager-sdk
 documentation: ug
 ---
 
 
-# File Operations in File Manager Control
+# File Operations in ASP.NET Core File Manager
 
 The File Manager control is used to browse, manage, and organize the files and folders in a file system through a web application. All basic file operations like creating a new folder, uploading and downloading of files in the file system, and deleting and renaming of existing files and folders are available in the File Manager control. Additionally, previewing of image files is provided in the File Manager control.
 

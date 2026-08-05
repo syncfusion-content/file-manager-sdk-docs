@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Views in TypeScript File Manager component | Syncfusion
-description: Learn about the available views (Large Icons and Details) in the TypeScript File Manager component and how to customize them.
-platform: file-manager-sdk
+title: Views in TypeScript File Manager | Syncfusion
+description: Learn how to switch between Large Icons and Details views in the TypeScript File Manager for flexible file browsing.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Views in TypeScript File Manager component
+# Views in TypeScript File Manager
 
 The View section displays files and folders for users to browse. Use the [`view`](../api/file-manager/index-default#view) API to set or change the initial view of the File Manager component.
 

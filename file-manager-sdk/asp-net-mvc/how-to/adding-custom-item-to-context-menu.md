@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom Contextmenu item in ASP.NET MVC File Manager | Syncfusion
-description: Learn here all about Adding Custom Item To Context Menu in ASP.NET MVC File Manager control of Syncfusion Essential JS 2 and more.
+title: Adding custom item to context menu in ASP.NET MVC File Manager | Syncfusion
+description: Learn how to add a custom item to the context menu in the ASP.NET MVC File Manager with custom icons and click handlers.
+control: File Manager
 platform: file-manager-sdk
-control: Adding Custom Item To Context Menu
 publishingplatform: file-manager-sdk
 documentation: ug
 ---
 
-# How to add custom menu item in context menu
+# How to add custom item to context menu in ASP.NET MVC File Manager
 
 The context menu can be customized using the `contextMenuSettings`,`menuOpen`, and `menuClick` events.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: File operations in JavaScript File Manager component | Syncfusion
-description: Learn how the JavaScript File Manager component performs file operations and the request/response formats.
-platform: file-manager-sdk
+title: File Operations in JavaScript File Manager | Syncfusion
+description: Learn how to perform file operations in the JavaScript File Manager, including read, create, delete, rename, copy, move, upload, and download.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# File operations in JavaScript File Manager component
+# File Operations in JavaScript File Manager
 
 The File Manager component provides a web-based interface to browse, manage, and organize files and folders. It supports basic file operations such as creating folders, uploading and downloading files, deleting and renaming items, and previewing images.
 

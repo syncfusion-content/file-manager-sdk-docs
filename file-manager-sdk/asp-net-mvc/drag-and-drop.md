@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Drag And Drop in ASP.NET MVC File Manager Control | Syncfusion
-description: Learn here all about Drag And Drop in ASP.NET MVC File Manager control of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in ASP.NET MVC File Manager | Syncfusion
+description: Learn how to enable drag and drop in the ASP.NET MVC File Manager to move or upload files between folders using built-in drag events.
+control: File Manager
 platform: file-manager-sdk
-control: Drag And Drop
 publishingplatform: file-manager-sdk
 documentation: ug
 ---
 
 
-# Drag And Drop in File Manager Control
+# Drag and Drop in ASP.NET MVC File Manager
 
 The File Manager allows moving files or folders between directories using the `allowDragAndDrop` property. It also supports uploading a file by dragging it from Windows Explorer to the File Manager control. You can enable or disable this support by using the `allowDragAndDrop` property of File Manager.
 

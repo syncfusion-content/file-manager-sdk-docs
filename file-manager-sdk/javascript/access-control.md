@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Access control in JavaScript File Manager component | Syncfusion
-description: Learn how to configure access control (permissions and rules) in the JavaScript File Manager component using Syncfusion Essential JS 2.
-platform: file-manager-sdk
+title: Access Control in JavaScript File Manager | Syncfusion
+description: Learn how to configure access control in the JavaScript File Manager with role-based permissions and restricted file operations.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Access control in JavaScript File Manager component
+# Access Control in JavaScript File Manager
 
 The File Manager component allows defining access permissions for folders and files using access rules assigned to users or roles.
 

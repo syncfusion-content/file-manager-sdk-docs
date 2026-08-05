@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Localization in ASP.NET Core File Manager Control | Syncfusion
-description: Learn here all about Localization in ASP.NET Core File Manager control of Syncfusion Essential JS 2 and more.
+title: Localization in ASP.NET Core File Manager | Syncfusion
+description: Learn how to localize the ASP.NET Core File Manager to any culture by defining locale-specific texts and messages beyond the default English locale.
+control: File Manager
 platform: file-manager-sdk
-control: Localization
 publishingplatform: file-manager-sdk
 documentation: ug
 ---
 
 
-# File Manager Localization
+# Localization in ASP.NET Core File Manager
 
 The File Manager can be localized to any culture by defining its texts and messages in the corresponding culture. The default locale of the File Manager is `en`(English). The following table represents the default texts and messages of the File Manager in `en` culture.
 

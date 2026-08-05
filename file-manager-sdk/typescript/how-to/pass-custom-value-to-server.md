@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Pass Custom Values in TypeScript File Manager | Syncfusion
-description: Learn about how to Pass custom value to server in the TypeScript File Manager component of Syncfusion Essential JS 2 and more.
-platform: file-manager-sdk
+title: Pass a custom value to the server in TypeScript File Manager | Syncfusion
+description: Learn how to pass a custom value to the server in the TypeScript File Manager for authentication, logging, or role-based access on each request.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Pass custom value to server in TypeScript File Manager component
+# How to pass a custom value to the server in TypeScript File Manager
 
 The File Manager component allows seamless backend server interaction by passing custom values. This enhances the functionality and security of file operations, particularly helpful for tasks like authentication, logging, or user role-based processing. In multi-user systems, it ensures file access permissions and actions are user-specific and secure. You can manage user-specific operations such as **Read**, **Delete**, **Rename**, **Create**, **Move**, **Copy**, **Details**, **Search**, **Upload**, **Download**, and **GetImage** using custom headers or query parameters. This guide demonstrates implementing these features using the [`beforeSend`](../../api/file-manager#beforesend), [`beforeDownload`](../../api/file-manager#beforedownload) and [`beforeImageLoad`](../../api/file-manager#beforeimageload) events. Let's explore how to achieve this in [`Physical file system provider`](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider).
 

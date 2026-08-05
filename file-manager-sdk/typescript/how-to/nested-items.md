@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Nested items in TypeScript File Manager component | Syncfusion
-description: Learn here all about Nested items in TypeScript File Manager component of Syncfusion Essential JS 2 and more.
-platform: file-manager-sdk
+title: Use nested File Manager in TypeScript | Syncfusion
+description: Learn how to integrate the TypeScript File Manager within components such as Tab and Dialog to build flexible and interactive application layouts.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# c in TypeScript File Manager component
+# Nested items in TypeScript File Manager component
 
 The File Manager can be rendered inside other UI components such as Dialog and more.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Upload in Syncfusion ASP.NET Core File Manager Control | Syncfusion
-description: Learn here all about Upload in ASP.NET Core File Manager control of Syncfusion Essential JS 2 and more.
+title: Upload in ASP.NET Core File Manager | Syncfusion
+description: Learn how to upload files in the ASP.NET Core File Manager with chunk uploads, directory uploads, and drag-and-drop support.
+control: File Manager
 platform: file-manager-sdk
-control: Upload
 publishingplatform: file-manager-sdk
 documentation: ug
 ---
 
-# Upload in File Manager control
+# Upload in ASP.NET Core File Manager
 
 The File Manager control provides a `uploadSettings` property with various options to customize how files are uploaded, including controlling file size, restricting file types, checking for excessively large and empty files, and enabling chunk uploads.
 

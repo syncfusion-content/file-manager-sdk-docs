@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview in ASP.NET Core File Manager Control | Syncfusion
-description: Learn here all about Overview in ASP.NET Core File Manager control of Syncfusion Essential JS 2 and more.
+title: About ASP.NET Core File Manager Component | Syncfusion
+description: Learn about the ASP.NET Core File Manager, its key capabilities, and the common scenarios it supports for managing files on the server.
+control: File Manager
 platform: file-manager-sdk
-control: Index
 publishingplatform: file-manager-sdk
 documentation: ug
 ---

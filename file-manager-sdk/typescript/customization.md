@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Customization in TypeScript File Manager component | Syncfusion
-description: Learn how to customize the TypeScript File Manager component in Syncfusion Essential JS 2, and more.
-platform: file-manager-sdk
+title: Customization in TypeScript File Manager | Syncfusion
+description: Learn how to customize the TypeScript File Manager context menu, toolbar, navigation pane, upload, and tooltip using built-in APIs.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Customization in TypeScript File Manager component
+# Customization in TypeScript File Manager
 
 The File Manager component allows customizing features such as context menu, search, upload, and toolbar using APIs. The following areas can be customized in the File Manager component:
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Views in JavaScript File Manager component | Syncfusion
-description: Learn about the available views (Large Icons and Details) in the JavaScript File Manager component and how to customize them.
-platform: file-manager-sdk
+title: Views in JavaScript File Manager | Syncfusion
+description: Learn how to switch between Large Icons and Details views in the JavaScript File Manager for flexible file browsing.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Views in JavaScript File Manager component
+# Views in JavaScript File Manager
 
 The View section displays files and folders for users to browse. Use the [`view`](../api/file-manager/index-default#view) API to set or change the initial view of the File Manager component.
 

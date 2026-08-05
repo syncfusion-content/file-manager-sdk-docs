@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Selection in TypeScript File Manager component | Syncfusion
-description: Learn how to use and configure multiple selection, range selection, and disabling multi-selection in the TypeScript File Manager component.
-platform: file-manager-sdk
+title: Multiple Selection in TypeScript File Manager | Syncfusion
+description: Learn how to enable multiple selection in the TypeScript File Manager using Ctrl/Shift keys and checkboxes to select many files at once.
 control: File Manager
+platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# Multiple selection in TypeScript File Manager component
+# Multiple Selection in TypeScript File Manager
 
 The File Manager component supports multiple selection by enabling the [`allowMultiSelection`](../api/file-manager#allowmultiselection) property (enabled by default). Use the Ctrl or Shift keys while selecting items to create multi-selection ranges; checkboxes can also be used. Use `Ctrl + A` to select all items in the current directory. The [`fileSelect`](../api/file-manager#fileselect) is triggered whenever items are selected or unselected.
 
