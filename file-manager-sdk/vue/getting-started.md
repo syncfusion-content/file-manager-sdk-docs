@@ -126,11 +126,11 @@ To enable file operation functionality in the File Manager, configure the [url](
 
 {% tabs %}
 {% highlight html tabtitle="~/src/App.vue" %}
-{% include code-snippet/file-manager-sdk/vue/vue/getting-started-cs1/app.vue %}
+{% include code-snippet/file-manager-sdk/vue/getting-started-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/file-manager-sdk/vue/help.syncfusion.com/code-snippet/file-manager-sdk/vue/getting-started-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/file-manager-sdk/vue/getting-started-cs1" %}
 
 ### Server-side setup
 
