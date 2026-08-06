@@ -4,7 +4,6 @@ title: Getting Started with JavaScript File Manager | Syncfusion
 description: Learn how to get started with the JavaScript File Manager and explore setup, configuration, and core feature examples.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
