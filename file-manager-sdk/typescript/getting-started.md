@@ -137,7 +137,7 @@ filemanagerInstance.appendTo('#filemanager');
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/file-manager-sdk/typescript/help.syncfusion.com/code-snippet/file-manager-sdk/typescript/getting-started-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/file-manager-sdk/typescript/getting-started-cs1" %}
 
 ### Server-side setup
 
