@@ -171,14 +171,14 @@ The following sample shows the File Manager component in the browser.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager-sdk/angular/angular/getting-started-cs3/src/app.component.ts %}
+{% include code-snippet/file-manager-sdk/angular/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
-{% include code-snippet/file-manager-sdk/angular/angular/getting-started-cs3/src/styles.css %}
+{% include code-snippet/file-manager-sdk/angular/getting-started-cs3/src/styles.css %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager-sdk/angular/angular/getting-started-cs3/src/main.ts %}
+{% include code-snippet/file-manager-sdk/angular/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/file-manager-sdk/angular/help.syncfusion.com/samples/file-manager-sdk/angular/getting-started-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/file-manager-sdk/angular/getting-started-cs3" %}

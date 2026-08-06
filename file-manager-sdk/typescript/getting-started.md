@@ -4,7 +4,6 @@ title: Getting Started with TypeScript File Manager | Syncfusion
 description: Learn how to get started with the TypeScript File Manager and explore setup, configuration, and core feature examples.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
@@ -137,7 +136,7 @@ filemanagerInstance.appendTo('#filemanager');
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/file-manager-sdk/typescript/help.syncfusion.com/code-snippet/file-manager-sdk/typescript/getting-started-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/file-manager-sdk/typescript/getting-started-cs1" %}
 
 ### Server-side setup
 
