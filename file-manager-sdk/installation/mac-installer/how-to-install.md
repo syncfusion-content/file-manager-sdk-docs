@@ -2,7 +2,7 @@
 layout: post
 title: Installing Syncfusion File Manager SDK Mac installer - Syncfusion
 description: Learn here about how to install Syncfusion File Manager SDK Mac installer after downloading from our Syncfusion website.
-platform: file-formats
+platform: file-manager-sdk
 control: Installation and Deployment
 documentation: ug
 ---
