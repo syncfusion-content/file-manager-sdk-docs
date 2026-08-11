@@ -2,7 +2,7 @@
 layout: post
 title: Downloading Syncfusion File Manager SDK Offline Installer - Syncfusion
 description: Learn how to download the Syncfusion File Manager SDK offline installer from our website with a license.
-platform: File Manager SDK
+platform: file-manager-sdk
 control: Installation and Deployment
 documentation: ug
 
