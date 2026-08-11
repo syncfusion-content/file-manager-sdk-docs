@@ -2,7 +2,7 @@
 layout: post
 title: Installing Syncfusion File Manager SDK web installer - Syncfusion
 description: Learn here about how to install Syncfusion File Manager SDK web installer after downloading from our Syncfusion website.
-platform: File Manager SDK
+platform: file-manager-sdk
 control: Installation and Deployment
 documentation: ug
 ---

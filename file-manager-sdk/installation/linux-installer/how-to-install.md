@@ -2,7 +2,7 @@
 layout: post
 title: Installing Syncfusion File Manager SDK Linux Installer - Syncfusion
 description: Learn here about how to install the Syncfusion File Manager SDK Linux installer after downloading it from our Syncfusion website.
-platform: File Manager SDK
+platform: file-manager-sdk
 control: Installation and Deployment
 documentation: ug
 
