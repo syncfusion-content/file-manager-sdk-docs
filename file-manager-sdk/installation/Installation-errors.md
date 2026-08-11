@@ -2,7 +2,7 @@
 layout: post
 title: Installation Errors in File Manager SDK - Syncfusion
 description: Learn here about the common installation errors and solution to those errors in Syncfusion File Manager SDK Components installation.
-platform: file-formats
+platform: file-manager-sdk
 control: Installation and Deployment
 documentation: ug
 
