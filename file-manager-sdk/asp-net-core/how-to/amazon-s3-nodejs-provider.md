@@ -8,7 +8,7 @@ publishingplatform: file-manager-sdk
 documentation: ug
 ---
 
-# How to implement a custom file provider in ASP.NET Core File Manager
+# How to implement Amazon S3 custom provider in ASP.NET Core File Manager
 
 This guide explains how to use Amazon S3 Storage to supply the necessary data for the File Manager. Node.js fetches the required data from Amazon S3 Storage and serves it to the File Manager.
 
@@ -187,7 +187,7 @@ The following table represents the response parameters of **read** operations.
 |files|FileManagerDirectoryContent[]|-|Details of files and folders present in given path or directory.|
 |error|[ErrorDetails](../file-operations.md#delete)|-|Error Details|
 
-<a id="file-manager-directory-content"></a>
+<a id="file-manager-directory-content" aria-label="File Manager Directory Content"></a>
 The following table represents the contents of **FileManagerDirectoryContent** in the File Manager request and response.
 
 |Parameter|Type|Default|Explanation|Is required|
@@ -213,7 +213,7 @@ The following table represents the contents of **FileManagerDirectoryContent** i
 |renameFiles|String[]|-|Details of the renamed item.|Optional|
 
 
-<a id="access-rules"></a>
+<a id="access-rules" aria-label="Access Rules Section"></a>
 The following table represents the **AccessRules** properties available for file and folder:
 
 | **Properties** | **Applicable for file** | **Applicable for folder** | **Description** |
@@ -486,7 +486,7 @@ const sourceKey = formattedPath + req.body.name;
 const targetKey = formattedPath + req.body.newName;
 ```
 
-To verify the existence of the target folder when renaming a folder, use a direct array length check on the result of `getAllFilesInDirectory(targetPrefix)` instead of `for await...of`; S3 list commands return a `Promise<Array>`, which is not an async iterable.
+To verify the existence of the target folder when renaming a folder, use a direct array length check on the result of `getAllFilesInDirectory(targetPrefix)` instead of `for await...of`; S3 list commands return a `Promise<Array>`, which is not an async iterates.
 
 The following table represents the response parameters of *rename* operations.
 
