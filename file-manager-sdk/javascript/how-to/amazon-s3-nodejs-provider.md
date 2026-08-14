@@ -4,7 +4,6 @@ title: Custom Node.js service for JavaScript File Manager | Syncfusion
 description: Learn how to implement a custom file provider in the JavaScript File Manager using Node.js with Amazon S3 as the data source.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
