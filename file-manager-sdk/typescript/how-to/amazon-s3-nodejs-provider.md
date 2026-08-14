@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Custom Node.js service for React File Manager | Syncfusion
-description: Learn how to implement a custom file provider in the React File Manager using Node.js with Amazon S3 as the data source.
+title: Custom Node.js service for TypeScript File Manager | Syncfusion
+description: Learn how to implement a custom file provider in the TypeScript File Manager using Node.js with Amazon S3 as the data source.
 control: File Manager
 platform: file-manager-sdk
+publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
 
-# How to implement a custom file provider in React File Manager
+# How to implement a custom file provider in TypeScript File Manager
 
 This guide explains how to use Amazon S3 Storage to supply the necessary data for the File Manager. Node.js fetches the required data from Amazon S3 Storage and serves it to the File Manager.
 
