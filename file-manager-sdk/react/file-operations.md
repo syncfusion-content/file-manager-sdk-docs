@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # File Operations in React File Manager
 
-The File Manager component is used to browse, manage, and organize the files and folders in a file system through a web application. All basic file operations like creating a new folder, uploading and downloading of files in the file system, and deleting and renaming of existing files and folders are available in the File Manager component.  Additionally, previewing of image files is also provided in the File Manager component.
+The React File Manager component is used to browse, manage, and organize the files and folders in a file system through a web application. All basic file operations like creating a new folder, uploading and downloading of files in the file system, and deleting and renaming of existing files and folders are available in the React File Manager component.  Additionally, previewing of image files is also provided in the React File Manager component.
 
-The following table represents the basic operations available in the File Manager and their corresponding functions.
+The following table represents the basic operations available in the React File Manager and their corresponding functions.
 
 |Operation Name|Function|
 |----|----|
@@ -27,11 +27,11 @@ The following table represents the basic operations available in the File Manage
 |upload|Upload files to the current path or directory in the file system.|
 |download|Downloads the file from the server and the multiple files can be downloaded as ZIP files.|
 
->The *CreateFolder*, *Remove*, and *Rename* actions will be reflected in the File Manager only after the successful response from the server.
+>The *CreateFolder*, *Remove*, and *Rename* actions will be reflected in the React File Manager only after the successful response from the server.
 
 ## Folder Upload support
 
-To perform the directory(folder) upload in File Manager, set [directoryUpload](https://ej2.syncfusion.com/react/documentation/api/file-manager/uploadSettings#directoryupload) as true within the uploadSettings property. The directory upload feature is supported for the following file service providers:
+To perform the directory(folder) upload in React File Manager, set [directoryUpload](https://ej2.syncfusion.com/react/documentation/api/file-manager/uploadSettings#directoryupload) as true within the uploadSettings property. The directory upload feature is supported for the following file service providers:
 * Physical file service provider.
 * Azure file service provider.
 * NodeJS file service provider.
@@ -850,11 +850,11 @@ The following table represents the request parameters of *GetImage* operations.
 
 Return the image as a file stream in response.
 
-The request from the File Manager can be customized using the `beforeSend` event. Additional information can be passed to the File Manager in file operation response and can be used in customization.
+The request from the React File Manager can be customized using the `beforeSend` event. Additional information can be passed to the React File Manager in file operation response and can be used in customization.
 
 ## File request and response contents
 
-The following table represents the contents of *data, cwd, and files* in the File Manager request and response.
+The following table represents the contents of *data, cwd, and files* in the React File Manager request and response.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -867,7 +867,7 @@ The following table represents the contents of *data, cwd, and files* in the Fil
 |size|Number|-|File size|
 |type|String|-|File extension|
 
-The following table represents the contents of *error* in the File Manager request and response.
+The following table represents the contents of *error* in the React File Manager request and response.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -875,7 +875,7 @@ The following table represents the contents of *error* in the File Manager reque
 |message|String|-|Error message|
 |fileExists|String[]|-|List of duplicate file names|
 
-The following table represents the contents of *details* in the File Manager request and response.
+The following table represents the contents of *details* in the React File Manager request and response.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -891,7 +891,7 @@ The following table represents the contents of *details* in the File Manager req
 
 ## Action Buttons
 
-The File Manager has several menu buttons to access the file operations. The list of menu buttons available in the File Manager is given in the following table.
+The React File Manager has several menu buttons to access the file operations. The list of menu buttons available in the React File Manager is given in the following table.
 
 |Menu Button|Behaviour|
 |----|----|
@@ -1043,7 +1043,7 @@ The following table provides the default context menu item and the corresponding
 
 ## Ajax Settings Configuration
 
-The File Manager's [ajaxSettings](https://ej2.syncfusion.com/react/documentation/api/file-manager/index-default#ajaxsettings) property allows you to configure the URLs for various file operations including file operations, upload, download, and image preview.
+The React File Manager's [ajaxSettings](https://ej2.syncfusion.com/react/documentation/api/file-manager/index-default#ajaxsettings) property allows you to configure the URLs for various file operations including file operations, upload, download, and image preview.
 
 ### File Download Support
 
@@ -1071,7 +1071,7 @@ export default App;
 
 ### File Upload Support
 
-To enable file upload functionality in the File Manager, configure the [uploadUrl](https://ej2.syncfusion.com/react/documentation/api/file-manager/ajaxsettingsmodel#uploadurl) property within the `ajaxSettings`. This URL handles the file upload requests to the server.
+To enable file upload functionality in the React File Manager, configure the [uploadUrl](https://ej2.syncfusion.com/react/documentation/api/file-manager/ajaxsettingsmodel#uploadurl) property within the `ajaxSettings`. This URL handles the file upload requests to the server.
 
 {% raw %}
 ```ts
@@ -1098,7 +1098,7 @@ For more details on implementing upload support, refer to the [upload](./upload)
 
 ### Image Preview Support
 
-To enable image preview functionality in the File Manager, configure the [getImageUrl](https://ej2.syncfusion.com/react/documentation/api/file-manager/ajaxsettingsmodel#getimageurl) property within the `ajaxSettings`. This URL handles retrieving the image files for preview display.
+To enable image preview functionality in the React File Manager, configure the [getImageUrl](https://ej2.syncfusion.com/react/documentation/api/file-manager/ajaxsettingsmodel#getimageurl) property within the `ajaxSettings`. This URL handles retrieving the image files for preview display.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

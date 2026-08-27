@@ -166,6 +166,6 @@ It is possible to render the File Manager in right-to-left direction by setting 
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager enablertl](images/enable_rtl.png)
+![File Manager enablertl](images/enable_rtl.png)
 
 {% endif %}

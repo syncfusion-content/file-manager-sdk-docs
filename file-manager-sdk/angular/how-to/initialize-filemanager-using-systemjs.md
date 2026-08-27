@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # How to Initialize File Manager using SystemJS in Angular
 
-File Manager can also be initialized using `SystemJS` as follows:
+Angular File Manager can also be initialized using `SystemJS` as follows:
 
 ## Installation and configuration
 
@@ -24,13 +24,13 @@ File Manager can also be initialized using `SystemJS` as follows:
 
 For more information, refer to [Angular sample setup](https://v17.angular.io/guide/setup-local).
 
-* Install Syncfusion<sup style="font-size:70%">&reg;</sup> File Manager packages using the below command.
+* Install Syncfusion<sup style="font-size:70%">&reg;</sup> Angular File Manager packages using the below command.
 
   ```sh
   npm install @syncfusion/ej2-angular-filemanager --save
   ```
 
-The above package installs File Manager dependencies which are required to render the component in an Angular environment.
+The above package installs Angular File Manager dependencies which are required to render the component in an Angular environment.
 
 * Syncfusion `ej2-angular-filemanager` packages need to be mapped in the `systemjs.config.js` configuration file.
 
@@ -123,9 +123,9 @@ To render the File Manager component, need to import File Manager and its depend
 >Note: If you want to refer the combined component styles,
 please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
-## Create a simple File Manager
+## Create a simple Angular File Manager
 
-Refer to the following code to include the File Manager in your application .
+Refer to the following code to include the Angular File Manager in your application .
 
 * Create an `Angular` component with a File Manager. Add the File Manager component by using <ejs-filemanager> selector in template section of the `app.component.ts` file.
 
@@ -134,8 +134,8 @@ Refer to the following code to include the File Manager in your application .
   </ejs-filemanager>
   ```
 
-* Create an `Angular` module and include the above File Manager component.
-* In the module, declare the Component and Directives required to render the File Manager.
+* Create an `Angular` module and include the above Angular File Manager component.
+* In the module, declare the Component and Directives required to render the Angular File Manager.
 * Bootstrap the application with the above module.
 
 Refer to the following snippet to import the `FileManagerAllModule` in `app.module.ts` from the `@syncfusion/ej2-angular-filemanager`.
@@ -167,7 +167,7 @@ Use the npm run start command to run the application in the browser.
 npm start
 ```
 
-The following sample shows the File Manager component in the browser.
+The following sample shows the Angular File Manager component in the browser.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

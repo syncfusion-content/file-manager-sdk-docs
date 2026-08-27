@@ -128,9 +128,9 @@ Then add the following CSS reference to the  **src/app/globals.css** file:
 
 Follow the below steps to add the React File Manager component to the Next.js project:
 
-1.Define the File Manager component in the **app/page.tsx** file, as shown below:
+1.Define the React File Manager component in the **app/page.tsx** file, as shown below:
 
-To enable file operation functionality in the File Manager, configure the [url](https://ej2.syncfusion.com/react/documentation/api/file-manager/ajaxsettingsmodel#url) property within the [ajaxSettings](https://ej2.syncfusion.com/react/documentation/api/file-manager/ajaxsettings). This URL handles the file operation requests from the server.
+To enable file operation functionality in the React File Manager, configure the [url](https://ej2.syncfusion.com/react/documentation/api/file-manager/ajaxsettingsmodel#url) property within the [ajaxSettings](https://ej2.syncfusion.com/react/documentation/api/file-manager/ajaxsettings). This URL handles the file operation requests from the server.
 
 {% tabs %}
 {% highlight ts tabtitle="page.tsx" %}
@@ -163,7 +163,7 @@ export default App;
 The sample uses `https://physical-service.syncfusion.com/` as the [url](https://ej2.syncfusion.com/react/documentation/api/file-manager/ajaxsettingsmodel#url) endpoint in [ajaxSettings](https://ej2.syncfusion.com/react/documentation/api/file-manager/ajaxsettings).
 
 
-To use your own files, host a File Manager service and replace the `url` value with your service endpoint. See the [File System Provider](./file-system-provider) documentation for setup details.
+To use your own files, host a React File Manager service and replace the `url` value with your service endpoint. See the [File System Provider](./file-system-provider) documentation for setup details.
 
 ## Run the application
 
@@ -182,6 +182,6 @@ yarn run dev
 {% endhighlight %}
 {% endtabs %}
 
-To learn more about the functionality of the File Manager component, refer to the [documentation](https://ej2.syncfusion.com/react/documentation/file-manager/getting-started#module-injection).
+To learn more about the functionality of the React File Manager component, refer to the [documentation](https://ej2.syncfusion.com/react/documentation/file-manager/getting-started#module-injection).
 
 > [View the NEXT.js File Manager sample in the GitHub repository](https://github.com/SyncfusionExamples/syncfusion-react-filemanager-component-in-nextjs).

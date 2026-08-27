@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # Localization in Vue File Manager
 
-The File Manager can be localized to any culture by defining the corresponding texts and messages for that culture. The default locale of the File Manager is `en` (English). The following table lists the default texts and messages of the File Manager in the `en` culture.
+The Vue File Manager can be localized to any culture by defining the corresponding texts and messages for that culture. The default locale of the Vue File Manager is `en` (English). The following table lists the default texts and messages of the Vue File Manager in the `en` culture.
 
 |KEY|Text/Message|
 |----|----|
@@ -122,7 +122,7 @@ The example below demonstrates adding the German culture locale (`de-DE`).
 
 ## Rendering component in right-to-left direction
 
-It is possible to render the File Manager in right-to-left direction by setting the [enableRtl](https://ej2.syncfusion.com/vue/documentation/api/file-manager#enablertl) API to true.
+It is possible to render the Vue File Manager in right-to-left direction by setting the [enableRtl](https://ej2.syncfusion.com/vue/documentation/api/file-manager#enablertl) API to true.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

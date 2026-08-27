@@ -10,16 +10,16 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # Views in Vue File Manager
 
-View is the section where the files and folders are displayed for the user to browse. The [view](https://ej2.syncfusion.com/vue/documentation/api/file-manager/index-default#view) API can also be used to change the initial view of the File Manager.
+View is the section where the files and folders are displayed for the user to browse. The [view](https://ej2.syncfusion.com/vue/documentation/api/file-manager/index-default#view) API can also be used to change the initial view of the Vue File Manager.
 
- The File Manager has two types of [views](https://ej2.syncfusion.com/vue/documentation/api/file-manager/index-default#view) to display the files and folders.
+ The Vue File Manager has two types of [views](https://ej2.syncfusion.com/vue/documentation/api/file-manager/index-default#view) to display the files and folders.
 
 * [LargeIcons View](#large-icons-view)
 * [Details View](#details-view)
 
 ## Large Icons View
 
-By default, the File Manager renders in the Large Icons view. The example below demonstrates the default Large Icons rendering.
+By default, the Vue File Manager renders in the Large Icons view. The example below demonstrates the default Large Icons rendering.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -49,7 +49,7 @@ The large icons view layout can be customized using the `largeIconsTemplate` pro
 
 ## Details view
 
-The **DetailsView** is an injectable module in the File Manager so, it should be injected before rendering the File Manager to avail its functionality. The default appearance of the File Manager can be changed from large icons to details view by using the [view](https://ej2.syncfusion.com/vue/documentation/api/file-manager/index-default#view) property. The following example demonstrates the File Manager with the **Details** view.
+The **DetailsView** is an injectable module in the Vue File Manager so, it should be injected before rendering the Vue File Manager to avail its functionality. The default appearance of the Vue File Manager can be changed from large icons to details view by using the [view](https://ej2.syncfusion.com/vue/documentation/api/file-manager/index-default#view) property. The following example demonstrates the Vue File Manager with the **Details** view.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

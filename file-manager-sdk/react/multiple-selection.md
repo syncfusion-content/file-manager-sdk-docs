@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # Multiple Selection in React File Manager
 
-The File Manager allows you to select multiple files by enabling the [allowMultiSelection](https://ej2.syncfusion.com/react/documentation/api/file-manager#allowmultiselection) property (enabled by default). The multiple selection can be done by pressing the `Ctrl` key or `Shift` key and selecting the files. The check box can also be used to do multiple selection. `Ctrl + A` can be used to select all files in the current directory. The [fileSelect](https://ej2.syncfusion.com/react/documentation/api/file-manager#fileselect) event will be triggered when the items of File Manager component is selected or unselected.
+The React File Manager allows you to select multiple files by enabling the [allowMultiSelection](https://ej2.syncfusion.com/react/documentation/api/file-manager#allowmultiselection) property (enabled by default). The multiple selection can be done by pressing the `Ctrl` key or `Shift` key and selecting the files. The check box can also be used to do multiple selection. `Ctrl + A` can be used to select all files in the current directory. The [fileSelect](https://ej2.syncfusion.com/react/documentation/api/file-manager#fileselect) event will be triggered when the items of React File Manager component is selected or unselected.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -29,11 +29,11 @@ The File Manager allows you to select multiple files by enabling the [allowMulti
 
  {% previewsample "https://help.syncfusion.com/code-snippet/file-manager-sdk/react/multiselect-cs1" %}
 
->Note: The File Manager has support to select files and folders initially or dynamically by specifying their names in [selectedItems](https://ej2.syncfusion.com/react/documentation/api/file-manager#selecteditems) property.
+>Note: The React File Manager has support to select files and folders initially or dynamically by specifying their names in [selectedItems](https://ej2.syncfusion.com/react/documentation/api/file-manager#selecteditems) property.
 
 ## Range Selection
 
-The File Manager supports for selecting files and folders in specific ranges through mouse drag as like File Explorer. This is particularly useful in scenarios where users need to select a large group of files quickly without manually clicking each one. 
+The React File Manager supports for selecting files and folders in specific ranges through mouse drag as like File Explorer. This is particularly useful in scenarios where users need to select a large group of files quickly without manually clicking each one. 
 
 ### Enabling Range Selection
 

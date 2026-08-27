@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # Getting Started with React File Manager
 
-This section explains how to create and configure the **File Manager** component in a React application.
+This section explains how to create and configure the **React File Manager** component in a React application.
 
 To get started quickly with the [React File Manager](https://www.syncfusion.com/react-ui-components/react-file-manager), refer to the video below:
 
@@ -49,7 +49,7 @@ sf new my-app --framework react --template file-manager --theme tailwind3
 {% endhighlight %}
 {% endtabs %}
 
-In this mode, the project configuration is passed directly in the command. The above command creates a React Vite application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `File Manager` component.
+In this mode, the project configuration is passed directly in the command. The above command creates a React Vite application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `React File Manager` component.
 
 ### Interactive mode
 
@@ -80,7 +80,7 @@ When you run the `sf` command, the CLI prompts you to select the required projec
 {% endhighlight %}
 {% endtabs %}
 
-The above selections generate a React Vite application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `File Manager` component. You can choose different values for language, theme, style format, MCP setup, and skills installation based on your project requirements.
+The above selections generate a React Vite application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `React File Manager` component. You can choose different values for language, theme, style format, MCP setup, and skills installation based on your project requirements.
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> CLI creates the project with a predefined template. After the project is generated, you can customize or replace the component code based on your application requirements.
 
@@ -98,7 +98,7 @@ npm run dev
 
 The output will appear as follows:
 
-![File Manager Component](./images/cli-file-manager.png)
+![React File Manager Component](./images/cli-file-manager.png)
 
 {% endtabcontent %}
 
@@ -172,7 +172,7 @@ cd my-app
 
 ## Adding React File Manager packages
 
-To install the File Manager component, use the following command:
+To install the React File Manager component, use the following command:
 
 ```bash
 npm i @syncfusion/ej2-react-filemanager
@@ -180,7 +180,7 @@ npm i @syncfusion/ej2-react-filemanager
 
 ## Adding CSS reference
 
-Themes for Syncfusion<sup style="font-size:70%">&reg;</sup> File Manager component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/react/documentation/appearance/theme) documentation.
+Themes for Syncfusion<sup style="font-size:70%">&reg;</sup> React File Manager component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/react/documentation/appearance/theme) documentation.
 
 Install the **Tailwind 3** theme package using the following command:
 
@@ -202,15 +202,15 @@ Then add the following CSS reference to the **src/App.css** file:
 {% endhighlight %}
 {% endtabs %}
 
-To reference `App.css` in the application, import it into the `src/App.tsx` file. Also, remove any unnecessary styles from `src/index.css` and `src/App.css`, as they may affect the File Manager component UI.
+To reference `App.css` in the application, import it into the `src/App.tsx` file. Also, remove any unnecessary styles from `src/index.css` and `src/App.css`, as they may affect the React File Manager component UI.
 
 > **Note:** If you want to use combined component styles, make use of the [Custom Resource Generator (CRG)](https://crg.syncfusion.com) in your application.
 
-## Adding File Manager component
+## Adding React File Manager component
 
-The File Manager component code should be placed in the **src/App.tsx** file.
+The React File Manager component code should be placed in the **src/App.tsx** file.
 
-To enable file operation functionality in the File Manager, configure the [url](https://ej2.syncfusion.com/react/documentation/api/file-manager/ajaxsettingsmodel#url) property within the [ajaxSettings](https://ej2.syncfusion.com/react/documentation/api/file-manager/ajaxsettings). This URL handles the file operation requests from the server.
+To enable file operation functionality in the React File Manager, configure the [url](https://ej2.syncfusion.com/react/documentation/api/file-manager/ajaxsettingsmodel#url) property within the [ajaxSettings](https://ej2.syncfusion.com/react/documentation/api/file-manager/ajaxsettings). This URL handles the file operation requests from the server.
 
 {% tabs %}
 {% highlight ts tabtitle="App.tsx" %}
@@ -231,7 +231,7 @@ To enable file operation functionality in the File Manager, configure the [url](
 
 The sample uses `https://physical-service.syncfusion.com/` as the [`url`](https://ej2.syncfusion.com/react/documentation/api/file-manager/ajaxsettingsmodel#url) endpoint in [`ajaxSettings`](https://ej2.syncfusion.com/react/documentation/api/file-manager/ajaxsettings).
 
-To use your own files, host a File Manager service and replace the `url` value with your service endpoint. See the [File System Provider](./file-system-provider) documentation for setup details.
+To use your own files, host a React File Manager service and replace the `url` value with your service endpoint. See the [File System Provider](./file-system-provider) documentation for setup details.
 
 ## Registering Your Syncfusion License
 
@@ -271,7 +271,7 @@ npm run preview
 
 ## Troubleshooting
 
-- **File Manager not rendering styles:** Ensure the theme CSS is imported in `App.css` and that you removed the default Vite CSS in `index.css`.
+- **React File Manager not rendering styles:** Ensure the theme CSS is imported in `App.css` and that you removed the default Vite CSS in `index.css`.
 - **Trial license warning banner:** Register a license key via `registerLicense()` from `@syncfusion/ej2-base`.
 - **Port 5173 already in use:** Stop the conflicting process or run Vite on a different port with `npm run dev -- --port 3000`.
 
@@ -279,8 +279,8 @@ npm run preview
 
 * [Ajax Settings Configuration (uploadUrl, downloadUrl, getImageUrl)](./file-operations#ajax-settings-configuration)
 * [Injecting Services for Overview](./user-interface#injecting-services-for-overview)
-* [File Manager Views](./views)
-* [File Manager File Operations](./file-operations)
-* [File Manager Upload](./upload)
-* [File Manager Customization](./customization)
+* [React File Manager Views](./views)
+* [React File Manager File Operations](./file-operations)
+* [React File Manager Upload](./upload)
+* [React File Manager Customization](./customization)
 * [Getting Started with Next.js](./nextjs-getting-started)

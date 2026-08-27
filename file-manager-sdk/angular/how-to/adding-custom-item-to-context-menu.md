@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # How to add custom item to context menu in Angular File Manager
 
-The File Manager component allows you to customize the default context menu by adding new menu items, controlling visibility, and handling click events. This customization is especially useful when you need to implement application-specific actions in the File Manager interface.
+The Angular File Manager component allows you to customize the default context menu by adding new menu items, controlling visibility, and handling click events. This customization is especially useful when you need to implement application-specific actions in the Angular File Manager interface.
 
 ## Overview of context menu customization
 

@@ -10,11 +10,11 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # Style and Appearance in Vue File Manager
 
-This article shows CSS selectors and examples that can be used to modify the File Manager control's appearance to match user preferences.
+This article shows CSS selectors and examples that can be used to modify the Vue File Manager control's appearance to match user preferences.
 
-## Customizing the File Manager navigation pane
+## Customizing the Vue File Manager navigation pane
 
-To customize the File Manager navigation pane, target the `.e-navigation` selector and apply styles.
+To customize the Vue File Manager navigation pane, target the `.e-navigation` selector and apply styles.
 
 The following example shows how to customize the navigation pane visual styles:
 
@@ -23,7 +23,7 @@ The following example shows how to customize the navigation pane visual styles:
     margin: 10px;
 }
 
-/* Set background color for the File Manager navigation pane */
+/* Set background color for the Vue File Manager navigation pane */
 .e-filemanager .e-navigation {
     background: #3a0647;
 }
@@ -41,9 +41,9 @@ The following example shows how to customize the navigation pane visual styles:
 
 ![Vue File Manager Customization Navigation Pane](./images/customize_navigation_pane.png)
 
-## Customizing the File Manager layout
+## Customizing the Vue File Manager layout
 
-To customize the File Manager layout, target the `.e-layout-content` selector and related view selectors.
+To customize the Vue File Manager layout, target the `.e-layout-content` selector and related view selectors.
 
 ```css
 .sample-container {
@@ -69,7 +69,7 @@ To customize the File Manager layout, target the `.e-layout-content` selector an
 
 ![Vue File Manager Customization Layout](./images/customize_layout.png)
 
-## Customizing the File Manager thumbnail
+## Customizing the Vue File Manager thumbnail
 
 To customize thumbnails, apply `background-image` or other styles to the file-type selectors listed below.
 
@@ -107,7 +107,7 @@ The following example demonstrates customizing the folder thumbnail for both Lar
 
 ![Vue File Manager Customization Thumbnail](./images/customize_thumbnail.png)
 
-## Customizing the File Manager Toolbar
+## Customizing the Vue File Manager Toolbar
 
 To style toolbar items, target the `.e-toolbar` and button selectors.
 
@@ -135,7 +135,7 @@ To style toolbar items, target the `.e-toolbar` and button selectors.
 
 ![Vue File Manager Customization Toolbar](./images/customize_toolbar.png)
 
-## Customizing the File Manager selected files/folders
+## Customizing the Vue File Manager selected files/folders
 
 Use the selectors below to change styles for selected or active files/folders.
 
@@ -165,7 +165,7 @@ Use the selectors below to change styles for selected or active files/folders.
 
 ![Vue File Manager Customization Selected File](./images/customize_selected_file.png)
 
-## Customizing the File Manager Dialog
+## Customizing the Vue File Manager Dialog
 
 Below are common dialog elements and their selectors.
 
@@ -181,7 +181,7 @@ Below are common dialog elements and their selectors.
     margin: 10px;
 }
 
-/* For File Manager Dialog header */
+/* For Vue File Manager Dialog header */
 .e-filemanager .e-dialog .e-dlg-header-content {
   background-color: #0d6efd;
 }

@@ -165,12 +165,12 @@ The tooltip value can be customized by adding extra content to the title of the 
 
 ## Maintaining component state on page reload
 
-The File Manager supports maintaining the component state on page reload. This can be achieved by enabling [enablePersistence](https://ej2.syncfusion.com/vue/documentation/api/file-manager#enablepersistence) property which maintains the following,
-* Previous view of the File Manager - [View](https://ej2.syncfusion.com/vue/documentation/api/file-manager#view)
-* Previous path of the File Manager - [Path](https://ej2.syncfusion.com/vue/documentation/api/file-manager#path)
-* Previous selected items of the File Manager - [SelectedItems](https://ej2.syncfusion.com/vue/documentation/api/file-manager#selecteditems)
+The Vue File Manager supports maintaining the component state on page reload. This can be achieved by enabling [enablePersistence](https://ej2.syncfusion.com/vue/documentation/api/file-manager#enablepersistence) property which maintains the following,
+* Previous view of the Vue File Manager - [View](https://ej2.syncfusion.com/vue/documentation/api/file-manager#view)
+* Previous path of the Vue File Manager - [Path](https://ej2.syncfusion.com/vue/documentation/api/file-manager#path)
+* Previous selected items of the Vue File Manager - [SelectedItems](https://ej2.syncfusion.com/vue/documentation/api/file-manager#selecteditems)
 
-For every operation in File Manager, ajax request will be sent to the server which then processes the request and sends back the response. When the ajax request is success, [success](https://ej2.syncfusion.com/vue/documentation/api/file-manager#success) event will be triggered and [failure](https://ej2.syncfusion.com/vue/documentation/api/file-manager#failure) event will be triggered if the request gets failed.
+For every operation in Vue File Manager, ajax request will be sent to the server which then processes the request and sends back the response. When the ajax request is success, [success](https://ej2.syncfusion.com/vue/documentation/api/file-manager#success) event will be triggered and [failure](https://ej2.syncfusion.com/vue/documentation/api/file-manager#failure) event will be triggered if the request gets failed.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -183,13 +183,13 @@ For every operation in File Manager, ajax request will be sent to the server whi
         
 {% previewsample "https://help.syncfusion.com/code-snippet/file-manager-sdk/vue/persistence-cs1" %}
 
->**Note:** The files of the current folder opened in the File Manager can be refreshed programmatically by calling [refreshFiles](https://ej2.syncfusion.com/vue/documentation/api/file-manager#refreshfiles) method.
+>**Note:** The files of the current folder opened in the Vue File Manager can be refreshed programmatically by calling [refreshFiles](https://ej2.syncfusion.com/vue/documentation/api/file-manager#refreshfiles) method.
 
-## Specifying the current path of the File Manager
+## Specifying the current path of the Vue File Manager
 
-The current path of the File Manager can be specified initially or dynamically using the [path](https://ej2.syncfusion.com/vue/documentation/api/file-manager#path) property.
+The current path of the Vue File Manager can be specified initially or dynamically using the [path](https://ej2.syncfusion.com/vue/documentation/api/file-manager#path) property.
 
-The following code snippet demonstrates specifying the current path in File Manager on rendering.
+The following code snippet demonstrates specifying the current path in Vue File Manager on rendering.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

@@ -10,11 +10,11 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # Customization in Angular File Manager
 
-The File Manager component provides extensive customization options to tailor its appearance and functionality to your specific requirements. This guide demonstrates how to customize various aspects of the File Manager to enhance user experience and meet your application needs.
+The Angular File Manager component provides extensive customization options to tailor its appearance and functionality to your specific requirements. This guide demonstrates how to customize various aspects of the Angular File Manager to enhance user experience and meet your application needs.
 
 ## Available customization options
 
-The following customization options are available in the File Manager component:
+The following customization options are available in the Angular File Manager component:
 
 * [Context menu customization](#context-menu-customization)
 * [Details view customization](#details-view-customization)
@@ -82,9 +82,9 @@ The navigation pane settings like minimum and maximum width, visibility, and sor
 
 ## Show/Hide file extension
 
-The file extensions are displayed in the File Manager by default. This can be hidden by disabling the [showFileExtension](https://ej2.syncfusion.com/angular/documentation/api/file-manager#showfileextension) property.
+The file extensions are displayed in the Angular File Manager by default. This can be hidden by disabling the [showFileExtension](https://ej2.syncfusion.com/angular/documentation/api/file-manager#showfileextension) property.
 
-In File Manager, the [fileLoad](https://ej2.syncfusion.com/angular/documentation/api/file-manager#fileload) and [fileOpen](https://ej2.syncfusion.com/angular/documentation/api/file-manager#fileopen) events are triggered before the file/folder is rendered and before the file/folder is opened respectively. These events can be utilized to perform operations before a file/folder is rendered or opened.
+In Angular File Manager, the [fileLoad](https://ej2.syncfusion.com/angular/documentation/api/file-manager#fileload) and [fileOpen](https://ej2.syncfusion.com/angular/documentation/api/file-manager#fileopen) events are triggered before the file/folder is rendered and before the file/folder is opened respectively. These events can be utilized to perform operations before a file/folder is rendered or opened.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,7 +102,7 @@ In File Manager, the [fileLoad](https://ej2.syncfusion.com/angular/documentation
 
 ## Show/Hide hidden items
 
-The File Manager provides support to show/hide the hidden items by enabling/disabling the [showHiddenItems](https://ej2.syncfusion.com/angular/documentation/api/file-manager#showhiddenitems) property.
+The Angular File Manager provides support to show/hide the hidden items by enabling/disabling the [showHiddenItems](https://ej2.syncfusion.com/angular/documentation/api/file-manager#showhiddenitems) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -120,7 +120,7 @@ The File Manager provides support to show/hide the hidden items by enabling/disa
 
 ## Show/Hide thumbnail images in large icons view
 
-The thumbnail images are displayed in the File Manager's large icons view by default. This can be hidden by disabling the [showThumbnail](https://ej2.syncfusion.com/angular/documentation/api/file-manager#showthumbnail) property.
+The thumbnail images are displayed in the Angular File Manager's large icons view by default. This can be hidden by disabling the [showThumbnail](https://ej2.syncfusion.com/angular/documentation/api/file-manager#showthumbnail) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -178,7 +178,7 @@ The upload settings like minimum and maximum file size and enabling auto upload 
 
 ## Tooltip customization
 
-The tooltip value can be customized by adding extra content to the title of the toolbar, navigation pane, details view, and large icons of the File Manager element. Custom tooltips can provide additional information or guidance to users when hovering over File Manager elements.
+The tooltip value can be customized by adding extra content to the title of the toolbar, navigation pane, details view, and large icons of the Angular File Manager element. Custom tooltips can provide additional information or guidance to users when hovering over Angular File Manager elements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -196,12 +196,12 @@ The tooltip value can be customized by adding extra content to the title of the 
 
 ## Maintaining Component State on Page Reload
 
-The File Manager supports maintaining the component state on page reload. This can be achieved by enabling [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/file-manager#enablepersistence) property which maintains the following,
-* Previous view of the File Manager - [View](https://ej2.syncfusion.com/angular/documentation/api/file-manager#view)
-* Previous navigation path of the File Manager - [Path](https://ej2.syncfusion.com/angular/documentation/api/file-manager#path)
-* Previous selected items of the File Manager - [SelectedItems](https://ej2.syncfusion.com/angular/documentation/api/file-manager#selecteditems)
+The Angular File Manager supports maintaining the component state on page reload. This can be achieved by enabling [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/file-manager#enablepersistence) property which maintains the following,
+* Previous view of the Angular File Manager - [View](https://ej2.syncfusion.com/angular/documentation/api/file-manager#view)
+* Previous navigation path of the Angular File Manager - [Path](https://ej2.syncfusion.com/angular/documentation/api/file-manager#path)
+* Previous selected items of the Angular File Manager - [SelectedItems](https://ej2.syncfusion.com/angular/documentation/api/file-manager#selecteditems)
 
-For every operation in File Manager, ajax request will be sent to the server which then processes the request and sends back the response. When the ajax request is success, [success](https://ej2.syncfusion.com/angular/documentation/api/file-manager#success) event will be triggered and [failure](https://ej2.syncfusion.com/angular/documentation/api/file-manager#failure) event will be triggered if the request gets failed.
+For every operation in Angular File Manager, ajax request will be sent to the server which then processes the request and sends back the response. When the ajax request is success, [success](https://ej2.syncfusion.com/angular/documentation/api/file-manager#success) event will be triggered and [failure](https://ej2.syncfusion.com/angular/documentation/api/file-manager#failure) event will be triggered if the request gets failed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -217,13 +217,13 @@ For every operation in File Manager, ajax request will be sent to the server whi
   
 {% previewsample "https://help.syncfusion.com/samples/file-manager-sdk/angular/persistence-cs1" %}
 
->**Note:** The files of the current folder opened in the File Manager can be refreshed programatically by calling [refreshFiles](https://ej2.syncfusion.com/angular/documentation/api/file-manager#refreshfiles) method.
+>**Note:** The files of the current folder opened in the Angular File Manager can be refreshed programatically by calling [refreshFiles](https://ej2.syncfusion.com/angular/documentation/api/file-manager#refreshfiles) method.
 
-## Specifying the current path of the File Manager
+## Specifying the current path of the Angular File Manager
 
-The current path of the File Manager can be specified initially or dynamically using the [path](https://ej2.syncfusion.com/angular/documentation/api/file-manager#path) property.
+The current path of the Angular File Manager can be specified initially or dynamically using the [path](https://ej2.syncfusion.com/angular/documentation/api/file-manager#path) property.
 
-The following code snippet demonstrates specifying the current path in File Manager on rendering.
+The following code snippet demonstrates specifying the current path in Angular File Manager on rendering.
 
 ```typescript
 

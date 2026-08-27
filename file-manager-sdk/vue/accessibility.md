@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 The [Vue File Manager](https://www.syncfusion.com/vue-components/vue-file-manager) component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), and [WCAG 2.2](https://www.w3.org/TR/WCAG22/). It implements WAI-ARIA roles and attributes commonly used to evaluate accessibility.
 
-The File Manager component's accessibility compliance is summarized below.
+The Vue File Manager component's accessibility compliance is summarized below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,14 +40,14 @@ The File Manager component's accessibility compliance is summarized below.
 
 ## WAI-ARIA attributes
 
-The File Manager implements WAI-ARIA patterns to improve accessibility. The table below lists ARIA attributes used by the component and their purpose:
+The Vue File Manager implements WAI-ARIA patterns to improve accessibility. The table below lists ARIA attributes used by the component and their purpose:
 
 | Attributes | Purpose |
 | --- | --- |
 | `role` | Used to convey a significant and contextual message to the user. |
-| `aria-disabled` | Indicates whether the File Manager component is in disabled state.|
+| `aria-disabled` | Indicates whether the Vue File Manager component is in disabled state.|
 | `aria-haspopup` | Indicates whether the toolbar item has a popup list or not. |
-| `aria-orientation` | Indicates whether the File Manager element is oriented horizontally or vertically. |
+| `aria-orientation` | Indicates whether the Vue File Manager element is oriented horizontally or vertically. |
 | `aria-expanded` | Indicates whether the Treeview node has been expanded. |
 | `aria-owns` | Contains the ID of the suggestion list to indicate popup as a child element. |
 | `aria-activedescendent` | Holds the ID of the active list item to focus its descendant child element. |
@@ -70,7 +70,7 @@ The File Manager implements WAI-ARIA patterns to improve accessibility. The tabl
 
 ## Keyboard interaction
 
-The File Manager supports keyboard interaction to help users who rely on the keyboard or assistive technologies. The following shortcuts are supported:
+The Vue File Manager supports keyboard interaction to help users who rely on the keyboard or assistive technologies. The following shortcuts are supported:
 
 | **Press** | **To do this** |
 | --- | --- |
@@ -80,7 +80,7 @@ The File Manager supports keyboard interaction to help users who rely on the key
 | <kbd>Tab</kbd> | Focuses on the first element of toolbar and navigates through the next tab indexed element. |
 | <kbd>Esc(Escape)</kbd> | Closes the image when it is in open state. |
 | <kbd>Alt+N</kbd> | Creates a new folder dialog.|
-| <kbd>F5</kbd> | Refresh the File Manager element. |
+| <kbd>F5</kbd> | Refresh the Vue File Manager element. |
 | <kbd>Home</kbd> | Navigate through the first element of details view or large icons view. |
 | <kbd>End</kbd> | Navigate through the last element of details view or large icons view. |
 | <kbd>Move Left</kbd> | Scrolls left to the previous folder and select the first item when files are loaded |
@@ -89,18 +89,18 @@ The File Manager supports keyboard interaction to help users who rely on the key
 | <kbd>Shift+Right</kbd> | Allows multiselection. Select the file or folder at the right of the previously selected folder. |
 | <kbd>Shift+Left</kbd> | Allows multiselection. Select the file or folder at the left of the previously selected folder. |
 | <kbd>Shift+Down</kbd> | Allows multiselection. Select the file or folder till the focused index. |
-| <kbd>Shift+Delete</kbd> | Permanently deletes the selected file or folder in the File Manager element. |
-| <kbd>Delete</kbd> | Deletes the selected file or folder in the File Manager element. |
+| <kbd>Shift+Delete</kbd> | Permanently deletes the selected file or folder in the Vue File Manager element. |
+| <kbd>Delete</kbd> | Deletes the selected file or folder in the Vue File Manager element. |
 | <kbd>Shift+Up</kbd> | Allows multiselection. Select the file or folder till the focused index. |
-| <kbd>Ctrl+C</kbd> | Copies the selected file or folder in the File Manager element. |
-| <kbd>Ctrl+V</kbd> | Pastes the copied/cut file or folder in the File Manager element. |
-| <kbd>Ctrl+X</kbd> | Cuts the selected file or folder in the File Manager element. |
+| <kbd>Ctrl+C</kbd> | Copies the selected file or folder in the Vue File Manager element. |
+| <kbd>Ctrl+V</kbd> | Pastes the copied/cut file or folder in the Vue File Manager element. |
+| <kbd>Ctrl+X</kbd> | Cuts the selected file or folder in the Vue File Manager element. |
 | <kbd>Ctrl+A</kbd> | Select all the files or folders in the details view or large icons view. |
-| <kbd>F2</kbd> | Creates a rename dialog for a selected file or folder in the File Manager element. |
-| <kbd>Shift+F10</kbd> | Opens the context menu for the selected file or folder in the File Manager element. |
-| <kbd>Ctrl+D</kbd> | Downloads the list of selected files or folders in the File Manager element. |
-| <kbd>Ctrl+Shift+1</kbd> | Changes the File Manager layout to details view. |
-| <kbd>Ctrl+Shift+2</kbd> | Changes the File Manager layout to large icons view. |
+| <kbd>F2</kbd> | Creates a rename dialog for a selected file or folder in the Vue File Manager element. |
+| <kbd>Shift+F10</kbd> | Opens the context menu for the selected file or folder in the Vue File Manager element. |
+| <kbd>Ctrl+D</kbd> | Downloads the list of selected files or folders in the Vue File Manager element. |
+| <kbd>Ctrl+Shift+1</kbd> | Changes the Vue File Manager layout to details view. |
+| <kbd>Ctrl+Shift+2</kbd> | Changes the Vue File Manager layout to large icons view. |
 
 ## Ensuring accessibility
 

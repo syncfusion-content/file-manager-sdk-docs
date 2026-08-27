@@ -57,14 +57,14 @@ new AccessRule { Path = "*", Role = "Default User", Read = Permission.Deny, Writ
 
 ## Permissions
 
-This section explains how access rules determine permissions for files and folders in the File Manager. The table below summarizes the possible permission values.
+This section explains how access rules determine permissions for files and folders in the Vue File Manager. The table below summarizes the possible permission values.
 
 | **Value** | **Description** |
 | --- | --- |
 | Allow | Grants permission to perform the specified operations (read, write, copy, download). |
 | Deny | Denies permission to perform the specified operations (read, write, copy, download). |
 
-Apply access rules by using the `Role` property to target specific roles. The File Manager then displays and permits operations on files and folders based on the assigned roles and rules.
+Apply access rules by using the `Role` property to target specific roles. The Vue File Manager then displays and permits operations on files and folders based on the assigned roles and rules.
 
 The following example demonstrates denying write permission for the Administrator role:
 
@@ -93,7 +93,7 @@ Example: deny writing and uploading in the root folder:
 new AccessRule { Path = "/", Role = "Document Manager", Read = Permission.Allow, Write = Permission.Deny, Copy = Permission.Deny, WriteContents = Permission.Deny, Upload = Permission.Deny, Download = Permission.Deny, IsFile = false },
 ```
 
-The following example demonstrates the File Manager rendered with access control support.
+The following example demonstrates the Vue File Manager rendered with access control support.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

@@ -122,7 +122,7 @@ This setup includes additional dependencies required for more advanced functiona
 
 ## Adding File Manager control
 
-You can start adding Essential<sup style="font-size:70%">&reg;</sup> JS 2 file manager control to the application. To get started, add the file manager control in **index.js** file using the following code.
+You can start adding Essential<sup style="font-size:70%">&reg;</sup> JS 2 File Manager control to the application. To get started, add the File Manager control in **index.js** file using the following code.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

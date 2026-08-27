@@ -10,14 +10,14 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # Access Control in Angular File Manager
 
-Access control in the File Manager allows you to restrict user actions by defining permissions for files and folders. This security feature lets you control who can read, write, download, upload, or copy specific content based on user roles.
+Access control in the Angular File Manager allows you to restrict user actions by defining permissions for files and folders. This security feature lets you control who can read, write, download, upload, or copy specific content based on user roles.
 
 * [Access Rules](#access-rules)
 * [Permissions](#permissions)
 
 ## Access Rules
 
-Access rules define the security permissions for folders and files in the File Manager. The `FileAccessController` class provides the foundation for implementing these rules in your application.
+Access rules define the security permissions for folders and files in the Angular File Manager. The `FileAccessController` class provides the foundation for implementing these rules in your application.
 
 To set up access rules for folders (including their files and sub-folders) and individual files, use the `SetRules()` method in the controller. The rules determine which operations are allowed for specific paths and user roles.
 
@@ -64,14 +64,14 @@ Copy = Permission.Deny, WriteContents = Permission.Deny, Upload = Permission.Den
 
 ## Permissions
 
-This section explains how to apply security permissions to File Manager files or folders using access rules. The File Manager uses two permission values:
+This section explains how to apply security permissions to Angular File Manager files or folders using access rules. The Angular File Manager uses two permission values:
 
 | **Value** | **Description** |
 | --- | ---|
 | Allow | Allows you to do read, write, copy, and download operations. |
 | Deny | Denies you to do read, write, copy, and download operations. |
 
-Use the `Role` property to apply created roles to the File Manager. After assigning roles, the File Manager displays folders or files and allows operations based on the permissions defined for each role.
+Use the `Role` property to apply created roles to the Angular File Manager. After assigning roles, the Angular File Manager displays folders or files and allows operations based on the permissions defined for each role.
 
 ### Examples of Permission Rules
 
@@ -107,7 +107,7 @@ Copy = Permission.Deny, WriteContents = Permission.Deny, Upload = Permission.Den
 IsFile = false },
 ```
 
-The following example demonstrates the File Manager rendered with access control support:
+The following example demonstrates the Angular File Manager rendered with access control support:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

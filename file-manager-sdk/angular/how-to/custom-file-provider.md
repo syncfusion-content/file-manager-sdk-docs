@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # How to implement a custom file provider in Angular File Manager
 
-Here, we manipulate the Azure Blob Storage to supply the necessary data for the File Manager. We achieve this by utilizing Node JS to fetch the required data from the Azure blob storage.
+Here, we manipulate the Azure Blob Storage to supply the necessary data for the Angular File Manager. We achieve this by utilizing Node JS to fetch the required data from the Azure blob storage.
 
-Node JS acts as the bridge between the File Manager component and Azure Blob Storage, allowing seamless communication and data retrieval. Through this integration, the File Manager can access and interact with the data stored in Azure Blob Storage, enabling smooth file management operations.
+Node JS acts as the bridge between the Angular File Manager component and Azure Blob Storage, allowing seamless communication and data retrieval. Through this integration, the Angular File Manager can access and interact with the data stored in Azure Blob Storage, enabling smooth file management operations.
 
 ## Prerequisites
 
@@ -101,7 +101,7 @@ const containerClient = blobServiceClient.getContainerClient(containerName);
 
 ```
 
-## Implementing File Manager operations
+## Implementing Angular File Manager operations
 
 We need to provide the following actions to creating a new folder, copying and moving of files or folders, deleting, uploading, and downloading the files or folders in the file system
 
@@ -164,7 +164,7 @@ The following table represents the response parameters of **read** operations.
 |error|[ErrorDetails](../file-operations.md#delete)|-|Error Details|
 
 <a id="file-manager-directory-content"></a>
-The following table represents the contents of **FileManagerDirectoryContent** in the File Manager request and response.
+The following table represents the contents of **FileManagerDirectoryContent** in the Angular File Manager request and response.
 
 |Parameter|Type|Default|Explanation|Is required|
 |----|----|----|----|----|

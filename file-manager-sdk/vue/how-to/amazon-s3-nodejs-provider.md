@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # How to implement Amazon S3 custom provider in Vue File Manager
 
-This guide explains how to use Amazon S3 Storage to supply the necessary data for the File Manager. Node.js fetches the required data from Amazon S3 Storage and serves it to the File Manager.
+This guide explains how to use Amazon S3 Storage to supply the necessary data for the Vue File Manager. Node.js fetches the required data from Amazon S3 Storage and serves it to the Vue File Manager.
 
-Node.js acts as the bridge between the File Manager component and Amazon S3 Storage, allowing seamless communication and data retrieval. Through this integration, the File Manager can access and interact with the data stored in Amazon S3 Storage, enabling smooth file management operations.
+Node.js acts as the bridge between the Vue File Manager component and Amazon S3 Storage, allowing seamless communication and data retrieval. Through this integration, the Vue File Manager can access and interact with the data stored in Amazon S3 Storage, enabling smooth file management operations.
 
 
 ## Prerequisites
@@ -190,7 +190,7 @@ The following table represents the response parameters of **read** operations.
 |error|[ErrorDetails](../file-operations.md#delete)|-|Error Details|
 
 <a id="file-manager-directory-content" aria-label="File Manager Directory Content"></a>
-The following table represents the contents of **FileManagerDirectoryContent** in the File Manager request and response.
+The following table represents the contents of **FileManagerDirectoryContent** in the Vue File Manager request and response.
 
 |Parameter|Type|Default|Explanation|Is required|
 |----|----|----|----|----|
@@ -377,7 +377,7 @@ You need to handle the following three cases:
 
 Create the **PutObjectCommand** with the **req.body.filename**. If the object does not exist, then upload the data to that object. If the object already exists, then create an error message containing "File Already Exists" and send the response.
 
-> **Note:** All upload responses (save, keepboth, and replace) must be returned as JSON with the documented structure (`{ error, files, cwd, details }`) and a `Content-Type: application/json` header. Do not return plain text such as `res.send('Success')`, otherwise the File Manager client cannot parse the response. For the duplicate-file error path, include the existing file's metadata in the `files` array so the File Manager can show the conflict in the UI.
+> **Note:** All upload responses (save, keepboth, and replace) must be returned as JSON with the documented structure (`{ error, files, cwd, details }`) and a `Content-Type: application/json` header. Do not return plain text such as `res.send('Success')`, otherwise the Vue File Manager client cannot parse the response. For the duplicate-file error path, include the existing file's metadata in the `files` array so the Vue File Manager can show the conflict in the UI.
 
 ### Create a new folder
 

@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 The [Vue File Manager](https://www.syncfusion.com/vue-components/vue-file-manager) component enables browsing, managing, and organizing files and folders in a file system from a web application. Common file operations—creating folders, uploading and downloading files, deleting and renaming items, and previewing images—are supported by the component.
 
-The following table lists the basic operations available in the File Manager and their purpose.
+The following table lists the basic operations available in the Vue File Manager and their purpose.
 
 | Operation Name | Function |
 | ---- | ---- |
@@ -27,11 +27,11 @@ The following table lists the basic operations available in the File Manager and
 | upload | Uploads files to the current path or directory. |
 | download | Downloads files; multiple files can be downloaded as a ZIP archive. |
 
-> The *CreateFolder*, *Remove*, and *Rename* actions are reflected in the File Manager only after a successful server response.
+> The *CreateFolder*, *Remove*, and *Rename* actions are reflected in the Vue File Manager only after a successful server response.
 
 ## Folder upload support
 
-To enable directory (folder) upload in the File Manager, set the [directoryUpload](https://ej2.syncfusion.com/vue/documentation/api/file-manager/uploadSettings#directoryupload) property to true within the [`uploadSettings`](https://ej2.syncfusion.com/vue/documentation/api/file-manager#uploadsettings) configuration. The ability to upload either folders or files is determined by the value of the **directoryUpload** property, which can be enabled or disabled as needed. This directory upload feature is supported by the following file service providers:
+To enable directory (folder) upload in the Vue File Manager, set the [directoryUpload](https://ej2.syncfusion.com/vue/documentation/api/file-manager/uploadSettings#directoryupload) property to true within the [`uploadSettings`](https://ej2.syncfusion.com/vue/documentation/api/file-manager#uploadsettings) configuration. The ability to upload either folders or files is determined by the value of the **directoryUpload** property, which can be enabled or disabled as needed. This directory upload feature is supported by the following file service providers:
 * Physical file service provider.
 * Azure file service provider.
 * NodeJS file service provider.
@@ -212,7 +212,7 @@ Refer to the [GitHub example](https://github.com/SyncfusionExamples/amazon-s3-as
 
 ## File operation request and response parameters
 
-The default parameters sent with File Manager requests and the expected response parameters are described below.
+The default parameters sent with Vue File Manager requests and the expected response parameters are described below.
 
 ### Read
 
@@ -844,11 +844,11 @@ The following table represents the request parameters of *GetImage* operations.
 
 Return the image as a file stream in response.
 
-The request from the File Manager can be customized using the [beforeSend](https://ej2.syncfusion.com/vue/documentation/api/file-manager#beforesend) event. Additional information can be passed to the File Manager in file operation response and can be used in customization.
+The request from the Vue File Manager can be customized using the [beforeSend](https://ej2.syncfusion.com/vue/documentation/api/file-manager#beforesend) event. Additional information can be passed to the Vue File Manager in file operation response and can be used in customization.
 
 ## File request and response contents
 
-The following table represents the contents of *data, cwd, and files* in the File Manager request and response.
+The following table represents the contents of *data, cwd, and files* in the Vue File Manager request and response.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -861,7 +861,7 @@ The following table represents the contents of *data, cwd, and files* in the Fil
 |size|Number|-|File size|
 |type|String|-|File extension|
 
-The following table represents the contents of *error* in the File Manager request and response.
+The following table represents the contents of *error* in the Vue File Manager request and response.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -869,7 +869,7 @@ The following table represents the contents of *error* in the File Manager reque
 |message|String|-|Error message|
 |fileExists|String[]|-|List of duplicate file names|
 
-The following table represents the contents of *details* in the File Manager request and response.
+The following table represents the contents of *details* in the Vue File Manager request and response.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -885,7 +885,7 @@ The following table represents the contents of *details* in the File Manager req
 
 ## Action Buttons
 
-The File Manager has several menu buttons to access the file operations. The list of menu buttons available in the File Manager is given in the following table.
+The Vue File Manager has several menu buttons to access the file operations. The list of menu buttons available in the Vue File Manager is given in the following table.
 
 |Menu Button|Behaviour|
 |----|----|
@@ -1037,7 +1037,7 @@ The following table provides the default context menu item and the corresponding
 
 ## Ajax Settings Configuration
 
-The File Manager's [ajaxSettings](https://ej2.syncfusion.com/vue/documentation/api/file-manager/index-default#ajaxsettings) property allows you to configure the URLs for various file operations including file operations, upload, download, and image preview.
+The Vue File Manager's [ajaxSettings](https://ej2.syncfusion.com/vue/documentation/api/file-manager/index-default#ajaxsettings) property allows you to configure the URLs for various file operations including file operations, upload, download, and image preview.
 
 ### File Download support
 
@@ -1127,7 +1127,7 @@ To perform the upload operation, initialize the `uploadUrl` property in a [ajaxS
 
 ### Image Preview support
 
-To perform the image preview support in the [Vue File Manager](https://www.syncfusion.com/vue-components/vue-file-manager) component, need to initialize the `getImageUrl` property in a [ajaxSettings](https://ej2.syncfusion.com/vue/documentation/api/file-manager#ajaxsettings) of File Manager component.
+To perform the image preview support in the [Vue File Manager](https://www.syncfusion.com/vue-components/vue-file-manager) component, need to initialize the `getImageUrl` property in a [ajaxSettings](https://ej2.syncfusion.com/vue/documentation/api/file-manager#ajaxsettings) of Vue File Manager component.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # How to preselect items in React File Manager
 
-You can preselect the items in the File Manager component by utilizing the [fileLoad](https://ej2.syncfusion.com/react/documentation/api/file-manager#fileload) event. The required file and folder names must be stated in the declared string array variable. In the event handler, we have to assign the array of file and folder names to the [selectedItems](https://ej2.syncfusion.com/react/documentation/api/file-manager#selecteditems) property.
+You can preselect the items in the React File Manager component by utilizing the [fileLoad](https://ej2.syncfusion.com/react/documentation/api/file-manager#fileload) event. The required file and folder names must be stated in the declared string array variable. In the event handler, we have to assign the array of file and folder names to the [selectedItems](https://ej2.syncfusion.com/react/documentation/api/file-manager#selecteditems) property.
 
 The following example shows how to preselect the items.
 

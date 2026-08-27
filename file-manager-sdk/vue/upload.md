@@ -18,7 +18,7 @@ The [directoryUpload](https://ej2.syncfusion.com/vue/documentation/api/file-mana
 
 To enable directory upload, set the `directoryUpload` property to `true` in the `uploadSettings` configuration.
 
-When set to `true`, this property enables directory upload in the File Manager, allowing users to upload entire folders. If set to `false`, only individual files can be uploaded. 
+When set to `true`, this property enables directory upload in the Vue File Manager, allowing users to upload entire folders. If set to `false`, only individual files can be uploaded. 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -93,7 +93,7 @@ With chunk upload, the pause and resume options gives users enhanced control ove
 
 The [autoUpload](https://ej2.syncfusion.com/vue/documentation/api/file-manager/uploadsettingsmodel#autoupload) property controls whether files are automatically uploaded when they are added to the upload queue in the [Vue File Manager](https://www.syncfusion.com/vue-components/vue-file-manager) component.
 
-The default value is `true`, the File Manager will automatically upload files as soon as they are added to the upload queue. If set to `false`, the files will not be uploaded automatically, giving you the chance to manipulate the files before uploading them to the server.
+The default value is `true`, the Vue File Manager will automatically upload files as soon as they are added to the upload queue. If set to `false`, the files will not be uploaded automatically, giving you the chance to manipulate the files before uploading them to the server.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -149,11 +149,11 @@ If you want to allow only image files like .jpg and .png, you would set the prop
 
 The [Vue File Manager](https://www.syncfusion.com/vue-components/vue-file-manager) component provides support for external drag-and-drop functionality for uploading files by dragging it from local file system to File Manager.
 
-To completely prevent the external drag-and-drop upload functionality (i.e., disallowing users from dragging and dropping files from outside into the File Manager), you can set the [dropArea](https://ej2.syncfusion.com/vue/documentation/api/uploader#droparea) property to null. This can be done by accessing the File Manager instance via its class methods.
+To completely prevent the external drag-and-drop upload functionality (i.e., disallowing users from dragging and dropping files from outside into the Vue File Manager), you can set the [dropArea](https://ej2.syncfusion.com/vue/documentation/api/uploader#droparea) property to null. This can be done by accessing the Vue File Manager instance via its class methods.
 
->**Note:** Setting [allowDragAndDrop](https://ej2.syncfusion.com/vue/documentation/api/file-manager#allowdraganddrop) property to false will not prevent the file upload operation through external drag and drop. It will only prevent drag and drop action within the File Manager component.
+>**Note:** Setting [allowDragAndDrop](https://ej2.syncfusion.com/vue/documentation/api/file-manager#allowdraganddrop) property to false will not prevent the file upload operation through external drag and drop. It will only prevent drag and drop action within the Vue File Manager component.
 
-The following example demonstrates how to prevent the external drag and drop upload actions for all types of files in the File Manager component.
+The following example demonstrates how to prevent the external drag and drop upload actions for all types of files in the Vue File Manager component.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # Customization in React File Manager
 
-The File Manager component allows customizing its functionalities like, context menu, searching, uploading, toolbar using APIs. Given below are some of the functionalities that can be customized in the File Manager,
+The React File Manager component allows customizing its functionalities like, context menu, searching, uploading, toolbar using APIs. Given below are some of the functionalities that can be customized in the React File Manager,
 
 * [Context menu customization](#context-menu-customization)
 * [Details view customization](#details-view-customization)
@@ -87,9 +87,9 @@ The navigation pane settings like, minimum and maximum width, visibility and sor
 
 ## Show/Hide file extension
 
-The file extensions are displayed in the File Manager by default. This can be hidden by disabling the [showFileExtension](https://ej2.syncfusion.com/react/documentation/api/file-manager#showfileextension) property.
+The file extensions are displayed in the React File Manager by default. This can be hidden by disabling the [showFileExtension](https://ej2.syncfusion.com/react/documentation/api/file-manager#showfileextension) property.
 
-In File Manager [fileLoad](https://ej2.syncfusion.com/react/documentation/api/file-manager#fileload) and [fileOpen](https://ej2.syncfusion.com/react/documentation/api/file-manager#fileopen) events are triggered before the file/folder is rendered and before the file/folder is opened respectively. These events can be utilized to perform operations before a file/folder is rendered or opened.
+In React File Manager [fileLoad](https://ej2.syncfusion.com/react/documentation/api/file-manager#fileload) and [fileOpen](https://ej2.syncfusion.com/react/documentation/api/file-manager#fileopen) events are triggered before the file/folder is rendered and before the file/folder is opened respectively. These events can be utilized to perform operations before a file/folder is rendered or opened.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -110,7 +110,7 @@ In File Manager [fileLoad](https://ej2.syncfusion.com/react/documentation/api/fi
 
 ## Show/Hide hidden items
 
-The File Manager provides support to show/hide the hidden items by enabling/disabling the [showHiddenItems](https://ej2.syncfusion.com/react/documentation/api/file-manager#showhiddenitems) property.
+The React File Manager provides support to show/hide the hidden items by enabling/disabling the [showHiddenItems](https://ej2.syncfusion.com/react/documentation/api/file-manager#showhiddenitems) property.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -131,7 +131,7 @@ The File Manager provides support to show/hide the hidden items by enabling/disa
 
 ## Show/Hide thumbnail images in large icons view
 
-The thumbnail images are displayed in the File Manager's large icons view by default. This can be hidden by disabling the [showThumbnail](https://ej2.syncfusion.com/react/documentation/api/file-manager#showthumbnail) property.
+The thumbnail images are displayed in the React File Manager's large icons view by default. This can be hidden by disabling the [showThumbnail](https://ej2.syncfusion.com/react/documentation/api/file-manager#showthumbnail) property.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -219,12 +219,12 @@ The tooltip value can be customized by adding extra content to the title of the 
 
 ## Maintaining Component State on Page Reload
 
-The File Manager supports maintaining the component state on page reload. This can be achieved by enabling [enablePersistence](https://ej2.syncfusion.com/react/documentation/api/file-manager#enablepersistence) property, which maintains the following:
-* Previous view of the File Manager - [View](https://ej2.syncfusion.com/react/documentation/api/file-manager#view)
-* Previous path of the File Manager - [Path](https://ej2.syncfusion.com/react/documentation/api/file-manager#path)
-* Previous selected items of the File Manager - [SelectedItems](https://ej2.syncfusion.com/react/documentation/api/file-manager#selecteditems)
+The React File Manager supports maintaining the component state on page reload. This can be achieved by enabling [enablePersistence](https://ej2.syncfusion.com/react/documentation/api/file-manager#enablepersistence) property, which maintains the following:
+* Previous view of the React File Manager - [View](https://ej2.syncfusion.com/react/documentation/api/file-manager#view)
+* Previous path of the React File Manager - [Path](https://ej2.syncfusion.com/react/documentation/api/file-manager#path)
+* Previous selected items of the React File Manager - [SelectedItems](https://ej2.syncfusion.com/react/documentation/api/file-manager#selecteditems)
 
-For every operation in File Manager, ajax request will be sent to the server which then processes the request and sends back the response. When the ajax request is success, [success](https://ej2.syncfusion.com/react/documentation/api/file-manager#success) event will be triggered and [failure](https://ej2.syncfusion.com/react/documentation/api/file-manager#failure) event will be triggered if the request gets failed.
+For every operation in React File Manager, ajax request will be sent to the server which then processes the request and sends back the response. When the ajax request is success, [success](https://ej2.syncfusion.com/react/documentation/api/file-manager#success) event will be triggered and [failure](https://ej2.syncfusion.com/react/documentation/api/file-manager#failure) event will be triggered if the request gets failed.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
@@ -246,13 +246,13 @@ For every operation in File Manager, ajax request will be sent to the server whi
 
  {% previewsample "https://help.syncfusion.com/code-snippet/file-manager-sdk/react/persistence-cs1" %}
 
->**Note:** The files of the current folder opened in the File Manager can be refreshed programatically by calling the [refreshFiles](https://ej2.syncfusion.com/react/documentation/api/file-manager#refreshfiles) method.
+>**Note:** The files of the current folder opened in the React File Manager can be refreshed programatically by calling the [refreshFiles](https://ej2.syncfusion.com/react/documentation/api/file-manager#refreshfiles) method.
 
-## Specifying the Current Path of the File Manager
+## Specifying the Current Path of the React File Manager
 
-The current path of the File Manager can be specified initially or dynamically using the [path](https://ej2.syncfusion.com/react/documentation/api/file-manager#path) property.
+The current path of the React File Manager can be specified initially or dynamically using the [path](https://ej2.syncfusion.com/react/documentation/api/file-manager#path) property.
 
-The following code snippet demonstrates specifying the current path in File Manager on rendering.
+The following code snippet demonstrates specifying the current path in React File Manager on rendering.
 
 **src/App.tsx**
 

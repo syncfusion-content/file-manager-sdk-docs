@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # How to customize thumbnails in React File Manager
 
-The default appearance of the File Manager can customize with your own icon by using [showThumbnail](https://ej2.syncfusion.com/react/documentation/api/file-manager#showthumbnail) property.
+The default appearance of the React File Manager can customize with your own icon by using [showThumbnail](https://ej2.syncfusion.com/react/documentation/api/file-manager#showthumbnail) property.
 
 The following example demonstrate how to add a custom icon in largeicons view.
 

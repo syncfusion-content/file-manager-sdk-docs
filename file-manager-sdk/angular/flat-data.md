@@ -10,14 +10,14 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # Flat Data in Angular File Manager
 
-The File Manager component supports using flat JSON data as an array of objects for rendering files and folders without requiring a backend service. This approach eliminates the need to define an [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) URL and allows for client-side data manipulation.
+The Angular File Manager component supports using flat JSON data as an array of objects for rendering files and folders without requiring a backend service. This approach eliminates the need to define an [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) URL and allows for client-side data manipulation.
 ## Implementing Flat JSON Data Binding
-To bind flat JSON data to the File Manager:
+To bind flat JSON data to the Angular File Manager:
 
-1. Use the File Manager component's [fileSystemData](https://ej2.syncfusion.com/angular/documentation/api/file-manager#filesystemdata) property to provide an array of [fileData](https://ej2.syncfusion.com/angular/documentation/api/file-manager/fileData) interface objects.
+1. Use the Angular File Manager component's [fileSystemData](https://ej2.syncfusion.com/angular/documentation/api/file-manager#filesystemdata) property to provide an array of [fileData](https://ej2.syncfusion.com/angular/documentation/api/file-manager/fileData) interface objects.
 2. Define parent-child relationships between files and folders using the `parentId` property in each object.
 
-This means you no longer need to use a separate service provider, as you can integrate services like Google, Amazon, Azure, and others directly into your code using the FileManager's action events.
+This means you no longer need to use a separate service provider, as you can integrate services like Google, Amazon, Azure, and others directly into your code using the Angular File Manager's action events.
 
 ## The fileData Interface Structure
 
@@ -36,7 +36,7 @@ The `fileData` interface requires the following properties:
 
 ## Local Data Implementation
 
-The File Manager can be populated with local data by providing an array of [fileData](https://ej2.syncfusion.com/angular/documentation/api/file-manager/fileData) interface objects with [parentId](https://ej2.syncfusion.com/angular/documentation/api/file-manager/fileData#parentid) mapping.
+The Angular File Manager can be populated with local data by providing an array of [fileData](https://ej2.syncfusion.com/angular/documentation/api/file-manager/fileData) interface objects with [parentId](https://ej2.syncfusion.com/angular/documentation/api/file-manager/fileData#parentid) mapping.
 
 **Root-Level Folders and Files:**
 - To render items at the root level, either set the `parentId` as `null` or omit the `parentId` property from the object.
@@ -57,7 +57,7 @@ The File Manager can be populated with local data by providing an array of [file
 
 ## Handling File Operations with Events
 
-When using flat JSON data, you'll need to handle file operations manually by subscribing to the File Manager's events and updating your data accordingly.
+When using flat JSON data, you'll need to handle file operations manually by subscribing to the Angular File Manager's events and updating your data accordingly.
 ### Key Events for Data Manipulation
 Event Name | Description
  ---  | ---
@@ -65,7 +65,7 @@ Event Name | Description
 [delete](https://ej2.syncfusion.com/angular/documentation/api/file-manager#delete) | This event is triggered after the file or folder is deleted successfully. The deleted file or folder details can be retrieved here. Additionally, custom elements' visibility can be managed here based on the application's use case.
 [beforeFolderCreate](https://ej2.syncfusion.com/angular/documentation/api/file-manager#beforefoldercreate) | This event is triggered before a folder is created. It allows for the restriction of folder creation based on the application's use case.
 [folderCreate](https://ej2.syncfusion.com/angular/documentation/api/file-manager#foldercreate) | This event is triggered when a folder is successfully created. It provides an opportunity to retrieve details about the newly created folder.
-[search](https://ej2.syncfusion.com/angular/documentation/api/file-manager#search) | This event is triggered when a search action occurs in the search bar of the File Manager component. It triggers each character entered in the input during the search process.
+[search](https://ej2.syncfusion.com/angular/documentation/api/file-manager#search) | This event is triggered when a search action occurs in the search bar of the Angular File Manager component. It triggers each character entered in the input during the search process.
 [beforeRename](https://ej2.syncfusion.com/angular/documentation/api/file-manager#beforerename) | This event is triggered when a file or folder is about to be renamed. It allows for the restriction of the rename action for specific folders or files by utilizing the cancel option.
 [rename](https://ej2.syncfusion.com/angular/documentation/api/file-manager#rename) | This event is triggered when a file or folder is successfully renamed. It provides an opportunity to fetch details about the renamed file.
 [beforeMove](https://ej2.syncfusion.com/angular/documentation/api/file-manager#beforemove) | This event is triggered when a file or folder begins to move from its current path through a copy/cut and paste action.

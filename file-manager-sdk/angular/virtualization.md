@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # Virtualization in Angular File Manager
 
-File Manager's UI virtualization optimizes performance by dynamically loading only the visible files and directories in the viewport instead of rendering the entire collection at once. This significantly improves loading times and reduces memory consumption when handling large numbers of files and directories in both detailsView and largeIconsView.
+Angular File Manager's UI virtualization optimizes performance by dynamically loading only the visible files and directories in the viewport instead of rendering the entire collection at once. This significantly improves loading times and reduces memory consumption when handling large numbers of files and directories in both detailsView and largeIconsView.
 
 ## Module Injection
 
@@ -36,7 +36,7 @@ export class AppModule { }
 
 ## Enable Virtualization
 
-The File Manager's virtualization feature dynamically renders items based on the current viewport dimensions. As users scroll through content in either [largeIconsView](https://ej2.syncfusion.com/angular/documentation/api/file-manager#view) or [detailsView](https://ej2.syncfusion.com/angular/documentation/api/file-manager/detailsViewSettings), only the visible items are loaded, while others are rendered on demand.
+The Angular File Manager's virtualization feature dynamically renders items based on the current viewport dimensions. As users scroll through content in either [largeIconsView](https://ej2.syncfusion.com/angular/documentation/api/file-manager#view) or [detailsView](https://ej2.syncfusion.com/angular/documentation/api/file-manager/detailsViewSettings), only the visible items are loaded, while others are rendered on demand.
 
 To enable virtualization, set the [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/file-manager#enablevirtualization) property to true. This is especially recommended when working with directories containing hundreds or thousands of files.
 
@@ -63,12 +63,12 @@ The following example demonstrates virtualization with a large collection of fil
 Virtualization is particularly beneficial in the following scenarios:
 
 * File systems with hundreds or thousands of files in a single directory
-* Applications where File Manager needs to load quickly without performance degradation
+* Applications where Angular File Manager needs to load quickly without performance degradation
 * Environments with limited memory resources where rendering large collections could impact performance
 
 ## Limitations for Virtualization
 
-When implementing virtualization in the File Manager, be aware of these limitations:
+When implementing virtualization in the Angular File Manager, be aware of these limitations:
 
 * Programmatic selection using the **selectAll** method is not supported with virtual scrolling.
 

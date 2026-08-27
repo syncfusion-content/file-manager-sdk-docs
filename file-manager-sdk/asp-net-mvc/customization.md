@@ -11,7 +11,7 @@ documentation: ug
 
 # Customization in ASP.NET MVC File Manager
 
-The File Manager control allows customizing its functionalities such as context menu, searching, uploading, and toolbar using APIs. Given below are some of the functionalities that can be customized in the File Manager,
+The File Manager control allows customizing its functionalities such as context menu, searching, uploading, and toolbar using APIs. Given below are some of the functionalities that can be customized in the File Manager.
 
 * [Context menu customization](#context-menu-customization)
 * [Details view customization](#details-view-customization)
@@ -54,7 +54,7 @@ The context menu settings, such as items to be displayed on files, folders, layo
 
 The output will be as shown below.
 
-![File Manager contextmenu ](./images/contextmenu_item.PNG)
+![File Manager contextmenu](./images/contextmenu_item.PNG)
 
 ## Details view customization
 
@@ -85,7 +85,7 @@ The details view settings like, column width, header text, template for each fie
 
 Output be like the below.
 
-![File Manager details-view ](./images/details-view.png)
+![File Manager details-view](./images/details-view.png)
 
 ## Navigation pane customization
 
@@ -118,7 +118,7 @@ The navigation pane settings like, minimum and maximum width, visibility and sor
 
 Output be like the below.
 
-![File Manager navigationpane ](./images/navigationpane.PNG)
+![File Manager navigationpane](./images/navigationpane.PNG)
 
 ## Show/Hide file extension
 
@@ -153,7 +153,7 @@ In File Manager `fileLoad` and `fileOpen` events are triggered before the file/f
 
 Output be like the below.
 
-![File Manager show/hidden extension ](./images/fileextension.PNG)
+![File Manager show/hidden extension](./images/fileextension.PNG)
 
 ## Show/Hide hidden items
 
@@ -186,7 +186,7 @@ The File Manager provides support to show/hide the hidden items by enabling/disa
 
 Output be like the below.
 
-![File Manager show/hidden items ](./images/hidden_items.png)
+![File Manager show/hidden items](./images/hidden_items.png)
 
 ## Show/Hide thumbnail images in large icons view
 
@@ -219,7 +219,7 @@ The thumbnail images are displayed in the File Manager's large icons view by def
 
 Output be like the below.
 
-![File Manager showthumbnail ](./images/thumbnail.PNG)
+![File Manager showthumbnail](./images/thumbnail.PNG)
 
 ## Toolbar customization
 
@@ -252,7 +252,7 @@ The toolbar settings, such as items to be displayed in the toolbar and visibilit
 
 Output be like the below.
 
-![File Manager toolbar customization ](./images/toolbar_item.PNG)
+![File Manager toolbar customization](./images/toolbar_item.PNG)
 
 
 ### See Also
@@ -290,11 +290,11 @@ The upload settings, such as minimum and maximum file size and enabling auto upl
 
 Output be like the below, when file size is below the `minFileSize`.
 
-![File Manager upload customization ](./images/file_size.png)
+![File Manager upload customization](./images/file_size.png)
 
 Output be like the below, when file size is above the `minFileSize`.
 
-![File Manager upload customization ](./images/enable_persistence.PNG)
+![File Manager upload customization](./images/enable_persistence.PNG)
 
 ## Tooltip customization
 
@@ -327,7 +327,7 @@ The tooltip value can be customized by adding extra content to the title of the 
 
 Output be like the below.
 
-![File Manager tooltip customization ](./images/tooltip.png)
+![File Manager tooltip customization](./images/tooltip.png)
 
 ## Maintaining component state on page reload
 
@@ -369,7 +369,7 @@ For every operation in File Manager, ajax request will be sent to the server whi
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager enable persistence](images/enable_persistence.png)
+![File Manager enable persistence](images/enable_persistence.png)
 
 N> The files of the current folder opened in the File Manager can be refreshed programatically by calling `refreshFiles` method
 
@@ -406,7 +406,7 @@ The current path of the File Manager can be specified initially or dynamically u
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager enablertl](images/path.png)
+![File Manager enablertl](images/path.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/FileManager/ASP.NET%20MVC%20Razor%20Examples).
 
