@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # Flat Data in React File Manager
 
-The File Manager uses a flat data JSON as an array of objects for rendering, eliminating the need to define [ajaxSettings](https://ej2.syncfusion.com/react/documentation/api/file-manager/index-default#ajaxsettings) url. To load a folder data as an array of objects, use the File Manager component's [fileSystemData](https://ej2.syncfusion.com/react/documentation/api/file-manager/index-default#filesystemdata) property with a type of [fileData](https://ej2.syncfusion.com/react/documentation/api/file-manager/filedata) interface. This means you no longer need to use a separate service provider, as you can integrate services like Google, Amazon, Azure, and others directly into your code using the File Manager's action events.
+The React File Manager uses a flat data JSON as an array of objects for rendering, eliminating the need to define [ajaxSettings](https://ej2.syncfusion.com/react/documentation/api/file-manager/index-default#ajaxsettings) url. To load a folder data as an array of objects, use the React File Manager component's [fileSystemData](https://ej2.syncfusion.com/react/documentation/api/file-manager/index-default#filesystemdata) property with a type of [fileData](https://ej2.syncfusion.com/react/documentation/api/file-manager/filedata) interface. This means you no longer need to use a separate service provider, as you can integrate services like Google, Amazon, Azure, and others directly into your code using the React File Manager's action events.
 
 **Event Information**
 
@@ -20,7 +20,7 @@ Event Name | Description
 [delete](https://ej2.syncfusion.com/react/documentation/api/file-manager/index-default#delete) | This event is triggered after the file or folder is deleted successfully. The deleted file or folder details can be retrieved here. Additionally, custom elements' visibility can be managed here based on the application's use case.
 [beforeFolderCreate](https://ej2.syncfusion.com/react/documentation/api/file-manager/index-default#beforefoldercreate) | This event is triggered before a folder is created. It allows for the restriction of folder creation based on the application's use case.
 [folderCreate](https://ej2.syncfusion.com/react/documentation/api/file-manager/index-default#foldercreate) | This event is triggered when a folder is successfully created. It provides an opportunity to retrieve details about the newly created folder.
-[search](https://ej2.syncfusion.com/react/documentation/api/file-manager/index-default#search) | This event is triggered when a search action occurs in the search bar of the File Manager component. It triggers each character entered in the input during the search process.
+[search](https://ej2.syncfusion.com/react/documentation/api/file-manager/index-default#search) | This event is triggered when a search action occurs in the search bar of the React File Manager component. It triggers each character entered in the input during the search process.
 [beforeRename](https://ej2.syncfusion.com/react/documentation/api/file-manager/index-default#beforerename) | This event is triggered when a file or folder is about to be renamed. It allows for the restriction of the rename action for specific folders or files by utilizing the cancel option.
 [rename](https://ej2.syncfusion.com/react/documentation/api/file-manager/index-default#rename) | This event is triggered when a file or folder is successfully renamed. It provides an opportunity to fetch details about the renamed file.
 [beforeMove](https://ej2.syncfusion.com/react/documentation/api/file-manager/index-default#beforemove) | This event is triggered when a file or folder begins to move from its current path through a copy/cut and paste action.
@@ -28,7 +28,7 @@ Event Name | Description
 
 ## Local data
 
-The File Manager can be populated with local data that contains the array of [fileData](https://ej2.syncfusion.com/react/documentation/api/file-manager/filedata) interface objects with [parentId](https://ej2.syncfusion.com/react/documentation/api/file-manager/fileData#parentid) mapping.
+The React File Manager can be populated with local data that contains the array of [fileData](https://ej2.syncfusion.com/react/documentation/api/file-manager/filedata) interface objects with [parentId](https://ej2.syncfusion.com/react/documentation/api/file-manager/fileData#parentid) mapping.
 
 To render the root-level folder, specify the `parentId` as null, or there is no need to specify the `parentId` in the array of `fileData` interface objects.
 

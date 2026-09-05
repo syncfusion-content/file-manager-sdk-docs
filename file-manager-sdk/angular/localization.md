@@ -10,13 +10,13 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # Localization in Angular File Manager
 
-Localization enables the File Manager component to adapt to different languages and cultural settings by translating its user interface elements. This feature ensures your application is accessible to users worldwide, regardless of their language preference.
+Localization enables the Angular File Manager component to adapt to different languages and cultural settings by translating its user interface elements. This feature ensures your application is accessible to users worldwide, regardless of their language preference.
 
-The File Manager uses the `L10n` service to handle text and message translations. The default locale is `en` (English), but you can localize the component to any supported culture by providing translations for the UI strings.
+The Angular File Manager uses the `L10n` service to handle text and message translations. The default locale is `en` (English), but you can localize the component to any supported culture by providing translations for the UI strings.
 
 ## Setting up localization
 
-To implement localization in your File Manager component:
+To implement localization in your Angular File Manager component:
 
 1. Import the `L10n` module from the `@syncfusion/ej2-base` package
 2. Load the desired locale object with translations
@@ -24,7 +24,7 @@ To implement localization in your File Manager component:
 
 ## Default localization keys
 
-The following table lists all available localization keys and their default English values in the File Manager component:
+The following table lists all available localization keys and their default English values in the Angular File Manager component:
 
 |KEY|Text/Message|
 |----|----|
@@ -123,7 +123,7 @@ The following table lists all available localization keys and their default Engl
 
 ## Example: Localizing to German (de-DE)
 
-The following example demonstrates how to localize the File Manager to German language:
+The following example demonstrates how to localize the Angular File Manager to German language:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -141,7 +141,7 @@ The following example demonstrates how to localize the File Manager to German la
 
 ## Rendering component in right-to-left direction
 
-It is possible to render the File Manager in right-to-left direction by setting the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/file-manager#enablertl) API to true.
+It is possible to render the Angular File Manager in right-to-left direction by setting the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/file-manager#enablertl) API to true.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

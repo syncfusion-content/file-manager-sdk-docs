@@ -10,11 +10,11 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # Virtualization in React File Manager
 
-File Manager's UI virtualization allows you for the dynamic loading of a large number of directories and files in both the detailsView and largeIconsView without degrading its performance.
+React File Manager's UI virtualization allows you for the dynamic loading of a large number of directories and files in both the detailsView and largeIconsView without degrading its performance.
 
 ## Module Injection
 
-In order to use UI Virtualization, you need to inject its virtualization service in the App. This modules should be injected into the File Manager using the Inject directive.
+In order to use UI Virtualization, you need to inject its virtualization service in the App. This modules should be injected into the React File Manager using the Inject directive.
 
 {% raw %}
 
@@ -25,7 +25,7 @@ import * as React from 'react';
 function App() {
     let hostUrl: string = "https://physical-service.syncfusion.com/";
     return (
-            // specifies the tag to render the File Manager component
+            // specifies the tag to render the React File Manager component
             <FileManagerComponent id="filemanager" ajaxSettings={{
                     url: hostUrl + "api/FileManager/FileOperations",
                     getImageUrl: hostUrl + "api/FileManager/GetImage",
@@ -43,7 +43,7 @@ export default App;
 
 ## Enable Virtualization
 
-The virtualization of the File Manager component is based on the height and width of the viewport. The items will be loaded in both [largeIconsView](https://ej2.syncfusion.com/react/documentation/api/file-manager#view) and [detailsView](https://ej2.syncfusion.com/react/documentation/api/file-manager/detailsViewSettings) based on the viewport size.
+The virtualization of the React File Manager component is based on the height and width of the viewport. The items will be loaded in both [largeIconsView](https://ej2.syncfusion.com/react/documentation/api/file-manager#view) and [detailsView](https://ej2.syncfusion.com/react/documentation/api/file-manager/detailsViewSettings) based on the viewport size.
 
 In order to enable `virtualization`, you must set the [enableVirtualization](https://ej2.syncfusion.com/react/documentation/api/file-manager#enablevirtualization) property to true.
 

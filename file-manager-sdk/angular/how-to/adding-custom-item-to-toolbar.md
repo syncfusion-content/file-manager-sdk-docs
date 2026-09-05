@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # How to add a custom item to the toolbar in Angular File Manager
 
-The File Manager component allows you to customize the toolbar by modifying existing items or adding new custom items to enhance functionality according to your application requirements.
+The Angular File Manager component allows you to customize the toolbar by modifying existing items or adding new custom items to enhance functionality according to your application requirements.
 
 ## Customizing the toolbar items
 

@@ -60,7 +60,7 @@ In this sample demonstrates the full features of the File Manager that includes 
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager overview](images/overview.png)
+![File Manager overview](images/overview.png)
 
 {% endif %}
 

@@ -37,7 +37,7 @@ cd ej2-aspcore-file-provider
 
 ```
 
-After cloning,  open the project in Visual Studio and restore the NuGet packages. Now, we need to set the root directory of the physical file system in the FileManager controller.
+After cloning,  open the project in Visual Studio and restore the NuGet packages. Now, we need to set the root directory of the physical file system in the Vue File Manager controller.
 
 After setting the root directory of the file system,  build and run the project. Now, the project will be hosted in `http://localhost:{port}` and  mapping the **ajaxSettings** property of the [Vue File Manager](https://www.syncfusion.com/vue-components/vue-file-manager) component to the appropriate controller methods allows to manage the files in the physical file system.
 
@@ -84,7 +84,7 @@ git clone https://github.com/SyncfusionExamples/azure-aspcore-file-provider  azu
 
 ```
 
-After cloning, open the project in Visual Studio and restore the NuGet packages. Now, we need to register the Azure storage by passing details like name, password, and blob name to the Register Azure method in the FileManager controller.
+After cloning, open the project in Visual Studio and restore the NuGet packages. Now, we need to register the Azure storage by passing details like name, password, and blob name to the Register Azure method in the Vue File Manager controller.
 
 ```ts
 
@@ -100,7 +100,7 @@ void setBlobContainer( Blob-contatiner-url, Root-blob-directory-url)
 
 ```
 
-> **Note:** Also, **blobPath** is a container path in Azure Blob Storage, and **filePath** is the file location path. For example, create a **files** container in the mentioned Azure blob storage. Inside that container, create a new folder, **Files** which includes all files and folders that need to be viewed in FileManager. Check out the below path for an example.
+> **Note:** Also, **blobPath** is a container path in Azure Blob Storage, and **filePath** is the file location path. For example, create a **files** container in the mentioned Azure blob storage. Inside that container, create a new folder, **Files** which includes all files and folders that need to be viewed in Vue File Manager. Check out the below path for an example.
 
 ```ts
 
@@ -158,7 +158,7 @@ git clone https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider.
 
 > **Note:** To learn more about creating and configuring an Amazon S3 bucket, refer to this [link](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-configure-bucket.html).
 
-After cloning, open the project in Visual Studio and restore the NuGet packages. Now, register Amazon S3 client account details like *awsAccessKeyId*, *awsSecretKeyId* and *awsRegion* details in **RegisterAmazonS3** method in the FileManager controller to perform the file operations.
+After cloning, open the project in Visual Studio and restore the NuGet packages. Now, register Amazon S3 client account details like *awsAccessKeyId*, *awsSecretKeyId* and *awsRegion* details in **RegisterAmazonS3** method in the Vue File Manager controller to perform the file operations.
 
 ```ts
 
@@ -290,7 +290,7 @@ git clone https://github.com/SyncfusionExamples/ftp-aspcore-file-provider.git  f
 
 ```
 
-After cloning, open the project in Visual Studio and restore the NuGet packages. Now, register File Transfer Protocol details like *hostName*, *userName* and *password* in **SetFTPConnection** method in the FileManager controller to perform the file operations.
+After cloning, open the project in Visual Studio and restore the NuGet packages. Now, register File Transfer Protocol details like *hostName*, *userName* and *password* in **SetFTPConnection** method in the Vue File Manager controller to perform the file operations.
 
 ```ts
 
@@ -313,7 +313,7 @@ import { provide } from "vue";
 
 import { FileManagerComponent as EjsFilemanager, DetailsView, NavigationPane, Toolbar } from "@syncfusion/ej2-vue-filemanager";
 
-// Initializing File Manager file transfer protocol file system service.
+// Initializing Vue File Manager file transfer protocol file system service.
 const ajaxSettings = 
 {
     // Replace the hosted port number in the place of "{port}"
@@ -369,7 +369,7 @@ void SetSQLConnection(string name, string tableName, string tableID)
 
 ```
 
-> Refer to this [FileManager.mdf](https://github.com/SyncfusionExamples/sql-server-database-aspcore-file-provider/blob/master/App_Data/FileManager.mdf), to learn  about the pre-defined file system SQL database for the EJ2 File Manager.
+> Refer to this [FileManager.mdf](https://github.com/SyncfusionExamples/sql-server-database-aspcore-file-provider/blob/master/App_Data/FileManager.mdf), to learn  about the pre-defined file system SQL database for the EJ2 Vue File Manager.
 
 After configuring the connection, build and run the project. Now, the project will be hosted in `http://localhost:{port}` and  mapping the ajaxSettings property of the [Vue File Manager](https://www.syncfusion.com/vue-components/vue-file-manager) component to the appropriate controller methods allows to manage the files in the SQL database table.
 
@@ -540,7 +540,7 @@ provide('filemanager',  [DetailsView, NavigationPane, Toolbar]);
 
 ## Firebase Realtime Database file system provider
 
-The [Firebase Realtime Database](https://firebase.google.com/) file system provider in **ASP.NET Core** provides the efficient way to store the File Manager file system in a cloud database as JSON representation.
+The [Firebase Realtime Database](https://firebase.google.com/) file system provider in **ASP.NET Core** provides the efficient way to store the Vue File Manager file system in a cloud database as JSON representation.
 
 ### Generate Secret access key from service account
 

@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # Localization in React File Manager
 
-The File Manager can be localized to any culture by defining the texts and messages of the File Manager in the corresponding culture. The default locale of the File Manager is `en` (English). The following table represents the default texts and messages of the File Manager in `en` culture.
+The React File Manager can be localized to any culture by defining the texts and messages of the React File Manager in the corresponding culture. The default locale of the React File Manager is `en` (English). The following table represents the default texts and messages of the React File Manager in `en` culture.
 
 |KEY|Text/Message|
 |----|----|
@@ -128,7 +128,7 @@ The below example shows adding the German culture locale(`de-DE`)
 
 ## Rendering Component in Right-to-Left Direction
 
-It is possible to render the File Manager in right-to-left direction by setting the [enableRtl](https://ej2.syncfusion.com/react/documentation/api/file-manager#enablertl) API to true.
+It is possible to render the React File Manager in right-to-left direction by setting the [enableRtl](https://ej2.syncfusion.com/react/documentation/api/file-manager#enablertl) API to true.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

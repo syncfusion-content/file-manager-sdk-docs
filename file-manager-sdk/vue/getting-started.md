@@ -92,7 +92,7 @@ yarn add @syncfusion/ej2-vue-filemanager
 
 ## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-Themes for Syncfusion<sup style="font-size:70%">&reg;</sup> File Manager components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/vue/documentation/appearance/theme) documentation.
+Themes for Syncfusion<sup style="font-size:70%">&reg;</sup> Vue File Manager components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/vue/documentation/appearance/theme) documentation.
  
 Install the **Material 3** theme package using the following command:
 
@@ -122,7 +122,7 @@ Then add the following CSS reference to the **src/App.vue** file:
 
 Replace the default contents of the **src/App.vue** file with the following code.
 
-To enable file operation functionality in the File Manager, configure the [url](https://ej2.syncfusion.com/vue/documentation/api/file-manager/ajaxsettingsmodel#url) property within the [ajaxSettings](https://ej2.syncfusion.com/vue/documentation/api/file-manager/ajaxsettings). This URL handles the file operation requests from the server.
+To enable file operation functionality in the Vue File Manager, configure the [url](https://ej2.syncfusion.com/vue/documentation/api/file-manager/ajaxsettingsmodel#url) property within the [ajaxSettings](https://ej2.syncfusion.com/vue/documentation/api/file-manager/ajaxsettings). This URL handles the file operation requests from the server.
 
 {% tabs %}
 {% highlight html tabtitle="~/src/App.vue" %}
@@ -136,7 +136,7 @@ To enable file operation functionality in the File Manager, configure the [url](
 
 The sample uses `https://physical-service.syncfusion.com/api/FileManager/FileOperations` as the [`url`](https://ej2.syncfusion.com/vue/documentation/api/file-manager/ajaxsettingsmodel#url) endpoint in [`ajaxSettings`](https://ej2.syncfusion.com/vue/documentation/api/file-manager/ajaxsettings).
 
-To use your own files, host a File Manager service and replace the `url` value with your service endpoint. See the [File System Provider](./file-system-provider) documentation for setup details.
+To use your own files, host a Vue File Manager service and replace the `url` value with your service endpoint. See the [File System Provider](./file-system-provider) documentation for setup details.
 
 ## Registering Your Syncfusion License
 
@@ -186,7 +186,7 @@ npx serve dist
 
 ## Troubleshooting
 
-- **File Manager not rendering styles:** Ensure the theme CSS is imported in `src/App.vue` and that you removed any default Vue CLI starter styles that may override the File Manager styles.
+- **Vue File Manager not rendering styles:** Ensure the theme CSS is imported in `src/App.vue` and that you removed any default Vue CLI starter styles that may override the Vue File Manager styles.
 - **Trial license warning banner:** Register a license key via `registerLicense()` from `@syncfusion/ej2-base`.
 - **Port 8080 already in use:** Stop the conflicting process or run the Vue CLI dev server on a different port with `npm run serve -- --port 3000`.
 
@@ -194,7 +194,7 @@ npx serve dist
 
 * [Ajax Settings Configuration (uploadUrl, downloadUrl, getImageUrl)](./file-operations#ajax-settings-configuration)
 * [Injecting Services for Overview](./user-interface#injecting-services-for-overview)
-* [File Manager Views](./views)
-* [File Manager File Operations](./file-operations)
-* [File Manager Upload](./upload)
-* [File Manager Customization](./customization)
+* [Vue File Manager Views](./views)
+* [Vue File Manager File Operations](./file-operations)
+* [Vue File Manager Upload](./upload)
+* [Vue File Manager Customization](./customization)

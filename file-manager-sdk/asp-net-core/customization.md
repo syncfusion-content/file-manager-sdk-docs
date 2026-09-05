@@ -369,7 +369,7 @@ For every operation in File Manager, ajax request will be sent to the server whi
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager enable persistence](images/enable_persistence.png)
+![File Manager enable persistence](images/enable_persistence.png)
 
 N> The files of the current folder opened in the File Manager can be refreshed programatically by calling `refreshFiles` method
 
@@ -406,7 +406,7 @@ The current path of the File Manager can be specified initially or dynamically u
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager enablertl](images/path.png)
+![File Manager enablertl](images/path.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/FileManager/ASP.NET%20MVC%20Razor%20Examples).
 

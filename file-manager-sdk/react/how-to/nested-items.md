@@ -10,14 +10,14 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # Nested items in React File Manager component
 
-File Manager can be rendered inside the other components like Tab, Dialog, and more.
+React File Manager can be rendered inside the other components like Tab, Dialog, and more.
 
-* [Adding File Manager inside the dialog](#adding-file-manager-inside-the-dialog)
-* [Adding  File Manager inside the tab](#adding-file-manager-inside-the-tab)
+* [Adding React File Manager inside the dialog](#adding-file-manager-inside-the-dialog)
+* [Adding  React File Manager inside the tab](#adding-file-manager-inside-the-tab)
 
-## Adding File Manager inside the dialog
+## Adding React File Manager inside the dialog
 
-The following example shows the File Manager component rendered inside the dialog. Click the browse button in the Uploader element to open the File Manager inside the Dialog component.
+The following example shows the React File Manager component rendered inside the dialog. Click the browse button in the Uploader element to open the React File Manager inside the Dialog component.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -36,9 +36,9 @@ The following example shows the File Manager component rendered inside the dialo
 
  {% previewsample "https://help.syncfusion.com/code-snippet/file-manager-sdk/react/file-upload-cs1" %}
 
-## Adding File Manager inside the tab
+## Adding React File Manager inside the tab
 
-The following example demonstrate that the File Manager component is placed inside the content area of tab element.
+The following example demonstrate that the React File Manager component is placed inside the content area of tab element.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

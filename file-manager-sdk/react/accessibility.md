@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # Accessibility in React File Manager
 
-The File Manager component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The React File Manager component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the File Manager component is outlined below.
+The accessibility compliance for the React File Manager component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,14 +40,14 @@ The accessibility compliance for the File Manager component is outlined below.
 
 ## WAI-ARIA attributes
 
-The File Manager component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns) patterns to meet the accessibility. The following ARIA attributes are used in the File Manager component:
+The React File Manager component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns) patterns to meet the accessibility. The following ARIA attributes are used in the React File Manager component:
 
 | Attributes | Purpose |
 | --- | --- |
 | `role` | Used to convey a significant and contextual message to the user. |
-| `aria-disabled` | Indicates whether the File Manager component is in disabled state.|
+| `aria-disabled` | Indicates whether the React File Manager component is in disabled state.|
 | `aria-haspopup` | Indicates whether the toolbar item has a popup list or not. |
-| `aria-orientation` | Indicates whether the File Manager element is oriented horizontally or vertically. |
+| `aria-orientation` | Indicates whether the React File Manager element is oriented horizontally or vertically. |
 | `aria-expanded` | Indicates whether the Treeview node has been expanded. |
 | `aria-owns` | Contains the ID of the suggestion list to indicate popup as a child element. |
 | `aria-activedescendent` | Holds the ID of the active list item to focus its descendant child element. |
@@ -70,7 +70,7 @@ The File Manager component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/a
 
 ## Keyboard interaction
 
-The File Manager component followed the `keyboard interaction` guidelines, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the File Manager component.
+The React File Manager component followed the `keyboard interaction` guidelines, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the React File Manager component.
 
 | **Press** | **To do this** |
 | --- | --- |
@@ -80,7 +80,7 @@ The File Manager component followed the `keyboard interaction` guidelines, makin
 | <kbd>Tab</kbd> | Focuses on the first element of toolbar and navigates through the next tab indexed element. |
 | <kbd>Esc(Escape)</kbd> | Closes the image when it is in open state. |
 | <kbd>Alt+N</kbd> | Creates a new folder dialog.|
-| <kbd>F5</kbd> | Refresh the File Manager element. |
+| <kbd>F5</kbd> | Refresh the React File Manager element. |
 | <kbd>Home</kbd> | Navigate through the first element of details view or large icons view. |
 | <kbd>End</kbd> | Navigate through the last element of details view or large icons view. |
 | <kbd>Move Left</kbd> | Scrolls left to the previous folder and select the first item when files are loaded |
@@ -89,24 +89,24 @@ The File Manager component followed the `keyboard interaction` guidelines, makin
 | <kbd>Shift+Right</kbd> | Allows multiselection. Select the file or folder at the right of the previously selected folder. |
 | <kbd>Shift+Left</kbd> | Allows multiselection. Select the file or folder at the left of the previously selected folder. |
 | <kbd>Shift+Down</kbd> | Allows multiselection. Select the file or folder till the focused index. |
-| <kbd>Shift+Delete</kbd> | Permanently deletes the selected file or folder in the File Manager element. |
-| <kbd>Delete</kbd> | Deletes the selected file or folder in the File Manager element. |
+| <kbd>Shift+Delete</kbd> | Permanently deletes the selected file or folder in the React File Manager element. |
+| <kbd>Delete</kbd> | Deletes the selected file or folder in the React File Manager element. |
 | <kbd>Shift+Up</kbd> | Allows multiselection. Select the file or folder till the focused index. |
-| <kbd>Ctrl+C</kbd> | Copies the selected file or folder in the File Manager element. |
-| <kbd>Ctrl+V</kbd> | Pastes the copied/cut file or folder in the File Manager element. |
-| <kbd>Ctrl+X</kbd> | Cuts the selected file or folder in the File Manager element. |
+| <kbd>Ctrl+C</kbd> | Copies the selected file or folder in the React File Manager element. |
+| <kbd>Ctrl+V</kbd> | Pastes the copied/cut file or folder in the React File Manager element. |
+| <kbd>Ctrl+X</kbd> | Cuts the selected file or folder in the React File Manager element. |
 | <kbd>Ctrl+A</kbd> | Select all the files or folders in the details view or large icons view. |
-| <kbd>F2</kbd> | Creates a rename dialog for a selected file or folder in the File Manager element. |
-| <kbd>Shift+F10</kbd> | Opens the context menu for the selected file or folder in the File Manager element. |
-| <kbd>Ctrl+D</kbd> | Downloads the list of selected files or folders in the File Manager element. |
-| <kbd>Ctrl+Shift+1</kbd> | Changes the File Manager layout to details view. |
-| <kbd>Ctrl+Shift+2</kbd> | Changes the File Manager layout to large icons view. |
+| <kbd>F2</kbd> | Creates a rename dialog for a selected file or folder in the React File Manager element. |
+| <kbd>Shift+F10</kbd> | Opens the context menu for the selected file or folder in the React File Manager element. |
+| <kbd>Ctrl+D</kbd> | Downloads the list of selected files or folders in the React File Manager element. |
+| <kbd>Ctrl+Shift+1</kbd> | Changes the React File Manager layout to details view. |
+| <kbd>Ctrl+Shift+2</kbd> | Changes the React File Manager layout to large icons view. |
 
 ## Ensuring accessibility
 
-The File Manager component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The React File Manager component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the File Manager component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/file-manager.html) in a new window to evaluate the accessibility of the File Manager component with accessibility tools.
+The accessibility compliance of the React File Manager component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/file-manager.html) in a new window to evaluate the accessibility of the React File Manager component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/file-manager.html" %}
 

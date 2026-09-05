@@ -10,11 +10,11 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # Multiple Selection in Angular File Manager
 
-The File Manager allows you to select multiple files and folders simultaneously for batch operations. This feature enables efficient file management by letting users perform actions on several items at once.
+The Angular File Manager allows you to select multiple files and folders simultaneously for batch operations. This feature enables efficient file management by letting users perform actions on several items at once.
 
 ## Enabling multiple selection
 
-By default, the multiple selection feature is enabled in File Manager. You can control this behavior using the [allowMultiSelection](https://ej2.syncfusion.com/angular/documentation/api/file-manager#allowmultiselection) property. When enabled, users can select multiple items using any of these methods:
+By default, the multiple selection feature is enabled in Angular File Manager. You can control this behavior using the [allowMultiSelection](https://ej2.syncfusion.com/angular/documentation/api/file-manager#allowmultiselection) property. When enabled, users can select multiple items using any of these methods:
 
 * Hold `Ctrl` key while clicking individual items to select/deselect them
 * Hold `Shift` key while clicking to select a range of items
@@ -43,7 +43,7 @@ The [fileSelect](https://ej2.syncfusion.com/angular/documentation/api/file-manag
 
 ## Range Selection
 
-The File Manager supports selecting files and folders in specific ranges through mouse drag operations, similar to desktop file explorers. This feature is particularly useful when users need to select a large group of adjacent items quickly.
+The Angular File Manager supports selecting files and folders in specific ranges through mouse drag operations, similar to desktop file explorers. This feature is particularly useful when users need to select a large group of adjacent items quickly.
 
 ### Enabling Range Selection
 
@@ -65,7 +65,7 @@ To enable range selection, set the [enableRangeSelection](https://ej2.syncfusion
 
 ## Disable Multi selection
 
-There are two ways to control multiple selection capabilities in the File Manager:
+There are two ways to control multiple selection capabilities in the Angular File Manager:
 
 1. **Partial restriction**: Setting the [allowMultiSelection](https://ej2.syncfusion.com/angular/documentation/api/file-manager#allowmultiselection) property to `false` will disable keyboard-based multiple selection methods (Ctrl+click, Shift+click, Ctrl+A). However, users can still select multiple items using checkboxes if they are visible.
 

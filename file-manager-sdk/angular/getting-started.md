@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # Getting Started with Angular File Manager
 
-The File Manager component provides a graphical user interface for browsing, managing, and organizing files and folders. This section explains how to create a simple **File Manager** component and its basic usage.
+The Angular File Manager component provides a graphical user interface for browsing, managing, and organizing files and folders. This section explains how to create a simple **Angular File Manager** component and its basic usage.
 
 {% tabcontents %}
 
@@ -45,7 +45,7 @@ sf new syncfusion-angular-app --framework angular --template file-manager
 {% endhighlight %}
 {% endtabs %}
 
-In this mode, the project configuration is passed directly in the command. The above command creates a Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> File Manager component.
+In this mode, the project configuration is passed directly in the command. The above command creates a Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular File Manager component.
 
 ### Interactive mode
 
@@ -57,7 +57,7 @@ sf
 {% endhighlight %}
 {% endtabs %}
 
-When you run the `sf` command, the CLI prompts you to select the required project configuration. To create a Angular application with the Syncfusion<sup style="font-size:70%">&reg;</sup> `File Manager` component, select the following options:
+When you run the `sf` command, the CLI prompts you to select the required project configuration. To create a Angular application with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Angular File Manager` component, select the following options:
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -74,7 +74,7 @@ When you run the `sf` command, the CLI prompts you to select the required projec
 {% endhighlight %}
 {% endtabs %}
 
-The above selections generate a Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `File Manager` component. You can choose different values for language, theme, style format, MCP setup, and skills installation based on your project requirements.
+The above selections generate a Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Angular File Manager` component. You can choose different values for language, theme, style format, MCP setup, and skills installation based on your project requirements.
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> CLI creates the project with a predefined template. After the project is generated, you can customize or replace the component code based on your application requirements.
 
@@ -92,7 +92,7 @@ ng serve
 
 The output will appear as follows:
 
-![File Manager Component](images/cli-file-manager.png)
+![Angular File Manager Component](images/cli-file-manager.png)
 
 {% endtabcontent %}
 
@@ -181,7 +181,7 @@ cd syncfusion-angular-app
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages
 
-To install the File Manager component, use the following command:
+To install the Angular File Manager component, use the following command:
 
 ```bash
 npm install @syncfusion/ej2-angular-filemanager --save
@@ -189,7 +189,7 @@ npm install @syncfusion/ej2-angular-filemanager --save
 
 ## Adding CSS reference
 
-Themes for Syncfusion® File Manager components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for Syncfusion® Angular File Manager components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
 Install the Material 3 theme package using the following command:
 
@@ -213,17 +213,17 @@ Then add the following CSS reference to the **src/style.css** file:
 
 For using SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/documentation/common/how-to/sass).
 
-## Add File Manager component
+## Add Angular File Manager component
 
-Modify the template in the **src/app/app.ts** file to render the File Manager component. Add the [Angular File Manager](https://www.syncfusion.com/angular-components/angular-file-manager) by using `<ejs-filemanager>` selector in `template` section of the **app.ts** file.
+Modify the template in the **src/app/app.ts** file to render the Angular File Manager component. Add the [Angular File Manager](https://www.syncfusion.com/angular-components/angular-file-manager) by using `<ejs-filemanager>` selector in `template` section of the **app.ts** file.
 
-The [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) property must be defined while initializing the File Manager. File Manager utilizes the URLs mentioned in `ajaxSettings` to send file operation requests to the server. The File Manager service link is provided in the `hostUrl` variable.
+The [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) property must be defined while initializing the Angular File Manager. Angular File Manager utilizes the URLs mentioned in `ajaxSettings` to send file operation requests to the server. The Angular File Manager service link is provided in the `hostUrl` variable.
 
 ### Server-side setup
 
 The sample uses `https://physical-service.syncfusion.com/` as the [`url`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettings#url) endpoint in [`ajaxSettings`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettings).
 
-To use your own files, host a File Manager service and replace the `url` value with your service endpoint. See the [File System Provider](./file-system-provider) documentation for setup details.
+To use your own files, host a Angular File Manager service and replace the `url` value with your service endpoint. See the [File System Provider](./file-system-provider) documentation for setup details.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -285,7 +285,7 @@ Then open the URL displayed in the terminal.
 
 ## Troubleshooting
 
-- **File Manager styles are not applied:** Ensure the required Syncfusion theme CSS is imported in `src/styles.css`.
+- **Angular File Manager styles are not applied:** Ensure the required Syncfusion theme CSS is imported in `src/styles.css`.
 - **Trial license warning message:** Register a valid Syncfusion license key using the `registerLicense()` method from `@syncfusion/ej2-base`.
 - **Port 4200 is already in use:** Stop the conflicting process or run the application on a different port:
 
@@ -297,7 +297,7 @@ Then open the URL displayed in the terminal.
 
 * [Ajax Settings Configuration (uploadUrl, downloadUrl, getImageUrl)](./file-operations#ajax-settings-configuration)
 * [Injecting Services for Overview](./user-interface#injecting-services-for-overview)
-* [File Manager Views](./views)
-* [File Manager File Operations](./file-operations)
-* [File Manager Upload](./upload)
-* [File Manager Customization](./customization)
+* [Angular File Manager Views](./views)
+* [Angular File Manager File Operations](./file-operations)
+* [Angular File Manager Upload](./upload)
+* [Angular File Manager Customization](./customization)

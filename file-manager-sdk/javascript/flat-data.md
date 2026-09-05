@@ -11,7 +11,7 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # Flat Data in JavaScript File Manager
 
-The File Manager uses a flat data object as an array of JavaScript objects for rendering, eliminating the need to define [`ajaxSettings`](../api/file-manager#ajaxsettings) url. To load a folder data as an array of JavaScript objects, use the File Manager control's [`fileSystemData`](../api/file-manager#filesystemdata) property with a type of [`fileData`](../api/file-manager/fileData) interface. This means you no longer need to use a separate service provider, as you can integrate services like Google, Amazon, Azure, and others directly into your JavaScript code using the FileManager's action events. For example, you can integrate Google Drive by following the [Google Drive API Quickstart guide for JavaScript](https://developers.google.com/drive/api/quickstart/js).
+The File Manager uses a flat data object as an array of JavaScript objects for rendering, eliminating the need to define [`ajaxSettings`](../api/file-manager#ajaxsettings) url. To load a folder data as an array of JavaScript objects, use the File Manager control's [`fileSystemData`](../api/file-manager#filesystemdata) property with a type of [`fileData`](../api/file-manager/fileData) interface. This means you no longer need to use a separate service provider, as you can integrate services like Google, Amazon, Azure, and others directly into your JavaScript code using the File Manager's action events. For example, you can integrate Google Drive by following the [Google Drive API Quickstart guide for JavaScript](https://developers.google.com/drive/api/quickstart/js).
 
 **Event Information**
 
@@ -29,7 +29,7 @@ Event Name | Description
 
 ## Local data
 
-The FileManager can be populated with local data that contains the array of `fileData` interface objects with [`parentId`](../api/file-manager/fileData#parentid)  mapping.
+The File Manager can be populated with local data that contains the array of `fileData` interface objects with [`parentId`](../api/file-manager/fileData#parentid)  mapping.
 
 To render the root-level folder, specify the `parentId` as null, or there is no need to specify the `parentId` in the array of `fileData` interface objects.
 

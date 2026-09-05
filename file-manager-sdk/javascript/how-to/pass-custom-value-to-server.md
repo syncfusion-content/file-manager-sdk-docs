@@ -182,7 +182,7 @@ public object Download([FromBody] FileManagerDirectoryContent args)
 
 ## 4. For GetImage Operation
 
-For the **GetImage** operation, use the [`beforeImageLoad`](../../api/file-manager#beforeimageload) event. Inside this event, set [`useImageAsUrl`](../../api/file-manager/beforeImageLoadEventArgs#useImageAsUrl) to false to instruct the FileManager not to load the image directly via its URL but instead to use a fetch request. Here, attach the **Authorization** header with the value **User1** within the beforeSend event of the ajaxSettings.
+For the **GetImage** operation, use the [`beforeImageLoad`](../../api/file-manager#beforeimageload) event. Inside this event, set [`useImageAsUrl`](../../api/file-manager/beforeImageLoadEventArgs#useImageAsUrl) to false to instruct the File Manager not to load the image directly via its URL but instead to use a fetch request. Here, attach the **Authorization** header with the value **User1** within the beforeSend event of the ajaxSettings.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # File System Provider in React File Manager
 
-The file system provider allows the File Manager component to manage the files and folders in a physical or cloud-based file system. It provides the methods for performing various file actions like creating a new folder, copying and moving of files or folders, deleting, uploading, and downloading the files or folders in the file system.
+The file system provider allows the React File Manager component to manage the files and folders in a physical or cloud-based file system. It provides the methods for performing various file actions like creating a new folder, copying and moving of files or folders, deleting, uploading, and downloading the files or folders in the file system.
 
-The following file providers are added in EJ2 File Manager component.
+The following file providers are added in EJ2 React File Manager component.
 
 * [Physical file system provider](#physical-file-system-provider)
 * [Azure cloud file system Provider](#azure-cloud-file-system-provider)
@@ -34,15 +34,15 @@ The Physical file system provider allows the users to access and manage the phys
     cd ej2-aspcore-file-provider
    ```
 
-After cloning, just open the project in Visual Studio and restore the NuGet packages. Now, set the root directory of the physical file system in the File Manager controller.
+After cloning, just open the project in Visual Studio and restore the NuGet packages. Now, set the root directory of the physical file system in the React File Manager controller.
 
-After setting the root directory of the file system, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager component to the appropriate controller methods allows to manage the files in the physical file system.
+After setting the root directory of the file system, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the React File Manager component to the appropriate controller methods allows to manage the files in the physical file system.
 
    {% raw %}
 
    ```ts
 
-    // Initializing File Manager Physical service.
+    // Initializing React File Manager Physical service.
    <div>
      <div className="control-section">
         <FileManagerComponent  id="file"
@@ -71,7 +71,7 @@ The Azure cloud file system provider allows the users to access and manage the b
 
   ```
 
-After cloning, just open the project in Visual Studio and restore the NuGet packages. Now, register the Azure storage by passing details like name, password, and blob name to the Register Azure method in the File Manager controller.
+After cloning, just open the project in Visual Studio and restore the NuGet packages. Now, register the Azure storage by passing details like name, password, and blob name to the Register Azure method in the React File Manager controller.
 
    ```ts
 
@@ -85,14 +85,14 @@ Then, set the blob container and the root blob directory by passing the correspo
     void setBlobContainer(string blobPath, string filePath)
   ```
 
-> **Note:** Also, assign the same *blobPath URL* and *filePath URL* in [**AzureFileOperations** and **AzureUpload**](https://github.com/SyncfusionExamples/azure-aspcore-file-provider/blob/master/Controllers/AzureProviderController.cs) methods in the File Manager controller to determine the original path of the Azure blob.
+> **Note:** Also, assign the same *blobPath URL* and *filePath URL* in [**AzureFileOperations** and **AzureUpload**](https://github.com/SyncfusionExamples/azure-aspcore-file-provider/blob/master/Controllers/AzureProviderController.cs) methods in the React File Manager controller to determine the original path of the Azure blob.
 
-After setting the blob container references, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager component to the appropriate controller methods allows to manage the Azure blob storage.
+After setting the blob container references, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the React File Manager component to the appropriate controller methods allows to manage the Azure blob storage.
 
   {% raw %}
 
   ```ts
-  // Initializing File Manager Azure cloud file system service.
+  // Initializing React File Manager Azure cloud file system service.
    <div>
         <div className="control-section">
             <FileManagerComponent  id="file"
@@ -130,18 +130,18 @@ The Amazon ***S3*** (*Simple Storage Service*) cloud file provider allows the us
 
 > **Note:** To learn more about creating and configuring an Amazon S3 bucket, refer to this [link](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-configure-bucket.html).
 
-After cloning, open the project in Visual Studio and restore the NuGet packages. Now, register Amazon S3 client account details like *awsAccessKeyId*, *awsSecretKeyId* and *awsRegion* details in **RegisterAmazonS3** method in the File Manager controller to perform the file operations.
+After cloning, open the project in Visual Studio and restore the NuGet packages. Now, register Amazon S3 client account details like *awsAccessKeyId*, *awsSecretKeyId* and *awsRegion* details in **RegisterAmazonS3** method in the React File Manager controller to perform the file operations.
 
   ```ts
    void RegisterAmazonS3(string bucketName, string awsAccessKeyId, string awsSecretAccessKey, string bucketRegion)
   ```
 
-After registering the Amazon client account details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager component to the appropriate controller methods allows to manage the Amazon ***S3*** (*Simple Storage Service*) bucket's objects storage.
+After registering the Amazon client account details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the React File Manager component to the appropriate controller methods allows to manage the Amazon ***S3*** (*Simple Storage Service*) bucket's objects storage.
 
   {% raw %}
 
  ```ts
-  // Initializing File Manager Amazon S3 cloud file system service.
+  // Initializing React File Manager Amazon S3 cloud file system service.
    <div>
         <div className="control-section">
             <FileManagerComponent  id="file"
@@ -210,7 +210,7 @@ To set up the SharePoint service provider, follow these steps:
 
 Replace "<--User Site Name-->", "<--User Drive ID-->", "tenantId", "clientId", and "clientSecret" with your actual values.
 
-After configuring the SharePoint file provider, build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager component to the appropriate controller methods allows to manage the files in the Microsoft SharePoint.
+After configuring the SharePoint file provider, build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the React File Manager component to the appropriate controller methods allows to manage the files in the Microsoft SharePoint.
 
 {% raw %}
   ```ts
@@ -240,18 +240,18 @@ In ASP.NET Core, File Transfer Protocol file system provider allows the users to
   git clone https://github.com/SyncfusionExamples/ftp-aspcore-file-provider.git  ftp-aspcore-file-provider.git
   ```
 
-After cloning, open the project in Visual Studio and restore the NuGet packages. Now, register File Transfer Protocol details like *hostName*, *userName* and *password* in **SetFTPConnection** method in the File Manager controller to perform the file operations.
+After cloning, open the project in Visual Studio and restore the NuGet packages. Now, register File Transfer Protocol details like *hostName*, *userName* and *password* in **SetFTPConnection** method in the React File Manager controller to perform the file operations.
 
   ```ts
   void SetFTPConnection(string hostName, string userName, string password)
   ```
 
-After registering the File Transfer Protocol details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager component to the appropriate controller methods allows you to manage the FTP’s objects storage.
+After registering the File Transfer Protocol details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the React File Manager component to the appropriate controller methods allows you to manage the FTP’s objects storage.
 
    {% raw %}
 
   ```ts
-  // Initializing File Manager file transfer protocol file system service.
+  // Initializing React File Manager file transfer protocol file system service.
    <div>
         <div className="control-section">
             <FileManagerComponent  id="file"
@@ -304,15 +304,15 @@ Now, to configure the database connection, set the connection name, table name a
   void SetSQLConnection(string name, string tableName, string tableID)
   ```
 
-> Refer to this [File Manager.mdf](https://github.com/SyncfusionExamples/sql-server-database-aspcore-file-provider/blob/master/App_Data/FileManager.mdf), to learn about the pre-defined file system SQL database for the EJ2 File Manager.
+> Refer to this [File Manager.mdf](https://github.com/SyncfusionExamples/sql-server-database-aspcore-file-provider/blob/master/App_Data/FileManager.mdf), to learn about the pre-defined file system SQL database for the EJ2 React File Manager.
 
-After configuring the connection, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager component to the appropriate controller methods allows to manage the files in the SQL database table.
+After configuring the connection, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the React File Manager component to the appropriate controller methods allows to manage the files in the SQL database table.
 
   {% raw %}
 
   ```ts
 
-  // Initializing File Manager with SQL Server Database service configuration.
+  // Initializing React File Manager with SQL Server Database service configuration.
   <div>
     <div className="control-section">
         <FileManagerComponent  id="file"
@@ -387,7 +387,7 @@ Now, just mapping the **ajaxSettings** property of the File Manager component to
 
   ```ts
 
-  // File Manager sample with nodejs service.
+  // React File Manager sample with nodejs service.
    <div>
     <div className="control-section">
         <FileManagerComponent  id="file"
@@ -425,13 +425,13 @@ After generating the client secret data, copy the JSON data to the following spe
   * EJ2GoogleDriveFileProvider > credentials > client_secret.json
   * GoogleOAuth2.0Base > credentials > client_secret.json
 
-After updating the credentials, just build and run the project. Now, the project will be hosted in `http://localhost:{port}`, and it will ask to log on to the Gmail account created the client secret credentials. Then, provide permission to access the Google Drive files by clicking the allow access button in the page. Now, just mapping the **ajaxSettings** property of the File Manager component to the appropriate controller methods will allows to manage the files from the Google Drive.
+After updating the credentials, just build and run the project. Now, the project will be hosted in `http://localhost:{port}`, and it will ask to log on to the Gmail account created the client secret credentials. Then, provide permission to access the Google Drive files by clicking the allow access button in the page. Now, just mapping the **ajaxSettings** property of the React File Manager component to the appropriate controller methods will allows to manage the files from the Google Drive.
 
    {% raw %}
 
    ```ts
 
-   // File Manager sample with Google Drive service.
+   // React File Manager sample with Google Drive service.
   <div>
     <div className="control-section">
         <FileManagerComponent id="file"
@@ -453,7 +453,7 @@ After updating the credentials, just build and run the project. Now, the project
 
 ## Firebase Realtime Database file system provider
 
-The [Firebase Realtime Database](https://firebase.google.com/) file system provider in **ASP.NET Core** provides the efficient way to store the File Manager file system in a cloud database as JSON representation.
+The [Firebase Realtime Database](https://firebase.google.com/) file system provider in **ASP.NET Core** provides the efficient way to store the React File Manager file system in a cloud database as JSON representation.
 
 ### Generate Secret access key from service account
 
@@ -510,7 +510,7 @@ Follow the given steps to generate the secret access key:
 
 ```
 
-Here, the `Files` denotes the `rootNode` and the subsequent object refers to the children of the root node. `rootNode` will be taken as the root folder of the file system loaded which will be loaded in File Manager component.
+Here, the `Files` denotes the `rootNode` and the subsequent object refers to the children of the root node. `rootNode` will be taken as the root folder of the file system loaded which will be loaded in React File Manager component.
 
 * To import a JSON file into the Firebase Realtime Database, navigate to the **Data** tab and click on the action icon shown in the accompanying image. From there, select the **Import JSON** option and upload the JSON file that was created using the code provided above.
 
@@ -572,12 +572,12 @@ In the above code,
 
 * `hostingEnvironment.ContentRootPath + \\FirebaseRealtimeDBHelper\\access_key.json` denotes service account key path which has authentication key for the Firebase Realtime Database data.
 
-After configuring the Firebase Realtime Database service link, build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager component to the appropriate controller methods allows to manage the files in the Firebase Realtime Database.
+After configuring the Firebase Realtime Database service link, build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the React File Manager component to the appropriate controller methods allows to manage the files in the Firebase Realtime Database.
 
 {% raw %}
 
 ```ts
-// File Manager sample with IBM COS service.
+// React File Manager sample with IBM COS service.
 <div>
     <div className="control-section">
         <FileManagerComponent  id="file"
@@ -599,7 +599,7 @@ After configuring the Firebase Realtime Database service link, build and run the
 
 ## IBM Cloud Object Storage file provider
 
-The IBM Cloud Object Storage file provider module allows you work with the IBM Cloud Object Storage. It also provides the methods for performing various file actions such as creating a new folder, renaming files, and deleting files. The IBM Cloud Object Storage file provider serves the file provider support for the File Manager component with the IBM Cloud Object Storage. We can make use of IBM Cloud Object Storage file provider by installing the[ej2-filemanager-ibm-cos-node-file-provider](https://www.npmjs.com/package/@syncfusion/ej2-filemanager-ibm-cos-node-file-provider) npm package or by cloning the [file provider](https://github.com/SyncfusionExamples/filemanager-ibm-cos-node-file-provider) from the GitHub.
+The IBM Cloud Object Storage file provider module allows you work with the IBM Cloud Object Storage. It also provides the methods for performing various file actions such as creating a new folder, renaming files, and deleting files. The IBM Cloud Object Storage file provider serves the file provider support for the React File Manager component with the IBM Cloud Object Storage. We can make use of IBM Cloud Object Storage file provider by installing the[ej2-filemanager-ibm-cos-node-file-provider](https://www.npmjs.com/package/@syncfusion/ej2-filemanager-ibm-cos-node-file-provider) npm package or by cloning the [file provider](https://github.com/SyncfusionExamples/filemanager-ibm-cos-node-file-provider) from the GitHub.
 
 ### Using ej2-filemanager-ibm-cos-node-file-provider npm package
 
@@ -637,12 +637,12 @@ To set the port in which the project to be hosted. Run the following command.
 
 > **Note:** By default, the service will run `8090` port.
 
-Now, just mapping the **ajaxSettings** property of the File Manager component to the appropriate file operation methods in the index.js file will allow to manage the IBM Cloud Object Storage.
+Now, just mapping the **ajaxSettings** property of the React File Manager component to the appropriate file operation methods in the index.js file will allow to manage the IBM Cloud Object Storage.
 
 {% raw %}
 
 ```ts
-// File Manager sample with IBM COS service.
+// React File Manager sample with IBM COS service.
 <div>
     <div className="control-section">
         <FileManagerComponent  id="file"

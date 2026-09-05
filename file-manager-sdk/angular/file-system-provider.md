@@ -10,10 +10,10 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # File System Provider in Angular File Manager
 
-The file system provider allows the File Manager component to manage the files and folders in a physical or cloud-based file system. It provides the methods for performing various file actions like creating a new folder, copying and moving of files or folders, deleting, uploading, and downloading the files or folders in the file system.
+The file system provider allows the Angular File Manager component to manage the files and folders in a physical or cloud-based file system. It provides the methods for performing various file actions like creating a new folder, copying and moving of files or folders, deleting, uploading, and downloading the files or folders in the file system.
 
 ## Overview of File System Providers
-The following file providers are available in EJ2 File Manager component:
+The following file providers are available in EJ2 Angular File Manager component:
 
 * [Physical file system provider](#physical-file-system-provider)
 * [Azure cloud file system Provider](#azure-cloud-file-system-provider)
@@ -37,9 +37,9 @@ cd ej2-aspcore-file-provider
 
 ```
 
-After cloning, just open the project in Visual Studio and restore the NuGet packages. Now, set the root directory of the physical file system in the File Manager controller.
+After cloning, just open the project in Visual Studio and restore the NuGet packages. Now, set the root directory of the physical file system in the Angular File Manager controller.
 
-After setting the root directory of the file system, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager component to the appropriate controller methods allows to manage the files in the physical file system.
+After setting the root directory of the file system, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the Angular File Manager component to the appropriate controller methods allows to manage the files in the physical file system.
 
 ```typescript
 
@@ -54,7 +54,7 @@ export class AppComponent {
     public ajaxSettings: object;
     public hostUrl: string = 'http://localhost:{port}/';
     public ngOnInit(): void {
-        // Initializing File Manager with Physical file system provider.
+        // Initializing Angular File Manager with Physical file system provider.
         this.ajaxSettings = {
             // Replace the hosted port number in the place of "{port}"
             url: this.hostUrl + "api/FileManager/FileOperations",
@@ -94,9 +94,9 @@ void setBlobContainer(string blobPath, string filePath)
 
 ```
 
-> **Note:** Also, assign the same *blobPath URL* and *filePath URL* in [**AzureFileOperations** and **AzureUpload**](https://github.com/SyncfusionExamples/azure-aspcore-file-provider/blob/master/Controllers/AzureProviderController.cs) methods in the File Manager controller to determine the original path of the Azure blob.
+> **Note:** Also, assign the same *blobPath URL* and *filePath URL* in [**AzureFileOperations** and **AzureUpload**](https://github.com/SyncfusionExamples/azure-aspcore-file-provider/blob/master/Controllers/AzureProviderController.cs) methods in the Angular File Manager controller to determine the original path of the Azure blob.
 
-After setting the blob container references, build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the ajaxSettings property of the File Manager component to the appropriate controller methods allows to manage the Azure blob storage.
+After setting the blob container references, build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the ajaxSettings property of the Angular File Manager component to the appropriate controller methods allows to manage the Azure blob storage.
 
 ```typescript
 
@@ -111,7 +111,7 @@ export class AppComponent {
     public ajaxSettings: object;
     public hostUrl: string = 'http://localhost:{port}/';
     public ngOnInit(): void {
-        // File Manager sample with Azure service.
+        // Angular File Manager sample with Azure service.
         this.ajaxSettings = {
             // Replace the hosted port number in the place of "{port}"
             url: this.hostUrl + "api/AzureProvider/AzureFileOperations",
@@ -148,7 +148,7 @@ git clone https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider.
 
 > **Note:** To learn more about creating and configuring an Amazon S3 bucket, refer to this [link](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-configure-bucket.html).
 
-After cloning, open the project in Visual Studio and restore the NuGet packages. Now, register Amazon S3 client account details like *awsAccessKeyId*, *awsSecretKeyId* and *awsRegion* details in **RegisterAmazonS3** method in the File Manager controller to perform the file operations.
+After cloning, open the project in Visual Studio and restore the NuGet packages. Now, register Amazon S3 client account details like *awsAccessKeyId*, *awsSecretKeyId* and *awsRegion* details in **RegisterAmazonS3** method in the Angular File Manager controller to perform the file operations.
 
 ```typescript
 
@@ -156,7 +156,7 @@ void RegisterAmazonS3(string bucketName, string awsAccessKeyId, string awsSecret
 
 ```
 
-After registering the Amazon client account details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager component to the appropriate controller methods allows to manage the Amazon ***S3*** (*Simple Storage Service*) bucket's objects storage.
+After registering the Amazon client account details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the Angular File Manager component to the appropriate controller methods allows to manage the Amazon ***S3*** (*Simple Storage Service*) bucket's objects storage.
 
 ```typescript
 
@@ -171,7 +171,7 @@ export class AppComponent {
     public ajaxSettings: object;
     public hostUrl: string = 'http://localhost:{port}/';
     public ngOnInit(): void {
-        // File Manager sample with amazon service.
+        // Angular File Manager sample with amazon service.
         this.ajaxSettings = {
             // Replace the hosted port number in the place of "{port}"
             url: this.hostUrl + "api/AmazonS3Provider/AmazonS3FileOperations",
@@ -236,7 +236,7 @@ To set up the SharePoint service provider, follow these steps:
 
 Replace "<--User Site Name-->", "<--User Drive ID-->", "tenantId", "clientId", and "clientSecret" with your actual values.
 
-After configuring the SharePoint file provider, build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager component to the appropriate controller methods allows to manage the files in the Microsoft SharePoint.
+After configuring the SharePoint file provider, build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the Angular File Manager component to the appropriate controller methods allows to manage the files in the Microsoft SharePoint.
 
 ```typescript
 
@@ -275,7 +275,7 @@ git clone https://github.com/SyncfusionExamples/ftp-aspcore-file-provider.git  f
 
 ```
 
-After cloning, open the project in Visual Studio and restore the NuGet packages. Now, register File Transfer Protocol details like *hostName*, *userName* and *password* in **SetFTPConnection** method in the File Manager controller to perform the file operations.
+After cloning, open the project in Visual Studio and restore the NuGet packages. Now, register File Transfer Protocol details like *hostName*, *userName* and *password* in **SetFTPConnection** method in the Angular File Manager controller to perform the file operations.
 
 ```typescript
 
@@ -283,7 +283,7 @@ void SetFTPConnection(string hostName, string userName, string password)
 
 ```
 
-After registering the File Transfer Protocol details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager component to the appropriate controller methods allows you to manage the FTP's objects storage.
+After registering the File Transfer Protocol details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the Angular File Manager component to the appropriate controller methods allows you to manage the FTP's objects storage.
 
 ```typescript
 
@@ -298,7 +298,7 @@ export class AppComponent {
     public ajaxSettings: object;
     public hostUrl: string = 'http://localhost:{port}/';
     public ngOnInit(): void {
-        // File Manager sample with file transfer protocol service.
+        // Angular File Manager sample with file transfer protocol service.
         this.ajaxSettings = {
             // Replace the hosted port number in the place of "{port}"
             url: this.hostUrl + "api/FTPProvider/FTPFileOperations",
@@ -349,9 +349,9 @@ void SetSQLConnection(string name, string tableName, string tableID)
 
 ```
 
-> Refer to this [FileManager.mdf](https://github.com/SyncfusionExamples/sql-server-database-aspcore-file-provider/blob/master/App_Data/FileManager.mdf), to learn about the pre-defined file system SQL database for the EJ2 File Manager.
+> Refer to this [FileManager.mdf](https://github.com/SyncfusionExamples/sql-server-database-aspcore-file-provider/blob/master/App_Data/FileManager.mdf), to learn about the pre-defined file system SQL database for the EJ2 Angular File Manager.
 
-After configuring the connection, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the ajaxSettings property of the File Manager component to the appropriate controller methods allows to manage the files in the SQL database table.
+After configuring the connection, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the ajaxSettings property of the Angular File Manager component to the appropriate controller methods allows to manage the files in the SQL database table.
 
 ```typescript
 
@@ -366,7 +366,7 @@ export class AppComponent {
     public ajaxSettings: object;
     public hostUrl: string = 'http://localhost:{port}/';
     public ngOnInit(): void {
-        // Initializing the File Manager with SQL database service.
+        // Initializing the Angular File Manager with SQL database service.
         this.ajaxSettings = {
             // Replace the hosted port number in the place of "{port}"
             url: this.hostUrl + "api/SQLProvider/SQLFileOperations",
@@ -444,7 +444,7 @@ export class AppComponent {
     public ajaxSettings: object;
     public hostUrl: string = 'http://localhost:8090/';
     public ngOnInit(): void {
-        // Initializing the File Manager with NodeJS service.
+        // Initializing the Angular File Manager with NodeJS service.
         this.ajaxSettings = {
             // Replace the hosted port number in the place of "{port}"
             url: this.hostUrl,
@@ -478,7 +478,7 @@ After generating the client secret data, copy the JSON data to the following spe
 
 * GoogleOAuth2.0Base > credentials > client_secret.json
 
-After updating the credentials, just build and run the project. Now, the project will be hosted in `http://localhost:{port}`, and it will ask to log on to the Gmail account created the client secret credentials. Then, provide permission to access the Google Drive files by clicking the allow access button in the page. Now, just mapping the ajaxSettings property of the File Manager component to the appropriate controller methods will allows to manage the files from the Google Drive.
+After updating the credentials, just build and run the project. Now, the project will be hosted in `http://localhost:{port}`, and it will ask to log on to the Gmail account created the client secret credentials. Then, provide permission to access the Google Drive files by clicking the allow access button in the page. Now, just mapping the ajaxSettings property of the Angular File Manager component to the appropriate controller methods will allows to manage the files from the Google Drive.
 
 ```typescript
 
@@ -493,7 +493,7 @@ export class AppComponent {
     public ajaxSettings: object;
     public hostUrl: string = 'http://localhost:{port}/';
     public ngOnInit(): void {
-        // Initializing the File Manager with Google Drive service.
+        // Initializing the Angular File Manager with Google Drive service.
         this.ajaxSettings = {
             // Replace the hosted port number in the place of "{port}"
             url: this.hostUrl + "api/GoogleDriveProvider/GoogleDriveFileOperations",
@@ -510,7 +510,7 @@ export class AppComponent {
 
 ## Firebase Realtime Database file system provider
 
-The [Firebase Realtime Database](https://firebase.google.com/) file system provider in **ASP.NET Core** provides the efficient way to store the File Manager file system in a cloud database as JSON representation.
+The [Firebase Realtime Database](https://firebase.google.com/) file system provider in **ASP.NET Core** provides the efficient way to store the Angular File Manager file system in a cloud database as JSON representation.
 
 ### Generate Secret access key from service account
 
@@ -567,7 +567,7 @@ Follow the given steps to generate the secret access key:
 
 ```
 
-Here, the `Files` denotes the `rootNode` and the subsequent object refers to the children of the root node. `rootNode` will be taken as the root folder of the file system loaded which will be loaded in File Manager component.
+Here, the `Files` denotes the `rootNode` and the subsequent object refers to the children of the root node. `rootNode` will be taken as the root folder of the file system loaded which will be loaded in Angular File Manager component.
 
 * To import a JSON file into the Firebase Realtime Database, navigate to the **Data** tab and click on the action icon shown in the accompanying image. From there, select the **Import JSON** option and upload the JSON file that was created using the code provided above.
 
@@ -629,7 +629,7 @@ In the above code:
 
 * `hostingEnvironment.ContentRootPath + \\FirebaseRealtimeDBHelper\\access_key.json` denotes service account key path which has authentication key for the Firebase Realtime Database data.
 
-After configuring the Firebase Realtime Database service link, build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager component to the appropriate controller methods allows to manage the files in the Firebase Realtime Database.
+After configuring the Firebase Realtime Database service link, build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the Angular File Manager component to the appropriate controller methods allows to manage the files in the Firebase Realtime Database.
 
 ```typescript
 
@@ -644,7 +644,7 @@ export class AppComponent {
     public ajaxSettings: object;
     public hostUrl: string = 'http://localhost:{port}/';
     public ngOnInit(): void {
-        // Initializing File Manager with Firebase Realtime Database service.
+        // Initializing Angular File Manager with Firebase Realtime Database service.
         this.ajaxSettings = {
             // Replace the hosted port number in the place of "{port}"
             url: this.hostUrl + "api/FirebaseProvider/FirebaseRealtimeFileOperations",

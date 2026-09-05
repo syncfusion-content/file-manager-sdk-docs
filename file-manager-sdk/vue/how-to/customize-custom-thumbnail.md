@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # How to customize thumbnails in Vue File Manager
 
-The File Manager's default appearance can be customized by providing a custom icon using the [showThumbnail](https://ej2.syncfusion.com/vue/documentation/api/file-manager#showthumbnail) property.
+The Vue File Manager's default appearance can be customized by providing a custom icon using the [showThumbnail](https://ej2.syncfusion.com/vue/documentation/api/file-manager#showthumbnail) property.
 
 The following example demonstrates how to add a custom icon in the Large Icons view.
 

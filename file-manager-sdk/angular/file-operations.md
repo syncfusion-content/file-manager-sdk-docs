@@ -10,11 +10,11 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # File Operations in Angular File Manager
 
-The File Manager component is used to browse, manage, and organize the files and folders in a file system through a web application. All basic file operations like creating a new folder, uploading and downloading of files in the file system, and deleting and renaming of existing files and folders are available in the File Manager component.  Additionally, previewing of image files is also provided in the File Manager component.
+The Angular File Manager component is used to browse, manage, and organize the files and folders in a file system through a web application. All basic file operations like creating a new folder, uploading and downloading of files in the file system, and deleting and renaming of existing files and folders are available in the Angular File Manager component.  Additionally, previewing of image files is also provided in the Angular File Manager component.
 
-This guide explains the core file operations available in the File Manager component and demonstrates how to implement and customize them in your Angular application.
+This guide explains the core file operations available in the Angular File Manager component and demonstrates how to implement and customize them in your Angular application.
 
-The following table outlines the fundamental operations supported by the File Manager:
+The following table outlines the fundamental operations supported by the Angular File Manager:
 
 |Operation Name|Function|
 |----|----|
@@ -29,11 +29,11 @@ The following table outlines the fundamental operations supported by the File Ma
 |upload|Uploads files to the current directory in the file system.|
 |download|Downloads selected files from the server (multiple files are downloaded as ZIP files).|
 
->Note: The *CreateFolder*, *Remove*, and *Rename* operations will only be reflected in the File Manager interface after a successful response from the server.
+>Note: The *CreateFolder*, *Remove*, and *Rename* operations will only be reflected in the Angular File Manager interface after a successful response from the server.
 
 ## Folder Upload support
 
-To enable directory (folder) upload functionality in the File Manager, set the [directoryUpload](https://ej2.syncfusion.com/documentation/api/file-manager/uploadSettings#directoryupload) property to true within the `uploadSettings` property. This setting determines whether users can upload entire folders or just individual files.
+To enable directory (folder) upload functionality in the Angular File Manager, set the [directoryUpload](https://ej2.syncfusion.com/documentation/api/file-manager/uploadSettings#directoryupload) property to true within the `uploadSettings` property. This setting determines whether users can upload entire folders or just individual files.
 
 The directory upload feature is supported for the following file service providers:
 * Physical file service provider
@@ -219,7 +219,7 @@ Refer to the [GitHub repository](https://github.com/SyncfusionExamples/amazon-s3
 
 ## File operation request and response Parameters
 
-This section details the request parameters sent by the File Manager and the response parameters expected by the component for various file operations.
+This section details the request parameters sent by the Angular File Manager and the response parameters expected by the component for various file operations.
 
 ### Read
 
@@ -851,11 +851,11 @@ The following table outlines the request parameters for *GetImage* operations:
 
 The response returns the image as a file stream.
 
->Note: You can customize File Manager requests using the [beforeSend](https://ej2.syncfusion.com/angular/documentation/api/file-manager#beforesend) event. This allows you to pass additional information to the File Manager in file operation responses for customization purposes.
+>Note: You can customize Angular File Manager requests using the [beforeSend](https://ej2.syncfusion.com/angular/documentation/api/file-manager#beforesend) event. This allows you to pass additional information to the Angular File Manager in file operation responses for customization purposes.
 
 ## File request and response contents
 
-The following table outlines the common properties in *data, cwd, and files* objects in File Manager requests and responses:
+The following table outlines the common properties in *data, cwd, and files* objects in Angular File Manager requests and responses:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -868,7 +868,7 @@ The following table outlines the common properties in *data, cwd, and files* obj
 |size|Number|-|File size|
 |type|String|-|File extension|
 
-The following table outlines the properties in the *error* object in File Manager requests and responses:
+The following table outlines the properties in the *error* object in Angular File Manager requests and responses:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -876,7 +876,7 @@ The following table outlines the properties in the *error* object in File Manage
 |message|String|-|Error message|
 |fileExists|String[]|-|List of duplicate file names|
 
-The following table outlines the properties in the *details* object in File Manager requests and responses:
+The following table outlines the properties in the *details* object in Angular File Manager requests and responses:
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -892,7 +892,7 @@ The following table outlines the properties in the *details* object in File Mana
 
 ## Action Buttons
 
-The File Manager includes various menu buttons for accessing file operations. The following table describes the available menu buttons and their behaviors:
+The Angular File Manager includes various menu buttons for accessing file operations. The following table describes the available menu buttons and their behaviors:
 
 |Menu Button|Behavior|
 |----|----|
@@ -1044,11 +1044,11 @@ The following table shows the default context menu items and their corresponding
 
 ## Ajax Settings Configuration
 
-The File Manager's [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/index-default#ajaxsettings) property allows you to configure the URLs for various file operations including file operations, upload, download, and image preview.
+The Angular File Manager's [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/index-default#ajaxsettings) property allows you to configure the URLs for various file operations including file operations, upload, download, and image preview.
 
 ### File Download support
 
-To enable the download operation, initialize the [downloadUrl](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettingsmodel#downloadurl) property in the [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of the File Manager component.
+To enable the download operation, initialize the [downloadUrl](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettingsmodel#downloadurl) property in the [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of the Angular File Manager component.
 
 ```typescript
 import { FileManagerModule, FileManagerAllModule } from '@syncfusion/ej2-angular-filemanager'
@@ -1073,7 +1073,7 @@ export class App {
 
 ### File Upload support
 
-To perform the upload operation, initialize the [uploadUrl](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettingsmodel#uploadurl) property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of File Manager Component.
+To perform the upload operation, initialize the [uploadUrl](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettingsmodel#uploadurl) property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of Angular File Manager Component.
 
 ```typescript
 import { FileManagerModule, FileManagerAllModule } from '@syncfusion/ej2-angular-filemanager'
@@ -1098,7 +1098,7 @@ export class App {
 
 ### Image Preview support
 
-To perform the image preview support in the File Manager component, need to initialize the [getImageUrl](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettingsmodel#getimageurl) property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of File Manager component.
+To perform the image preview support in the Angular File Manager component, need to initialize the [getImageUrl](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettingsmodel#getimageurl) property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of Angular File Manager component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

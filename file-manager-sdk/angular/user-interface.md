@@ -1,7 +1,7 @@
 ---
 layout: post
 title: User Interface in Angular File Manager | Syncfusion
-description: Learn how to use the Angular File Manager UI with view, toolbar, breadcrumb, context menu, and navigation pane modules for file browsing.
+description: Learn how to use the Angular Angular File Manager UI with view, toolbar, breadcrumb, context menu, and navigation pane modules for file browsing.
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
@@ -10,37 +10,37 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 
 # User Interface in Angular File Manager
 
-The File Manager provides a comprehensive user interface for browsing, organizing, and performing operations on files and folders. This guide explains each UI component and how they work together to provide an intuitive file management experience.
+The Angular File Manager provides a comprehensive user interface for browsing, organizing, and performing operations on files and folders. This guide explains each UI component and how they work together to provide an intuitive file management experience.
 
-## File Manager UI overview
+## Angular File Manager UI overview
 
-The File Manager UI consists of several integrated sections that enhance the user experience:
+The Angular File Manager UI consists of several integrated sections that enhance the user experience:
 * [View](#view) - Displays files and folders in either Large Icons or Details view
 * [Toolbar](#toolbar) - Provides quick access to common file operations
 * [Navigation Pane](#navigation-pane)- Enables easy folder navigation through a tree structure
 * [Breadcrumb](#breadcrumb) - Shows the current path and parent folder navigation
 * [Context Menu](#context-menu) - Provides contextual operations for files and folders
 
-![File Manager Overview](./images/user-interface.png)
+![Angular File Manager Overview](./images/user-interface.png)
 
-## Basic vs. full-featured File Manager
+## Basic vs. full-featured Angular File Manager
 
-The File Manager comes in two configurations:
+The Angular File Manager comes in two configurations:
 
-### Full-featured File Manager
+### Full-featured Angular File Manager
 Includes all injectable modules (Toolbar, Navigation Pane, and Details View) for comprehensive file management capabilities.
 
-### Basic File Manager
+### Basic Angular File Manager
 A lightweight version with essential functionality for simple use cases, including:
 * [View](#view) (Large Icons view for browsing files and folders),
 * [Breadcrumb](#breadcrumb) (For parent folder navigations),
 * [Context Menu](#context-menu) (For accessing file operations).
 
-![Basic File Manager](./images/default-ui.png)
+![Basic Angular File Manager](./images/default-ui.png)
 
 ## Injecting Services for Overview
 
-The basic File Manager includes a context menu, large-icons view, and breadcrumb navigation. You can extend its functionality by injecting additional feature modules:
+The basic Angular File Manager includes a context menu, large-icons view, and breadcrumb navigation. You can extend its functionality by injecting additional feature modules:
 
 * Toolbar: Provides quick access to common operations
 * Navigation pane: Shows folder hierarchy for easy navigation
@@ -78,7 +78,7 @@ export class App { }
 
 ## Toolbar
 
-The toolbar provides quick access to common file operations through a set of action buttons. It's an injectable module that must be included before rendering the File Manager.
+The toolbar provides quick access to common file operations through a set of action buttons. It's an injectable module that must be included before rendering the Angular File Manager.
 
 The toolbar intelligently handles space constraints—if there are too many items to display, excess items are moved to a dropdown menu accessed via a button at the end of the toolbar.
 
@@ -88,14 +88,14 @@ The toolbar intelligently handles space constraints—if there are too many item
 
 ## Files and folders navigation
 
-The File Manager provides navigation between files and folders using the following two options.
+The Angular File Manager provides navigation between files and folders using the following two options.
 
 * [Navigation Pane](#navigation-pane)
 * [Breadcrumb](#breadcrumb)
 
 ### Navigation pane
 
-The navigation pane is an injectable module that displays the folder hierarchy as a tree structure, allowing users to easily navigate between folders. It appears on the left side of the File Manager interface.
+The navigation pane is an injectable module that displays the folder hierarchy as a tree structure, allowing users to easily navigate between folders. It appears on the left side of the Angular File Manager interface.
 
 You can customize the navigation pane using the [navigationPaneSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/index-default#navigationpanesettings) property:
 * Control minimum and maximum width
@@ -113,12 +113,12 @@ The breadcrumb displays the current folder path and enables navigation to any pa
 
 ## View
 
-The view section displays files and folders for browsing. The File Manager offers two view modes:
+The view section displays files and folders for browsing. The Angular File Manager offers two view modes:
 
 * [Large Icons View](#large-icons-view)
 * [Details View](#details-view)
 
-The `large icons view` is the default starting view in the File Manager. The view can be changed by using the [toolbar](#toolbar) view button or by using the view menu in [context menu](#context-menu). The [view](https://ej2.syncfusion.com/angular/documentation/api/file-manager/index-default#view) API can also be used to change the initial view of the File Manager.
+The `large icons view` is the default starting view in the Angular File Manager. The view can be changed by using the [toolbar](#toolbar) view button or by using the view menu in [context menu](#context-menu). The [view](https://ej2.syncfusion.com/angular/documentation/api/file-manager/index-default#view) API can also be used to change the initial view of the Angular File Manager.
 
 ### Large icons view
 
@@ -144,7 +144,7 @@ You can add additional columns using the [detailsViewSettings](https://ej2.syncf
 
 ## Context menu
 
-The context menu appears on user interaction such as right-click. The File Manager is provided with context menu support to perform list of file operations with the files and folders. Context menu appears with varying menu items based on the targets such as file, folder (including navigation pane folders),  and layout (empty area in view).
+The context menu appears on user interaction such as right-click. The Angular File Manager is provided with context menu support to perform list of file operations with the files and folders. Context menu appears with varying menu items based on the targets such as file, folder (including navigation pane folders),  and layout (empty area in view).
 
 Context menu can be customized using the [contextMenuSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/index-default#contextmenusettings), [menuOpen](https://ej2.syncfusion.com/angular/documentation/api/file-manager/index-default#menuopen), and [menuClick](https://ej2.syncfusion.com/angular/documentation/api/file-manager/index-default#menuclick) events.
 
@@ -154,7 +154,7 @@ Context menu can be customized using the [contextMenuSettings](https://ej2.syncf
 
 ### Upload Files or Folders via context menu
 
-File Manager control allows to perform the files or folder [upload](https://ej2.syncfusion.com/angular/documentation/file-manager/file-operations#upload) operations with the help of Context Menu items by switching between the Files or Folder from Upload menu item.
+Angular File Manager control allows to perform the files or folder [upload](https://ej2.syncfusion.com/angular/documentation/file-manager/file-operations#upload) operations with the help of Context Menu items by switching between the Files or Folder from Upload menu item.
 
 ![Uploading a file](./images/filemanager-fileupload.png)
 
