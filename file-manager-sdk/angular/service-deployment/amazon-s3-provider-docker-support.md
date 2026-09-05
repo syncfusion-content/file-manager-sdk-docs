@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Angular [File Manager](https://www.syncfusion.com/angular-components/angular-file-manager) is a component for managing files and folders in a web application. It provides a Windows Explorer like interface for file operations such as viewing, selecting, uploading, downloading, sorting, filtering, creating, renaming, copying, moving, and deleting files and folders.
 
-This Docker image provides a preconfigured Docker container for the Syncfusion File Manager Amazon S3 file provider backend. The server-side Web API targets ASP.NET Core 10.0 and connects to Amazon S3 Storage.
+This Docker image provides a preconfigured Docker container for the Syncfusion File Manager Amazon S3 file provider back end. The server-side Web API targets ASP.NET Core 10.0 and connects to Amazon S3 Storage.
 
 You can quickly deploy the Docker image to your infrastructure. To add custom functionality, create your own Docker file based on the existing [File Manager Amazon S3 Docker project](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider).
 

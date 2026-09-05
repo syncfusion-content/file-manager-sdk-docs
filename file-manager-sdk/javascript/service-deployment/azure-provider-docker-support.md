@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Azure Provider Docker Support in JavaScript File Manager | Syncfusion
+title: Azure Docker Support in JavaScript File Manager | Syncfusion
 description: Learn how to deploy the JavaScript File Manager Azure file provider using the pre-built Docker image and required Azure Blob Storage settings.
 control: File Manager
 platform: ej2-javascript
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The JavaScript [File Manager](https://www.syncfusion.com/javascript-ui-controls/js-file-manager) is a control for managing files and folders in a web application. It provides a Windows Explorer like interface for file operations such as viewing, selecting, uploading, downloading, sorting, filtering, creating, renaming, copying, moving, and deleting files and folders.
 
-This Docker image provides a preconfigured Docker container for the Syncfusion File Manager Azure file provider backend. The server-side Web API targets ASP.NET Core 10.0 and connects to Azure Blob Storage
+This Docker image provides a preconfigured Docker container for the Syncfusion File Manager Azure file provider back end. The server-side Web API targets ASP.NET Core 10.0 and connects to Azure Blob Storage
 
 You can quickly deploy the Docker image to your infrastructure. To add custom functionality, create your own Docker file based on the existing [File Manager Azure Docker project](https://github.com/SyncfusionExamples/azure-aspcore-file-provider).
 

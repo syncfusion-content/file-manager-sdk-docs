@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Amazon S3 Provider Docker Support in ASP.NET MVC File Manager | Syncfusion
+title: Amazon S3 Docker Support in ASP.NET MVC File Manager | Syncfusion
 description: Learn how to deploy the ASP.NET MVC File Manager Amazon S3 file provider using the pre-built Docker image and required Amazon S3 settings.
 control: File Manager
 platform: file-manager-sdk
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The [ASP.NET MVC File Manager](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-manager) is a control for managing files and folders in a web application. It provides a Windows Explorer-like interface for file operations such as viewing, selecting, uploading, downloading, sorting, filtering, creating, renaming, copying, moving, and deleting files and folders.
 
-This Docker image provides a preconfigured Docker container for the Syncfusion File Manager Amazon S3 file provider backend. The server-side Web API targets ASP.NET Core 10.0 and connects to Amazon S3 Storage.
+This Docker image provides a preconfigured Docker container for the Syncfusion File Manager Amazon S3 file provider back end. The server-side Web API targets ASP.NET Core 10.0 and connects to Amazon S3 Storage.
 
 You can quickly deploy the Docker image to your infrastructure. To add custom functionality, create your own Docker file based on the existing [File Manager Amazon S3 Docker project](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider).
 
