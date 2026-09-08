@@ -101,10 +101,9 @@ Set the [`url`](https://ej2.syncfusion.com/vue/documentation/api/file-manager/aj
 
 The following example shows a Vue client that configures the [`ajaxSettings`](https://ej2.syncfusion.com/vue/documentation/api/file-manager/ajaxsettings) properties.
 
-{% raw %}
-
 {% tabs %}
 {% highlight html tabtitle="src/App.vue" %}
+{% raw %}
 <template>
   <div id="app">
     <ejs-filemanager id="file-manager" :ajaxSettings="ajaxSettings">
@@ -134,10 +133,9 @@ export default {
   }
 };
 </script>
+{% endraw %}
 {% endhighlight %}
 {% endtabs %}
-
-{% endraw %}
 
 For more information on how to get started with the File Manager component, refer to this [Getting Started](../getting-started) page.
 

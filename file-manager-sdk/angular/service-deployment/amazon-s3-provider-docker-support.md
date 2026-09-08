@@ -95,10 +95,7 @@ Set the [`url`](https://ej2.syncfusion.com/angular/documentation/api/file-manage
 
 The following example shows an Angular client that configures the [`ajaxSettings`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettings) properties.
 
-{% raw %}
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
+```typescript
 import { Component } from '@angular/core';
 import { FileManagerModule } from '@syncfusion/ej2-angular-filemanager';
 
@@ -119,10 +116,7 @@ export class App {
         getImageUrl: this.hostUrl + 'api/AmazonS3Provider/AmazonS3GetImage'
     };
 }
-{% endhighlight %}
-{% endtabs %}
-
-{% endraw %}
+```
 
 For more information on how to get started with the File Manager component, refer to this [Getting Started](../getting-started) page.
 
