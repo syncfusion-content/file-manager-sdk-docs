@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion Blazor File Manager | Syncfusion
-description: Learn how to use the Syncfusion Blazor File Manager to browse, organize, upload, download, and manage files and folders across physical, cloud, and database storage.
+description: Learn how to use the Syncfusion Blazor File Manager to browse, organize, upload, download, and manage files across local, cloud, and database providers.
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
@@ -317,4 +317,4 @@ The Blazor File Manager works with:
 - **Code Examples?** Browse [File Manager Demos](https://www.syncfusion.com/blazor-components/blazor-file-manager) and samples
 - **API Details?** See [File Manager API Reference](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.SfFileManager-1.html)
 - **Community?** Join the [Syncfusion Community Forum](https://www.syncfusion.com/forums/blazor-components)
-- **What's New?** Check [Release Notes](../Release-Notes/)
+- **What's New?** Check [Release Notes](../Release-Notes)
