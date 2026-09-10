@@ -103,27 +103,7 @@ The following example shows a React client that configures the [`ajaxSettings`](
 
 {% raw %}
 
-{% tabs %}
-{% highlight js tabtitle="App.jsx" %}
-import { FileManagerComponent } from '@syncfusion/ej2-react-filemanager';
-
-function App() {
-    const hostUrl = "http://localhost:5000/";
-
-    return (
-        <div className="control-section">
-            <FileManagerComponent id="filemanager" ajaxSettings = {{
-                url: hostUrl + "api/AzureProvider/AzureFileOperations",
-                uploadUrl: hostUrl + 'api/AzureProvider/AzureUpload',
-                downloadUrl: hostUrl + 'api/AzureProvider/AzureDownload',
-                getImageUrl: hostUrl + 'api/AzureProvider/AzureGetImage'
-            }} />
-        </div>
-    );
-}
-export default App;
-{% endhighlight %}
-{% highlight ts tabtitle="App.tsx" %}
+```ts
 import { FileManagerComponent } from '@syncfusion/ej2-react-filemanager';
 
 function App() {
@@ -141,8 +121,7 @@ function App() {
     );
 }
 export default App;
-{% endhighlight %}
-{% endtabs %}
+```
 
 {% endraw %}
 
