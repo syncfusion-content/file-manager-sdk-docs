@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 The Blazor [File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) is a component for managing files and folders in a web application. It provides a Windows Explorer like interface for file operations such as viewing, selecting, uploading, downloading, sorting, filtering, creating, renaming, copying, moving, and deleting files and folders.
 
-This Docker image provides a preconfigured Docker container for the Syncfusion File Manager Azure file provider back end. The server-side Web API targets ASP.NET Core 10.0 and connects to Azure Blob Storage
+This Docker image provides a preconfigured Docker container for the Syncfusion Blazor File Manager Azure file provider back end. The server-side Web API targets ASP.NET Core 10.0 and connects to Azure Blob Storage
 
-You can quickly deploy the Docker image to your infrastructure. To add custom functionality, create your own Docker file based on the existing [File Manager Azure Docker project](https://github.com/SyncfusionExamples/azure-aspcore-file-provider).
+You can quickly deploy the Docker image to your infrastructure. To add custom functionality, create your own Docker file based on the existing [Blazor File Manager Azure Docker project](https://github.com/SyncfusionExamples/azure-aspcore-file-provider).
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ Have Docker installed in your environment:
 - On Windows, install [Docker for Windows](https://docs.docker.com/docker-for-windows/install/).
 - On macOS, install [Docker for Mac](https://docs.docker.com/docker-for-mac/install/).
 
-## How to deploy the File Manager Azure Service Docker Image
+## How to deploy the Blazor File Manager Azure Service Docker Image
 
 ### Step 1: Pull the Azure file provider image from Docker Hub
 
@@ -47,10 +47,10 @@ services:
       AZURE_ACCOUNT_NAME: YOUR_AZURE_ACCOUNT_NAME
       AZURE_ACCOUNT_KEY: YOUR_AZURE_ACCOUNT_KEY
       AZURE_BLOB_NAME: YOUR_AZURE_BLOB_NAME
-      # Full URL of the Azure Blob container where the file manager operates.
+      # Full URL of the Azure Blob container where the Blazor File Manager operates.
       # Example: "https://<account>.blob.core.windows.net/<container>/"
       AZURE_BLOB_PATH: "Blob_Path"
-      # Full URL of the file path inside the blob container (the root folder shown by the file manager).
+      # Full URL of the file path inside the blob container (the root folder shown by the Blazor File Manager).
       # Example: "https://<account>.blob.core.windows.net/<container>/<file-path>"
       AZURE_FILE_PATH: "File_Path"
     ports:
@@ -66,7 +66,7 @@ services:
 | `AZURE_ACCOUNT_KEY` | Yes | Access key for your Azure Storage account. |
 | `AZURE_BLOB_NAME` | Yes | Name of the blob container that stores the files. |
 | `AZURE_BLOB_PATH` | Yes | Full URL of the Azure Blob container. Example: `https://<account>.blob.core.windows.net/<container>/` |
-| `AZURE_FILE_PATH` | Yes | Full URL of the file path inside the blob container shown by the File Manager. Example: `https://<account>.blob.core.windows.net/<container>/<file-path>` |
+| `AZURE_FILE_PATH` | Yes | Full URL of the file path inside the blob container shown by the Blazor File Manager. Example: `https://<account>.blob.core.windows.net/<container>/<file-path>` |
 
 ### Step 3: Run the container
 
@@ -78,7 +78,7 @@ docker compose up
 {% endhighlight %}
 {% endtabs %}
 
-The File Manager Azure provider is accessible at http://localhost:5000.
+The Blazor File Manager Azure provider is accessible at http://localhost:5000.
 
 To stop the container, run:
 
@@ -88,7 +88,7 @@ docker compose down
 {% endhighlight %}
 {% endtabs %}
 
-### Step 4: Configure the client-side File Manager component
+### Step 4: Configure the client-side Blazor File Manager component
 
 Set the `Url`, `UploadUrl`, `DownloadUrl`, and `GetImageUrl` properties in the Blazor File Manager component:
 
@@ -116,16 +116,16 @@ The following example shows a Blazor client that configures the [FileManagerAjax
 </SfFileManager>
 ```
 
-For more information on how to get started with the File Manager component, refer to this [Getting Started](../getting-started-with-web-app) page.
+For more information on how to get started with the Blazor File Manager component, refer to this [Getting Started](../getting-started-with-web-app) page.
 
 ## Troubleshooting
 
-This section lists common issues and their solutions when deploying the File Manager Azure provider Docker image.
+This section lists common issues and their solutions when deploying the Blazor File Manager Azure provider Docker image.
 
 - The Docker image is built on **ASP.NET Core 10.0**. Ensure that your Docker environment supports the required runtime. If you build a custom image, target `net10.0` or use the same base image to avoid runtime mismatch errors.
 
 - All environment variables listed in the [Azure Blob Storage credential details](#azure-blob-storage-credential-details) section are **required**. Missing or incorrect values will cause the provider to fail at startup or return errors during file operations. Verify that `AZURE_ACCOUNT_NAME`, `AZURE_ACCOUNT_KEY`, `AZURE_BLOB_NAME`, `AZURE_BLOB_PATH`, and `AZURE_FILE_PATH` are set correctly before running the container.
 
-- If the File Manager client cannot connect to the provider, confirm that the port mapping in `docker-compose.yml` matches the URL configured in the Blazor `FileManagerAjaxSettings`. For example, if the port is mapped as `5000:80`, the client should use `http://localhost:5000` as the host URL.
+- If the Blazor File Manager client cannot connect to the provider, confirm that the port mapping in `docker-compose.yml` matches the URL configured in the Blazor `FileManagerAjaxSettings`. For example, if the port is mapped as `5000:80`, the client should use `http://localhost:5000` as the host URL.
 
-Please refer to these getting started pages to create a File Manager in [React](https://help.syncfusion.com/file-manager-sdk/react/getting-started), [Angular](https://help.syncfusion.com/file-manager-sdk/angular/getting-started), [Vue](https://help.syncfusion.com/file-manager-sdk/vue/getting-started), [ASP.NET Core](https://help.syncfusion.com/file-manager-sdk/asp-net-core/getting-started), [ASP.NET MVC](https://help.syncfusion.com/file-manager-sdk/asp-net-mvc/getting-started), and [TypeScript](https://help.syncfusion.com/file-manager-sdk/typescript/getting-started).
+Please refer to these getting started pages to create a Blazor File Manager in [React](https://help.syncfusion.com/file-manager-sdk/react/getting-started), [Angular](https://help.syncfusion.com/file-manager-sdk/angular/getting-started), [Vue](https://help.syncfusion.com/file-manager-sdk/vue/getting-started), [ASP.NET Core](https://help.syncfusion.com/file-manager-sdk/asp-net-core/getting-started), [ASP.NET MVC](https://help.syncfusion.com/file-manager-sdk/asp-net-mvc/getting-started), and [TypeScript](https://help.syncfusion.com/file-manager-sdk/typescript/getting-started).

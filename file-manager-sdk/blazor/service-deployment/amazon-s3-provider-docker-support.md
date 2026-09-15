@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 The Blazor [File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) is a component for managing files and folders in a web application. It provides a Windows Explorer like interface for file operations such as viewing, selecting, uploading, downloading, sorting, filtering, creating, renaming, copying, moving, and deleting files and folders.
 
-This Docker image provides a preconfigured Docker container for the Syncfusion File Manager Amazon S3 file provider back end. The server-side Web API targets ASP.NET Core 10.0 and connects to Amazon S3 Storage.
+This Docker image provides a preconfigured Docker container for the Syncfusion Blazor File Manager Amazon S3 file provider back end. The server-side Web API targets ASP.NET Core 10.0 and connects to Amazon S3 Storage.
 
-You can quickly deploy the Docker image to your infrastructure. To add custom functionality, create your own Docker file based on the existing [File Manager Amazon S3 Docker project](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider).
+You can quickly deploy the Docker image to your infrastructure. To add custom functionality, create your own Docker file based on the existing [Blazor File Manager Amazon S3 Docker project](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider).
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ Have Docker installed in your environment:
 - On Windows, install [Docker for Windows](https://docs.docker.com/docker-for-windows/install/).
 - On macOS, install [Docker for Mac](https://docs.docker.com/docker-for-mac/install/).
 
-## How to deploy the File Manager Amazon S3 Service Docker Image
+## How to deploy the Blazor File Manager Amazon S3 Service Docker Image
 
 ### Step 1: Pull the Amazon S3 file provider image from Docker Hub
 
@@ -72,7 +72,7 @@ docker compose up
 {% endhighlight %}
 {% endtabs %}
 
-The File Manager Amazon S3 provider is accessible at http://localhost:5000.
+The Blazor File Manager Amazon S3 provider is accessible at http://localhost:5000.
 
 To stop the container, run:
 
@@ -82,7 +82,7 @@ docker compose down
 {% endhighlight %}
 {% endtabs %}
 
-### Step 4: Configure the client-side File Manager component
+### Step 4: Configure the client-side Blazor File Manager component
 
 Set the `Url`, `UploadUrl`, `DownloadUrl`, and `GetImageUrl` properties in the Blazor File Manager component:
 
@@ -110,16 +110,16 @@ The following example shows a Blazor client that configures the [FileManagerAjax
 </SfFileManager>
 ```
 
-For more information on how to get started with the File Manager component, refer to this [Getting Started](../getting-started-with-web-app) page.
+For more information on how to get started with the Blazor File Manager component, refer to this [Getting Started](../getting-started-with-web-app) page.
 
 ## Troubleshooting
 
-This section lists common issues and their solutions when deploying the File Manager Amazon S3 provider Docker image.
+This section lists common issues and their solutions when deploying the Blazor File Manager Amazon S3 provider Docker image.
 
 - The Docker image is built on **ASP.NET Core 10.0**. Ensure that your Docker environment supports the required runtime. If you build a custom image, target `net10.0` or use the same base image to avoid runtime mismatch errors.
 
 - All environment variables listed in the [Amazon S3 credential details](#amazon-s3-credential-details) section are **required**. Missing or incorrect values will cause the provider to fail at startup or return errors during file operations. Verify that `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_BUCKET_NAME`, and `AWS_BUCKET_REGION` are set correctly before running the container.
 
-- If the File Manager client cannot connect to the provider, confirm that the port mapping in `docker-compose.yml` matches the URL configured in the Blazor `FileManagerAjaxSettings`. For example, if the port is mapped as `5000:80`, the client should use `http://localhost:5000` as the host URL.
+- If the Blazor File Manager client cannot connect to the provider, confirm that the port mapping in `docker-compose.yml` matches the URL configured in the Blazor `FileManagerAjaxSettings`. For example, if the port is mapped as `5000:80`, the client should use `http://localhost:5000` as the host URL.
 
-Please refer to these getting started pages to create a File Manager in [React](https://help.syncfusion.com/file-manager-sdk/react/getting-started), [Angular](https://help.syncfusion.com/file-manager-sdk/angular/getting-started), [Vue](https://help.syncfusion.com/file-manager-sdk/vue/getting-started), [ASP.NET Core](https://help.syncfusion.com/file-manager-sdk/asp-net-core/getting-started), [ASP.NET MVC](https://help.syncfusion.com/file-manager-sdk/asp-net-mvc/getting-started), and [TypeScript](https://help.syncfusion.com/file-manager-sdk/typescript/getting-started).
+Please refer to these getting started pages to create a Blazor File Manager in [React](https://help.syncfusion.com/file-manager-sdk/react/getting-started), [Angular](https://help.syncfusion.com/file-manager-sdk/angular/getting-started), [Vue](https://help.syncfusion.com/file-manager-sdk/vue/getting-started), [ASP.NET Core](https://help.syncfusion.com/file-manager-sdk/asp-net-core/getting-started), [ASP.NET MVC](https://help.syncfusion.com/file-manager-sdk/asp-net-mvc/getting-started), and [TypeScript](https://help.syncfusion.com/file-manager-sdk/typescript/getting-started).
