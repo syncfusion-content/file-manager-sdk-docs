@@ -64,7 +64,7 @@ The File Manager integrates with virtually any storage target through the provid
 | **[SQL Database](./SQL-database-file-system-provider)** | Transactional, queryable file metadata | Apps needing relational metadata, audit |
 | **[Google Drive](./Google-Drive-file-system-provider)** | Personal/Google Workspace cloud storage | Google-centric integrations |
 | **[Firebase Realtime DB](./Firebase-Real-time-Database-file-system-provider)** | Real-time metadata sync | Collaborative, multi-user apps |
-| **[Custom Provider](./custom-file-provider)** | Any proprietary storage or service | Specialized or legacy backends |
+| **[Custom Provider](./custom-file-provider)** | Any proprietary storage or service | Specialized or legacy back ends |
 
 **Docker & Service Deployment**
 
@@ -270,7 +270,7 @@ The File Manager exposes a comprehensive event model through `FileManagerEvents<
 
 | Feature | Purpose | Use Case | Key Benefit |
 |---------|---------|----------|-------------|
-| **[Custom HTTP Handler](./how-to/customize-http-handler)** | Modify request/response handling | Specialized backends | Full transport control |
+| **[Custom HTTP Handler](./how-to/customize-http-handler)** | Modify request/response handling | Specialized back ends | Full transport control |
 | **[Custom Filtering](./how-to/perform-custom-filtering)** | Apply custom filter logic | Domain-specific search | Tailored item discovery |
 | **[Nested Items](./how-to/nested-items)** | Hierarchical menu structures | Grouped custom actions | Organized custom UI |
 | **[File Previewing](./how-to/previewing-files)** | Customize preview behavior | Specialized media workflows | Enhanced UX |
