@@ -163,7 +163,7 @@ Enable with [`AllowDragAndDrop`](https://help.syncfusion.com/cr/blazor/Syncfusio
 | [`OnFileDragStop`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnFileDragStop) | Item about to be dropped | Target validation |
 | [`FileDropped`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_FileDropped) | Item dropped | Post-drop actions |
 
-See [Restrict Drag and Drop / Upload](./how-to/restrict-drag-and-drop-upload.md) for permission-based restrictions.
+See [Restrict Drag and Drop Upload](./how-to/restrict-drag-and-drop-upload) for permission-based restrictions.
 
 ## Upload
 
@@ -182,7 +182,7 @@ The Blazor File Manager provides rich upload configuration through `FileManagerU
 
 N> When `DirectoryUpload` is set to `true`, only folders can be uploaded. When it is set to `false`, only individual files can be uploaded. Simultaneous uploading of files and folders is not supported.
 
-For large-file strategies, see [Upload Large Files](./how-to/upload-large-files.md). For HTTP handler customization, see [Customize HTTP Handler](./how-to/customize-http-handler.md).
+For large-file strategies, see [Upload Large Files](./how-to/upload-large-files). For HTTP handler customization, see [Customize HTTP Handler](./how-to/customize-http-handler).
 
 ## Performance
 
@@ -190,9 +190,9 @@ The Blazor File Manager is engineered for smooth browsing of directories contain
 
 | Feature | Benefit | Use Case | Key Benefit |
 |---------|---------|----------|-------------|
-| **[Virtualization](./virtualization.md)** | Dynamically load only viewport-visible items in both Details and Large Icons views | Large directories (10K+ items) | Smooth scrolling |
-| **[Pagination](./pagination.md)** | Segment files/folders into pages with a pager control | Browsable large directories | Predictable page sizes |
-| **[Chunked Upload](./upload.md#chunk-upload)** | Upload large files in resumable chunks | Large binary uploads | Network resilience |
+| **[Virtualization](./virtualization)** | Dynamically load only viewport-visible items in both Details and Large Icons views | Large directories (10K+ items) | Smooth scrolling |
+| **[Pagination](./pagination)** | Segment files/folders into pages with a pager control | Browsable large directories | Predictable page sizes |
+| **[Chunked Upload](./upload#chunk-upload)** | Upload large files in resumable chunks | Large binary uploads | Network resilience |
 
 Enable virtualization via [`EnableVirtualization`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.SfFileManager-1.html#Syncfusion_Blazor_FileManager_SfFileManager_1_EnableVirtualization). Enable pagination via [`AllowPaging`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.SfFileManager-1.html#Syncfusion_Blazor_FileManager_SfFileManager_1_AllowPaging) with `FileManagerPageSettings` (`PageSize`, `NumericItemsCount`, `CurrentPage`, `PageSizes`, and `Template`).
 
@@ -264,7 +264,7 @@ The File Manager exposes a comprehensive event model through `FileManagerEvents<
 | [`ToolbarItemClicked`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_ToolbarItemClicked) | Toolbar item clicked | Intercept toolbar actions |
 | [`MenuOpened`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_MenuOpened) | Context menu opens | Enable/disable, hide, or icon custom items |
 | [`OnMenuClick`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnMenuClick) | Context menu item clicked | Intercept menu actions |
-| [`OnSend`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnSend) (BeforeSend) | Before upload request sent | Add auth headers for `HttpClient` upload mode |
+| [`OnSend`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnSend) | Before upload request sent | Add auth headers for `HttpClient` upload mode |
 
 ## Advanced features
 
@@ -278,9 +278,9 @@ The File Manager exposes a comprehensive event model through `FileManagerEvents<
 
 **Enterprise Patterns**
 
-- **Secure Multi-tenant Apps** — Combine Access Control with Restrict Drag-and-Drop/Upload and a [Custom File Provider](./custom-file-provider.md).
-- **Cloud Migration** — Use Azure Blob or [Amazon S3 providers with Docker Service Deployment](./service-deployment/amazon-s3-provider-docker-support.md).
-- **Large Directories** — Enable [Virtualization](./virtualization.md) or [Pagination](./pagination.md) with Chunk Upload.
+- **Secure Multi-tenant Apps** — Combine Access Control with Restrict Drag-and-Drop/Upload and a [Custom File Provider](./custom-file-provider).
+- **Cloud Migration** — Use Azure Blob or [Amazon S3 providers with Docker Service Deployment](./service-deployment/amazon-s3-provider-docker-support).
+- **Large Directories** — Enable [Virtualization](./virtualization) or [Pagination](./pagination) with Chunk Upload.
 
 ## System requirements
 
@@ -294,22 +294,22 @@ The Blazor File Manager works with:
 ## Quick links
 
 **Getting Started:**
-- [Blazor Web App Guide](./getting-started-with-web-app.md)
-- [Blazor Server App Guide](./getting-started-with-server-app.md)
-- [Blazor WebAssembly App Guide](./getting-started-with-wasm-app.md)
-- [Blazor MAUI App Guide](./getting-started-with-maui-app.md)
+- [Blazor Web App Guide](./getting-started-with-web-app)
+- [Blazor Server App Guide](./getting-started-with-server-app)
+- [Blazor WebAssembly App Guide](./getting-started-with-wasm-app)
+- [Blazor MAUI App Guide](./getting-started-with-maui-app)
 
 **Popular Features:**
-- [File Operations](./file-operations.md) — Read, create, rename, delete, copy, move, search
-- [File System Providers](./file-system-provider.md) — Physical, cloud, database, custom
-- [Upload](./upload.md) — Directory, sequential, chunk, auto upload, restrictions
-- [Views](./views.md) — Large Icons and Details view customization
-- [Toolbar](./toolbar.md) — Built-in and custom toolbar items
-- [Context Menu](./context-menu.md) — Per-target menu customization
-- [Drag and Drop](./drag-and-drop.md) — Move files with full event control
-- [Virtualization](./virtualization.md) — Smooth large-directory browsing
-- [Pagination](./pagination.md) — Page-controlled file display
-- [Accessibility](./accessibility.md) — WCAG, Section 508, keyboard navigation
+- [File Operations](./file-operations) — Read, create, rename, delete, copy, move, search
+- [File System Providers](./file-system-provider) — Physical, cloud, database, custom
+- [Upload](./upload) — Directory, sequential, chunk, auto upload, restrictions
+- [Views](./views) — Large Icons and Details view customization
+- [Toolbar](./toolbar) — Built-in and custom toolbar items
+- [Context Menu](./context-menu) — Per-target menu customization
+- [Drag and Drop](./drag-and-drop) — Move files with full event control
+- [Virtualization](./virtualization) — Smooth large-directory browsing
+- [Pagination](./pagination) — Page-controlled file display
+- [Accessibility](./accessibility) — WCAG, Section 508, keyboard navigation
 
 ## Support & Resources
 
