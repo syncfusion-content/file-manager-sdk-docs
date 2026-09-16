@@ -11,11 +11,11 @@ documentation: ug
 
 ## Introduction to Syncfusion Blazor File Manager
 
-The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) is a powerful, Explorer-like UI component for browsing, organizing, and managing files and folders directly within web applications. Built on the `SfFileManager<TValue>` component, it offers a comprehensive set of enterprise-grade capabilities—including a configurable toolbar, navigation pane, breadcrumb, context menu, dual view modes, and complete file operations—paired with a pluggable file-system-provider model that connects to physical disks, cloud storage, and databases. Designed for usability, security, and scalability, it enables developers to build document-management systems, cloud file explorers, and content portals without extensive custom UI work.
+The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) is a powerful, Explorer-like UI component for browsing, organizing, and managing files and folders directly within web applications. It offers a comprehensive set of enterprise-grade capabilities—including a configurable toolbar, navigation pane, breadcrumb, context menu, dual view modes, and complete file operations—paired with a pluggable file-system-provider model that connects to physical disks, cloud storage, and databases. Designed for usability, security, and scalability, it enables developers to build document-management systems, cloud file explorers, and content portals without extensive custom UI work.
 
 ## Common use cases
 
-The Blazor File Manager is ideal for a wide range of business scenarios:
+The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) is ideal for a wide range of business scenarios:
 
 | Use Case | Description | Key Features |
 |----------|-------------|-------------|
@@ -28,7 +28,7 @@ The Blazor File Manager is ideal for a wide range of business scenarios:
 
 ## File System Provider Model
 
-The Blazor File Manager decouples UI from storage through a *file system provider* model. The component sends standardized *file action* requests (read, create, rename, delete, search, copy, move, upload, download, get details, get image) to a backend controller implementing a provider, and renders the responses uniformly. This lets you choose or build the right storage strategy for any application architecture.
+The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) decouples UI from storage through a *file system provider* model. The component sends standardized *file action* requests (read, create, rename, delete, search, copy, move, upload, download, get details, get image) to a backend controller implementing a provider, and renders the responses uniformly. This lets you choose or build the right storage strategy for any application architecture.
 
 **Built-in Providers**
 
@@ -77,7 +77,7 @@ Cloud and database providers include dedicated Docker support for containerized 
 
 ## Data Binding
 
-The File Manager supports two ways to load files and folders within `SfFileManager<TValue>`:
+The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) supports two ways to load files and folders:
 
 - **[AjaxSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerAjaxSettings.html)** — Bind the component to a RESTful JSON service by configuring `FileManagerAjaxSettings` with the `Url`, `UploadUrl`, `DownloadUrl`, and `GetImageUrl` endpoints. The component automatically sends file-action requests and parses JSON responses.
 - **List Objects (IEnumerable)** — Bind to a list of objects and supply responses within the corresponding File Manager events, bypassing the AJAX service entirely. Useful for in-memory or client-side scenarios.
@@ -86,7 +86,7 @@ N> When using [`AjaxSettings`](https://help.syncfusion.com/cr/blazor/Syncfusion.
 
 ## File Operations
 
-The Blazor File Manager provides comprehensive file and folder manipulation capabilities that let users browse, create, organize, and remove items directly within the interface. Every operation is a standardized *file action* sent to the configured provider and reflected in the UI after a successful server response.
+The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) provides comprehensive file and folder manipulation capabilities that let users browse, create, organize, and remove items directly within the interface. Every operation is a standardized *file action* sent to the configured provider and reflected in the UI after a successful server response.
 
 | Operation | Purpose | Key Benefit |
 |-----------|---------|-------------|
@@ -167,7 +167,7 @@ See [Restrict Drag and Drop Upload](./how-to/restrict-drag-and-drop-upload) for 
 
 ## Upload
 
-The Blazor File Manager provides rich upload configuration through `FileManagerUploadSettings`, covering file size, type restrictions, chunked uploads, and upload mode.
+The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) provides rich upload configuration through `FileManagerUploadSettings`, covering file size, type restrictions, chunked uploads, and upload mode.
 
 | Feature | Property | Purpose | Key Benefit |
 |---------|----------|---------|-------------|
@@ -186,7 +186,7 @@ For large-file strategies, see [Upload Large Files](./how-to/upload-large-files)
 
 ## Performance
 
-The Blazor File Manager is engineered for smooth browsing of directories containing hundreds to hundreds of thousands of items through virtualization, on-demand loading, and an efficient provider response format.
+The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) is engineered for smooth browsing of directories containing hundreds to hundreds of thousands of items through virtualization, on-demand loading, and an efficient provider response format.
 
 | Feature | Benefit | Use Case | Key Benefit |
 |---------|---------|----------|-------------|
@@ -284,7 +284,7 @@ The File Manager exposes a comprehensive event model through `FileManagerEvents<
 
 ## System requirements
 
-The Blazor File Manager works with:
+The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) works with:
 
 - **Blazor Version**: .NET 8.0 or higher
 - **Hosting Models**: Blazor Web App, Blazor WebAssembly, Blazor Server, Blazor MAUI
