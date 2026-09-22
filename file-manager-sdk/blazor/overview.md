@@ -11,7 +11,7 @@ documentation: ug
 
 ## Introduction to Syncfusion Blazor File Manager
 
-The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) is a powerful, Explorer-like UI component for browsing, organizing, and managing files and folders directly within web applications. It offers a comprehensive set of enterprise-grade capabilities—including a configurable toolbar, navigation pane, breadcrumb, context menu, dual view modes, and complete file operations—paired with a pluggable file-system-provider model that connects to physical disks, cloud storage, and databases. Designed for usability, security, and scalability, it enables developers to build document-management systems, cloud file explorers, and content portals without extensive custom UI work.
+The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) is a powerful, Explorer-like UI component for browsing, organizing, and managing files and folders directly within web applications. It offers a comprehensive set of enterprise-grade capabilities-including a configurable toolbar, navigation pane, breadcrumb, context menu, dual view modes, and complete file operations-paired with a pluggable file-system-provider model that connects to physical disks, cloud storage, and databases. Designed for usability, security, and scalability, it enables developers to build document-management systems, cloud file explorers, and content portals without extensive custom UI work.
 
 ## Common use cases
 
@@ -26,41 +26,41 @@ The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-fi
 | **Database-Backed File Stores** | Store file metadata and binaries in SQL and serve them through a standardized provider pattern | SQL Database Provider, Custom File Provider |
 | **Collaborative Workspaces** | Let multiple users move, copy, and share files with access-controlled, permission-aware operations | Access Control (provider-specific), Drag-and-Drop, Multiple Selection |
 
-## File System Provider Model
+## File system provider model
 
 The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) decouples UI from storage through a *file system provider* model. The component sends standardized *file action* requests (read, create, rename, delete, search, copy, move, upload, download, get details, get image) to a backend controller implementing a provider, and renders the responses uniformly. This lets you choose or build the right storage strategy for any application architecture.
 
 **Built-in Providers**
 
-- **[Physical File System Provider](./physical-file-system-provider)** — Browse and manage files on a local disk through an ASP.NET Core controller backed by the `PhysicalFileProvider`. Ideal for on-premises applications and rapid prototyping. See the reference implementation at [ej2-aspcore-file-provider](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider).
+- **[Physical File System Provider](./physical-file-system-provider)** - Browse and manage files on a local disk through an ASP.NET Core controller backed by the `PhysicalFileProvider`. Ideal for on-premises applications and rapid prototyping. See the reference implementation at [ej2-aspcore-file-provider](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider).
 
-- **[Azure Cloud File System Provider](./azure-cloud-file-system-provider)** — Connect to Azure Blob Storage for durable, scalable, cloud-hosted object storage. Requires `accountName`, `accountKey`, and `blobName` credentials.
+- **[Azure Cloud File System Provider](./azure-cloud-file-system-provider)** - Connect to Azure Blob Storage for durable, scalable, cloud-hosted object storage. Requires `accountName`, `accountKey`, and `blobName` credentials.
 
-- **[Amazon S3 Cloud File Provider](./amazon-S3-cloud-file-provider)** — Connect to an AWS S3 bucket using `awsAccessKeyId`, `awsSecretAccessKeyId`, `bucketRegion`, and `awsRegion` to manage objects from the File Manager.
+- **[Amazon S3 Cloud File Provider](./amazon-S3-cloud-file-provider)** - Connect to an AWS S3 bucket using `awsAccessKeyId`, `awsSecretAccessKeyId`, `bucketRegion`, and `awsRegion` to manage objects from the File Manager.
 
-- **[File Transfer Protocol (FTP) File System Provider](./File-Transfer-Protocol-file-system-provider)** — Browse and manage files hosted on remote FTP servers.
+- **[File Transfer Protocol (FTP) File System Provider](./File-Transfer-Protocol-file-system-provider)** - Browse and manage files hosted on remote FTP servers.
 
-- **[SharePoint File Provider](./sharePoint-file-provider)** — Integrate with Microsoft SharePoint document libraries for enterprise content management.
+- **[SharePoint File Provider](./sharePoint-file-provider)** - Integrate with Microsoft SharePoint document libraries for enterprise content management.
 
-- **[SQL Database File System Provider](./SQL-database-file-system-provider)** — Persist file metadata and binaries in a relational database using a SQL-backed provider.
+- **[SQL Database File System Provider](./SQL-database-file-system-provider)** - Persist file metadata and binaries in a relational database using a SQL-backed provider.
 
-- **[Google Drive File System Provider](./Google-Drive-file-system-provider)** — Browse and manage files stored in Google Drive through a connector service.
+- **[Google Drive File System Provider](./Google-Drive-file-system-provider)** - Browse and manage files stored in Google Drive through a connector service.
 
-- **[Firebase Real-time Database File System Provider](./Firebase-Real-time-Database-file-system-provider)** — Store and sync file metadata using Firebase's real-time database.
+- **[Firebase Real-time Database File System Provider](./Firebase-Real-time-Database-file-system-provider)** - Store and sync file metadata using Firebase's real-time database.
 
-- **[Custom File Provider](./custom-file-provider)** — Build a provider for any proprietary or specialized backend by implementing the standard request/response format for each file action.
+- **[Custom File Provider](./custom-file-provider)** - Build a provider for any proprietary or specialized backend by implementing the standard request/response format for each file action.
 
 **Storage Compatibility**
 
 The File Manager integrates with virtually any storage target through the provider pattern:
 
-| Storage | Key Benefit | Best For |
+| Storage | Description | Best For |
 |---------|------------|----------|
 | **[Physical Disk](./physical-file-system-provider)** | Direct local filesystem access | On-premises apps, simple deployments |
 | **[Azure Blob Storage](./azure-cloud-file-system-provider)** | Durable, massively scalable cloud object storage | Enterprise cloud apps, large unstructured data |
 | **[Amazon S3](./amazon-S3-cloud-file-provider)** | Pay-as-you-go, highly available object storage | Cloud-native apps, cross-region storage |
 | **[FTP Server](./File-Transfer-Protocol-file-system-provider)** | Legacy remote file access | Existing FTP infrastructure |
-| **SharePoint** | Enterprise document library integration | Intranet content, Microsoft 365 workflows |
+| **[SharePoint](./sharePoint-file-provider)** | Enterprise document library integration | Intranet content, Microsoft 365 workflows |
 | **[SQL Database](./SQL-database-file-system-provider)** | Transactional, queryable file metadata | Apps needing relational metadata, audit |
 | **[Google Drive](./Google-Drive-file-system-provider)** | Personal/Google Workspace cloud storage | Google-centric integrations |
 | **[Firebase Realtime DB](./Firebase-Real-time-Database-file-system-provider)** | Real-time metadata sync | Collaborative, multi-user apps |
@@ -72,23 +72,23 @@ Cloud and database providers include dedicated Docker support for containerized 
 
 | Provider | Docker Guide |
 |----------|--------------|
-| Amazon S3 | Amazon S3 Provider Docker Support |
-| Azure Blob | Azure Provider Docker Support |
+| **Amazon S3** | Amazon S3 Provider Docker Support |
+| **Azure Blob** | Azure Provider Docker Support |
 
-## Data Binding
+## Data binding
 
 The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) supports two ways to load files and folders:
 
-- **[AjaxSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerAjaxSettings.html)** — Bind the component to a RESTful JSON service by configuring `FileManagerAjaxSettings` with the `Url`, `UploadUrl`, `DownloadUrl`, and `GetImageUrl` endpoints. The component automatically sends file-action requests and parses JSON responses.
-- **List Objects (IEnumerable)** — Bind to a list of objects and supply responses within the corresponding File Manager events, bypassing the AJAX service entirely. Useful for in-memory or client-side scenarios.
+- **[AjaxSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerAjaxSettings.html)** - Bind the component to a RESTful JSON service by configuring `FileManagerAjaxSettings` with the `Url`, `UploadUrl`, `DownloadUrl`, and `GetImageUrl` endpoints. The component automatically sends file-action requests and parses JSON responses.
+- **List Objects (IEnumerable)** - Bind to a list of objects and supply responses within the corresponding File Manager events, bypassing the AJAX service entirely. Useful for in-memory or client-side scenarios.
 
 N> When using [`AjaxSettings`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerAjaxSettings.html), the File Manager loads data from its AJAX URLs. When using list objects, the File Manager loads data via the responses you provide in the events.
 
-## File Operations
+## File operations
 
 The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) provides comprehensive file and folder manipulation capabilities that let users browse, create, organize, and remove items directly within the interface. Every operation is a standardized *file action* sent to the configured provider and reflected in the UI after a successful server response.
 
-| Operation | Purpose | Key Benefit |
+| Operation | Purpose | Benefit |
 |-----------|---------|-------------|
 | **`read`** | Read files/folders from the current path to display content for browsing | Foundation for all navigation |
 | **`create`** | Create a new folder in the current path | Quick folder organization |
@@ -109,15 +109,15 @@ Each request and response carries standardized content fields (`name`, `dateCrea
 
 The File Manager provides two built-in view modes for browsing files and folders, switchable at runtime through the toolbar, context menu, or the [`View`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.SfFileManager-1.html#Syncfusion_Blazor_FileManager_SfFileManager_1_View) API.
 
-| View | Description | Best For | Key Benefit |
+| View | Description | Best For | Benefit |
 |------|-------------|----------|-------------|
-| **[Large Icons View](./views#large-icons-view)** | Thumbnail-driven layout with large previews; default starting view | Visual recognition, images, media | Fast visual scanning |
+| **[Large Icons View](./views#large-icons-view)** | Thumbnail-driven layout with large previews, default starting view | Visual recognition, images, media | Fast visual scanning |
 | **[Details View](./views#details-view)** | Sorted tabular list with columns (Name, Date Modified, Type, Size) | Organized information, large directories | Column sorting, custom columns |
 
 **Customizing Views**
 
-- **Large Icons View** — Customize rendering entirely via the `LargeIconsTemplate` property to add file-type icons, background images, formatted dates, and dropdown menus per item.
-- **Details View** — Add custom columns via `FileManagerColumn` under `FileManagerDetailsViewSettings`. Customize column `Width`, `MinWidth`, `Format`, `HeaderText`, `HeaderTemplate`, and per-cell `Template`.
+- **Large Icons View** - Customize rendering entirely via the `LargeIconsTemplate` property to add file-type icons, background images, formatted dates, and dropdown menus per item.
+- **Details View** - Add custom columns via `FileManagerColumn` under `FileManagerDetailsViewSettings`. Customize column `Width`, `MinWidth`, `Format`, `HeaderText`, `HeaderTemplate`, and per-cell `Template`.
 
 ## User interface & interaction
 
@@ -127,10 +127,10 @@ The File Manager UI is composed of several coordinated sections, fully configura
 
 | Section | Purpose | Customization |
 |---------|---------|---------------|
-| **Toolbar** | Direct access to file operations at the top of the component | Items, visibility, custom items via templates |
+| **[Toolbar](./toolbar)** | Direct access to file operations at the top of the component | Items, visibility, custom items via templates |
 | **[Context Menu](./context-menu)** | Right-click access to file, folder, and layout actions | Per-target items, enable/disable, hide, custom items |
 | **[Navigation Pane](./end-user-capabilities#navigation-pane)** | Folder hierarchy tree for easy navigation | Visibility, min/max width, `NavigationPaneTemplate` |
-| **Breadcrumb** | Parent-folder navigation with overflow dropdown | Auto-resizing; auto-collapses parent folders |
+| **[Breadcrumb](./end-user-capabilities#breadcrumb)** | Parent-folder navigation with overflow dropdown | Auto-resizing, auto-collapses parent folders |
 | **[Large Icons View](./views#large-icons-view)** | Browse using large thumbnails | `LargeIconsTemplate` |
 | **[Details View](./views#details-view)** | Browse using a sortable grid | Custom columns, column templates |
 
@@ -140,11 +140,11 @@ Built-in toolbar items include `NewFolder`, `SortBy`, `Upload`, `Cut`, `Copy`, `
 
 **Context Menu**
 
-The context menu displays different items depending on the target—*Layout* (empty area), *Folder*, or *File*—configured through `FileManagerContextMenuSettings` (`File`, `Folder`, `Layout` arrays). Customize items, enable/disable, show/hide, and inject custom items with icons via the [`MenuOpened`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_MenuOpened) and [`OnMenuClick`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnMenuClick) events.
+The context menu displays different items depending on the target-*Layout* (empty area), *Folder*, or *File*-configured through `FileManagerContextMenuSettings` (`File`, `Folder`, `Layout` arrays). Customize items, enable/disable, show/hide, and inject custom items with icons via the [`MenuOpened`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_MenuOpened) and [`OnMenuClick`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnMenuClick) events.
 
 **Multiple Selection**
 
-| Feature | Purpose | Key Benefit |
+| Feature | Purpose | Benefit |
 |---------|---------|-------------|
 | **[AllowMultiSelection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.SfFileManager-1.html#Syncfusion_Blazor_FileManager_SfFileManager_1_AllowMultiSelection)** | Enable selecting multiple files via Ctrl/Shift-click (enabled by default) | Bulk operations |
 | **Checkbox Selection** | Per-item checkboxes with select-all | Clear bulk selection |
@@ -159,9 +159,9 @@ Enable with [`AllowDragAndDrop`](https://help.syncfusion.com/cr/blazor/Syncfusio
 
 | Event | Triggers | Use Case |
 |-------|----------|----------|
-| [`OnFileDragStart`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnFileDragStart) | Dragging starts | Validate, cancel, or customize drag |
-| [`OnFileDragStop`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnFileDragStop) | Item about to be dropped | Target validation |
-| [`FileDropped`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_FileDropped) | Item dropped | Post-drop actions |
+| **[`OnFileDragStart`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnFileDragStart)** | Dragging starts | Validate, cancel, or customize drag |
+| **[`OnFileDragStop`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnFileDragStop)** | Item about to be dropped | Target validation |
+| **[`FileDropped`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_FileDropped)** | Item dropped | Post-drop actions |
 
 See [Restrict Drag and Drop Upload](./how-to/restrict-drag-and-drop-upload) for permission-based restrictions.
 
@@ -169,7 +169,7 @@ See [Restrict Drag and Drop Upload](./how-to/restrict-drag-and-drop-upload) for 
 
 The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) provides rich upload configuration through `FileManagerUploadSettings`, covering file size, type restrictions, chunked uploads, and upload mode.
 
-| Feature | Property | Purpose | Key Benefit |
+| Feature | Property | Purpose | Benefit |
 |---------|----------|---------|-------------|
 | **Directory Upload** | [`DirectoryUpload`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerUploadSettings.html#Syncfusion_Blazor_FileManager_FileManagerUploadSettings_DirectoryUpload) | Upload entire folders (supported by Physical, Azure, and Amazon S3 providers) | Bulk folder ingestion |
 | **Sequential Upload** | [`SequentialUpload`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerUploadSettings.html#Syncfusion_Blazor_FileManager_FileManagerUploadSettings_SequentialUpload) | Upload files one after another | Reduced traffic, fewer failures |
@@ -188,7 +188,7 @@ For large-file strategies, see [Upload Large Files](./how-to/upload-large-files)
 
 The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) is engineered for smooth browsing of directories containing hundreds to hundreds of thousands of items through virtualization, on-demand loading, and an efficient provider response format.
 
-| Feature | Benefit | Use Case | Key Benefit |
+| Feature | Description | Use Case | Benefit |
 |---------|---------|----------|-------------|
 | **[Virtualization](./virtualization)** | Dynamically load only viewport-visible items in both Details and Large Icons views | Large directories (10K+ items) | Smooth scrolling |
 | **[Pagination](./pagination)** | Segment files/folders into pages with a pager control | Browsable large directories | Predictable page sizes |
@@ -206,7 +206,7 @@ Enable virtualization via [`EnableVirtualization`](https://help.syncfusion.com/c
 
 The File Manager is fully customizable to align with application design systems and specialized workflows.
 
-| Feature | Purpose | Key Benefit |
+| Feature | Purpose | Benefit |
 |---------|---------|-------------|
 | **[Styles & Appearance](./styles)** | Override CSS classes for navigation pane, thumbnails, and layout | Brand-consistent theming |
 | **[Toolbar Custom Items](./toolbar)** | Add custom toolbar items with templates | Specialized actions |
@@ -215,9 +215,9 @@ The File Manager is fully customizable to align with application design systems 
 | **[Details View Columns](./views#define-custom-columns)** | Add/customize columns with templates and formats | Tailored tabular display |
 | **[Navigation Pane Template](./end-user-capabilities#navigation-pane)** | Customize navigation pane icons and content | Custom folder trees |
 
-**Thumbnails** can be customized per file type using CSS selectors (e.g., `.e-fe-image`, `.e-fe-folder`, `.e-fe-zip`, `.e-fe-xlsx`, and others—see Styles and Appearance for the full list). The `.e-navigation` selector customizes the navigation pane.
+**Thumbnails** can be customized per file type using CSS selectors (e.g., `.e-fe-image`, `.e-fe-folder`, `.e-fe-zip`, `.e-fe-xlsx`, and others-see Styles and Appearance for the full list). The `.e-navigation` selector customizes the navigation pane.
 
-## Accessibility & Keyboard Navigation
+## Accessibility & keyboard navigation
 
 The File Manager is fully accessible and compliant with major accessibility standards:
 
@@ -245,7 +245,7 @@ The component follows [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) patt
 | <kbd>Esc</kbd> | <kbd>Esc</kbd> | Close open image preview |
 | <kbd>Alt</kbd>+<kbd>N</kbd> | <kbd>⌥</kbd>+<kbd>N</kbd> | Open New Folder dialog |
 | <kbd>F5</kbd> | <kbd>F5</kbd> | Refresh the File Manager |
-| <kbd>Ctrl+Shift+1</kbd> | <kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>1</kbd> | Switch to Grid view |
+| <kbd>Ctrl+Shift+1</kbd> | <kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>1</kbd> | Switch to Large Icons View |
 | <kbd>Ctrl+Shift+2</kbd> | <kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>2</kbd> | Switch to Details view |
 | <kbd>Ctrl+A</kbd> | <kbd>⌘</kbd>+<kbd>A</kbd> | Select all items (viewport-limited under virtualization) |
 
@@ -255,20 +255,20 @@ The File Manager exposes a comprehensive event model through `FileManagerEvents<
 
 | Event | Triggers | Use Case |
 |-------|----------|----------|
-| [`FileSelection`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_FileSelection) | Before a file/folder is selected | Prevent specific selections |
-| [`FileSelected`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_FileSelected) | After a file/folder is (un)selected | React to selection changes |
-| [`OnFileDragStart`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnFileDragStart) | Drag starts | Validate or cancel drag |
-| [`OnFileDragStop`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnFileDragStop) | Item about to drop | Validate target |
-| [`FileDropped`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_FileDropped) | Item dropped | Post-drop actions |
-| [`ToolbarCreated`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_ToolbarCreated) | Before toolbar items are created | Customize toolbar |
-| [`ToolbarItemClicked`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_ToolbarItemClicked) | Toolbar item clicked | Intercept toolbar actions |
-| [`MenuOpened`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_MenuOpened) | Context menu opens | Enable/disable, hide, or icon custom items |
-| [`OnMenuClick`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnMenuClick) | Context menu item clicked | Intercept menu actions |
-| [`OnSend`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnSend) | Before upload request sent | Add auth headers for `HttpClient` upload mode |
+| **[`FileSelection`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_FileSelection)** | Before a file/folder is selected | Prevent specific selections |
+| **[`FileSelected`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_FileSelected)** | After a file/folder is (un)selected | React to selection changes |
+| **[`OnFileDragStart`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnFileDragStart)** | Drag starts | Validate or cancel drag |
+| **[`OnFileDragStop`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnFileDragStop)** | Item about to drop | Validate target |
+| **[`FileDropped`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_FileDropped)** | Item dropped | Post-drop actions |
+| **[`ToolbarCreated`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_ToolbarCreated)** | Before toolbar items are created | Customize toolbar |
+| **[`ToolbarItemClicked`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_ToolbarItemClicked)** | Toolbar item clicked | Intercept toolbar actions |
+| **[`MenuOpened`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_MenuOpened)** | Context menu opens | Enable/disable, hide, or icon custom items |
+| **[`OnMenuClick`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnMenuClick)** | Context menu item clicked | Intercept menu actions |
+| **[`OnSend`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnSend)** | Before upload request sent | Add auth headers for `HttpClient` upload mode |
 
 ## Advanced features
 
-| Feature | Purpose | Use Case | Key Benefit |
+| Feature | Purpose | Use Case | Benefit |
 |---------|---------|----------|-------------|
 | **[Custom HTTP Handler](./how-to/customize-http-handler)** | Modify request/response handling | Specialized back ends | Full transport control |
 | **[Custom Filtering](./how-to/perform-custom-filtering)** | Apply custom filter logic | Domain-specific search | Tailored item discovery |
@@ -278,9 +278,9 @@ The File Manager exposes a comprehensive event model through `FileManagerEvents<
 
 **Enterprise Patterns**
 
-- **Secure Multi-tenant Apps** — Combine Access Control with Restrict Drag-and-Drop/Upload and a [Custom File Provider](./custom-file-provider).
-- **Cloud Migration** — Use Azure Blob or Amazon S3 providers with Docker Service Deployment.
-- **Large Directories** — Enable [Virtualization](./virtualization) or [Pagination](./pagination) with Chunk Upload.
+- **Secure Multi-tenant Apps** - Combine Access Control with Restrict Drag-and-Drop/Upload and a [Custom File Provider](./custom-file-provider).
+- **Cloud Migration** - Use Azure Blob or Amazon S3 providers with Docker Service Deployment.
+- **Large Directories** - Enable [Virtualization](./virtualization) or [Pagination](./pagination) with Chunk Upload.
 
 ## System requirements
 
@@ -300,18 +300,18 @@ The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-fi
 - [Blazor MAUI App Guide](./getting-started-with-maui-app)
 
 **Popular Features:**
-- [File Operations](./file-operations) — Read, create, rename, delete, copy, move, search
-- [File System Providers](./file-system-provider) — Physical, cloud, database, custom
-- [Upload](./upload) — Directory, sequential, chunk, auto upload, restrictions
-- [Views](./views) — Large Icons and Details view customization
-- [Toolbar](./toolbar) — Built-in and custom toolbar items
-- [Context Menu](./context-menu) — Per-target menu customization
-- [Drag and Drop](./drag-and-drop) — Move files with full event control
-- [Virtualization](./virtualization) — Smooth large-directory browsing
-- [Pagination](./pagination) — Page-controlled file display
-- [Accessibility](./accessibility) — WCAG, Section 508, keyboard navigation
+- [File Operations](./file-operations) - Read, create, rename, delete, copy, move, search
+- [File System Providers](./file-system-provider) - Physical, cloud, database, custom
+- [Upload](./upload) - Directory, sequential, chunk, auto upload, restrictions
+- [Views](./views) - Large Icons and Details view customization
+- [Toolbar](./toolbar) - Built-in and custom toolbar items
+- [Context Menu](./context-menu) - Per-target menu customization
+- [Drag and Drop](./drag-and-drop) - Move files with full event control
+- [Virtualization](./virtualization) - Smooth large-directory browsing
+- [Pagination](./pagination) - Page-controlled file display
+- [Accessibility](./accessibility) - WCAG, Section 508, keyboard navigation
 
-## Support & Resources
+## Support & resources
 
 - **Questions?** Visit the [Syncfusion Support Portal](https://www.syncfusion.com/support)
 - **Code Examples?** Browse [File Manager Demos](https://www.syncfusion.com/blazor-components/blazor-file-manager) and samples
