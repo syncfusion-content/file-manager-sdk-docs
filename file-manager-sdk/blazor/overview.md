@@ -24,7 +24,7 @@ The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-fi
 | **Image & Media Galleries** | Visualize and preview images and videos with large-icon thumbnails before download | Large Icons View, Image Preview, Drag-and-Drop |
 | **Content Portals (CMS)** | Allow content authors to upload, rename, and arrange assets within a structured folder tree | Upload, Context Menu, Toolbar, Sorting |
 | **Database-Backed File Stores** | Store file metadata and binaries in SQL and serve them through a standardized provider pattern | SQL Database Provider, Custom File Provider |
-| **Collaborative Workspaces** | Let multiple users move, copy, and share files with access-controlled, permission-aware operations | Access Control (provider-specific), Drag-and-Drop, Multiple Selection |
+| **Collaborative Workspaces** | Let multiple users move, copy, and share files with access-controlled, permission-aware operations | [Access Control](./access-control), Drag-and-Drop, Multiple Selection |
 
 ## File System Provider Model
 
@@ -278,7 +278,7 @@ The File Manager exposes a comprehensive event model through `FileManagerEvents<
 
 **Enterprise Patterns**
 
-- **Secure Multi-tenant Apps** — Combine Access Control with Restrict Drag-and-Drop/Upload and a [Custom File Provider](./custom-file-provider).
+- **Secure Multi-tenant Apps** — Combine [Access Control](./access-control) with Restrict Drag-and-Drop/Upload and a [Custom File Provider](./custom-file-provider).
 - **Cloud Migration** — Use Azure Blob or [Amazon S3 providers with Docker Service Deployment](./service-deployment/amazon-s3-provider-docker-support).
 - **Large Directories** — Enable [Virtualization](./virtualization) or [Pagination](./pagination) with Chunk Upload.
 
