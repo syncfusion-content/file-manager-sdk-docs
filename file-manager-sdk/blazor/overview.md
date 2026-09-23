@@ -88,7 +88,7 @@ N> When using [`AjaxSettings`](https://help.syncfusion.com/cr/blazor/Syncfusion.
 
 The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) provides comprehensive file and folder manipulation capabilities that let users browse, create, organize, and remove items directly within the interface. Every operation is a standardized *file action* sent to the configured provider and reflected in the UI after a successful server response.
 
-| Operation | Purpose | Benefit |
+| Operation | Purpose | Outcome |
 |-----------|---------|-------------|
 | **`read`** | Read files/folders from the current path to display content for browsing | Foundation for all navigation |
 | **`create`** | Create a new folder in the current path | Quick folder organization |
@@ -109,7 +109,7 @@ Each request and response carries standardized content fields (`name`, `dateCrea
 
 The File Manager provides two built-in view modes for browsing files and folders, switchable at runtime through the toolbar, context menu, or the [`View`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.SfFileManager-1.html#Syncfusion_Blazor_FileManager_SfFileManager_1_View) API.
 
-| View | Description | Best For | Benefit |
+| View | Description | Best For | Advantage |
 |------|-------------|----------|-------------|
 | **[Large Icons View](./views#large-icons-view)** | Thumbnail-driven layout with large previews, default starting view | Visual recognition, images, media | Fast visual scanning |
 | **[Details View](./views#details-view)** | Sorted tabular list with columns (Name, Date Modified, Type, Size) | Organized information, large directories | Column sorting, custom columns |
@@ -144,7 +144,7 @@ The context menu displays different items depending on the target-*Layout* (empt
 
 **Multiple Selection**
 
-| Feature | Purpose | Benefit |
+| Feature | Purpose | Advantage |
 |---------|---------|-------------|
 | **[AllowMultiSelection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.SfFileManager-1.html#Syncfusion_Blazor_FileManager_SfFileManager_1_AllowMultiSelection)** | Enable selecting multiple files via Ctrl/Shift-click (enabled by default) | Bulk operations |
 | **Checkbox Selection** | Per-item checkboxes with select-all | Clear bulk selection |
@@ -169,7 +169,7 @@ See [Restrict Drag and Drop Upload](./how-to/restrict-drag-and-drop-upload) for 
 
 The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) provides rich upload configuration through `FileManagerUploadSettings`, covering file size, type restrictions, chunked uploads, and upload mode.
 
-| Feature | Property | Purpose | Benefit |
+| Feature | Property | Purpose | Advantage |
 |---------|----------|---------|-------------|
 | **Directory Upload** | [`DirectoryUpload`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerUploadSettings.html#Syncfusion_Blazor_FileManager_FileManagerUploadSettings_DirectoryUpload) | Upload entire folders (supported by Physical, Azure, and Amazon S3 providers) | Bulk folder ingestion |
 | **Sequential Upload** | [`SequentialUpload`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerUploadSettings.html#Syncfusion_Blazor_FileManager_FileManagerUploadSettings_SequentialUpload) | Upload files one after another | Reduced traffic, fewer failures |
@@ -188,7 +188,7 @@ For large-file strategies, see [Upload Large Files](./how-to/upload-large-files)
 
 The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) is engineered for smooth browsing of directories containing hundreds to hundreds of thousands of items through virtualization, on-demand loading, and an efficient provider response format.
 
-| Feature | Description | Use Case | Benefit |
+| Feature | Description | Use Case | Advantage |
 |---------|---------|----------|-------------|
 | **[Virtualization](./virtualization)** | Dynamically load only viewport-visible items in both Details and Large Icons views | Large directories (10K+ items) | Smooth scrolling |
 | **[Pagination](./pagination)** | Segment files/folders into pages with a pager control | Browsable large directories | Predictable page sizes |
@@ -206,7 +206,7 @@ Enable virtualization via [`EnableVirtualization`](https://help.syncfusion.com/c
 
 The File Manager is fully customizable to align with application design systems and specialized workflows.
 
-| Feature | Purpose | Benefit |
+| Feature | Purpose | Advantage |
 |---------|---------|-------------|
 | **[Styles & Appearance](./styles)** | Override CSS classes for navigation pane, thumbnails, and layout | Brand-consistent theming |
 | **[Toolbar Custom Items](./toolbar)** | Add custom toolbar items with templates | Specialized actions |
@@ -268,7 +268,7 @@ The File Manager exposes a comprehensive event model through `FileManagerEvents<
 
 ## Advanced features
 
-| Feature | Purpose | Use Case | Benefit |
+| Feature | Purpose | Use Case | Advantage |
 |---------|---------|----------|-------------|
 | **[Custom HTTP Handler](./how-to/customize-http-handler)** | Modify request/response handling | Specialized back ends | Full transport control |
 | **[Custom Filtering](./how-to/perform-custom-filtering)** | Apply custom filter logic | Domain-specific search | Tailored item discovery |
