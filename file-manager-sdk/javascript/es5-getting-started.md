@@ -115,10 +115,10 @@ This setup includes additional dependencies required for more advanced functiona
 > To include all required Essential JS 2 styles and scripts, use the following CDN links.
 >
 > Essential JS 2 combined bootstrap5.3 theme (all components)
-> <link href="https://cdn.syncfusion.com/ej2/34.1.29/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+> <link href="https://cdn.syncfusion.com/ej2/34.2.2/bootstrap5.3.css" rel="stylesheet" type="text/css" />
 >
 > Essential JS 2 combined script (all components)
-> <script src="https://cdn.syncfusion.com/ej2/34.1.29/dist/ej2.min.js" type="text/javascript"></script>
+> <script src="https://cdn.syncfusion.com/ej2/34.2.2/dist/ej2.min.js" type="text/javascript"></script>
 
 ## Adding File Manager control
 
@@ -143,9 +143,9 @@ filemanagerInstance.appendTo('#filemanager');
     <title>Essential JS 2 File Manager</title>
 
     <!-- Essential JS 2 bootstrap5.3 theme -->
-    <link href="https://cdn.syncfusion.com/ej2/33.1.44/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/34.2.2/bootstrap5.3.css" rel="stylesheet" type="text/css" />
     <!-- Essential JS 2 all script -->
-    <script src="https://cdn.syncfusion.com/ej2/33.1.44/dist/ej2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/34.2.2/dist/ej2.min.js" type="text/javascript"></script>
 
 </head>
 
