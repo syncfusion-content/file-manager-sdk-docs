@@ -9,18 +9,34 @@ documentation: ug
 
 # How to Render the File Manager Inside Other Components in Blazor
 
-The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) component can be rendered within other components, such as Dialog, Tab, and more.
+## Prerequisites
 
-* [Adding Blazor File Manager inside the Dialog](#adding-file-manager-inside-the-dialog)
-* [Adding Blazor File Manager inside the Tab](#adding-file-manager-inside-the-tab)
+Before you begin, ensure the following are in place:
 
-## Adding Blazor File Manager inside the Dialog
+* A Blazor application targeting .NET 6.0 or later.
+* The following Syncfusion NuGet packages installed: `Syncfusion.Blazor`, `Syncfusion.Blazor.Popups` (for the Dialog sample), `Syncfusion.Blazor.Navigations` (for the Tab sample), and `Syncfusion.Blazor.Themes` (for the built-in stylesheets).
+* Syncfusion Blazor services registered in `Program.cs` (for example, `builder.Services.AddSyncfusionBlazor();`).
+* The Syncfusion theme stylesheet referenced in `App.razor` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly).
+* A valid Syncfusion license (community or commercial), registered at application startup via `Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");` in `Program.cs`.
 
-When rendering the Blazor File Manager component with the Flat Data sample inside the SfDialog component, the Blazor File Manager's layout height may not update correctly due to the dialog being in a hidden state during initialization.
+The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) component can be rendered within other components, such as the Dialog and Tab components. Use the **Dialog** option when the file picker is a one-off action the user must complete before continuing; use the **Tab** option when the File Manager is part of a multi-page view alongside other content.
 
-To overcome this, use the [RefreshLayoutAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.SfFileManager-1.html#Syncfusion_Blazor_FileManager_SfFileManager_1_RefreshLayoutAsync) method of the Blazor FileManager component within the [Opened](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Popups.DialogEvents.html#Syncfusion_Blazor_Popups_DialogEvents_Opened) event of the SfDialog component. This ensures that the Blazor File Manager's layout is properly initialized and adjusted after the dialog is displayed.
+> **Compatibility**: This guide applies to .NET 6.0 or later and Syncfusion Blazor packages 20.2.x and newer.
 
-The following example shows how to render the SfFileManager component inside the SfDialog component:
+* [Adding the Blazor File Manager inside the Dialog](#adding-the-blazor-file-manager-inside-the-dialog)
+* [Adding the Blazor File Manager inside a Tab](#adding-the-blazor-file-manager-inside-the-tab)
+
+## Adding the Blazor File Manager inside the Dialog
+
+When rendering the FileManager inside the `SfDialog` component, the layout may not initialize correctly because the dialog is hidden on first render. This sample uses the [flat data binding](https://blazor.syncfusion.com/documentation/file-manager/flat-data) pattern to supply the directory contents in memory.
+
+### Why call RefreshLayoutAsync?
+
+Because the File Manager computes its layout (grid columns, tree width, scroll dimensions) only when it is visible, the initial measurement taken while the dialog is hidden produces incorrect sizes. Call `RefreshLayoutAsync` in the dialog's `Opened` event so the File Manager recomputes those measurements after the dialog becomes visible.
+
+To implement this, use the [RefreshLayoutAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.SfFileManager-1.html#Syncfusion_Blazor_FileManager_SfFileManager_1_RefreshLayoutAsync) method of the FileManager component within the [Opened](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Popups.DialogEvents.html#Syncfusion_Blazor_Popups_DialogEvents_Opened) event of the `SfDialog` component. This ensures that the layout is recalculated after the dialog becomes visible.
+
+The following example shows how to render the `SfFileManager` component inside the `SfDialog` component:
 
 ```cshtml
 
@@ -180,11 +196,19 @@ The following example shows how to render the SfFileManager component inside the
 
 ```
 
+> **Note**: If the dialog is resizable or the user changes its size after opening, also call `RefreshLayoutAsync` in the dialog's `Resizing` and `Resized` events so the File Manager recomputes its layout to match the new dimensions.
+
 ![Blazor File Manager displayed inside a dialog](../images/blazor-filemanager-inside-dialog.webp)
 
-## Adding Blazor File Manager inside the Tab
+*Blazor File Manager rendered inside an `SfDialog`, with the layout refreshed after the dialog opens.*
 
-The following example demonstrates how to integrate the Blazor File Manager component within the content area of a Tab component. This setup allows users to manage files directly within a tabbed interface, providing an organized and efficient file management experience.
+## Adding the Blazor File Manager inside a Tab
+
+The following example demonstrates how to integrate the FileManager component within the content area of a Tab component.
+
+### Why isn't RefreshLayoutAsync needed here?
+
+Unlike the dialog, the Tab component renders its content template when the tab is selected, so the File Manager's initial `OnAfterRender` runs while the host element is already visible. Because the layout is computed against a visible container, no manual refresh is required.
 
 ```cshtml
 
@@ -232,3 +256,21 @@ The following example demonstrates how to integrate the Blazor File Manager comp
 ```
 
 ![Blazor File Manager displayed inside a tab](../images/blazor-filemanager-inside-tab.webp)
+
+*Blazor File Manager rendered as the content of a Tab item.*
+
+> **Backend requirement**: The remote URLs in `FileManagerAjaxSettings` (`Url`, `UploadUrl`, `DownloadUrl`, `GetImageUrl`) point to a File Manager service that must be hosted and reachable from your application. If the service runs on a different origin, enable CORS for your application's origin. See the [File Manager service](https://blazor.syncfusion.com/documentation/file-manager/file-system-provider) docs for setup details.
+
+## Troubleshooting
+
+* **(Dialog) Layout not rendered correctly**: Confirm that `RefreshLayoutAsync` is invoked in the dialog's `Opened` event.
+* **(Dialog) Layout breaks when the dialog is resized**: Also call `RefreshLayoutAsync` in the dialog's `Resizing` and `Resized` events.
+* **(Tab) No files shown**: Verify that the `FileManagerAjaxSettings` URLs are reachable from the hosting environment, and that the service is configured to accept requests from the application origin (CORS) if cross-origin.
+* **(Tab) Thumbnail images missing**: Confirm the `GetImageUrl` endpoint is reachable and returns valid image data with the correct `Content-Type`.
+* **(Both) Component not visible at all**: Ensure the Syncfusion theme stylesheet is referenced in `App.razor` (Server) or `wwwroot/index.html` (WebAssembly), and that the license is registered in `Program.cs`.
+
+## See also
+
+* [Getting started with the Blazor File Manager](https://blazor.syncfusion.com/documentation/file-manager/getting-started)
+* [Flat data binding](https://blazor.syncfusion.com/documentation/file-manager/flat-data) (used by the Dialog sample)
+* [License key setup](https://blazor.syncfusion.com/documentation/getting-started/license-key)
