@@ -1,10 +1,11 @@
----
+﻿---
 layout: post
 title: File Operations in Blazor File Manager | Syncfusion
 description: Learn how to browse, create, rename, delete, copy, move, search, and download files and folders in the Blazor File Manager.
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # File Operations in Blazor File Manager
@@ -1948,7 +1949,7 @@ This will configure and map the controller in your Blazor App.
 
 ## Add Blazor File Manager to the Application
 
-After configuring the server-side service, integrate the Syncfusion® Blazor File Manager component into the application by creating a dedicated Razor component.
+After configuring the server-side service, integrate the SyncfusionÂ® Blazor File Manager component into the application by creating a dedicated Razor component.
 
 ### Create the Razor Component
 
@@ -1971,7 +1972,7 @@ Add your required files and folders under the `wwwroot\Files` directory.
 
 * In your  project, the `wwwroot` directory is where static files are served from. It is typically found at the root level of your server project.
 * Inside the `wwwroot` directory, create a new folder named `Files`. This will be used to store static files like images, documents, or other resources that you want to serve directly.
-* Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. This will render the Blazor File Manager component in the default web browser.
+* Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>âŒ˜</kbd>+<kbd>F5</kbd> (macOS) to launch the application. This will render the Blazor File Manager component in the default web browser.
 
 ![Blazor File Manager Component](images/blazor-filemanager-component.webp)
 

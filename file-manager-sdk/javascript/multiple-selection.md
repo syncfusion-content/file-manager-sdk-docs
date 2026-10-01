@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Multiple Selection in JavaScript File Manager | Syncfusion
 description: Learn how to enable multiple selection in the JavaScript File Manager using Ctrl/Shift keys and checkboxes to select many files at once.
@@ -7,6 +7,7 @@ platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Multiple Selection in JavaScript File Manager

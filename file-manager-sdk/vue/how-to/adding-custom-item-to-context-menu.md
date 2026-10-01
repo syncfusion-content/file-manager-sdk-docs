@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Adding custom item to context menu in Vue File Manager | Syncfusion
 description: Learn how to add a custom item to the context menu in the Vue File Manager with custom icons and click handlers.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to add custom item to context menu in Vue File Manager

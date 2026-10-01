@@ -1,10 +1,11 @@
----
+﻿---
 layout: post
 title: Firebase Provider in Blazor File Manager | Syncfusion
 description: Learn how to use the Firebase Real-time Database file system provider in the Blazor File Manager to store files in the cloud.
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Firebase Provider in Blazor File Manager

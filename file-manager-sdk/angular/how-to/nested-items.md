@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Use nested File Manager in Angular | Syncfusion
 description: Learn how to integrate the Angular File Manager within components such as Tab and Dialog to build flexible and interactive application layouts.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Nested items in Angular File Manager component

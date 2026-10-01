@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: File System Provider in Angular File Manager | Syncfusion
 description: Learn how to connect the Angular File Manager to physical, Azure, Amazon S3, Google Drive, Firebase, and other file system providers.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # File System Provider in Angular File Manager

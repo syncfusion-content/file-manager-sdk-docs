@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Flat Data in ASP.NET Core File Manager | Syncfusion
 description: Learn how to load flat JSON data in the ASP.NET Core File Manager without a service provider, using local data structures to render folders and files.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Flat Data in ASP.NET Core File Manager

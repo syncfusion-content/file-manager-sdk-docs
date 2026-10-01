@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Perform custom sorting in TypeScript File Manager | Syncfusion
 description: Learn how to perform custom sorting in the TypeScript File Manager for the Large Icons view and Details view columns, with examples for natural sorting.
@@ -7,6 +7,7 @@ platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to perform custom sorting in TypeScript File Manager

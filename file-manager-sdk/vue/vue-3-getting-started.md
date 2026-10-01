@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with Vue File Manager in Vue 3 | Syncfusion
 description: Learn how to get started with the Vue File Manager in Vue 3 and explore setup, configuration, and core feature examples.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Getting Started with the Vue File Manager in Vue 3
@@ -69,15 +70,15 @@ When you run the `sf` command, the CLI prompts you to select the required projec
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
-√ Project name? ... my-project
-√ Choose Framework: » Vue
-√ Choose Language: » JavaScript
-√ Choose Template: » File Manager
-√ Choose Theme: » Material3
-√ Choose Style Format: » CSS
-√ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
-√ Would you like to install Syncfusion Component Skills for AI-powered development? ... no      
-√ Install dependencies and start app now? ... no
+âˆš Project name? ... my-project
+âˆš Choose Framework: Â» Vue
+âˆš Choose Language: Â» JavaScript
+âˆš Choose Template: Â» File Manager
+âˆš Choose Theme: Â» Material3
+âˆš Choose Style Format: Â» CSS
+âˆš Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
+âˆš Would you like to install Syncfusion Component Skills for AI-powered development? ... no      
+âˆš Install dependencies and start app now? ... no
 
 {% endhighlight %}
 {% endtabs %}
@@ -153,13 +154,13 @@ Using one of the above commands will lead you to set up additional configuration
 1.Define the project name: We can specify the name of the project directly. Let's specify the name of the project as `my-project` for this article.
 
 ```bash
-? Project name: » my-project
+? Project name: Â» my-project
 ```
 
 2.Select `Vue` as the framework. It will create a Vue 3 project.
 
 ```bash
-? Select a framework: » - Use arrow-keys. Return to submit.
+? Select a framework: Â» - Use arrow-keys. Return to submit.
 Vanilla
 > Vue
   React
@@ -172,11 +173,11 @@ Vanilla
 3.Choose `JavaScript` as the framework variant to build this Vite project using JavaScript and Vue.
 
 ```bash
-? Select a variant: » - Use arrow-keys. Return to submit.
+? Select a variant: Â» - Use arrow-keys. Return to submit.
 > JavaScript
   TypeScript
-  Customize with create-vue ↗
-  Nuxt ↗
+  Customize with create-vue â†—
+  Nuxt â†—
 ```
 
 4.Install dependencies and start the dev server.

@@ -1,10 +1,11 @@
----
+﻿---
 layout: post
 title: Accessibility in Blazor File Manager | Syncfusion
 description: Learn how the Blazor File Manager supports WAI-ARIA, keyboard navigation, and WCAG, Section 508, and ADA accessibility standards.
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Accessibility in Blazor File Manager
@@ -79,10 +80,10 @@ You can use the following key shortcuts to access the Blazor File Manager withou
 | <kbd>Enter</kbd> | <kbd>Enter</kbd> | Selects the focused item and navigate through the child elements. |
 | <kbd>Tab</kbd> | <kbd>Tab</kbd> | Focuses on the first element of toolbar and navigates through the next tab indexed element. |
 | <kbd>Esc(Escape)</kbd> | <kbd>Esc</kbd> | Closes the image when it is in open state. |
-| <kbd>Alt</kbd> + <kbd>N</kbd> | <kbd>⌥</kbd> + <kbd>N</kbd> | Creates a new folder dialog.|
+| <kbd>Alt</kbd> + <kbd>N</kbd> | <kbd>âŒ¥</kbd> + <kbd>N</kbd> | Creates a new folder dialog.|
 | <kbd>F5</kbd> | <kbd>F5</kbd> | Refresh the Blazor File Manager element. |
-| <kbd>Ctrl+Shift+1</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>1</kbd> | Changes the Blazor File Manager layout to Grid view. |
-| <kbd>Ctrl+Shift+2</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>2</kbd> | Changes the Blazor File Manager layout to Details view. |
+| <kbd>Ctrl+Shift+1</kbd> | <kbd>âŒ˜</kbd> + <kbd>â‡§</kbd> + <kbd>1</kbd> | Changes the Blazor File Manager layout to Grid view. |
+| <kbd>Ctrl+Shift+2</kbd> | <kbd>âŒ˜</kbd> + <kbd>â‡§</kbd> + <kbd>2</kbd> | Changes the Blazor File Manager layout to Details view. |
 
 ## Ensuring accessibility
 

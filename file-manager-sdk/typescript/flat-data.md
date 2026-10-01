@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Flat Data in TypeScript File Manager | Syncfusion
 description: Learn how to load flat JSON data in the TypeScript File Manager without a service provider, using local data structures to render folders and files.
@@ -7,6 +7,7 @@ platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Flat Data in TypeScript File Manager

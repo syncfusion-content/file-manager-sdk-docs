@@ -1,10 +1,11 @@
----
+﻿---
 layout: post
 title: How to preview files in Blazor File Manager | Syncfusion
 description: Learn how to preview PDF, Word, and Excel files in the Blazor File Manager using the PDF Viewer, Document Editor, and Dialog components.
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to Preview Files in Blazor File Manager

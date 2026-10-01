@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Drag and Drop in ASP.NET Core File Manager | Syncfusion
 description: Learn how to enable drag and drop in the ASP.NET Core File Manager to move or upload files between folders using built-in drag events.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 

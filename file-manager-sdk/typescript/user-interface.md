@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: User Interface in TypeScript File Manager | Syncfusion
 description: Learn how to use the TypeScript File Manager UI with view, toolbar, breadcrumb, context menu, and navigation pane modules for file browsing.
@@ -7,6 +7,7 @@ platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # User Interface in TypeScript File Manager

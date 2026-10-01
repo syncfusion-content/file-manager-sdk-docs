@@ -1,10 +1,11 @@
----
+﻿---
 layout: post
 title: Virtualization in Blazor File Manager | Syncfusion
 description: Learn how to enable UI virtualization in the Blazor File Manager for smooth scrolling through large directories in Details and Large Icons views.
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Virtualization in Blazor File Manager

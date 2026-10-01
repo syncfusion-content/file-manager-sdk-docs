@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Accessibility in ASP.NET Core File Manager | Syncfusion
 description: Learn about the accessibility support in the ASP.NET Core File Manager, including WCAG 2.2, Section 508, ADA, and WAI-ARIA role compliance.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 

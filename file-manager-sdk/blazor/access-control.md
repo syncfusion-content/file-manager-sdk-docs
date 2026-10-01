@@ -1,10 +1,11 @@
----
+﻿---
 layout: post
 title: Access Control in Blazor File Manager | Syncfusion
 description: Learn how to configure access control in the Blazor File Manager with role-based permissions and restricted file operations.
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Access Control in Blazor File Manager

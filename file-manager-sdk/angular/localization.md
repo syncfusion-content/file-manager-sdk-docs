@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Localization in Angular File Manager | Syncfusion
 description: Learn how to localize the Angular File Manager to any culture by defining locale-specific texts and messages beyond the default English locale.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Localization in Angular File Manager

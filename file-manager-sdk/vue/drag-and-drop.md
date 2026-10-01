@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Drag and Drop in Vue File Manager | Syncfusion
 description: Learn how to enable drag and drop in the Vue File Manager to move or upload files between folders using built-in drag events.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Drag and Drop in Vue File Manager
@@ -14,10 +15,10 @@ The File Manager allows files or folders to be moved from one folder to another 
 
 The drag-and-drop operation raises several events that allow handling and customizing behavior:
 
-* [fileDragStart](https://ej2.syncfusion.com/vue/documentation/api/file-manager#filedragstart) — Triggered when dragging a file or folder begins.
-* [fileDragging](https://ej2.syncfusion.com/vue/documentation/api/file-manager#filedragging) — Triggered while a file or folder is being dragged.
-* [fileDragStop](https://ej2.syncfusion.com/vue/documentation/api/file-manager#filedragstop) — Triggered when a dragged file or folder is about to be dropped on the target.
-* [fileDropped](https://ej2.syncfusion.com/vue/documentation/api/file-manager#filedropped) — Triggered after a file or folder has been dropped.
+* [fileDragStart](https://ej2.syncfusion.com/vue/documentation/api/file-manager#filedragstart) â€” Triggered when dragging a file or folder begins.
+* [fileDragging](https://ej2.syncfusion.com/vue/documentation/api/file-manager#filedragging) â€” Triggered while a file or folder is being dragged.
+* [fileDragStop](https://ej2.syncfusion.com/vue/documentation/api/file-manager#filedragstop) â€” Triggered when a dragged file or folder is about to be dropped on the target.
+* [fileDropped](https://ej2.syncfusion.com/vue/documentation/api/file-manager#filedropped) â€” Triggered after a file or folder has been dropped.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

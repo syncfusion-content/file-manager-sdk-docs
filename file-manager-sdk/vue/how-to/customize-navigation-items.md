@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Customize the navigation pane in Vue File Manager | Syncfusion
 description: Learn how to customize the navigation pane in the Vue File Manager by templating each folder node to show extra metadata or custom icons.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to customize the navigation pane in Vue File Manager

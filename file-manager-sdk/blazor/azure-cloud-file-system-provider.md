@@ -1,10 +1,11 @@
----
+﻿---
 layout: post
 title: Azure Cloud Provider in Blazor File Manager | Syncfusion
 description: Learn how to connect the Blazor File Manager to Azure Blob Storage to browse and manage files in the cloud.
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Azure Cloud Provider in Blazor File Manager
@@ -73,7 +74,7 @@ public AzureProviderController(IHostingEnvironment hostingEnvironment)
 
 ## Configuring Blazor File Manager UI
 
-To configure Blazor File Manager component, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), then search and install **Syncfusion.Blazor.FileManager** and **Syncfusion.Blazor.Themes**. Integrate the Blazor FileManager component by pasting the below code in your .razor file of the Blazor application. Click this [link](https://blazor.syncfusion.com/documentation/file-manager/getting-started-with-web-app) for more details.
+To configure Blazor File Manager component, open the NuGet package manager in Visual Studio (Tools â†’ NuGet Package Manager â†’ Manage NuGet Packages for Solution), then search and install **Syncfusion.Blazor.FileManager** and **Syncfusion.Blazor.Themes**. Integrate the Blazor FileManager component by pasting the below code in your .razor file of the Blazor application. Click this [link](https://blazor.syncfusion.com/documentation/file-manager/getting-started-with-web-app) for more details.
 
 Now, build and run the Azure File Service provider project. It will be hosted in `http://localhost:{port}`. Map the [FileManagerAjaxSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerAjaxSettings.html) of the Blazor File Manager component to the AzureProvider controller endpoints (Url, UploadUrl, DownloadUrl, GetImageUrl) to manage blobs in your Azure Blob Storage container.
 

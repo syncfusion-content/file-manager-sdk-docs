@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Views in TypeScript File Manager | Syncfusion
 description: Learn how to switch between Large Icons and Details views in the TypeScript File Manager for flexible file browsing.
@@ -7,6 +7,7 @@ platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Views in TypeScript File Manager
