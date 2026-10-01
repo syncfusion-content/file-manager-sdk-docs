@@ -4,7 +4,7 @@ title: Server Deployment and Docker in ASP.NET Core File Manager | Syncfusion
 description: Learn how to deploy the unified ASP.NET Core File Manager provider Docker image for Azure Blob Storage and Amazon S3.
 control: File Manager
 platform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
 ---
 
 # File Manager Provider Docker Support in ASP.NET Core File Manager

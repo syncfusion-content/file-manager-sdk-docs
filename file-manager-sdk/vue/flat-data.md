@@ -5,7 +5,7 @@ description: Learn how to load flat JSON data in the Vue File Manager without a 
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/file-manager-sdk
+domainurl: https://help.syncfusion.com/file-manager-sdkappliesto: UI Component Suite, File Manager SDK
 ---
 
 # Flat Data in Vue File Manager

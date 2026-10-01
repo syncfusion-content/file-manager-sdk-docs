@@ -5,7 +5,7 @@ description: Learn how to render the ASP.NET MVC File Manager in Internet Explor
 control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
 ---
 
 # Render File Manager in Internet Explorer

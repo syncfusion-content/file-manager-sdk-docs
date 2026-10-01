@@ -5,7 +5,7 @@ description: Learn how to enable multiple selection in the ASP.NET MVC File Mana
 control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
 ---
 
 

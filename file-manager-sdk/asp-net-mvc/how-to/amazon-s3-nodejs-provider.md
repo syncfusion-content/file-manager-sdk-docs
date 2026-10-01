@@ -4,7 +4,7 @@ title: Node.js S3 Provider in ASP.NET MVC File Manager | Syncfusion
 description: Learn how to implement a custom file provider in the ASP.NET MVC File Manager using Node.js with Amazon S3 as the data source.
 control: File Manager
 platform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to implement Amazon S3 custom provider in ASP.NET MVC File Manager

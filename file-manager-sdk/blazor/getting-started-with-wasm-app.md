@@ -4,7 +4,7 @@ title: Getting Started with File Manager in Blazor WASM App | Syncfusion
 description: Learn how to get started with the Blazor File Manager component in a Blazor WebAssembly App using Visual Studio, VS Code, or the .NET CLI.
 control: File Manager
 platform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
 ---
 
 <!-- markdownlint-disable MD024 -->

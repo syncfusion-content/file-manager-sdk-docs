@@ -4,7 +4,7 @@ title: Custom File Provider in Blazor File Manager | Syncfusion
 description: Learn how to build a custom file provider for the Blazor File Manager by following the standard request and response format for file actions.
 control: File Manager
 platform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
 ---
 
 # Custom File Provider in Blazor File Manager

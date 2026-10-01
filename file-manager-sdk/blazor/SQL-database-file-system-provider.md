@@ -4,7 +4,7 @@ title: SQL Database Provider in Blazor File Manager | Syncfusion
 description: Learn how to use the SQL database file system provider in the Blazor File Manager to manage files stored in a SQL Server table.
 control: File Manager
 platform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
 ---
 
 # SQL Database Provider in Blazor File Manager

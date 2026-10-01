@@ -5,7 +5,7 @@ description: Learn how to enable drag and drop in the Vue File Manager to move o
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/file-manager-sdk
+domainurl: https://help.syncfusion.com/file-manager-sdkappliesto: UI Component Suite, File Manager SDK
 ---
 
 # Drag and Drop in Vue File Manager

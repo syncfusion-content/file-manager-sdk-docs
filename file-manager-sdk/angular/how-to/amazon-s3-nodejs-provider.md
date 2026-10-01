@@ -5,7 +5,7 @@ description: Learn how to implement a custom file provider in the Angular File M
 control: File Manager
 platform: ej2-angular
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: ##DomainURL##appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to implement Amazon S3 custom provider in Angular File Manager

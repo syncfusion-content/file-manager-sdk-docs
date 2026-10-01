@@ -4,7 +4,7 @@ title: Accessibility in Blazor File Manager | Syncfusion
 description: Learn how the Blazor File Manager supports WAI-ARIA, keyboard navigation, and WCAG, Section 508, and ADA accessibility standards.
 control: File Manager
 platform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
 ---
 
 # Accessibility in Blazor File Manager

@@ -5,7 +5,7 @@ description: Learn how to switch between Large Icons and Details views in the AS
 control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
 ---
 
 

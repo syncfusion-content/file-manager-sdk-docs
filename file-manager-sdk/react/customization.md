@@ -5,7 +5,7 @@ description: Learn how to customize the React File Manager context menu, toolbar
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/file-manager-sdk
+domainurl: https://help.syncfusion.com/file-manager-sdkappliesto: UI Component Suite, File Manager SDK
 ---
 
 # Customization in React File Manager

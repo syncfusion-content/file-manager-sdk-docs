@@ -5,7 +5,7 @@ description: Learn how to upload files in the ASP.NET MVC File Manager with chun
 control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
 ---
 
 # Upload in ASP.NET MVC File Manager

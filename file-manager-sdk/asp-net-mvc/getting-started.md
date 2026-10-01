@@ -5,7 +5,7 @@ description: Learn how to get started with the ASP.NET MVC File Manager and expl
 control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
 ---
 
 

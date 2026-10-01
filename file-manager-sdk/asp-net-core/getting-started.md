@@ -5,7 +5,7 @@ description: Learn how to get started with the ASP.NET Core File Manager and exp
 control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
 ---
 
 

@@ -5,7 +5,7 @@ description: Learn how to add a custom item to the toolbar in the ASP.NET Core F
 control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to add a custom item to the toolbar in ASP.NET Core File Manager

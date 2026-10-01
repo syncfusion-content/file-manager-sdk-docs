@@ -5,7 +5,7 @@ description: Learn how to integrate the Vue File Manager within components such 
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/file-manager-sdk
+domainurl: https://help.syncfusion.com/file-manager-sdkappliesto: UI Component Suite, File Manager SDK
 ---
 
 # Nested items in Vue File Manager component

@@ -5,7 +5,7 @@ description: Learn how to deploy the unified Angular File Manager provider Docke
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/file-manager-sdk
+domainurl: https://help.syncfusion.com/file-manager-sdkappliesto: UI Component Suite, File Manager SDK
 ---
 
 # File Manager Provider Docker Support in Angular File Manager

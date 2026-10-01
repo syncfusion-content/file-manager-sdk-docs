@@ -5,7 +5,7 @@ description: Learn how to customize the appearance of the ASP.NET MVC File Manag
 control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
 ---
 
 # Style and Appearance in ASP.NET MVC File Manager

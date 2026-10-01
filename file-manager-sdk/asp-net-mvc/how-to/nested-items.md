@@ -5,7 +5,7 @@ description: Learn how to integrate the ASP.NET MVC File Manager within componen
 control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
 ---
 
 # Nested items in ASP.NET MVC File Manager component

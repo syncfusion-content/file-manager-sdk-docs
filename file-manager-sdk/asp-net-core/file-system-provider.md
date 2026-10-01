@@ -5,7 +5,7 @@ description: Learn how to connect the ASP.NET Core File Manager to physical, Azu
 control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
 ---
 
 

@@ -5,7 +5,7 @@ description: Learn how to connect the Angular File Manager to physical, Azure, A
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/file-manager-sdk
+domainurl: https://help.syncfusion.com/file-manager-sdkappliesto: UI Component Suite, File Manager SDK
 ---
 
 # File System Provider in Angular File Manager

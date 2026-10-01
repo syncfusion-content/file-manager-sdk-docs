@@ -5,7 +5,7 @@ description: Learn about the accessibility support in the Vue File Manager, incl
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/file-manager-sdk
+domainurl: https://help.syncfusion.com/file-manager-sdkappliesto: UI Component Suite, File Manager SDK
 ---
 
 # Accessibility in Vue File Manager
