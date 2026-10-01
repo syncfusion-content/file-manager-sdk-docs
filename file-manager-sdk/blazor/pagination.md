@@ -5,6 +5,7 @@ description: Learn how to enable pagination in the Blazor File Manager and custo
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Pagination in Blazor File Manager

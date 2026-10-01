@@ -5,6 +5,7 @@ description: Learn how to implement a custom file provider in the ASP.NET MVC Fi
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to implement Amazon S3 custom provider in ASP.NET MVC File Manager

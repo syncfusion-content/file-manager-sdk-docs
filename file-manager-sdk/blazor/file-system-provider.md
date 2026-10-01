@@ -5,6 +5,7 @@ description: Learn about the file system providers available in the Blazor File 
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # File System Providers in Blazor File Manager

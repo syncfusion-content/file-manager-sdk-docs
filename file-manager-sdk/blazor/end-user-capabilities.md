@@ -5,6 +5,7 @@ description: Learn about the Blazor File Manager user interface sections like to
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # End User Capabilities in Blazor File Manager

@@ -5,6 +5,7 @@ description: Learn how to connect the Blazor File Manager to Google Drive using 
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Google Drive Provider in Blazor File Manager
