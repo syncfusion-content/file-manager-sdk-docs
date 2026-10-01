@@ -278,7 +278,7 @@ The File Manager exposes a comprehensive event model through `FileManagerEvents<
 
 **Enterprise Patterns**
 
-- **Secure Multi-tenant Apps** - Combine Access Control with Restrict Drag-and-Drop/Upload and a [Custom File Provider](./custom-file-provider).
+- **Secure Multi-tenant Apps** - Combine [Access Control](./access-control) with Restrict Drag-and-Drop/Upload and a [Custom File Provider](./custom-file-provider).
 - **Cloud Migration** - Use Azure Blob or Amazon S3 providers with Docker Service Deployment.
 - **Large Directories** - Enable [Virtualization](./virtualization) or [Pagination](./pagination) with Chunk Upload.
 
