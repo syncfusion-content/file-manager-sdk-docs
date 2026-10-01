@@ -4,7 +4,6 @@ title: Server Deployment and Docker in JavaScript File Manager | Syncfusion
 description: Learn how to deploy the unified JavaScript File Manager provider Docker image for Azure Blob Storage and Amazon S3.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 ---
