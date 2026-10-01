@@ -1,10 +1,11 @@
----
+﻿---
 layout: post
 title: How to perform custom filtering in Blazor File Manager | Syncfusion
 description: Learn how to perform a custom search in the Blazor File Manager by triggering a server-side operation with a search string.
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to Perform Custom Filtering in Blazor File Manager

@@ -1,10 +1,11 @@
----
+﻿---
 layout: post
 title: Styles and Appearance in Blazor File Manager | Syncfusion
 description: Learn how to customize the look and feel of the Blazor File Manager by overriding CSS classes for the navigation pane, toolbar, and content area.
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Styles and Appearance in Blazor File Manager

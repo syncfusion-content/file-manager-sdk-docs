@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Virtualization in JavaScript File Manager | Syncfusion
 description: Learn how to enable virtualization in the JavaScript File Manager for dynamically loading large folders in Details and Large Icons views without performance loss.
@@ -7,6 +7,7 @@ platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Virtualization in JavaScript File Manager

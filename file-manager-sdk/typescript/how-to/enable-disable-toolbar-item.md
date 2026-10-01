@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Enable or disable a toolbar item in TypeScript File Manager | Syncfusion
 description: Learn how to enable or disable a toolbar item in the TypeScript File Manager at runtime based on user actions or selection state.
@@ -7,6 +7,7 @@ platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to enable or disable a toolbar item in TypeScript File Manager

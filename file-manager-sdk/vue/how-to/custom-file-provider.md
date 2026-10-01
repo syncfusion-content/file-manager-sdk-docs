@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Implement a custom file provider in Vue File Manager | Syncfusion
 description: Learn how to implement a custom file provider in the Vue File Manager using Node.js with Azure Blob Storage as the data source.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to implement a custom file provider in Vue File Manager
@@ -297,7 +298,7 @@ Create the archive file to download the multiple Files, Folders and single folde
 
 ### Upload
 
-Create the **app.post** method with URL ‘**/fileManager/Upload**.
+Create the **app.post** method with URL â€˜**/fileManager/Upload**.
 
 The following table represents the request parameters of *Upload* operations.
 
@@ -380,7 +381,7 @@ The following table represents the request parameters of *create* operations.
 
 ```
 
-Check the existence of the folder, If the folder exists then send the error message containing “Folder already exists”. If it does not exist, then create the folder. Create the folder by creating the file in that folder’s path.
+Check the existence of the folder, If the folder exists then send the error message containing â€œFolder already existsâ€. If it does not exist, then create the folder. Create the folder by creating the file in that folderâ€™s path.
 
 The following table represents the response parameters of *create* operations.
 
@@ -771,7 +772,7 @@ The following table represents the response parameters of *copy* operations.
   - Directory copy and move.
   - File copy and move.
 
-Create the **isRename** variable to store the is request is rename or not. If the **isRename** is false then check the existence of the folders, and if folder is existing, then send the error message. If **isRename** is true, then don’t check the existence of the folder.
+Create the **isRename** variable to store the is request is rename or not. If the **isRename** is false then check the existence of the folders, and if folder is existing, then send the error message. If **isRename** is true, then donâ€™t check the existence of the folder.
 
 To move or copy the folders you need to get all the blobs from that folder and create the new path for each blob and copy the data from the old path to the new path. To move or copy the files copy the data from the source blob client to target client. If the action is move then delete the old blob.
 

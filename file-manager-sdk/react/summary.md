@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Summary in React File Manager | Syncfusion
 description: Find quick links to all React File Manager guides, including setup, file operations, views, customization, and accessibility topics.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Summary in React File Manager

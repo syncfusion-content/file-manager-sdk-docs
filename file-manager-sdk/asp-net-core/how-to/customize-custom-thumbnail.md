@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Customize thumbnails in ASP.NET Core File Manager | Syncfusion
 description: Learn how to customize thumbnails in the ASP.NET Core File Manager by adding your own icons for file types and folders in the LargeIcons view.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to customize thumbnails in ASP.NET Core File Manager

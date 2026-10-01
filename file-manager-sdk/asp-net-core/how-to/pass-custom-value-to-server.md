@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Pass a custom value to the server in ASP.NET Core File Manager | Syncfusion
 description: Learn how to pass a custom value to the server in the ASP.NET Core File Manager for authentication, logging, or role-based access on each request.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to pass a custom value to the server in ASP.NET Core File Manager

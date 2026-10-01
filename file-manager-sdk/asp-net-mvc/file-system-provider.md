@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: File System Provider in ASP.NET MVC File Manager | Syncfusion
 description: Learn how to connect the ASP.NET MVC File Manager to physical, Azure, Amazon S3, Google Drive, Firebase, and other file system providers.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 
@@ -264,7 +265,7 @@ After cloning, open the project in Visual Studio and restore the NuGet packages.
 
 ```
 
-After registering the File Transfer Protocol details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager control to the appropriate controller methods allows you to manage the FTP’s objects storage.
+After registering the File Transfer Protocol details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager control to the appropriate controller methods allows you to manage the FTPâ€™s objects storage.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

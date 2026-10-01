@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Server Deployment and Docker in React File Manager | Syncfusion
 description: Learn how to deploy the unified React File Manager provider Docker image for Azure Blob Storage and Amazon S3.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # File Manager Provider Docker Support in React File Manager

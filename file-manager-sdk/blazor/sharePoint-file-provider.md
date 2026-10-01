@@ -1,10 +1,11 @@
----
+﻿---
 layout: post
 title: SharePoint Provider in Blazor File Manager | Syncfusion
 description: Learn how to connect the Blazor File Manager to Microsoft SharePoint to browse and manage files in a document library.
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # SharePoint Provider in Blazor File Manager

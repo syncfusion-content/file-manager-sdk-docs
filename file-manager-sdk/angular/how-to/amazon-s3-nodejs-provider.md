@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Node.js Amazon S3 File Provider in Angular File Manager | Syncfusion
 description: Learn how to implement a custom file provider in the Angular File Manager using Node.js with Amazon S3 as the data source.
@@ -6,6 +6,7 @@ control: File Manager
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to implement Amazon S3 custom provider in Angular File Manager

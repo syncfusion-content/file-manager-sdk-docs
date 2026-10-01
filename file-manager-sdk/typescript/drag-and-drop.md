@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Drag and Drop in TypeScript File Manager | Syncfusion
 description: Learn how to enable drag and drop in the TypeScript File Manager to move or upload files between folders using built-in drag events.
@@ -7,6 +7,7 @@ platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Drag and Drop in TypeScript File Manager

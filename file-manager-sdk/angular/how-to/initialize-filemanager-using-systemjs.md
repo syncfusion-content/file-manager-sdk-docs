@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: How to Initialize File Manager using SystemJS in Angular | Syncfusion
 description: Learn how to initialize the Angular File Manager using SystemJS to load and configure the component in a SystemJS-based Angular project.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to Initialize File Manager using SystemJS in Angular

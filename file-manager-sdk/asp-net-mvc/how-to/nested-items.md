@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Use nested File Manager in ASP.NET MVC | Syncfusion
 description: Learn how to integrate the ASP.NET MVC File Manager within components such as Tab and Dialog to build flexible and interactive application layouts.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Nested items in ASP.NET MVC File Manager component

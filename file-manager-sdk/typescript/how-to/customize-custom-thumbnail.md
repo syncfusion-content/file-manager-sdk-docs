@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Customize thumbnails in TypeScript File Manager | Syncfusion
 description: Learn how to customize thumbnails in the TypeScript File Manager by adding your own icons for file types and folders in the LargeIcons view.
@@ -7,6 +7,7 @@ platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to customize thumbnails in TypeScript File Manager

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Customization in Vue File Manager | Syncfusion
 description: Learn how to customize the Vue File Manager context menu, toolbar, navigation pane, upload, and tooltip using built-in APIs.
@@ -6,11 +6,12 @@ control: File Manager
 platform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Customization in Vue File Manager
 
-The [Vue File Manager](https://www.syncfusion.com/vue-components/vue-file-manager) component allows customization of its functionality and UI—such as the context menu, searching, uploading, and toolbar—using public APIs. The following topics describe customization options:
+The [Vue File Manager](https://www.syncfusion.com/vue-components/vue-file-manager) component allows customization of its functionality and UIâ€”such as the context menu, searching, uploading, and toolbarâ€”using public APIs. The following topics describe customization options:
 
 * [Context menu customization](#context-menu-customization)
 * [Details view customization](#details-view-customization)
@@ -54,7 +55,7 @@ Configure details view columns (header text, width, templates, formats) using th
 
 ## Navigation pane customization
 
-Control navigation pane behavior—such as minimum/maximum width, visibility, and sort order—using the [navigationPaneSettings](https://ej2.syncfusion.com/vue/documentation/api/file-manager#navigationpanesettings) property.
+Control navigation pane behaviorâ€”such as minimum/maximum width, visibility, and sort orderâ€”using the [navigationPaneSettings](https://ej2.syncfusion.com/vue/documentation/api/file-manager#navigationpanesettings) property.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

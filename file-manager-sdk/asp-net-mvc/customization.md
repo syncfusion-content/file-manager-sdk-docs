@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Customization in ASP.NET MVC File Manager | Syncfusion
 description: Learn how to customize the ASP.NET MVC File Manager context menu, toolbar, navigation pane, upload, and tooltip using built-in APIs.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 

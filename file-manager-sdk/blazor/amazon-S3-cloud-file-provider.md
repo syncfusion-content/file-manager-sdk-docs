@@ -1,17 +1,18 @@
----
+﻿---
 layout: post
 title: Amazon S3 Cloud Provider in Blazor File Manager | Syncfusion
 description: Learn how to connect the Blazor File Manager to Amazon S3 to browse and manage files stored in an S3 bucket.
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Amazon S3 Cloud Provider in Blazor File Manager
 
 ## Introduction to Amazon S3
 
-Amazon Simple Storage Service (Amazon S3) is AWS's object storage service for storing and retrieving any amount of data. S3 is durable, scalable, and pay‑as‑you‑go. In this guide the [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) connects to S3 through an ASP.NET Core backend so you can securely browse and perform file operations in the Blazor File Manager component.
+Amazon Simple Storage Service (Amazon S3) is AWS's object storage service for storing and retrieving any amount of data. S3 is durable, scalable, and payâ€‘asâ€‘youâ€‘go. In this guide the [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) connects to S3 through an ASP.NET Core backend so you can securely browse and perform file operations in the Blazor File Manager component.
 
 ## Prerequisites
 
@@ -49,7 +50,7 @@ this.operation.RegisterAmazonS3("<---bucketName--->", "<---awsAccessKeyId--->", 
 
 ## Configuring Blazor File Manager UI
 
-To configure Blazor File Manager component, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), then search and install **Syncfusion.Blazor.FileManager** and **Syncfusion.Blazor.Themes**. Integrate the Blazor FileManager component by pasting the below code in your .razor file of the Blazor application. Click this [link](https://blazor.syncfusion.com/documentation/file-manager/getting-started-with-web-app) for more details.
+To configure Blazor File Manager component, open the NuGet package manager in Visual Studio (Tools â†’ NuGet Package Manager â†’ Manage NuGet Packages for Solution), then search and install **Syncfusion.Blazor.FileManager** and **Syncfusion.Blazor.Themes**. Integrate the Blazor FileManager component by pasting the below code in your .razor file of the Blazor application. Click this [link](https://blazor.syncfusion.com/documentation/file-manager/getting-started-with-web-app) for more details.
 
 Now, build and run the Amazon File Service provider project. It will be hosted at `http://localhost:{port}`. Map the [FileManagerAjaxSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerAjaxSettings.html) of the Blazor File Manager component to the AmazonS3Provider controller endpoints (Url, UploadUrl, DownloadUrl, GetImageUrl) to manage objects in your S3 bucket.
 

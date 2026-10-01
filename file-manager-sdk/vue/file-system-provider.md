@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: File System Provider in Vue File Manager | Syncfusion
 description: Learn how to connect the Vue File Manager to physical, Azure, Amazon S3, Google Drive, Firebase, and other file system providers.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # File System Provider in Vue File Manager
@@ -298,7 +299,7 @@ After cloning, open the project in Visual Studio and restore the NuGet packages.
 
 ```
 
-After registering the File Transfer Protocol details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and  mapping the **ajaxSettings** property of the [Vue File Manager](https://www.syncfusion.com/vue-components/vue-file-manager) component to the appropriate controller methods allows you to manage the FTP’s objects storage.
+After registering the File Transfer Protocol details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and  mapping the **ajaxSettings** property of the [Vue File Manager](https://www.syncfusion.com/vue-components/vue-file-manager) component to the appropriate controller methods allows you to manage the FTPâ€™s objects storage.
 
 ```
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Multiple Selection in ASP.NET MVC File Manager | Syncfusion
 description: Learn how to enable multiple selection in the ASP.NET MVC File Manager using Ctrl/Shift keys and checkboxes to select many files at once.
@@ -6,6 +6,7 @@ control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 
