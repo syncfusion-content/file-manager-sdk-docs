@@ -5,7 +5,8 @@ description: Learn how to localize the ASP.NET MVC File Manager to any culture b
 control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 

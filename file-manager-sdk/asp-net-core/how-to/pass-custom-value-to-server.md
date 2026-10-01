@@ -5,7 +5,8 @@ description: Learn how to pass a custom value to the server in the ASP.NET Core 
 control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to pass a custom value to the server in ASP.NET Core File Manager

@@ -4,7 +4,8 @@ title: Pagination in Blazor File Manager | Syncfusion
 description: Learn how to enable pagination in the Blazor File Manager and customize page size, current page, and the items per page dropdown.
 control: File Manager
 platform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Pagination in Blazor File Manager

@@ -4,7 +4,8 @@ title: How to customize navigation items in Blazor File Manager | Syncfusion
 description: Learn how to customize the layout of folder nodes in the Blazor File Manager navigation pane with a custom template.
 control: File Manager
 platform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to Customize Navigation Pane in Blazor File Manager

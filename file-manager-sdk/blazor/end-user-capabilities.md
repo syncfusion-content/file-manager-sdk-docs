@@ -4,7 +4,8 @@ title: End User Capabilities in Blazor File Manager | Syncfusion
 description: Learn about the Blazor File Manager user interface sections like toolbar, breadcrumb, navigation pane, context menu, and views.
 control: File Manager
 platform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # End User Capabilities in Blazor File Manager

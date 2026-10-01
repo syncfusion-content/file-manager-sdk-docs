@@ -4,7 +4,8 @@ title: Drag and Drop in Blazor File Manager | Syncfusion
 description: Learn how to move files and folders within the Blazor File Manager using drag and drop and the events that fire during the operation.
 control: File Manager
 platform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Drag and Drop in Blazor File Manager

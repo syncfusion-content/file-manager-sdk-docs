@@ -5,7 +5,8 @@ description: Learn how to load flat JSON data in the ASP.NET Core File Manager w
 control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Flat Data in ASP.NET Core File Manager

@@ -5,7 +5,8 @@ description: Learn about the ASP.NET Core File Manager, its key capabilities, an
 control: File Manager
 platform: file-manager-sdk
 publishingplatform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # ASP.NET Core File Manager Overview

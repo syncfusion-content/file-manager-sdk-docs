@@ -4,7 +4,8 @@ title: Toolbar in Blazor File Manager | Syncfusion
 description: Learn about the built-in toolbar items in the Blazor File Manager for creating folders, sorting, uploading, refreshing, and viewing files.
 control: File Manager
 platform: file-manager-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Toolbar in Blazor File Manager
