@@ -5,6 +5,7 @@ description: Learn about the built-in toolbar items in the Blazor File Manager f
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Toolbar in Blazor File Manager

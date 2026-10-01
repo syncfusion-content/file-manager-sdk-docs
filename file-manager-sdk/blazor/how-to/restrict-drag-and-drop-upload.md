@@ -5,6 +5,7 @@ description: Learn how to disable the external drag and drop upload action for a
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to Restrict Drag and Drop Upload in Blazor File Manager

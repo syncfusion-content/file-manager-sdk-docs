@@ -5,6 +5,7 @@ description: Learn how to deploy the unified ASP.NET Core File Manager provider 
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # File Manager Provider Docker Support in ASP.NET Core File Manager

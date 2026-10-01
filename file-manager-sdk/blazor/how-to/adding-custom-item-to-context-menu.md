@@ -5,6 +5,7 @@ description: Learn how to add a custom menu item to the context menu in the Blaz
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to Add a Custom Item to the Context Menu in Blazor File Manager

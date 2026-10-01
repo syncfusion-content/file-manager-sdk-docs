@@ -5,6 +5,7 @@ description: Learn how to build a custom file provider for the Blazor File Manag
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Custom File Provider in Blazor File Manager
