@@ -5,6 +5,7 @@ description: Learn how to deploy the unified Blazor File Manager provider Docker
 control: File Manager
 platform: file-manager-sdk
 documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # File Manager Provider Docker Support in Blazor File Manager

@@ -5,6 +5,7 @@ description: Learn how to browse, create, rename, delete, copy, move, search, an
 control: File Manager
 platform: file-manager-sdk
 documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # File Operations in Blazor File Manager

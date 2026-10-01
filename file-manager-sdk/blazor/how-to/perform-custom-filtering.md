@@ -5,6 +5,7 @@ description: Learn how to perform a custom search in the Blazor File Manager by 
 control: File Manager
 platform: file-manager-sdk
 documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to Perform Custom Filtering in Blazor File Manager

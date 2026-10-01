@@ -5,6 +5,7 @@ description: Learn how to render the Blazor File Manager inside other components
 control: File Manager
 platform: file-manager-sdk
 documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to Render the File Manager Inside Other Components in Blazor

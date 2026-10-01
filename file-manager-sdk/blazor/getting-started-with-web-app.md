@@ -5,6 +5,7 @@ description: Checkout and learn about how to get started with the Blazor File Ma
 component: File Manager
 platform: file-manager-sdk
 documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Getting Started with Blazor File Manager in Blazor Web App

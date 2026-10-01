@@ -5,6 +5,7 @@ description: Learn how to configure access control in the Blazor File Manager wi
 control: File Manager
 platform: file-manager-sdk
 documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Access Control in Blazor File Manager

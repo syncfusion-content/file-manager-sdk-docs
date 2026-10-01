@@ -5,6 +5,7 @@ description: Learn how to connect the Blazor File Manager to Azure Blob Storage 
 control: File Manager
 platform: file-manager-sdk
 documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Azure Cloud Provider in Blazor File Manager

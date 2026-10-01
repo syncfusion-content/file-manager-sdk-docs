@@ -5,6 +5,7 @@ description: Learn how to deploy the unified ASP.NET MVC File Manager provider D
 control: File Manager
 platform: file-manager-sdk
 documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # File Manager Provider Docker Support in ASP.NET MVC File Manager

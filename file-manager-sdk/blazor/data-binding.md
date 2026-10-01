@@ -5,6 +5,7 @@ description: Learn how to bind data to the Blazor File Manager using a RESTful J
 control: File Manager
 platform: file-manager-sdk
 documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Data Binding in Blazor File Manager

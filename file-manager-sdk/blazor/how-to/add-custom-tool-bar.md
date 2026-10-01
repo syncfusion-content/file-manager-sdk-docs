@@ -5,6 +5,7 @@ description: Learn how to add and customize a custom toolbar item in the Blazor 
 control: File Manager
 platform: file-manager-sdk
 documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to Add a Custom Item to the Toolbar in Blazor File Manager

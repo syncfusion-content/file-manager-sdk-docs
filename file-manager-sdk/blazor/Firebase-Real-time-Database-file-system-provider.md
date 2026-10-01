@@ -5,6 +5,7 @@ description: Learn how to use the Firebase Real-time Database file system provid
 control: File Manager
 platform: file-manager-sdk
 documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Firebase Provider in Blazor File Manager

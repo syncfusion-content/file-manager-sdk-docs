@@ -5,6 +5,7 @@ description: Learn how to connect the Blazor File Manager to Amazon S3 to browse
 control: File Manager
 platform: file-manager-sdk
 documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Amazon S3 Cloud Provider in Blazor File Manager

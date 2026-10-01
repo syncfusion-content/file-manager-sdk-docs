@@ -5,6 +5,7 @@ description: Learn how to enable UI virtualization in the Blazor File Manager fo
 control: File Manager
 platform: file-manager-sdk
 documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Virtualization in Blazor File Manager

@@ -5,6 +5,7 @@ description: Learn how to enable large file uploads in the Blazor File Manager b
 control: File Manager
 platform: file-manager-sdk
 documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to Upload Large Files in Blazor File Manager

@@ -5,6 +5,7 @@ description: Learn how to use the Syncfusion Blazor File Manager to browse, orga
 control: File Manager
 platform: file-manager-sdk
 documentation: ugappliesto: UI Component Suite, File Manager SDK
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Overview of Syncfusion Blazor File Manager Component
