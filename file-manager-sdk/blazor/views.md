@@ -10,17 +10,24 @@ appliesto: UI Component Suite, File Manager SDK
 
 # Views in Blazor File Manager
 
-The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) component provides both the `Large Icons View` for visual recognition and the `Details View` for organized information.
+The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) component renders the file system in two built-in layouts: the `Large Icons View` for visual recognition and the `Details View` for organized information.
+
+Choose a layout based on how end users browse content:
+
+- **Large Icons View:** Best for image-heavy folders and quick visual scanning.
+- **Details View:** Best when file metadata (size, type, modified date) drives selection.
 
 ## Large Icons View
 
-The `Large Icons View` is the default starting view in the FileManager. The view can be changed by using the [Toolbar](https://blazor.syncfusion.com/documentation/file-manager/file-operations#toolbar) view button or by using the view menu in [Context Menu](https://blazor.syncfusion.com/documentation/file-manager/context-menu). The [View](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.SfFileManager-1.html#Syncfusion_Blazor_FileManager_SfFileManager_1_View) API can also be used to change the initial view of the FileManager.
+`ViewType.LargeIcons` is the default starting view in the File Manager. The view can be changed using the **View** button on the [Toolbar](https://blazor.syncfusion.com/documentation/file-manager/file-operations#toolbar), or through the **View** submenu in the [Context Menu](https://blazor.syncfusion.com/documentation/file-manager/context-menu). To set the initial view in code, assign the `View` API (for example, `ViewType.LargeIcons` or `ViewType.Details`).
 
-In the large icons view, the thumbnail icons will be shown in a larger size, which displays the data in a form that best suits their content. For image type files, a **preview** will be displayed. Extension thumbnails will be displayed for other type files.
+In the Large Icons View, thumbnails are shown at a larger size that displays the data in a form that best suits its content. For image files, a **preview** is displayed. Extension thumbnails are displayed for other file types.
 
 ### Customize existing Large Icons View
 
-The large icons view layout can be customized using the `LargeIconsTemplate` property, which allows you to display file or folder information, apply custom formatting, and use conditional rendering based on item type. You can customize it further based on your application requirements.
+The Large Icons View layout can be customized using the `LargeIconsTemplate` property, which lets you display file or folder information, apply custom formatting, and use conditional rendering based on item type. The following sample renders a custom card per item and is configured to use the Syncfusion sample service endpoint; replace the URLs with your own service before running the sample.
+
+> **Note:** The `e-fe-*` icon classes and other File Manager styles ship with the `Syncfusion.Blazor.FileManager` NuGet package. Reference the Syncfusion stylesheet (for example, `_content/Syncfusion.Blazor/styles.css`) in `App.razor` or `_Host.cshtml` for the icon classes to resolve.
 
 ```cshtml
 
@@ -115,11 +122,11 @@ The large icons view layout can be customized using the `LargeIconsTemplate` pro
 
 ## Details View
 
-In the details view, the files are displayed in a sorted list order. This file list comprises of several columns of information about the files such as **Name**, **Date Modified**, **Type**, and **Size**. Each file has its own small icon representing the file type. Additional columns can be added using [DetailsViewSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerDetailsViewSettings.html) API. The details view allows you to perform sorting using column header.
+In the Details View, files are displayed in a sorted list order. This file list comprises several columns of information about each file, including **Name**, **Date Modified**, **Type**, and **Size**. Each file has its own small icon representing the file type by default. Additional columns can be added using the [FileManagerDetailsViewSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerDetailsViewSettings.html) API. The Details View allows you to perform sorting by clicking a column header. Sorting behavior is controlled per column by the `AllowSorting` property of each `FileManagerColumn` (default: `true`).
 
 ### Define custom columns
 
-To add a custom column to the details view, use the [FileManagerColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerColumn.html) from the `Syncfusion.Blazor.FileManager` namespace. Here's an example:
+To add a custom column to the Details View, use the [FileManagerColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerColumn.html) from the `Syncfusion.Blazor.FileManager` namespace. Each `Template` block receives a `FileManagerDirectoryContent` instance, so custom columns can render any field that the server returns (for example, `Type`). The following example shows how to add a `Category` column to the Details View.
 
 ```cshtml
 
@@ -155,7 +162,7 @@ To add a custom column to the details view, use the [FileManagerColumn](https://
 
 ### Customize existing column format
 
-The details view settings like, column [Width](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerColumn.html#Syncfusion_Blazor_FileManager_FileManagerColumn_Width), [Format](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerColumn.html#Syncfusion_Blazor_FileManager_FileManagerColumn_Format), [HeaderText](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerColumn.html#Syncfusion_Blazor_FileManager_FileManagerColumn_HeaderText), [Template](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerColumn.html#Syncfusion_Blazor_FileManager_FileManagerColumn_Template) for each field can be customized using [FileManagerColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerColumn.html) property.
+The Details View column appearance, such as column [Width](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerColumn.html#Syncfusion_Blazor_FileManager_FileManagerColumn_Width), [Format](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerColumn.html#Syncfusion_Blazor_FileManager_FileManagerColumn_Format), [HeaderText](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerColumn.html#Syncfusion_Blazor_FileManager_FileManagerColumn_HeaderText), and [Template](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerColumn.html#Syncfusion_Blazor_FileManager_FileManagerColumn_Template), can be customized on each field using the [FileManagerColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerColumn.html) property. `Format` values follow the C# [date and time format strings](https://learn.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ```cshtml
 
@@ -185,6 +192,13 @@ The details view settings like, column [Width](https://help.syncfusion.com/cr/bl
 </SfFileManager>
 
 ```
+
+## See Also
+
+- [Toolbar](https://blazor.syncfusion.com/documentation/file-manager/file-operations#toolbar)
+- [Context Menu](https://blazor.syncfusion.com/documentation/file-manager/context-menu)
+- [Multiple file selection](https://blazor.syncfusion.com/documentation/file-manager/multiple-file-selection)
+- [Blazor File Manager live samples](https://github.com/syncfusion/blazor-samples/tree/master/FileManager)
 
 
 

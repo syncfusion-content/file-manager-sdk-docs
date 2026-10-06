@@ -1,121 +1,122 @@
 ---
 layout: post
-title: Getting Started with File Manager in Blazor Server App | Syncfusion
-description: Learn how to get started with the Blazor File Manager component in a Blazor Server App using Visual Studio, VS Code, or the .NET CLI.
+title: Getting Started with Blazor FileManager in Blazor Server App | Syncfusion
+description: Learn how to get started with the Blazor FileManager component in a Blazor Server App using Visual Studio, VS Code, or the .NET CLI.
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
 
-<!-- markdownlint-disable MD024 -->
+# Getting Started with Blazor FileManager in Blazor Server App
 
-# Getting Started with Blazor File Manager in Blazor Server App
+This section briefly explains how to include the [Blazor FileManager](https://www.syncfusion.com/blazor-components/blazor-file-manager) component in your Blazor Server App using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
 
-This section briefly explains how to include the [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) component in your Blazor Server App using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
+> **Compatibility:** This guide targets **.NET 8, .NET 9, and .NET 10**. Blazor Server requires a persistent SignalR connection, so the FileManager runs server-side; for very large uploads, configure the maximum upload size and SignalR buffer sizes on the host.
 
-> **Ready to streamline your Blazor development?** <br/>Discover the full potential of Blazor components with AI Coding Assistants. Effortlessly integrate, configure, and enhance projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into preferred AI-powered IDEs like VS Code, Cursor, CodeStudio and more. [Explore AI Coding Assistants](https://blazor.syncfusion.com/documentation/ai-coding-assistant/overview)
+## Prerequisites
 
-## Using .NET CLI Templates
+- Install the latest [.NET SDK](https://dotnet.microsoft.com/download) (8.0 or later).
+- For **Visual Studio**: install [Visual Studio 2022 17.8+](https://visualstudio.microsoft.com/vs/) with the **ASP.NET and web development** workload.
+- For **VS Code**: install the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension.
+- Trust the local development certificate: `dotnet dev-certs https --trust` (required for Blazor Web Apps and Server Apps).
+- (Optional) Install the [Syncfusion® Blazor Extension](https://blazor.syncfusion.com/documentation/visual-studio-code-integration/create-project) for templating.
 
-Quickly set up a Blazor application using the preconfigured [Syncfusion Web App Template](https://help.syncfusion.com/extension/syncfusion-blazor-webapp-template-via-nuget/installation).
+## Register Syncfusion license key
 
-First, install the template using the .NET CLI.
+Syncfusion Blazor components require a valid license key. Register it once at the top of **Program.cs** before `AddSyncfusionBlazor()`:
 
-{% tabs %}
-{% highlight razor tabtitle=".NET CLI" %}
+```csharp
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+```
 
-dotnet new install Syncfusion.Blazor.WebApp.Templates
+See [Registering Syncfusion license key](https://blazor.syncfusion.com/documentation/getting-started/license-key) for more details.
 
-{% endhighlight %}
-{% endtabs %}
+## Option 1: Using .NET CLI Templates (recommended)
 
-Next, create a new project with following command.
+The fastest path is to scaffold a project from the preconfigured [Syncfusion Web App Template](https://help.syncfusion.com/extension/syncfusion-blazor-webapp-template-via-nuget/installation).
 
-{% tabs %}
-{% highlight razor tabtitle="Server" %}
+1. Install the template:
 
-dotnet new syncfusionblazorwebapp --name MyApp --interactivity Server
+    ```bash
+    dotnet new install Syncfusion.Blazor.WebApp.Templates
+    ```
 
-{% endhighlight %}
-{% endtabs %}
+2. Create a new Blazor Server App project:
 
-After creating the project, navigate to the main project folder (for example, `MyApp`) and run the following command.
+    ```bash
+    dotnet new syncfusionblazorwebapp --name MyApp --interactivity Server
+    ```
 
-{% highlight razor tabtitle=".NET CLI" %}
+3. Restore, then run the project:
 
-cd MyApp
-dotnet run
+    ```bash
+    cd MyApp
+    dotnet restore
+    dotnet run
+    ```
 
-{% endhighlight %}
+4. Continue with [Add the Blazor FileManager component](#add-blazor-filemanager-component) to wire up the component on the home page.
 
-## Manually creating a new Blazor Server App
+## Option 2: Manually creating a Blazor Server App
+
+Use this option if you prefer to start from the official Microsoft template.
 
 {% tabcontents %}
 
-{% tabcontent Visual Studio %}
+{% tabcontent VS %}
 
 Create a **Blazor Server App** by using the **Blazor Web App** template in Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/blazor/tooling?view=aspnetcore-10.0&pivots=vs) or the [Syncfusion® Blazor Extension](https://blazor.syncfusion.com/documentation/visual-studio-integration/template-studio).
 
 {% endtabcontent %}
 
-{% tabcontent Visual Studio Code %}
+{% tabcontent VS Code %}
 
-Run the following command to create a new Blazor Server App.
+Run the following command to create a new Blazor Web App project with the **Blazor Web App** template (Server render mode is configured in the UI or via the template parameters):
 
-{% tabs %}
-{% highlight razor tabtitle="Terminal" %}
-
-dotnet new blazor -o BlazorApp --interactivity Server
+```bash
+dotnet new blazor -o BlazorApp
 cd BlazorApp
+```
 
-{% endhighlight %}
-{% endtabs %}
-
-Alternatively, create a **Blazor Server App** using Visual Studio Code via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/blazor/tooling?view=aspnetcore-10.0&pivots=vsc) or the [Syncfusion® Blazor Extension](https://blazor.syncfusion.com/documentation/visual-studio-code-integration/create-project), or the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension.
+Alternatively, create a **Blazor Web App** using Visual Studio Code via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/blazor/tooling?view=aspnetcore-10.0&pivots=vsc) or the [Syncfusion® Blazor Extension](https://blazor.syncfusion.com/documentation/visual-studio-code-integration/create-project). The **C# Dev Kit** extension is required in either case.
 
 {% endtabcontent %}
 
 {% endtabcontents %}
 
-N> Configure the appropriate [Interactive render mode](https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-modes?view=aspnetcore-10.0#render-modes) and [Interactivity location](https://learn.microsoft.com/en-us/aspnet/core/blazor/tooling?view=aspnetcore-10.0&pivots=vs) while creating a Blazor Server App. For detailed information, refer to the [interactive render mode documentation](https://blazor.syncfusion.com/documentation/common/interactive-render-mode).
+> Configure the appropriate [Interactive render mode](https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-modes?view=aspnetcore-10.0#render-modes) (`Server`) and [Interactivity location](https://learn.microsoft.com/en-us/aspnet/core/blazor/tooling?view=aspnetcore-10.0&pivots=vs) (`Per page/component` or `Global`) when creating the project. For detailed information, refer to the [interactive render mode documentation](https://blazor.syncfusion.com/documentation/common/interactive-render-mode).
+>
+> If you use `Per page/component`, each Razor page that uses the FileManager must declare `@rendermode InteractiveServer` at the top. If you use `Global`, render mode is configured once in **App.razor**.
 
 ### Install the required Blazor packages
 
-Install the [Syncfusion.Blazor.FileManager](https://www.nuget.org/packages/Syncfusion.Blazor.FileManager) and [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes/) NuGet packages. All Syncfusion Blazor packages are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.blazor). See the [NuGet packages](https://blazor.syncfusion.com/documentation/nuget-packages) topic for details.
+Install the [Syncfusion.Blazor.FileManager](https://www.nuget.org/packages/Syncfusion.Blazor.FileManager) and [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes/) NuGet packages. All Syncfusion Blazor packages are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.blazor). See the [NuGet packages](https://blazor.syncfusion.com/documentation/nuget-packages) topic for details. For the latest available version, see the [Release Notes](https://blazor.syncfusion.com/documentation/release-notes).
 
 {% tabcontents %}
 
-{% tabcontent Visual Studio %}
+{% tabcontent VS %}
 
 1. Go to *Tools → NuGet Package Manager → Manage NuGet Packages for Solution*.
 2. Search the required NuGet packages (`Syncfusion.Blazor.FileManager` and `Syncfusion.Blazor.Themes`) and install them.
 
-Alternatively, you can install the same packages using the Package Manager Console with the following commands.
+Alternatively, install the same packages using the Package Manager Console:
 
-{% tabs %}
-{% highlight razor tabtitle="Package Manager Console" %}
-
+```powershell
 Install-Package Syncfusion.Blazor.FileManager -Version {{ site.releaseversion }}
 Install-Package Syncfusion.Blazor.Themes -Version {{ site.releaseversion }}
-
-{% endhighlight %}
-{% endtabs %}
+```
 
 {% endtabcontent %}
 
-{% tabcontent Visual Studio Code %}
+{% tabcontent VS Code %}
 
-Open the terminal and run the following commands.
+Open the terminal and run the following commands:
 
-{% tabs %}
-{% highlight razor tabtitle="Terminal" %}
-
+```bash
 dotnet add package Syncfusion.Blazor.FileManager -v {{ site.releaseversion }}
 dotnet add package Syncfusion.Blazor.Themes -v {{ site.releaseversion }}
-
-{% endhighlight %}
-{% endtabs %}
+```
 
 {% endtabcontent %}
 
@@ -123,61 +124,75 @@ dotnet add package Syncfusion.Blazor.Themes -v {{ site.releaseversion }}
 
 ### Add import namespaces
 
-After the packages are installed, open the **~/_Imports.razor** file and import the `Syncfusion.Blazor` and `Syncfusion.Blazor.FileManager` namespaces.
+Open **~/_Imports.razor** and import the `Syncfusion.Blazor` and `Syncfusion.Blazor.FileManager` namespaces:
 
-{% tabs %}
-{% highlight C# tabtitle="~/_Imports.razor" %}
-
+```csharp
 @using Syncfusion.Blazor
 @using Syncfusion.Blazor.FileManager
-
-{% endhighlight %}
-{% endtabs %}
+```
 
 ### Register the Blazor service
 
-Open the **Program.cs** file in Blazor Server App and register the Blazor service and include the required namespace reference `using Syncfusion.Blazor;` at the top.
+Open **Program.cs** and add the `using Syncfusion.Blazor;` namespace reference at the top. A typical Server App **Program.cs** looks similar to:
 
-{% tabs %}
-{% highlight C# tabtitle="Program.cs" %}
+```csharp
+using Syncfusion.Blazor;
 
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddRazorPages();
+builder.Services.AddServerSideBlazor();
 builder.Services.AddSyncfusionBlazor();
 
-{% endhighlight %}
-{% endtabs %}
+var app = builder.Build();
+
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Error");
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
+app.MapBlazorHub();
+app.MapFallbackToPage("/_Host");
+
+app.Run();
+```
 
 ### Add stylesheet and script resources
 
-The theme stylesheet and script can be accessed from NuGet through [Static Web Assets](https://blazor.syncfusion.com/documentation/appearance/themes#static-web-assets). Include the [stylesheet](https://blazor.syncfusion.com/documentation/appearance/themes) at the end of the `<head>` section in the **App.razor** file.
+The theme stylesheet and script can be accessed from NuGet through [Static Web Assets](https://blazor.syncfusion.com/documentation/appearance/themes#static-web-assets). Open **App.razor** and add the following at the end of the `<head>` section and at the end of the `<body>` section:
 
-{% tabs %}
-{% highlight razor tabtitle="App.razor" %}
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="/" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link href="_content/Syncfusion.Blazor.Themes/fluent2.css" rel="stylesheet" />
+</head>
+<body>
+    <script src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js" type="text/javascript"></script>
+    @* existing template body *@
+</body>
+</html>
+```
 
-<link href="_content/Syncfusion.Blazor.Themes/fluent2.css" rel="stylesheet" />
+> If your template ships with default Bootstrap or other theme links, remove or replace them to avoid style conflicts. See [Blazor Themes](https://blazor.syncfusion.com/documentation/appearance/themes) and [Adding Script Reference](https://blazor.syncfusion.com/documentation/common/adding-script-references) for alternative approaches (CDN, CRG).
 
-{% endhighlight %}
-{% endtabs %}
+### Add Blazor FileManager component
 
-Include the required [script references](https://blazor.syncfusion.com/documentation/common/adding-script-references) at the end of the `<body>` section in the **App.razor** file to enable Blazor File Manager functionality.
+Open **Home.razor** under **~/Components/Pages/** and add the Blazor FileManager component.
 
-{% tabs %}
-{% highlight razor tabtitle="App.razor" %}
-
-<script src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js" type="text/javascript"></script>
-
-{% endhighlight %}
-{% endtabs %}
-
-### Add Blazor File Manager component
-
-Open a Razor file located in the **~/Components/Pages/*.razor** (for example, **Home.razor**) and add the [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) component inside the Razor file.
-
-N> If the interactivity location is set to `Per page/component`, define a render mode at the top of the Razor file (for example, `InteractiveServer`). If the **Interactivity** is set to `Global`, the render mode is automatically configured in the `App.razor` file by default.
-
-{% tabs %}
-{% highlight razor tabtitle="Home.razor" %}
-
+```razor
+@page "/"
 @rendermode InteractiveServer
+@using Syncfusion.Blazor.FileManager
 
 <SfFileManager TValue="FileManagerDirectoryContent">
     <FileManagerAjaxSettings Url="https://physical-service.syncfusion.com/api/FileManager/FileOperations"
@@ -186,38 +201,62 @@ N> If the interactivity location is set to `Per page/component`, define a render
                              GetImageUrl="https://physical-service.syncfusion.com/api/FileManager/GetImage">
     </FileManagerAjaxSettings>
 </SfFileManager>
+```
 
-{% endhighlight %}
-{% endtabs %}
+**Property reference:**
+
+| Property | Type | Description |
+| --- | --- | --- |
+| `TValue` | `Type` | The data type of the file/folder records returned by the service. Use `FileManagerDirectoryContent` for the default service. |
+| `FileManagerAjaxSettings.Url` | `string` | Endpoint used for file operations (read, create, rename, delete, etc.). |
+| `FileManagerAjaxSettings.UploadUrl` | `string` | Endpoint that handles file uploads. |
+| `FileManagerAjaxSettings.DownloadUrl` | `string` | Endpoint that serves files for download. |
+| `FileManagerAjaxSettings.GetImageUrl` | `string` | Endpoint that returns image thumbnails. |
+
+> The endpoints shown above point to Syncfusion's **public sample service** at `https://physical-service.syncfusion.com`. They are read-only and intended for demos. For production use, replace them with your own service implementing the Syncfusion FileManager protocol. See [File System Provider](file-system-provider.md) and [Custom File Provider](custom-file-provider.md) for details.
+>
+> The `@rendermode InteractiveServer` directive is required only when the app uses `Per page/component` interactivity. If the project is configured for `Global` interactivity, the render mode is set once in **App.razor** and should be omitted here.
+
+![Blazor FileManager component in Blazor Server App](images/blazor-filemanager-server-app.webp)
 
 ### Run the application
 
 {% tabcontents %}
 
-{% tabcontent Visual Studio %}
+{% tabcontent VS %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) component will render in your default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) to launch the application. The Blazor FileManager component will render in your default web browser.
 
 {% endtabcontent %}
 
-{% tabcontent Visual Studio Code %}
+{% tabcontent VS Code %}
 
-Open the terminal and run the following command.
+Open the terminal and run the following command:
 
-{% tabs %}
-{% highlight razor tabtitle="Terminal" %}
-
+```bash
 dotnet run
-
-{% endhighlight %}
-{% endtabs %}
+```
 
 {% endtabcontent %}
 
 {% endtabcontents %}
 
-## See Also
+## Troubleshooting
 
-1. [Getting Started with Blazor Web App](https://blazor.syncfusion.com/documentation/getting-started/blazor-web-app)
-2. [Getting Started with Blazor WebAssembly App](https://blazor.syncfusion.com/documentation/getting-started/blazor-webassembly-app)
-3. [Getting Started with Blazor File Manager Data Binding](https://blazor.syncfusion.com/documentation/file-manager/data-binding)
+| Issue | Likely cause | Fix |
+| --- | --- | --- |
+| `SfFileManager` renders but no files appear | The demo service is unreachable or blocked by the network. | Replace the URLs with a local service (see [File System Provider](file-system-provider.md)). |
+| Static asset 404 for `_content/Syncfusion.Blazor.Themes/...` | Static web assets were not copied during restore. | Run `dotnet restore` and rebuild. Verify the package reference is present. |
+| Component renders as plain HTML with no interactivity | Render mode is not configured for the page. | Add `@rendermode InteractiveServer` at the top of the Razor page, or set the project to `Global` interactivity. |
+| `AddSyncfusionBlazor` not found | `Syncfusion.Blazor` namespace not imported. | Add `using Syncfusion.Blazor;` to **Program.cs** and `@using Syncfusion.Blazor` to **~/_Imports.razor**. |
+| License watermark shown at runtime | License key not registered. | Call `Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY")` at app startup. |
+
+## See also
+
+- [File operations](file-operations.md)
+- [File system provider](file-system-provider.md)
+- [Custom file provider](custom-file-provider.md)
+- [Upload](upload.md)
+- [Data binding](data-binding.md)
+- [Getting started with Blazor Web App](getting-started-with-web-app.md)
+- [Getting started with Blazor WebAssembly App](getting-started-with-wasm-app.md)

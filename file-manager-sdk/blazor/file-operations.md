@@ -10,24 +10,58 @@ appliesto: UI Component Suite, File Manager SDK
 
 # File Operations in Blazor File Manager
 
-The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) component is used to browse, manage, and organize the files and folders in a file system through a web application. All basic file operations like creating a new folder, uploading and downloading of files in the file system, and deleting and renaming of existing files and folders are available in the Blazor File Manager component.  Additionally, previewing of image files is also provided in the Blazor File Manager component.
+> **Version compatibility:** The examples in this document use the `Syncfusion.Blazor` and `Syncfusion.Blazor.FileManager` NuGet packages and target **.NET 6 or later** (Blazor Server, Blazor WebAssembly, and Blazor Web App interactive render modes). The `SortComparer` property and `FileManagerColumn.SortComparer` were introduced in Syncfusion Blazor File Manager **v20.2.0.36**; the `DownloadFilesAsync` method and `BeforeDownload` event require **v19.3.0.43** or later.
+
+The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) component is used to browse, manage, and organize files and folders in a file system through a web application. All basic file operations, such as creating a new folder, uploading and downloading files in the file system, and deleting and renaming existing files and folders, are available in the Blazor File Manager component. Additionally, previewing image files is supported in the Blazor File Manager component.
 
 The following table represents the basic operations available in the Blazor File Manager and their corresponding functions.
 
 |Operation Name|Function|
 |----|----|
-|read|Read the details of files or folders available in the given path from the file system, to display the files for the user to browse the content.|
+|read|Reads the details of files or folders available in the given path from the file system to display the files for the user to browse the content.|
 |create|Creates a new folder in the current path of the file system.|
 |delete|Removes the file or folder from the file server.|
-|rename|Rename the selected file or folder in the file system.|
+|rename|Renames the selected file or folder in the file system.|
 |search|Searches for items matching the search string in the current and child directories.|
-|details|Gets the detail of the selected item(s) from the file server.|
-|copy|Copy the selected file or folder in the file system.|
-|move|Cut the selected file or folder in the file server.|
-|upload|Upload files to the current path or directory in the file system.|
-|download|Downloads the file from the server and the multiple files can be downloaded as ZIP files.|
+|details|Returns the details of the selected item(s) from the file server.|
+|copy|Copies the selected file or folder in the file system.|
+|move|Cuts the selected file or folder in the file server.|
+|upload|Uploads files to the current path or directory in the file system.|
+|download|Downloads the file from the server; multiple files can be downloaded as a ZIP file.|
 
-N> The *CreateFolder*, *Remove*, and *Rename* actions will be reflected in the Blazor File Manager only after the successful response from the server.
+> The *CreateFolder*, *Remove*, and *Rename* actions are reflected in the Blazor File Manager only after a successful response from the server.
+
+## Prerequisites
+
+Before you start, make sure the following prerequisites are in place.
+
+1. **Create a Blazor project** (Blazor Server, Blazor WebAssembly, or Blazor Web App) using **.NET 6 or later**.
+2. **Install the Syncfusion Blazor NuGet packages** using the NuGet Package Manager or the Package Manager Console:
+   - `Syncfusion.Blazor`
+   - `Syncfusion.Blazor.FileManager`
+3. **Register Syncfusion services in `Program.cs`**. Add the following to the service registration block (after `builder.Services.AddRazorComponents()` for Blazor Web App, or after `builder.Services.AddServerSideBlazor()` / `AddRazorPages()` for other templates):
+
+   ```csharp
+   builder.Services.AddSyncfusionBlazor();
+   ```
+
+4. **Add the theme and script references** to your host page:
+   - In `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly / Blazor Web App), add the Syncfusion theme stylesheet inside the `<head>` element and the script reference at the end of the `<body>` element. For example:
+
+     ```html
+     <head>
+       <link href="_content/Syncfusion.Blazor/styles/bootstrap5.css" rel="stylesheet" />
+     </head>
+     <body>
+       <script src="_content/Syncfusion.Blazor/scripts/syncfusion-blazor.min.js"></script>
+     </body>
+     ```
+
+5. **Open network access** for the controller endpoints that the File Manager will call (`/api/FileManager/FileOperations`, `/api/FileManager/Upload`, `/api/FileManager/Download`, `/api/FileManager/GetImage`).
+
+> If you are using a different Syncfusion theme (Material, Tailwind, Fluent, etc.), replace the theme stylesheet reference accordingly. See the [Syncfusion Blazor themes documentation](https://blazor.syncfusion.com/documentation/appearance/themes) for the full list.
+
+> **Next step:** After completing the prerequisites, configure the server-side endpoints as described in the [Server-side Configuration](#server-side-configuration) section, then add the component to your application as described in [Add Blazor File Manager to the Application](#add-blazor-file-manager-to-the-application).
 
 ## Request and Response Contents Format in Blazor File Manager component
 
@@ -35,36 +69,39 @@ The following table represents the contents of *data, cwd, and files* in the Bla
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
-|name|String|-|File name|
-|dateCreated|String|-|Date in which file was created (UTC Date string).|
-|dateModified|String|-|Date in which file was last modified (UTC Date string).|
-|filterPath|String|-|Relative path to the file or folder.|
-|hasChild|Boolean|-|Defines this folder has any child folder or not.|
-|isFile|Boolean|-|Say whether the item is file or folder.|
-|size|Number|-|File size|
-|type|String|-|File extension|
+|name|String|-|Name of the file or folder.|
+|dateCreated|String|-|Date when the file was created (UTC Date string).|
+|dateModified|String|-|Date when the file was last modified (UTC Date string).|
+|filterPath|String|-|Relative path of the file or folder.|
+|hasChild|Boolean|-|Indicates whether this folder contains any child folders.|
+|isFile|Boolean|-|Indicates whether the item is a file or a folder.|
+|size|Number|-|File size in bytes.|
+|type|String|-|File extension (e.g., `.xlsx`, `.jpg`).|
 
 The following table represents the contents of *error* in the Blazor File Manager request and response.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
-|code|String|-|Error code|
-|message|String|-|Error message|
-|fileExists|String[]|-|List of duplicate file names|
+|code|String|-|Error code (HTTP-style code such as `404`, `417`).|
+|message|String|-|Human-readable error message.|
+|fileExists|String[]|-|List of file names that already exist at the target path.|
 
 The following table represents the contents of *details* in the Blazor File Manager request and response.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
-|name|String|-|File name|
-|dateCreated|String|-|Date in which file was created (UTC Date string).|
-|dateModified|String|-|Date in which file was last modified (UTC Date string).|
-|filterPath|String|-|Relative path to the file or folder.|
-|hasChild|Boolean|-|Defines this folder has any child folder or not.|
-|isFile|Boolean|-|Say whether the item is file or folder.|
-|size|Number|-|File size|
-|type|String|-|File extension|
-|multipleFiles|Boolean|-|Say whether the details are about single file or multiple files.|
+|name|String|-|Name of the file or folder.|
+|dateCreated|String|-|Date when the file was created (UTC Date string).|
+|dateModified|String|-|Date when the file was last modified (UTC Date string).|
+|filterPath|String|-|Relative path of the file or folder.|
+|hasChild|Boolean|-|Indicates whether this folder contains any child folders.|
+|isFile|Boolean|-|Indicates whether the item is a file or a folder.|
+|size|Number|-|File size in bytes.|
+|type|String|-|File extension (e.g., `.xlsx`, `.jpg`).|
+|multipleFiles|Boolean|-|Indicates whether the details are about a single file or multiple files.|
+|location|String|-|Absolute location of the file or folder on the server.|
+|created|String|-|Localized date string indicating when the item was created.|
+|modified|String|-|Localized date string indicating when the item was last modified.|
 
 ## Reading Files and Folders
 
@@ -72,8 +109,8 @@ The following table represents the request parameters of *read* operations.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
-|action|String|read|Name of the file operation.|
-|path|String|-|Relative path from which the data has to be read.|
+|action|String|read|Name of the file operation. See [operations](#request-and-response-contents-format) for the full list.|
+|path|String|-|Relative path from which the data is read.|
 |showHiddenItems|Boolean|-|Defines show or hide the hidden items.|
 |data|FileManagerDirectoryContent|-|Details about the current path (directory).|
 
@@ -132,7 +169,7 @@ The following table represents the response parameters of *read* operations.
 }
 ```
 
-Read operation triggers on the server side and find the related code details.
+Refer to the following server-side code for the read operation:
 
 ```csharp
 
@@ -148,9 +185,9 @@ The following table represents the request parameters of *create* operations.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
-|action|String|create|Name of the file operation.|
-|path|String|-|Relative path in which the folder has to be created.|
-|name|String|-|Name of the folder to be created.|
+|action|String|create|Name of the file operation. See [operations](#request-and-response-contents-format) for the full list.|
+|path|String|-|Relative path in which the folder is created.|
+|name|String|-|Name of the folder that is created.|
 |data|FileManagerDirectoryContent|-|Details about the current path (directory).|
 
 *Refer [File request and response contents](#file-request-and-response-contents) for the contents of data*
@@ -209,7 +246,7 @@ The following table represents the response parameters of *create* operations.
 }
 ```
 
-Create operation triggers on the server side and find the related code details.
+Refer to the following server-side code for the create operation:
 
 ```csharp
 
@@ -225,10 +262,10 @@ The following table represents the request parameters of *rename* operations.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
-|action|String|rename|Name of the file operation.|
-|path|String|-|Relative path in which the item is located.|
-|name|String|-|Current name of the item to be renamed.|
-|NewName|String|-|New name for the item.|
+|action|String|rename|Name of the file operation. See [operations](#request-and-response-contents-format) for the full list.|
+|path|String|-|Relative path of the item's location.|
+|name|String|-|Current name of the item that is renamed.|
+|NewName|String|-|New name assigned to the item.|
 |data|FileManagerDirectoryContent|-|Details of the item to be renamed.|
 
 *Refer [File request and response contents](#file-request-and-response-contents) for the contents of data*.
@@ -288,7 +325,7 @@ The following table represents the response parameters of *rename* operations.
 }
 ```
 
-Rename operation triggers on the server side and find the related code details.
+Refer to the following server-side code for the rename operation:
 
 ```csharp
 
@@ -305,9 +342,9 @@ The following table represents the request parameters of *delete* operations.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
-|action|String|delete|Name of the file operation.|
+|action|String|delete|Name of the file operation. See [operations](#request-and-response-contents-format) for the full list.|
 |path|String|-|Relative path where the items to be deleted are located.|
-|names|String[]|-|List of the items to be deleted.|
+|names|String[]|-|List of the items that are deleted.|
 |data|FileManagerDirectoryContent|-|Details of the item to be deleted.|
 
 *Refer [File request and response contents](#file-request-and-response-contents) for the contents of data*.
@@ -354,7 +391,7 @@ The following table represents the response parameters of *delete* operations.
 }
 ```
 
-Delete operation triggers on the server side and find the related code details.
+Refer to the following server-side code for the delete operation:
 
 ```csharp
 
@@ -370,9 +407,9 @@ The following table represents the request parameters of *details* operations.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
-|action|String|details|Name of the file operation.|
+|action|String|details|Name of the file operation. See [operations](#request-and-response-contents-format) for the full list.|
 |path|String|-|Relative path where the items are located.|
-|names|String[]|-|List of the items to get details.|
+|names|String[]|-|List of the items for which details are requested.|
 |data|FileManagerDirectoryContent|-|Details of the selected item.|
 
 *Refer [File request and response contents](#file-request-and-response-contents) for the contents of data*.
@@ -392,7 +429,7 @@ The following table represents the response parameters of *details* operations.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
-|details|FileManagerDirectoryContent|-|Details of the requested item(s).|
+|details|FileManagerDirectoryContent|-|Details of the requested item(s), including `name`, `location`, `created`, `modified`, `isFile`, and `size` fields.|
 |error|ErrorDetails|-|Error Details|
 
 *Refer [File request and response contents](#file-request-and-response-contents) for the contents of details and error*.
@@ -417,7 +454,7 @@ The following table represents the response parameters of *details* operations.
 }
 ```
 
-Details operation triggers on the server side and find the related code details.
+Refer to the following server-side code for the details operation:
 
 ```csharp
 
@@ -434,11 +471,11 @@ The following table represents the request parameters of *search* operations.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
-|action|String|search|Name of the file operation.|
-|path|String|-|Relative path to the directory where the files should be searched.|
+|action|String|search|Name of the file operation. See [operations](#request-and-response-contents-format) for the full list.|
+|path|String|-|Relative path of the directory to search.|
 |showHiddenItems|Boolean|-|Defines show or hide the hidden items.|
-|caseSensitive|Boolean|-|Defines search is case sensitive or not.|
-|searchString|String|-|String to be searched in the directory.|
+|caseSensitive|Boolean|-|Defines whether the search is case sensitive.|
+|searchString|String|-|String to search in the directory (supports `*` and `?` wildcards).|
 |data|FileManagerDirectoryContent|-|Details of the searched item.|
 
 *Example:*
@@ -496,7 +533,7 @@ The following table represents the response parameters of *search* operations.
 }
 ```
 
-Searching operation triggers on the server side and find the related code details.
+Refer to the following server-side code for the search operation:
 
 ```csharp
 
@@ -513,9 +550,9 @@ The following table represents the request parameters of *copy* operations.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
-|action|String|copy|Name of the file operation.|
+|action|String|copy|Name of the file operation. See [operations](#request-and-response-contents-format) for the full list.|
 |path|String|-|Relative path to the directory where the files should be copied.|
-|names|String[] |-|List of files to be copied.|
+|names|String[] |-|List of files that are copied.|
 |targetPath|String|-|Relative path where the items to be pasted are located.|
 |data|FileManagerDirectoryContent|-|Details of the copied item.|
 |renameFiles|String[]|-|Details of the renamed item.|
@@ -570,7 +607,7 @@ The following table represents the response parameters of *copy* operations.
 }
 ```
 
-Copy operation triggers on the server side and find the related code details.
+Refer to the following server-side code for the copy operation:
 
 ```csharp
 
@@ -587,9 +624,9 @@ The following table represents the request parameters of *move* operations.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
-|action|String|move|Name of the file operation.|
+|action|String|move|Name of the file operation. See [operations](#request-and-response-contents-format) for the full list.|
 |path|String|-|Relative path to the directory where the files should be copied.|
-|names|String[] |-|List of files to be moved.|
+|names|String[] |-|List of files that are moved.|
 |targetPath|String|-|Relative path where the items to be pasted are located.|
 |data|FileManagerDirectoryContent|-|Details of the moved item.|
 |renameFiles|String[]|-|Details of the renamed item.|
@@ -644,7 +681,7 @@ The following table represents the response parameters of *copy* operations.
 }
 ```
 
-Move operation triggers on the server side and find the related code details.
+Refer to the following server-side code for the move operation:
 
 ```csharp
 
@@ -686,7 +723,7 @@ The available options for the sort order are:
 
 The Blazor File Manager component provides a way to customize the default sort action for the LargeIconsView by defining the [`SortComparer`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.SfFileManager-1.html#Syncfusion_Blazor_FileManager_SfFileManager_1_SortComparer) property and for sorting individual columns in the DetailsView by defining the `SortComparer` property in the [`FileManagerColumn`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerColumn.html) class.The `SortComparer` class should implement the [IComparer](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1?view=net-8.0) interface.
 
-The following example demonstrates how to define custom sort comparer function to achieve natural sorting behavior for the Name column in both DetailsView and LargeIconsView.
+The following example demonstrates how to define a custom sort comparer to achieve natural sorting for the Name column in both the Details View and the Large Icons View.
 
 {% tabs %}
 {% highlight razor %}
@@ -1044,9 +1081,9 @@ The following table represents the request parameters of *Upload* operations.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
-|action|String|Save|Name of the file operation.|
-|path|String|-|Relative path to the location where the file has to be uploaded.|
-|uploadFiles|`IList<IFormFile>`|-|File that are uploaded.|
+|action|String|Save|Name of the file operation. See [operations](#request-and-response-contents-format) for the full list.|
+|path|String|-|Relative path of the location where the file is uploaded.|
+|uploadFiles|`IList<IFormFile>`|-|Files that are uploaded.|
 
 *Example:*
 
@@ -1088,7 +1125,7 @@ data: {
 
 The upload response is an empty string.
 
-The upload operation triggers on the server side and find the related code details.
+Refer to the following server-side code for the upload operation:
 
 ```csharp
 
@@ -1153,8 +1190,8 @@ The following table represents the request parameters of *download* operations.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
-|action|String|download|Name of the file operation|
-|path|String|-|Relative path to location where the files to download are present.|
+|action|String|download|Name of the file operation.||
+|path|String|-|Relative path of the location where the files to be downloaded are present.|
 |names|String[]|-|Name list of the items to be downloaded.|
 |data|FileManagerDirectoryContent|-|Details of the download item.|
 
@@ -1215,9 +1252,9 @@ The following table represents the request parameters of *download* operations.
 {% endhighlight %}
 {% endtabs %}
 
-Downloads the requested items from the file server in response.
+Returns the requested items from the file server in the response.
 
-Download operation triggers on the server side and find the related code details.
+Refer to the following server-side code for the download operation:
 
 ```csharp
 
@@ -1302,14 +1339,14 @@ The following table represents the request parameters of *GetImage* operations.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
-|action|String|GetImage|Name of the file operation|
-|path|String|-|Relative path to the image file|
+|action|String|GetImage|Name of the file operation.||
+|path|String|-|Relative path of the image file.|
 
 Return the image as a file stream in response.
 
 The request from the Blazor File Manager can be customized using the `OnSend` event. Additional information can be passed to the Blazor File Manager in file operation response and can be used in customization.
 
-GetImage operation triggers on the server side and find the related code details.
+Refer to the following server-side code for the get image operation:
 
 ```csharp
 
@@ -1322,50 +1359,15 @@ GetImage operation triggers on the server side and find the related code details
 
 ```
 
-N> Refer to the [Providers](https://blazor.syncfusion.com/documentation/file-manager/file-system-provider) for more details.
+> Refer to the [Providers](https://blazor.syncfusion.com/documentation/file-manager/file-system-provider) for more details.
 
-## Request and Response Contents Format
-
-The following table represents the contents of *data, cwd, and files* in the Blazor File Manager request and response.
-
-|Parameter|Type|Default|Explanation|
-|----|----|----|----|
-|name|String|-|File name|
-|dateCreated|String|-|Date in which file was created (UTC Date string).|
-|dateModified|String|-|Date in which file was last modified (UTC Date string).|
-|filterPath|String|-|Relative path to the file or folder.|
-|hasChild|Boolean|-|Defines this folder has any child folder or not.|
-|isFile|Boolean|-|Say whether the item is file or folder.|
-|size|Number|-|File size|
-|type|String|-|File extension|
-
-The following table represents the contents of *error* in the Blazor File Manager request and response.
-
-|Parameter|Type|Default|Explanation|
-|----|----|----|----|
-|code|String|-|Error code|
-|message|String|-|Error message|
-|fileExists|String[]|-|List of duplicate file names|
-
-The following table represents the contents of *details* in the Blazor File Manager request and response.
-
-|Parameter|Type|Default|Explanation|
-|----|----|----|----|
-|name|String|-|File name|
-|dateCreated|String|-|Date in which file was created (UTC Date string).|
-|dateModified|String|-|Date in which file was last modified (UTC Date string).|
-|filterPath|String|-|Relative path to the file or folder.|
-|hasChild|Boolean|-|Defines this folder has any child folder or not.|
-|isFile|Boolean|-|Say whether the item is file or folder.|
-|size|Number|-|File size|
-|type|String|-|File extension|
-|multipleFiles|Boolean|-|Say whether the details are about single file or multiple files.|
+> The full contents of `data`, `cwd`, `files`, `error`, and `details` are defined once in the [Request and Response Contents Format](#request-and-response-contents-format-in-blazor-file-manager-component) section near the top of this document.
 
 ## Events 
 
 The Blazor File Manager component has a list of events that can be triggered for certain actions. These events can be bound to the Blazor File Manager using the **FileManagerEvents**, which requires the **TValue** to be provided.
 
-N> All the events should be provided in a single **FileManagerEvents** component.
+> All the events should be provided in a single **FileManagerEvents** component.
 
 ### BeforeDownload
 
@@ -1610,6 +1612,29 @@ The [OnFileOpen](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileMan
 
 ```
 
+### OnRead
+
+The [OnRead](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnRead) event of the Blazor File Manager component is triggered when the component requests the contents of a directory. Use this event to provide files from a local service, a database, or any custom data source. Populate `args.Response` (a `FileManagerResponse<TValue>`) with `CWD` and `Files` to render the directory contents.
+
+```cshtml
+
+@using Syncfusion.Blazor.FileManager
+
+<SfFileManager TValue="FileManagerDirectoryContent">
+    <FileManagerEvents TValue="FileManagerDirectoryContent" OnRead="OnRead">
+    </FileManagerEvents>
+</SfFileManager>
+
+@code {
+    public void OnRead(ReadEventArgs<FileManagerDirectoryContent> args)
+    {
+        // Populate args.Response with CWD and Files for args.Path.
+        // Here, you can customize your code.
+    }
+}
+
+```
+
 ### OnSend
 
 The [OnSend](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnSend) event of the Blazor File Manager component is triggered before sending the HttpClient request to the server.
@@ -1770,64 +1795,11 @@ The toolbar can be divided into two sections as right and left. Whenever the too
 
 The following table provides the toolbar buttons that appear based on the selection.
 
-<!-- markdownlint-disable MD033 -->
-<table border="1">
-    <tr>
-        <th>Selected Items Count</th>
-        <th>Left section</th>
-        <th>Right section</th>
-    </tr>
-    <tr>
-        <td>`0` (none of the items)</td>
-        <td>
-            <ul>
-                <li>SortBy</li>
-                <li>Refresh</li>
-                <li>NewFolder</li>
-                <li>Upload</li>
-            </ul>
-        </td>
-        <td>
-            <ul>
-                <li>View</li>
-                <li>Details</li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td>`1` (single item selected)</td>
-        <td>
-            <ul>
-                <li>Delete</li>
-                <li>Download</li>
-                <li>Rename</li>
-            </ul>
-        </td>
-        <td>
-            <ul>
-                <li>Selected items count</li>
-                <li>View</li>
-                <li>Details</li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td>`>1` (multiple selection)</td>
-        <td>
-            <ul>
-                <li>Delete</li>
-                <li>Download</li>
-            </ul>
-        </td>
-        <td>
-            <ul>
-                <li>Selected items count</li>
-                <li>View</li>
-                <li>Details</li>
-            </ul>
-        </td>
-    </tr>
-</table>
+| Selected Items Count | Left section | Right section |
+|----------------------|--------------|----------------|
+| `0` (none of the items) | SortBy, Refresh, NewFolder, Upload | View, Details |
+| `1` (single item selected) | Delete, Download, Rename | Selected items count, View, Details |
+| `>1` (multiple selection) | Delete, Download | Selected items count, View, Details |
 
 ## Server-side Configuration
 
@@ -1930,7 +1902,7 @@ namespace filemanager.Server.Controllers
 {% endhighlight %}
 {% endtabs %}
 
-N> For standalone Blazor WASM applications, the service from this [link](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider/) can be used. This service is an ASP.NET Core project that acts as the backend API for your Blazor File Manager
+> For standalone Blazor WASM applications, the service from this [link](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider/) can be used. This service is an ASP.NET Core project that acts as the backend API for your Blazor File Manager.
 
 To configure and map the controller, open the `~/Program.cs` file of the server part of the application. Add the following code to configure the service for the controller and map the controller after `app.UseRouting()`. The `app.UseRouting()` middleware should be placed after `app.UseHttpsRedirection()`. The correct ordering is essential to ensure proper request handling and middleware functionality:
 
@@ -1976,7 +1948,7 @@ Add your required files and folders under the `wwwroot\Files` directory.
 
 ![Blazor File Manager Component](images/blazor-filemanager-component.webp)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/Blazor-Getting-Started-Examples/tree/main/FileManager).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/Blazor-Getting-Started-Examples/tree/main/FileManager).
 
 ### Blazor Web App: Configure interactive render mode
 
@@ -2003,6 +1975,8 @@ Define a render mode at top of the component, as follows:
 ## Ajax Settings Configuration
 
 The Ajax Settings configuration allows you to define the endpoints for file operations, upload, download, and image preview functionality in the Blazor File Manager.
+
+> **Suggested workflow order:** Configure the server endpoints in the following order — `Url` (file operations) → `UploadUrl` → `DownloadUrl` → `GetImageUrl`. Each subsection below follows that order so you can wire up the controller actions alongside the corresponding client-side settings.
 
 ### File download support
 

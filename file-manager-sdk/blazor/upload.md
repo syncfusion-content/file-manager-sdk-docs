@@ -12,6 +12,16 @@ appliesto: UI Component Suite, File Manager SDK
 
 The [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) component provides a [FileManagerUploadSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerUploadSettings.html) property with various options to customize how files are uploaded, such as controlling file size, restricting file types, and enabling chunk uploads.
 
+## Prerequisites
+
+Before configuring upload, install the Syncfusion Blazor File Manager package and register Syncfusion in your application:
+
+- Target framework: .NET 6.0 or later.
+- NuGet package: `Syncfusion.Blazor.FileManager` (latest stable release).
+- Register Syncfusion in `Program.cs` using `builder.Services.AddSyncfusionBlazor()` and add the script, stylesheet, and theme references as described in the [Getting Started](getting-started.md) guide.
+
+N> The `https://physical-service.syncfusion.com/...` URLs used in the examples on this page are demo endpoints hosted by Syncfusion. Replace them with your own service URLs before deploying to production.
+
 ## Directory Upload
 
 The [DirectoryUpload](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerUploadSettings.html#Syncfusion_Blazor_FileManager_FileManagerUploadSettings_DirectoryUpload) property controls whether users can browse and upload entire directories (folders) in the Blazor File Manager component. 
@@ -36,7 +46,9 @@ When set to `true`, this property enables directory upload in the FileManager, a
 ```
 N> When `DirectoryUpload` is set to `true`, only folders can be uploaded. When it is set to `false`, only individual files can be uploaded. Simultaneous uploading of files and folders is not supported.
 
-The screenshot below shows after successfully selecting a directory it uploads all the file inside it automatically. This demonstrates how the `DirectoryUpload` property works in the Blazor File Manager component.
+N> Directory upload relies on the HTML5 `webkitdirectory` / `directory` attribute. The application must be served over HTTPS (browsers restrict directory selection to secure contexts) and must be opened in a browser that supports folder selection (recent versions of Chrome, Edge, Firefox, or Safari 14+).
+
+The screenshot below shows that after a directory is successfully selected, all files inside it are uploaded automatically. This demonstrates how the `DirectoryUpload` property works in the Blazor File Manager component.
 
 ![Blazor File Manager with DirectoryUpload](images/blazor-filemanager-directoryupload.webp)
 
@@ -46,7 +58,7 @@ The [SequentialUpload](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.F
 
 To enable sequential upload, set the `SequentialUpload` property to `true` in the [FileManagerUploadSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerUploadSettings.html) configuration.
 
-When set to `true`, the selected files will process sequentially (one after the other) to the server. If the file uploaded successfully or failed, the next file will upload automatically in this sequential upload. This feature helps to reduce the upload traffic and reduce the failure of file upload.
+When set to `true`, the selected files are uploaded sequentially (one after the other) to the server. If a file uploads successfully or fails, the next file is uploaded automatically. This feature helps to reduce the upload traffic and lowers the chance of upload failures.
 
 ```cshtml
 
@@ -74,6 +86,8 @@ This property allows you to enable chunked uploads for large files by specifying
 
 By specifying a `ChunkSize`, the large file is divided into smaller parts, reducing the load on the network and making the upload process more efficient.
 
+N> `ChunkSize` must be a positive value in bytes. A value of at least 1 MiB (1,048,576 bytes) is recommended for reliable uploads. `MaxFileSize` is also expressed in bytes; setting it to `0` (the default) removes the upper size limit.
+
 ```cshtml
 
 @using Syncfusion.Blazor.FileManager
@@ -88,7 +102,7 @@ By specifying a `ChunkSize`, the large file is divided into smaller parts, reduc
 </SfFileManager>
 
 ```
-In the following example, the ChunkSize is set to 5 MB (5,242,880 bytes), and the MaxFileSize is set to 70 MB (73,728,000 bytes). This means files that are up to 70 MB will be uploaded in 5 MB chunks.
+In the following example, the `ChunkSize` is set to 5 MiB (5,242,880 bytes), and the `MaxFileSize` is set to about 70 MiB (73,728,000 bytes). This means files up to roughly 70 MiB will be uploaded in 5 MiB chunks.
 
 With chunk upload, the pause and resume options gives users enhanced control over the file upload process.
 
@@ -168,12 +182,14 @@ If you want to allow only image files like .jpg and .png, you would set the prop
 
 ## Upload Mode
 
-The [UploadMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerUploadSettings.html#Syncfusion_Blazor_FileManager_FileManagerUploadSettings_UploadMode) property defines the method used to perform the upload operation in the File Manager component.
+The [UploadMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerUploadSettings.html#Syncfusion_Blazor_FileManager_FileManagerUploadSettings_UploadMode) property defines the method used to perform the upload operation in the Blazor File Manager component.
 
 This property lets you choose between two upload modes. `FormSubmit` Uses the traditional form submission method for file uploads.
 `HttpClient` uses the HttpClient instance for the upload, providing more control over the request.
 
 By default, the `UploadMode` is set to `FormSubmit`, but you can switch to HttpClient for more control, such as managing headers or authorizing the upload response.
+
+N> The `HttpClient` upload mode requires `IHttpClientFactory` to be registered in the dependency-injection container (for example `builder.Services.AddHttpClient()` in `Program.cs`). The `IApiAuthTokenService` interface and the `TokenRequestModel` / `TokenResponseModel` types referenced by the sample `ApiAuthTokenService` are not part of Syncfusion and must be defined and registered in your project, for example `builder.Services.AddScoped<IApiAuthTokenService, ApiAuthTokenService>()`.
 
 {% tabs %}
 {% highlight razor %}
@@ -261,6 +277,8 @@ namespace Blazor
 
 {% endhighlight %}
 {% endtabs %}
+
+N> The `HttpClient` upload mode requires `IHttpClientFactory` to be registered in the DI container (`builder.Services.AddHttpClient()`). The `IApiAuthTokenService` interface and the `TokenRequestModel` / `TokenResponseModel` types referenced by the sample `ApiAuthTokenService` are not part of Syncfusion and must be defined in your project. Register the auth service with the container, for example `builder.Services.AddScoped<IApiAuthTokenService, ApiAuthTokenService>()`.
 
 ## Drag and Drop upload
 

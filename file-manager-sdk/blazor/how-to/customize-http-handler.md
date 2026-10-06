@@ -25,10 +25,10 @@ When working with secured APIs, all operations need proper authentication. There
 
 The Blazor File Manager component offers solutions for all these challenges:
 
-* For regular file operations and uploads: Use the [OnSend](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnSend) event to add authentication headers
-* For upload operations: Configure [FileManagerUploadSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerUploadSettings.html) with [UploadMode.HttpClient](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.UploadMode.html#Syncfusion_Blazor_FileManager_UploadMode_HttpClient)
-* For image operations: Use the [BeforeImageLoad](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_BeforeImageLoad) event with [UseImageAsUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.BeforeImageLoadEventArgs-1.html#Syncfusion_Blazor_FileManager_BeforeImageLoadEventArgs_1_UseImageAsUrl) as `false`
-* For download operations: Use the [BeforeDownload](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_BeforeDownload) event with [UseFormPost](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.BeforeDownloadEventArgs-1.html#Syncfusion_Blazor_FileManager_BeforeDownloadEventArgs_1_UseFormPost) as `false`
+* For regular file operations and uploads: use the [OnSend](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnSend) event to add authentication headers.
+* For upload operations: configure [FileManagerUploadSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerUploadSettings.html) with [UploadMode.HttpClient](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.UploadMode.html#Syncfusion_Blazor_FileManager_UploadMode_HttpClient). The default (`FormPost`) is suitable for same-origin requests and smaller payloads; switch to `HttpClient` when the API lives on a separate origin or requires custom headers.
+* For image operations: use the [BeforeImageLoad](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_BeforeImageLoad) event with [UseImageAsUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.BeforeImageLoadEventArgs-1.html#Syncfusion_Blazor_FileManager_BeforeImageLoadEventArgs_1_UseImageAsUrl) set to `false`. The default (`true`) issues a direct GET; setting it to `false` routes the request through `HttpClient` so you can attach headers.
+* For download operations: use the [BeforeDownload](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_BeforeDownload) event with [UseFormPost](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.BeforeDownloadEventArgs-1.html#Syncfusion_Blazor_FileManager_BeforeDownloadEventArgs_1_UseFormPost) set to `false`. The default (`true`) submits a form post and cannot attach custom headers across origins; setting it to `false` uses `HttpClient` instead.
 
 ## Setting Authorization Headers for File Operations and Uploads
 
@@ -56,19 +56,21 @@ For regular file operations (listing files, delete, rename, etc.) and uploads, y
 ```
 
 The [OnSend](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnSend) event is triggered for various file operations including:
-* read - For listing files and folders
-* delete - For deleting files and folders
-* copy - For copying files and folders
-* move - For moving files and folders
-* details - For retrieving file or folder details (e.g., size, type, modified date)
-* create - For creating new folders.
-* search - For searching files and folders
-* rename - For renaming files and folders
-* upload - For uploading files
+* read – for listing files and folders
+* delete – for deleting files and folders
+* copy – for copying files and folders
+* move – for moving files and folders
+* details – for retrieving file or folder details (e.g., size, type, modified date)
+* create – for creating new folders
+* search – for searching files and folders
+* rename – for renaming files and folders
+* upload – for uploading files
 
 ## Setting Authorization Headers for Image Operations
 
-For image operations, you'll need to use the [BeforeImageLoad](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_BeforeImageLoad) event with the [UseImageAsUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.BeforeImageLoadEventArgs-1.html#Syncfusion_Blazor_FileManager_BeforeImageLoadEventArgs_1_UseImageAsUrl) property:
+For image operations, use the [BeforeImageLoad](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_BeforeImageLoad) event with the [UseImageAsUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.BeforeImageLoadEventArgs-1.html#Syncfusion_Blazor_FileManager_BeforeImageLoadEventArgs_1_UseImageAsUrl) property. Compare with [Setting Authorization Headers for Download Operations](#setting-authorization-headers-for-download-operations) below for the equivalent `UseFormPost` switch.
+
+> **Tip:** When the API is hosted on a different origin, the browser sends an additional CORS preflight request because of the `Authorization` header; ensure the server's CORS configuration exposes the relevant response headers and supports `Authorization` in `Access-Control-Allow-Headers`.
 
 ```csharp
 <SfFileManager TValue="FileManagerDirectoryContent">
@@ -104,7 +106,7 @@ For image operations, you'll need to use the [BeforeImageLoad](https://help.sync
 
 ## Setting Authorization Headers for Download Operations
 
-For download operations, you can use the [BeforeDownload](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_BeforeDownload) event with the [UseFormPost](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.BeforeDownloadEventArgs-1.html#Syncfusion_Blazor_FileManager_BeforeDownloadEventArgs_1_UseFormPost) property:
+For download operations, use the [BeforeDownload](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_BeforeDownload) event with the [UseFormPost](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.BeforeDownloadEventArgs-1.html#Syncfusion_Blazor_FileManager_BeforeDownloadEventArgs_1_UseFormPost) property. Compare with [Setting Authorization Headers for Image Operations](#setting-authorization-headers-for-image-operations) above for the equivalent `UseImageAsUrl` switch.
 
 ```csharp
 <SfFileManager TValue="FileManagerDirectoryContent">
@@ -140,21 +142,31 @@ For download operations, you can use the [BeforeDownload](https://help.syncfusio
 
 ## Windows Authentication with JWT in Blazor File Manager
 
-This section explains how to create a Blazor server application with Windows authentication and JWT token handling for the File Manager component.
+This section explains how to create a Blazor Server application with Windows authentication and JWT token handling for the File Manager component. The component acts as the client that owns a Bearer token, while a separate ASP.NET Core service validates the token and returns file data.
 
-### Create Windows Authenticated Blazor Server Application
+> **Prerequisites:** .NET 8 or later, Syncfusion Blazor package matching your version, and Visual Studio 2022 (or the `dotnet` CLI). If `tools→extensions` lists the Syncfusion extension, install it before continuing.
 
-You can create a Blazor server application with Windows authentication using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/blazor/tooling?view=aspnetcore-7.0) or the [Syncfusion® Blazor Extension](https://blazor.syncfusion.com/documentation/visual-studio-integration/template-studio).
+### Create a Windows-authenticated Blazor Server Application
 
-![Authentication](../images/customize-http-handler.webp)
+1. In Visual Studio, choose **Create a new project** → **Blazor Server App**.
+2. In the **Authentication** step, select **Windows**. Click **Create**. Equivalently, use the [Syncfusion® Blazor extension](https://blazor.syncfusion.com/documentation/visual-studio-integration/template-studio) or the [`dotnet new` Blazor template reference](https://learn.microsoft.com/en-us/aspnet/core/blazor/tooling) on the CLI.
+3. Trust the local HTTPS certificate once: `dotnet dev-certs https --trust`.
+4. Add the JWT helper package to the client project:
 
-Include the [Microsoft.AspNetCore.Authentication.JWTBearer](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer) package for generating user tokens.
+    ```
+    dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+    ```
+
+5. Add the Syncfusion Blazor WebAssembly/File Manager package (see [Getting Started with Blazor File Manager Component](https://blazor.syncfusion.com/documentation/file-manager/getting-started-with-web-app) for the package name recommended for your Syncfusion version) and register `AddSyncfusionBlazor()` in `Program.cs`.
+6. Initialize the Blazor File Manager component in the **~/Pages/Index.razor** file. Place the File Manager markup described in the next section there.
 
 Initialize the Blazor File Manager component in the **~/Pages/Index.razor** file using the [Getting Started with Blazor File Manager Component](https://blazor.syncfusion.com/documentation/file-manager/getting-started-with-web-app) documentation.
 
 ### Implementing JWT Token Generation and Authorization
 
-To authorize the Blazor File Manager component server response, generate a user token in the **onInitialized** method based on the user's authentication state. Then, pass this user token as a header through the Blazor File Manager component's HTTP client instance in the component's events.
+To authorize the Blazor File Manager component's HTTP traffic, generate a user token in the `OnInitializedAsync` lifecycle method based on the user's authentication state. Then, pass this user token as a header through the Blazor File Manager component's HTTP client instance in the component's events.
+
+> **Note:** `OnInitializedAsync` runs once per session. For long-running sessions, refresh the token and re-apply the header on each call to `OnBeforeSend`, `HandleBeforeImageLoad`, and `HandleBeforeDownload`.
 
 ```csharp
 
@@ -250,13 +262,17 @@ To authorize the Blazor File Manager component server response, generate a user 
 
 ```
 
-## Create service application for File Manager action
+## Create the Service Application for File Manager Actions
 
-Create a new **ASP Core web application** with the required Blazor File Manager service models and controller, or clone the required service provider from the [file-system-provider](https://blazor.syncfusion.com/documentation/file-manager/file-system-provider) documentation that contains the available file service provider.
+Create a new **ASP.NET Core web application** with the required Blazor File Manager service models and controller, or clone the required service provider from the [file-system-provider](https://blazor.syncfusion.com/documentation/file-manager/file-system-provider) documentation, which contains the available file service provider.
 
-To demonstrate behavior with a physical service provider, include the [Microsoft.AspNetCore.Authentication.JWTBearer](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer), [Microsoft.IdentityModel.Tokens](https://www.nuget.org/packages/Microsoft.IdentityModel.Tokens) and [System.IdentityModel.Tokens.JWT](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt) packages for accessing the authorized token value on the service application.
+To demonstrate behavior with a physical service provider, include the following packages for accessing the authorized token value on the service application:
 
-Open **appsettings.json** and add the following key, issuer, and audience in the server application.
+* [Microsoft.AspNetCore.Authentication.JwtBearer](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer)
+* [Microsoft.IdentityModel.Tokens](https://www.nuget.org/packages/Microsoft.IdentityModel.Tokens)
+* [System.IdentityModel.Tokens.Jwt](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt)
+
+Open **appsettings.json** and add the following key, issuer, and audience in the server application. The key must be **at least 32 bytes long** for HS256 signing in modern ASP.NET Core versions; store the actual value in user secrets or environment variables, not in source control.
 
 ```json
 
@@ -268,7 +284,9 @@ Open **appsettings.json** and add the following key, issuer, and audience in the
 
 ```
 
-Configure the authentication code details in the service application’s **program.cs** file.
+> **Note:** The `Jwt` block must be a top-level child of the JSON document, not nested under another section.
+
+Define a CORS policy that permits the Blazor client's origin and use HTTPS dev URLs that match the values configured in the client project. Configure the authentication code details in the service application's **Program.cs** file:
 
 ```cshtml
 
@@ -311,7 +329,9 @@ app.Run();
 
 ```
 
-Now it can authorize the Blazor File Manager server response based on the authorized role that is assigned by the client application, as shown below.
+The server now authorizes the Blazor File Manager server response based on the role that the client application assigned. The `FileManagerController` below wires up the `[Authorize]` attribute to enforce the token-issued role. Apply the same role value to every endpoint (`FileOperations`, `Upload`, `GetImage`, `Download`) and place `[Route("api/[controller]")]` on the controller, or adjust the `FileManagerAjaxSettings` URLs so the client and server routes agree.
+
+> **Note:** The `GetImage` and `Download` signatures differ from the unmodified service provider when you enable `HttpClient` mode — they read request body parameters (`[FromBody]`) instead of query string parameters or form fields.
 
 ```cshtml
 
@@ -380,4 +400,4 @@ public class FileManagerController : Controller
 
 ```
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/Blazor-FileManager-WindowsAuthentication/tree/master).
+> **Reference Sample:** [Blazor-FileManager-WindowsAuthentication on GitHub](https://github.com/SyncfusionExamples/Blazor-FileManager-WindowsAuthentication/tree/master).

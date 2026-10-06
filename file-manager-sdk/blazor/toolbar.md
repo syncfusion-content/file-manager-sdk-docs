@@ -12,7 +12,7 @@ appliesto: UI Component Suite, File Manager SDK
 
 The Toolbar in the [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) provides a user-friendly interface for performing various file operations. It contains pre-defined items that correspond to specific actions. Here are some key points about the toolbar.
 
-## Built-in Toolbar items
+## Built-in toolbar items
 
 By default, the Blazor File Manager includes several pre-defined toolbar items. These items are ready to use and come with associated actions. This collection can be modified by defining the required items in [FileManagerToolbarSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerToolbarSettings.html).
 
@@ -21,13 +21,13 @@ Some common built-in toolbar items include:
 * `New Folder` - Creates a new folder in the current directory.
 * `SortBy` - Allows users to sort files and folders based on different criteria (e.g., name, size, date modified).
 * `Upload` - Enables users to upload files to the server.
-* `Refresh` - Specifies the array of string that is used to configure file items.
-* `View` - Specifies the array of string that is used to configure folder items.
-* `Details` - Specifies the array of string that is used to configure layout items.
+* `Refresh` - Reloads the contents of the current directory from the file system provider.
+* `View` - Switches the File Manager layout mode (e.g., Details or Large Icons view).
+* `Details` - Displays extended metadata about the selected files and folders.
 
-## Control Toolbar visibility
+## Control toolbar visibility
 
-The Toolbar visibility can also be controlled by using the [Visible](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerToolbarSettings.html#Syncfusion_Blazor_FileManager_FileManagerToolbarSettings_Visible) property. Set this property as false to hide the toolbar. You can also toggle this property dynamically based on your application logic.
+The toolbar visibility can also be controlled by using the [Visible](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerToolbarSettings.html#Syncfusion_Blazor_FileManager_FileManagerToolbarSettings_Visible) property, which defaults to `true`. Set this property to `false` to hide the toolbar. You can also toggle this property dynamically based on your application logic.
 
 ```cshtml
 
@@ -46,9 +46,9 @@ The Toolbar visibility can also be controlled by using the [Visible](https://hel
 
 ## Events
 
-The Blazor File Manager Toolbar component has a [ToolbarCreated](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_ToolbarCreated) and [ToolbarItemClicked](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_ToolbarItemClicked) events that can be triggered for certain actions. These events can be bound to the Blazor File Manager using the **FileManagerEvents**, which requires the **TValue** to be provided.
+The Blazor File Manager toolbar component has the [ToolbarCreated](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_ToolbarCreated) and [ToolbarItemClicked](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_ToolbarItemClicked) events that are triggered for certain actions. These events can be bound to the Blazor File Manager using the **FileManagerEvents** component, which requires `TValue` to be provided.
 
-N> All the events should be provided in a single **FileManagerEvents** component.
+> **Note:** All File Manager events should be provided in a single `FileManagerEvents` component.
 
 ### ToolbarCreated
 
@@ -94,7 +94,7 @@ The [ToolbarItemClicked](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor
 </SfFileManager>
 
 @code {
-    public void OnMenuClick(ToolbarClickEventArgs<FileManagerDirectoryContent> args)
+    public void ToolbarItemClicked(ToolbarClickEventArgs<FileManagerDirectoryContent> args)
     {
         // Here, you can customize your code.
     }

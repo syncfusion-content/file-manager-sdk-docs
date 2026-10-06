@@ -10,7 +10,7 @@ appliesto: UI Component Suite, File Manager SDK
 
 # Styles and Appearance in Blazor File Manager
 
-The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
+The following content provides the exact CSS structure used to modify the control's appearance based on user preference.
 
 ## Customizing the Blazor File Manager navigation pane
 
@@ -81,7 +81,7 @@ The following example demonstrates how to customize the Blazor File Manager's th
 
 ```
 
-![Blazor FileManager displays Custom Thumbnail](images/blazor-filemanager-custom-thumbnail.webp)
+![Blazor File Manager displays Customized Thumbnail](images/blazor-filemanager-custom-thumbnail.webp)
 
 ## Customizing the Blazor File Manager layout
 
@@ -107,9 +107,9 @@ To customize the Blazor File Manager layout, use the `.e-layout-content` selecto
 
 ```
 
-![Blazor FileManager displays Custom Layout](images/blazor-filemanager-custom-layout.webp)
+![Blazor File Manager displays Customized Layout](images/blazor-filemanager-custom-layout.webp)
 
-## Customizing the Blazor File Manager Toolbar
+## Customizing the Blazor File Manager toolbar
 
 To customize the Blazor File Manager toolbar items, use the `.e-toolbar` selector and apply styles.
 
@@ -133,11 +133,11 @@ To customize the Blazor File Manager toolbar items, use the `.e-toolbar` selecto
 
 ```
 
-![Blazor FileManager displays Custom Toolbar](images/blazor-filemanager-custom-toolbar.webp)
+![Blazor File Manager displays Customized Toolbar](images/blazor-filemanager-custom-toolbar.webp)
 
 ## Customizing the Blazor File Manager selected files/folders
 
-To customize the Blazor File Manager selected files/folders, use the below selectors and apply styles.
+To customize the Blazor File Manager selected files/folders, use the selectors below and apply styles.
 
 ```css
 
@@ -161,9 +161,9 @@ To customize the Blazor File Manager selected files/folders, use the below selec
 
 ```
 
-![Blazor FileManager displays Custom Selected Items](images/blazor-filemanager-custom-selected-items.webp)
+![Blazor File Manager displays Customized Selected Items](images/blazor-filemanager-custom-selected-items.webp)
 
-## Customizing the Blazor File Manager Dialog
+## Customizing the Blazor File Manager dialog
 
 To customize the dialog popup in the Blazor File Manager, you can apply styles to specific CSS selectors, as listed in the table below.
 
@@ -174,7 +174,7 @@ To customize the dialog popup in the Blazor File Manager, you can apply styles t
 |Overlay|`.e-dlg-overlay`|
 |Footer|`.e-footer-content`|
 
-In this example, we have applied styles to the header content.
+In this example, styles are applied to the header content.
 
 ```css
 
@@ -190,4 +190,4 @@ In this example, we have applied styles to the header content.
 
 ```
 
-![Blazor FileManager displays Custom Dialog](images/blazor-filemanager-custom-dialog.webp)
+![Blazor File Manager displays Customized Dialog](images/blazor-filemanager-custom-dialog.webp)

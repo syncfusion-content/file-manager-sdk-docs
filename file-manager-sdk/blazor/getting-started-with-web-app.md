@@ -14,6 +14,8 @@ This section briefly explains how to include the [Blazor File Manager](https://w
 
 > **Ready to streamline your Blazor development?** <br/>Discover the full potential of Blazor components with AI Coding Assistants. Effortlessly integrate, configure, and enhance projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into preferred AI-powered IDEs like VS Code, Cursor, CodeStudio and more. [Explore AI Coding Assistants](https://blazor.syncfusion.com/documentation/ai-coding-assistant/overview)
 
+> **Prerequisites:** .NET SDK 8.0 or later installed; for production, a valid Syncfusion license key (see [License registration](https://blazor.syncfusion.com/documentation/getting-started/license-registration)).
+
 ## Using .NET CLI Templates
 
 Quickly set up a Blazor application using the preconfigured [Syncfusion Web App Template](https://help.syncfusion.com/extension/syncfusion-blazor-webapp-template-via-nuget/installation).
@@ -68,7 +70,6 @@ dotnet run
 {% highlight razor tabtitle="Auto" %}
 
 cd MyApp
-cd MyApp
 dotnet run
 
 {% endhighlight %}
@@ -117,7 +118,7 @@ Install the [Syncfusion.Blazor.FileManager](https://www.nuget.org/packages/Syncf
 1. Go to *Tools → NuGet Package Manager → Manage NuGet Packages for Solution*.
 2. Search the required NuGet packages (`Syncfusion.Blazor.FileManager` and `Syncfusion.Blazor.Themes`) and install them.
 
-Alternatively, you can install the same packages using the Package Manager Console with the following commands.
+Alternatively, install the same packages using the Package Manager Console.
 
 {% tabs %}
 {% highlight razor tabtitle="Package Manager Console" %}
@@ -198,8 +199,6 @@ Include the required [script references](https://blazor.syncfusion.com/documenta
 
 Open a Razor file located in the **~/Components/Pages/*.razor** (for example, **Home.razor**) and add the [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) component inside the `.Client` project Razor file.
 
-N> If the interactivity location is set to `Per page/component` in the Web App, define a render mode at the top of the Razor file (For example, `InteractiveServer`, `InteractiveWebAssembly` or `InteractiveAuto`). If the **Interactivity** is set to `Global` with `Auto` or `WebAssembly`, the render mode is automatically configured in the `App.razor` file by default.
-
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
 
@@ -215,6 +214,10 @@ N> If the interactivity location is set to `Per page/component` in the Web App, 
 
 {% endhighlight %}
 {% endtabs %}
+
+> The `https://physical-service.syncfusion.com/*` endpoint is a demo service intended for evaluation only; replace it with your own file-system-provider URLs for production. See [Blazor File Manager file-system provider](file-system-provider.md).
+
+> If the interactivity location is set to `Per page/component` in the Web App, define a render mode at the top of the Razor file (for example, `InteractiveServer`, `InteractiveWebAssembly`, or `InteractiveAuto`). If the **Interactivity** is set to `Global` with `Auto` or `WebAssembly`, the render mode is automatically configured in the `App.razor` file by default.
 
 ### Run the application
 
@@ -234,7 +237,6 @@ Open the terminal and navigate to the main project folder (for example, `BlazorW
 {% highlight razor tabtitle="Terminal" %}
 
 cd ..
-cd BlazorWebApp
 dotnet run
 
 {% endhighlight %}
@@ -246,6 +248,7 @@ dotnet run
 
 ## See also
 
-1. [Getting Started with Blazor WebAssembly App](https://blazor.syncfusion.com/documentation/getting-started/blazor-webassembly-app)
-2. [Getting Started with Blazor Server App](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-visual-studio)
-3. [Getting Started with Blazor File Manager Data Binding](https://blazor.syncfusion.com/documentation/file-manager/data-binding)
+- [Getting Started with Blazor WebAssembly App](https://blazor.syncfusion.com/documentation/getting-started/blazor-webassembly-app)
+- [Getting Started with Blazor Server App](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-visual-studio)
+- [Getting Started with Blazor File Manager Data Binding](https://blazor.syncfusion.com/documentation/file-manager/data-binding)
+- [Blazor File Manager file-system provider](file-system-provider.md)
