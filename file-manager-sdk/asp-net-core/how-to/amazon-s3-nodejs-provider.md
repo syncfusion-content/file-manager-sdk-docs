@@ -5,6 +5,7 @@ description: Learn how to implement a custom file provider in the ASP.NET Core F
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Implement Amazon S3 custom provider in ASP.NET Core File Manager

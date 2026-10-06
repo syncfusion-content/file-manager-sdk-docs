@@ -5,6 +5,7 @@ description: Learn how to attach authentication tokens to file operations, image
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to Customize the HTTP Handler in Blazor File Manager
