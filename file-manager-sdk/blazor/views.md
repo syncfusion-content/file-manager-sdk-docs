@@ -5,6 +5,7 @@ description: Learn how to switch between Large Icons and Details views in the Bl
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Views in Blazor File Manager

@@ -5,6 +5,7 @@ description: Learn how to customize the look and feel of the Blazor File Manager
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Styles and Appearance in Blazor File Manager

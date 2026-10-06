@@ -5,6 +5,7 @@ description: Learn how to use the SQL database file system provider in the Blazo
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # SQL Database Provider in Blazor File Manager

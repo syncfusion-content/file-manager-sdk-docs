@@ -5,6 +5,7 @@ description: Learn how to use the FTP file system provider in the Blazor File Ma
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # FTP Provider in Blazor File Manager

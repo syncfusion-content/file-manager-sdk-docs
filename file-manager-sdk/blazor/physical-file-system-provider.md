@@ -5,6 +5,7 @@ description: Learn how to use the physical file system provider in the Blazor Fi
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
+appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Physical Provider in Blazor File Manager
