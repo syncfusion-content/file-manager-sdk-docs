@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Server Deployment and Docker in ASP.NET MVC File Manager | Syncfusion
 description: Learn how to deploy the unified ASP.NET MVC File Manager provider Docker image for Azure Blob Storage and Amazon S3.

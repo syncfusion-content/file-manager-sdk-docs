@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Views in JavaScript File Manager | Syncfusion
 description: Learn how to switch between Large Icons and Details views in the JavaScript File Manager for flexible file browsing.

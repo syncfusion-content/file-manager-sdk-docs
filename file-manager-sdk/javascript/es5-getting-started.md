@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with JavaScript File Manager | Syncfusion
 description: Learn how to get started with the JavaScript File Manager and explore setup, configuration, and core feature examples.
@@ -59,8 +59,8 @@ Follow these steps to set up your local environment.
 **Step 1:** Create a root folder named **my-app** for your application.
 
 **Step 2:** Open Visual Studio Code and create two files inside the **my-app** folder:
-- **index.html** — the main HTML file that loads the CDN resources and provides the File Manager container element.
-- **index.js** — the JavaScript file where the File Manager control is initialized.
+- **index.html** â€” the main HTML file that loads the CDN resources and provides the File Manager container element.
+- **index.js** â€” the JavaScript file where the File Manager control is initialized.
 
 Refer to the [Adding Syncfusion File Manager CDN resources](#adding-syncfusion-file-manager-cdn-resources) and [Adding File Manager control](#adding-file-manager-control) sections below for the content to add to each file.
 

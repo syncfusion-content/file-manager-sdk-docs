@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Multiple Selection in ASP.NET Core File Manager | Syncfusion
 description: Learn how to enable multiple selection in the ASP.NET Core File Manager using Ctrl/Shift keys and checkboxes to select many files at once.

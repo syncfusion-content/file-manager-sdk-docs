@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Perform custom sorting in JavaScript File Manager | Syncfusion
 description: Learn how to perform custom sorting in the JavaScript File Manager for the Large Icons view and Details view columns, with examples for natural sorting.

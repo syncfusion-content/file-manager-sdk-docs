@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Data Binding in Blazor File Manager | Syncfusion
 description: Learn how to bind data to the Blazor File Manager using a RESTful JSON service or a list of objects through events.
@@ -110,7 +110,7 @@ To access the above File Operations, you need some model class files that have f
 
 Add your required files and folders under the `wwwroot\Files` directory.
 
-* Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. This will render the Blazor File Manager component in your default web browser.
+* Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>âŒ˜</kbd>+<kbd>F5</kbd> (macOS) to launch the application. This will render the Blazor File Manager component in your default web browser.
 
 ![Blazor File Manager Component](images/blazor-filemanager-component.png)
 

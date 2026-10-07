@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Localization in Vue File Manager | Syncfusion
 description: Learn how to localize the Vue File Manager to any culture by defining locale-specific texts and messages beyond the default English locale.

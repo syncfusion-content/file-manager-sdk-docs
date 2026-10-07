@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Server Deployment and Docker in Blazor File Manager | Syncfusion
 description: Learn how to deploy the unified Blazor File Manager provider Docker image for Azure Blob Storage and Amazon S3.

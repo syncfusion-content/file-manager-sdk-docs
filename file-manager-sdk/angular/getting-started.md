@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with Angular File Manager | Syncfusion
 description: Learn how to get started with the Angular File Manager and explore setup, configuration, and core feature examples.
@@ -63,14 +63,14 @@ When you run the `sf` command, the CLI prompts you to select the required projec
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
-√ Project name? ... syncfusion-angular-app
-√ Choose Framework: » Angular
-√ Choose Template: » File Manager
-√ Choose Theme: » Material3
-√ Choose Style Format: » CSS
-√ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
-√ Would you like to install Syncfusion Component Skills for AI-powered development? ... no
-√ Install dependencies and start app now? ... no
+âˆš Project name? ... syncfusion-angular-app
+âˆš Choose Framework: Â» Angular
+âˆš Choose Template: Â» File Manager
+âˆš Choose Theme: Â» Material3
+âˆš Choose Style Format: Â» CSS
+âˆš Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
+âˆš Would you like to install Syncfusion Component Skills for AI-powered development? ... no
+âˆš Install dependencies and start app now? ... no
 
 {% endhighlight %}
 {% endtabs %}
@@ -190,7 +190,7 @@ npm install @syncfusion/ej2-angular-filemanager --save
 
 ## Adding CSS reference
 
-Themes for Syncfusion® File Manager components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for SyncfusionÂ® File Manager components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
 Install the Material 3 theme package using the following command:
 

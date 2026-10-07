@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Multiple Selection in Angular File Manager | Syncfusion
 description: Learn how to enable multiple selection in the Angular File Manager using Ctrl/Shift keys and checkboxes to select many files at once.

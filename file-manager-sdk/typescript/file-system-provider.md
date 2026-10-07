@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: File System Provider in TypeScript File Manager | Syncfusion
 description: Learn how to connect the TypeScript File Manager to physical, Azure, Amazon S3, Google Drive, Firebase, and other file system providers.
@@ -269,7 +269,7 @@ void SetFTPConnection(string hostName, string userName, string password)
 
 ```
 
-After registering the File Transfer Protocol details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the [`ajaxSettings`](../api/file-manager#ajaxsettings) property of the File Manager control to the appropriate controller methods allows to manage the FTP’s objects storage.
+After registering the File Transfer Protocol details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the [`ajaxSettings`](../api/file-manager#ajaxsettings) property of the File Manager control to the appropriate controller methods allows to manage the FTPâ€™s objects storage.
 
 ```ts
 

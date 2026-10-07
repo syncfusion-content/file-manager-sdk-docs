@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Pass a custom value to the server in ASP.NET MVC File Manager | Syncfusion
 description: Learn how to pass a custom value to the server in the ASP.NET MVC File Manager for authentication, logging, or role-based access on each request.

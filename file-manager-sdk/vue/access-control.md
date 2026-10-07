@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Access Control in Vue File Manager | Syncfusion
 description: Learn how to configure access control in the Vue File Manager with role-based permissions and restricted file operations.

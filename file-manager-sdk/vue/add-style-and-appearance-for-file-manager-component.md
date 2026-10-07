@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Style and Appearance in Vue File Manager | Syncfusion
 description: Learn how to customize the appearance of the Vue File Manager by overriding CSS selectors for the navigation pane, layout, and toolbar.

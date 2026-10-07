@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Add a custom item to the toolbar in Blazor File Manager | Syncfusion
 description: Learn how to add and customize a custom toolbar item in the Blazor File Manager with icons, tooltips, and click handlers.
@@ -65,13 +65,13 @@ To enhance the customization of toolbar items, the [FileManagerToolbarSettings](
                                  GetImageUrl="/api/SampleData/GetImage">
         </FileManagerAjaxSettings>
         <FileManagerToolbarSettings ToolbarItems="@Items"> 
-            <FileManagerCustomToolbarItems> 
+            <FileManagerCustomToolbarItems>Â 
                 <FileManagerCustomToolbarItem Name="Zoomin">
                     <Template>
                         <SfButton CssClass="e-tbar-btn-text e-tbar-ddb-text " Content="Zoom In" IconCss="e-icons e-zoom-in"></SfButton>
                     </Template>
                 </FileManagerCustomToolbarItem>
-            </FileManagerCustomToolbarItems> 
+            </FileManagerCustomToolbarItems>Â 
         </FileManagerToolbarSettings>
     </SfFileManager>
 

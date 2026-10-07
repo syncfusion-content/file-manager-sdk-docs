@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Views in Vue File Manager | Syncfusion
 description: Learn how to switch between Large Icons and Details views in the Vue File Manager for flexible file browsing.

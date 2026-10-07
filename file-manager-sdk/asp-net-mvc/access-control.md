@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Access Control in ASP.NET MVC File Manager | Syncfusion
 description: Learn how to configure access control in the ASP.NET MVC File Manager with role-based permissions and restricted file operations.

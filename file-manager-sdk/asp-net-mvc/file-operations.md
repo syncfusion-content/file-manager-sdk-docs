@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: File Operations in ASP.NET MVC File Manager | Syncfusion
 description: Learn how to perform file operations in the ASP.NET MVC File Manager, including read, create, delete, rename, copy, move, upload, and download.

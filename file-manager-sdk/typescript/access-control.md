@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Access Control in TypeScript File Manager | Syncfusion
 description: Learn how to configure access control in the TypeScript File Manager with role-based permissions and restricted file operations.

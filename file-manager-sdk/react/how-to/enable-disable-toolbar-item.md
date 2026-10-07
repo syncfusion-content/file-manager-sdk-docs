@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Enable or disable a toolbar item in React File Manager | Syncfusion
 description: Learn how to enable or disable a toolbar item in the React File Manager at runtime based on user actions or selection state.

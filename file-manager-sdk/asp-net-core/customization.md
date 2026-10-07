@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Customization in ASP.NET Core File Manager | Syncfusion
 description: Learn how to customize the ASP.NET Core File Manager context menu, toolbar, navigation pane, upload, and tooltip using built-in APIs.

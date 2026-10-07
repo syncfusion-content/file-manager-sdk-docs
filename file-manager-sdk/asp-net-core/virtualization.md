@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Virtualization in ASP.NET Core File Manager | Syncfusion
 description: Learn how to enable virtualization in the ASP.NET Core File Manager for dynamically loading large folders in Details and Large Icons views without performance loss.

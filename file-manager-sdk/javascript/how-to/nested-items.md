@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Use nested File Manager in JavaScript | Syncfusion
 description: Learn how to integrate the JavaScript File Manager within components such as Tab and Dialog to build flexible and interactive application layouts.

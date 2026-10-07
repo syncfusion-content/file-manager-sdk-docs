@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with React File Manager in Next.js | Syncfusion
 description: Learn how to set up the React File Manager in a Next.js project with step-by-step installation, configuration, and core feature examples.
@@ -10,7 +10,7 @@ appliesto: UI Component Suite, File Manager SDK
 ---
 
 
-# Creating a Next.js Application Using Syncfusion® Components
+# Creating a Next.js Application Using SyncfusionÂ® Components
 
 This section provides a step-by-step guide for setting up a Next.js application and integrating the [React File Manager](https://www.syncfusion.com/react-components/react-file-manager) component.
 
@@ -49,7 +49,7 @@ Using one of the above commands will prompt you to set up additional configurati
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
-√ What is your project named? » ej2-nextjs-file-manager
+âˆš What is your project named? Â» ej2-nextjs-file-manager
 
 {% endhighlight %}
 {% endtabs %}
@@ -59,7 +59,7 @@ Using one of the above commands will prompt you to set up additional configurati
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
-√ What is your project named? ... ej2-nextjs-file-manager
+âˆš What is your project named? ... ej2-nextjs-file-manager
 ? Would you like to use the recommended Next.js defaults?
 >   Yes, use recommended defaults - TypeScript, ESLint, Tailwind CSS, App Router
     No, reuse previous settings

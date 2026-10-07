@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Physical Provider in Blazor File Manager | Syncfusion
 description: Learn how to use the physical file system provider in the Blazor File Manager to browse and manage files on a local disk.

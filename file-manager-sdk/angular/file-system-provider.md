@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: File System Provider in Angular File Manager | Syncfusion
 description: Learn how to connect the Angular File Manager to physical, Azure, Amazon S3, Google Drive, Firebase, and other file system providers.

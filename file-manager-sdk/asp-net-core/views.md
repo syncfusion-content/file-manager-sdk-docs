@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Views in ASP.NET Core File Manager | Syncfusion
 description: Learn how to switch between Large Icons and Details views in the ASP.NET Core File Manager for flexible file browsing.

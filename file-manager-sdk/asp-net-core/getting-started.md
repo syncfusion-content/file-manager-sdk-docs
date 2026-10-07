@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with ASP.NET Core File Manager | Syncfusion
 description: Learn how to get started with the ASP.NET Core File Manager and explore setup, configuration, and core feature examples.
@@ -32,7 +32,7 @@ This section briefly explains about how to include the [ASP.NET Core File Manage
 
 1. Start **Visual Studio** and select **Create a new project**.
 
-2. In the **Create a new project** window, choose **ASP.NET Core Web App (Razor Pages)** → **Next**.
+2. In the **Create a new project** window, choose **ASP.NET Core Web App (Razor Pages)** â†’ **Next**.
 
 3. In the **Configure your new project** dialog, specify the **project name** (and optionally change location/folder).
 
@@ -48,7 +48,7 @@ For alternative approaches to create the project, see [Create a new project in V
 
 ## Install ASP.NET Core package in the application
 
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it. Alternatively, you can utilize the following package manager command to achieve the same.
+To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools â†’ NuGet Package Manager â†’ Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it. Alternatively, you can utilize the following package manager command to achieve the same.
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
@@ -319,7 +319,7 @@ After creating a controller for the File Manager service, register it in the `Pr
    app.MapControllers();
    ```
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>âŒ˜</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control will be rendered in the default web browser.
 
 ![File Manager getting started](images/getting-started.PNG)
 

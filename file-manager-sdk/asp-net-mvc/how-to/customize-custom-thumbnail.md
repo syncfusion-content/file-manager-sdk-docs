@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Customize thumbnails in ASP.NET MVC File Manager | Syncfusion
 description: Learn how to customize thumbnails in the ASP.NET MVC File Manager by adding your own icons for file types and folders in the LargeIcons view.

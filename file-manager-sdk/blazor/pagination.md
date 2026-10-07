@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Pagination in Blazor File Manager | Syncfusion
 description: Learn how to enable pagination in the Blazor File Manager and customize page size, current page, and the items per page dropdown.

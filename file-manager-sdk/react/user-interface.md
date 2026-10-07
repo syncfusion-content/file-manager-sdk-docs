@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: User Interface in React File Manager | Syncfusion
 description: Learn how to use the React File Manager UI with view, toolbar, breadcrumb, context menu, and navigation pane modules for file browsing.

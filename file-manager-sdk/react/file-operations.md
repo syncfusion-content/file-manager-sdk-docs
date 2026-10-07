@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: File Operations in React File Manager | Syncfusion
 description: Learn how to perform file operations in the React File Manager, including read, create, delete, rename, copy, move, upload, and download.

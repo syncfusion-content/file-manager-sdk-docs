@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Customize the navigation pane in React File Manager | Syncfusion
 description: Learn how to customize the navigation pane in the React File Manager by templating each folder node to show extra metadata or custom icons.

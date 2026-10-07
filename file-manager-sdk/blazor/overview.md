@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Overview of Syncfusion Blazor File Manager | Syncfusion
 description: Learn how to use the Syncfusion Blazor File Manager to browse, organize, upload, download, and manage files across local, cloud, and database providers.
@@ -244,11 +244,11 @@ The component follows [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) patt
 | <kbd>Enter</kbd> | <kbd>Enter</kbd> | Select focused item and navigate into it |
 | <kbd>Tab</kbd> | <kbd>Tab</kbd> | Focus first toolbar element, traverse tab order |
 | <kbd>Esc</kbd> | <kbd>Esc</kbd> | Close open image preview |
-| <kbd>Alt</kbd>+<kbd>N</kbd> | <kbd>⌥</kbd>+<kbd>N</kbd> | Open New Folder dialog |
+| <kbd>Alt</kbd>+<kbd>N</kbd> | <kbd>âŒ¥</kbd>+<kbd>N</kbd> | Open New Folder dialog |
 | <kbd>F5</kbd> | <kbd>F5</kbd> | Refresh the File Manager |
-| <kbd>Ctrl+Shift+1</kbd> | <kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>1</kbd> | Switch to Large Icons View |
-| <kbd>Ctrl+Shift+2</kbd> | <kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>2</kbd> | Switch to Details view |
-| <kbd>Ctrl+A</kbd> | <kbd>⌘</kbd>+<kbd>A</kbd> | Select all items (viewport-limited under virtualization) |
+| <kbd>Ctrl+Shift+1</kbd> | <kbd>âŒ˜</kbd>+<kbd>â‡§</kbd>+<kbd>1</kbd> | Switch to Large Icons View |
+| <kbd>Ctrl+Shift+2</kbd> | <kbd>âŒ˜</kbd>+<kbd>â‡§</kbd>+<kbd>2</kbd> | Switch to Details view |
+| <kbd>Ctrl+A</kbd> | <kbd>âŒ˜</kbd>+<kbd>A</kbd> | Select all items (viewport-limited under virtualization) |
 
 ## Events
 

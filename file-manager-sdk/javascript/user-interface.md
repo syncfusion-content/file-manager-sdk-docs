@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: User Interface in JavaScript File Manager | Syncfusion
 description: Learn how to use the JavaScript File Manager UI with view, toolbar, breadcrumb, context menu, and navigation pane modules for file browsing.

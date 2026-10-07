@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: About ASP.NET Core File Manager Component | Syncfusion
 description: Learn about the ASP.NET Core File Manager, its key capabilities, and the common scenarios it supports for managing files on the server.

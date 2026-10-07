@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Add custom item to context menu in Angular File Manager | Syncfusion
 description: Learn how to add a custom item to the context menu in the Angular File Manager with custom icons and click handlers.

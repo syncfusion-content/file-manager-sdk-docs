@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Accessibility in Vue File Manager | Syncfusion
 description: Learn about the accessibility support in the Vue File Manager, including WCAG 2.2, Section 508, ADA, and WAI-ARIA role compliance.

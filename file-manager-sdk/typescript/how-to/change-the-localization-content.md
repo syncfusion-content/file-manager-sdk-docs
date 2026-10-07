@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Change Localization Content in TypeScript File Manager | Syncfusion
 description: Learn how to change localization content in the TypeScript File Manager and customize the text displayed in the user interface.

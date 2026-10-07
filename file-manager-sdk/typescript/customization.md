@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Customization in TypeScript File Manager | Syncfusion
 description: Learn how to customize the TypeScript File Manager context menu, toolbar, navigation pane, upload, and tooltip using built-in APIs.
@@ -26,7 +26,7 @@ The File Manager component allows customizing features such as context menu, sea
 
 ## Context menu customization
 
-Context menu settings—such as the items displayed for files, folders, and layout interactions, as well as visibility—can be customized using the [`contextMenuSettings`](../api/file-manager#contextmenusettings) property.
+Context menu settingsâ€”such as the items displayed for files, folders, and layout interactions, as well as visibilityâ€”can be customized using the [`contextMenuSettings`](../api/file-manager#contextmenusettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -63,7 +63,7 @@ Context menu settings—such as the items displayed for files, folders, and layo
 
 ## Details view customization
 
-Details view settings—such as column width, header text, and templates for each field—can be customized using the [`detailsViewSettings`](../api/file-manager#detailsviewsettings) property.
+Details view settingsâ€”such as column width, header text, and templates for each fieldâ€”can be customized using the [`detailsViewSettings`](../api/file-manager#detailsviewsettings) property.
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
@@ -99,7 +99,7 @@ Details view settings—such as column width, header text, and templates for eac
 
 ## Navigation pane customization
 
-Navigation pane settings—such as minimum and maximum width, visibility, and sort order—can be customized using the [`navigationPaneSettings`](../api/file-manager#navigationpanesettings) property.
+Navigation pane settingsâ€”such as minimum and maximum width, visibility, and sort orderâ€”can be customized using the [`navigationPaneSettings`](../api/file-manager#navigationpanesettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -249,7 +249,7 @@ Thumbnail images are displayed in the File Manager component's Large Icons view 
 
 ## Toolbar customization
 
-Toolbar settings—such as the items displayed and their visibility—can be customized using the [`toolbarSettings`](../api/file-manager#toolbarsettings) property.
+Toolbar settingsâ€”such as the items displayed and their visibilityâ€”can be customized using the [`toolbarSettings`](../api/file-manager#toolbarsettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -290,7 +290,7 @@ Toolbar settings—such as the items displayed and their visibility—can be cus
 
 ## Upload customization
 
-Upload settings—such as minimum and maximum file size and auto upload behavior—can be configured using the [`uploadSettings`](../api/file-manager#uploadsettings) property.
+Upload settingsâ€”such as minimum and maximum file size and auto upload behaviorâ€”can be configured using the [`uploadSettings`](../api/file-manager#uploadsettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 

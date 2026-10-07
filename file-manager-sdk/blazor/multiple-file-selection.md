@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Multiple File Selection in Blazor File Manager | Syncfusion
 description: Learn how to select multiple files and folders in the Blazor File Manager using keyboard shortcuts, check boxes, or select all.

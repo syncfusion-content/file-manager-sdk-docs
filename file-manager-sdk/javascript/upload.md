@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Upload in JavaScript File Manager | Syncfusion
 description: Learn how to upload files in the JavaScript File Manager with chunk uploads, directory uploads, and drag-and-drop support.

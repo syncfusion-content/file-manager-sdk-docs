@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Views in Blazor File Manager | Syncfusion
 description: Learn how to switch between Large Icons and Details views in the Blazor File Manager and customize the appearance of files and folders.

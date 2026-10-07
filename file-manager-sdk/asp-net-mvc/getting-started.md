@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with ASP.NET MVC File Manager | Syncfusion
 description: Learn how to get started with the ASP.NET MVC File Manager and explore setup, configuration, and core feature examples.
@@ -26,7 +26,7 @@ This section briefly explains about how to include the [ASP.NET MVC File Manager
 
 ## Install ASP.NET MVC package in the application
 
-To add `ASP.NET MVC` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
+To add `ASP.NET MVC` controls in the application, open the NuGet package manager in Visual Studio (Tools â†’ NuGet Package Manager â†’ Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
@@ -99,7 +99,7 @@ Update a `HomeController.cs` file with the following code. Create a `Content/Fil
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC File Manager control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>âŒ˜</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC File Manager control will be rendered in the default web browser.
 
 ![ASP.NET MVC File Manager Control](images/getting-started.png)
 

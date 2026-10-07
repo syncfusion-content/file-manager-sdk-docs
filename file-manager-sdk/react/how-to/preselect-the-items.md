@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Preselect items in React File Manager | Syncfusion
 description: Learn how to preselect items in the React File Manager so the initial view shows the files and folders you choose.

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Upload in ASP.NET Core File Manager | Syncfusion
 description: Learn how to upload files in the ASP.NET Core File Manager with chunk uploads, directory uploads, and drag-and-drop support.

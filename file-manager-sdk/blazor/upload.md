@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Upload in Blazor File Manager | Syncfusion
 description: Learn how to configure file uploads in the Blazor File Manager with options for file size, type restrictions, chunk uploads, and directory uploads.
@@ -46,7 +46,7 @@ The [SequentialUpload](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.F
 
 To enable sequential upload, set the `SequentialUpload` property to `true` in the [FileManagerUploadSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerUploadSettings.html) configuration.
 
-When set to `true`, the selected files will process sequentially (one after the other) to the server. If the file uploaded successfully or failed, the next file will upload automatically in this sequential upload. This feature helps to reduce the upload traffic and reduce the failure of file upload.
+When set to `true`, the selected files willÂ processÂ sequentially (one after the other) to the server. If the file uploaded successfully or failed, the next file will upload automatically in this sequential upload. This feature helps to reduce the upload traffic and reduce the failure of file upload.
 
 ```cshtml
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Flat Data in Vue File Manager | Syncfusion
 description: Learn how to load flat JSON data in the Vue File Manager without a service provider, using local data structures to render folders and files.

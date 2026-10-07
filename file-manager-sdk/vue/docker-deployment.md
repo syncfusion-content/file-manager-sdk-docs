@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Server Deployment and Docker in Vue File Manager | Syncfusion
 description: Learn how to deploy the unified Vue File Manager provider Docker image for Azure Blob Storage and Amazon S3.

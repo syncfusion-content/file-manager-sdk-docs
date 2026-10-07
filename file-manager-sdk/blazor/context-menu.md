@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Context Menu in Blazor File Manager | Syncfusion
 description: Learn how to add and customize context menu items for files, folders, and layout areas in the Blazor File Manager.

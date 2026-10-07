@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Style and Appearance in React File Manager | Syncfusion
 description: Learn how to customize the appearance of the React File Manager by overriding CSS selectors for the navigation pane, layout, and toolbar.

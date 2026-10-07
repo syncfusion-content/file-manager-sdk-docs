@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with Vue File Manager | Syncfusion
 description: Learn how to get started with the Vue File Manager and explore setup, configuration, and core feature examples.
@@ -65,8 +65,8 @@ vue create quickstart
 
 During the setup process, the CLI will prompt you for a few configuration options. Select the following:
 
-- **Which linter to use?** → **Default ([Vue 2] babel, eslint)**
-- **Install with npm and start now?** → **Yes**
+- **Which linter to use?** â†’ **Default ([Vue 2] babel, eslint)**
+- **Install with npm and start now?** â†’ **Yes**
 
 Selecting **Yes** automatically installs the project dependencies and starts the development server.
 

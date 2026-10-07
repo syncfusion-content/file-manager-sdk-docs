@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with React File Manager | Syncfusion
 description: Learn how to get started with the React File Manager and explore setup, configuration, and core feature examples.
@@ -67,16 +67,16 @@ When you run the `sf` command, the CLI prompts you to select the required projec
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
-√ Project name? ... my-app
-√ Choose Framework: » React
-√ Choose Build Tool: » Vite
-√ Choose Language: » JavaScript
-√ Choose Template: » File Manager
-√ Choose Theme: » Tailwind3
-√ Choose Style Format: » CSS
-√ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
-√ Would you like to install Syncfusion Component Skills for AI-powered development? ... no      
-√ Install dependencies and start app now? ... no
+âˆš Project name? ... my-app
+âˆš Choose Framework: Â» React
+âˆš Choose Build Tool: Â» Vite
+âˆš Choose Language: Â» JavaScript
+âˆš Choose Template: Â» File Manager
+âˆš Choose Theme: Â» Tailwind3
+âˆš Choose Style Format: Â» CSS
+âˆš Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
+âˆš Would you like to install Syncfusion Component Skills for AI-powered development? ... no      
+âˆš Install dependencies and start app now? ... no
 
 {% endhighlight %}
 {% endtabs %}
@@ -158,8 +158,8 @@ npx create-vite@latest my-app -- --template react-ts
 
 During the setup process, the CLI will prompt you for a few configuration options. Select the following:
 
-- **Which linter to use?** → **ESLint**
-- **Install with npm and start now?** → **Yes**
+- **Which linter to use?** â†’ **ESLint**
+- **Install with npm and start now?** â†’ **Yes**
 
 Selecting **Yes** automatically installs the project dependencies and starts the development server.
 

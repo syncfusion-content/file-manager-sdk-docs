@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Drag and Drop in JavaScript File Manager | Syncfusion
 description: Learn how to enable drag and drop in the JavaScript File Manager to move or upload files between folders using built-in drag events.

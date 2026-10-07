@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Customization in React File Manager | Syncfusion
 description: Learn how to customize the React File Manager context menu, toolbar, navigation pane, upload, and tooltip using built-in APIs.

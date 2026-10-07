@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: File Operations in Angular File Manager | Syncfusion
 description: Learn how to perform file operations in the Angular File Manager, including read, create, delete, rename, copy, move, upload, and download.

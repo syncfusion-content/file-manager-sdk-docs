@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Restrict drag and drop upload in Blazor File Manager | Syncfusion
 description: Learn how to disable the external drag and drop upload action for any types of files or folders in the Blazor File Manager.

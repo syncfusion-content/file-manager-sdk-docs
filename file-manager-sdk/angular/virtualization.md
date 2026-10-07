@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Virtualization in Angular File Manager | Syncfusion
 description: Learn how to enable virtualization in the Angular File Manager for dynamically loading large folders in Details and Large Icons views without performance loss.

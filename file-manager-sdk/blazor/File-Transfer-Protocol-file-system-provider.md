@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: FTP Provider in Blazor File Manager | Syncfusion
 description: Learn how to use the FTP file system provider in the Blazor File Manager to browse and manage files on an FTP server.

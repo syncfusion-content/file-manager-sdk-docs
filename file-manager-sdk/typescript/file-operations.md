@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: File Operations in TypeScript File Manager | Syncfusion
 description: Learn how to perform file operations in the TypeScript File Manager, including read, create, delete, rename, copy, move, upload, and download.
@@ -934,9 +934,9 @@ The following table provides the toolbar buttons that appear based on the select
 
 | Selected Items Count | Left Section | Right Section |
 |----------------------|--------------|---------------|
-| `0` (none of the item) | • SortBy<br>• Refresh<br>• NewFolder<br>• Upload | • View<br>• Details |
-| `1` (single item selected) | • Delete<br>• Download<br>• Rename | • Selected items count<br>• View<br>• Details |
-| `>1` (multiple selection) | • Delete<br>• Download | • Selected items count<br>• View<br>• Details |
+| `0` (none of the item) | â€¢ SortBy<br>â€¢ Refresh<br>â€¢ NewFolder<br>â€¢ Upload | â€¢ View<br>â€¢ Details |
+| `1` (single item selected) | â€¢ Delete<br>â€¢ Download<br>â€¢ Rename | â€¢ Selected items count<br>â€¢ View<br>â€¢ Details |
+| `>1` (multiple selection) | â€¢ Delete<br>â€¢ Download | â€¢ Selected items count<br>â€¢ View<br>â€¢ Details |
 
 ### Context menu
 
@@ -944,9 +944,9 @@ The following table provides the default context menu item and the corresponding
 
 | Menu Name | Menu Items | Target |
 |-----------|------------|--------|
-| Layout | • SortBy<br>• View<br>• Refresh<br>• NewFolder<br>• Upload<br>• Details<br>• Select all | • Empty space in the view section (details view and large icon view area).<br>• Empty folder content. |
-| Folders | • Open<br>• Delete<br>• Rename<br>• Downloads<br>• Details | • Folders in treeview, details view, and large icon view. |
-| Files | • Open<br>• Delete<br>• Rename<br>• Downloads<br>• Details | • Files in details view and large icon view. |
+| Layout | â€¢ SortBy<br>â€¢ View<br>â€¢ Refresh<br>â€¢ NewFolder<br>â€¢ Upload<br>â€¢ Details<br>â€¢ Select all | â€¢ Empty space in the view section (details view and large icon view area).<br>â€¢ Empty folder content. |
+| Folders | â€¢ Open<br>â€¢ Delete<br>â€¢ Rename<br>â€¢ Downloads<br>â€¢ Details | â€¢ Folders in treeview, details view, and large icon view. |
+| Files | â€¢ Open<br>â€¢ Delete<br>â€¢ Rename<br>â€¢ Downloads<br>â€¢ Details | â€¢ Files in details view and large icon view. |
 
 ## Ajax Settings Configuration
 

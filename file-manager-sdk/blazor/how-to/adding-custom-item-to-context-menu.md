@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Add custom context menu item in Blazor File Manager | Syncfusion
 description: Learn how to add a custom menu item to the context menu in the Blazor File Manager with an icon and a custom click handler.

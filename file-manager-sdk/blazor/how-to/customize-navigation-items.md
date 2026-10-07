@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: How to customize navigation items in Blazor File Manager | Syncfusion
 description: Learn how to customize the layout of folder nodes in the Blazor File Manager navigation pane with a custom template.

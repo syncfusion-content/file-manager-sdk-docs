@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: End User Capabilities in Blazor File Manager | Syncfusion
 description: Learn about the Blazor File Manager user interface sections like toolbar, breadcrumb, navigation pane, context menu, and views.

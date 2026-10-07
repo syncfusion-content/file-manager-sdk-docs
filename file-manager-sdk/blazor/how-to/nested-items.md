@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Render File Manager inside other Blazor Components | Syncfusion
 description: Learn how to render the Blazor File Manager inside other components like Dialog and Tab, and refresh the layout after display.

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Accessibility in JavaScript File Manager | Syncfusion
 description: Learn about the accessibility support in the JavaScript File Manager, including WCAG 2.2, Section 508, ADA, and WAI-ARIA role compliance.

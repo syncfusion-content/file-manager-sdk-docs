@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: How to customize the HTTP handler in Blazor File Manager | Syncfusion
 description: Learn how to attach authentication tokens to file operations, image requests, downloads, and uploads in the Blazor File Manager.
@@ -144,7 +144,7 @@ This section explains how to create a Blazor server application with Windows aut
 
 ### Create Windows Authenticated Blazor Server Application
 
-You can create a Blazor server application with Windows authentication using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/blazor/tooling?view=aspnetcore-7.0) or the [Syncfusion® Blazor Extension](https://blazor.syncfusion.com/documentation/visual-studio-integration/template-studio).
+You can create a Blazor server application with Windows authentication using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/blazor/tooling?view=aspnetcore-7.0) or the [SyncfusionÂ® Blazor Extension](https://blazor.syncfusion.com/documentation/visual-studio-integration/template-studio).
 
 ![Authentication](../images/customize-http-handler.webp)
 
@@ -268,7 +268,7 @@ Open **appsettings.json** and add the following key, issuer, and audience in the
 
 ```
 
-Configure the authentication code details in the service application’s **program.cs** file.
+Configure the authentication code details in the service applicationâ€™s **program.cs** file.
 
 ```cshtml
 

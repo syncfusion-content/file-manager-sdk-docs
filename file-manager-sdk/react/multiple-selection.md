@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Multiple Selection in React File Manager | Syncfusion
 description: Learn how to enable multiple selection in the React File Manager using Ctrl/Shift keys and checkboxes to select many files at once.

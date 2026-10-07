@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with TypeScript File Manager | Syncfusion
 description: Learn how to get started with the TypeScript File Manager and explore setup, configuration, and core feature examples.

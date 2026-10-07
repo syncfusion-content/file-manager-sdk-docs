@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: User Interface in Angular File Manager | Syncfusion
 description: Learn how to use the Angular File Manager UI with view, toolbar, breadcrumb, context menu, and navigation pane modules for file browsing.
@@ -81,7 +81,7 @@ export class App { }
 
 The toolbar provides quick access to common file operations through a set of action buttons. It's an injectable module that must be included before rendering the File Manager.
 
-The toolbar intelligently handles space constraints—if there are too many items to display, excess items are moved to a dropdown menu accessed via a button at the end of the toolbar.
+The toolbar intelligently handles space constraintsâ€”if there are too many items to display, excess items are moved to a dropdown menu accessed via a button at the end of the toolbar.
 
 *Refer [Toolbar](./file-operations#toolbar) section in file operations to know more about the buttons present in toolbar*.
 
@@ -108,7 +108,7 @@ You can customize the appearance of the navigation pane by using the `navigation
 
 ### Breadcrumb
 
-The breadcrumb displays the current folder path and enables navigation to any parent folder. It's designed to be responsive—when the path becomes too long for the available space, a dropdown button appears at the beginning of the breadcrumb, containing parent folders closer to the root.
+The breadcrumb displays the current folder path and enables navigation to any parent folder. It's designed to be responsiveâ€”when the path becomes too long for the available space, a dropdown button appears at the beginning of the breadcrumb, containing parent folders closer to the root.
 
 ![BreadCrumb](./images/breadcrumb.png)
 

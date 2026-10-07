@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Summary in React File Manager | Syncfusion
 description: Find quick links to all React File Manager guides, including setup, file operations, views, customization, and accessibility topics.

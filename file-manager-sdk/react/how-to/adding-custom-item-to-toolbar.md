@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Add a custom item to the toolbar in React File Manager | Syncfusion
 description: Learn how to add a custom item to the toolbar in the React File Manager to extend built-in actions with custom controls.

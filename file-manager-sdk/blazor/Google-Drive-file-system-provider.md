@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Google Drive Provider in Blazor File Manager | Syncfusion
 description: Learn how to connect the Blazor File Manager to Google Drive using OAuth 2.0 to browse and manage files in a Drive account.

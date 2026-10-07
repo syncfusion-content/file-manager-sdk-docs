@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Pass a custom value to the server in Vue File Manager | Syncfusion
 description: Learn how to pass a custom value to the server in the Vue File Manager for authentication, logging, or role-based access on each request.
