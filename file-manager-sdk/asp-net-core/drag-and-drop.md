@@ -21,8 +21,6 @@ The events triggered in drag and drop support are:
 * `fileDragStop` - Triggers when the file/folder is about to be dropped at the target.
 * `fileDropped` - Triggers when the file/folder is dropped.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-core/drag-and-drop/tagHelper %}
@@ -31,20 +29,6 @@ The events triggered in drag and drop support are:
 {% include code-snippet/file-manager-sdk/asp-net-core/drag-and-drop/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/drag-and-drop/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/drag-and-drop/HomeController_mvc.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 The output will look like the image below.
 

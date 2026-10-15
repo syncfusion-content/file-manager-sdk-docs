@@ -14,11 +14,11 @@ The file system provider allows the [Blazor File Manager](https://www.syncfusion
 
 The following file providers are added in Blazor File Manager component.
 
-* [Physical file system provider](https://blazor.syncfusion.com/documentation/file-manager/ASP-NET-Core-file-system-provider)
-* [Azure cloud file system Provider](https://blazor.syncfusion.com/documentation/file-manager/ASP-NET-Core-Azure-cloud-file-system-provider)
-* [Amazon S3 cloud file provider](https://blazor.syncfusion.com/documentation/file-manager/ASP-NET-Core-Amazon-S3-cloud-file-provider)
-* [SharePoint file provider](https://blazor.syncfusion.com/documentation/file-manager/ASP-NET-Core-SharePoint-file-provider)
-* [File Transfer Protocol file system provider](https://blazor.syncfusion.com/documentation/file-manager/File-Transfer-Protocol-file-system-provider)
-* [SQL database file system provider](https://blazor.syncfusion.com/documentation/file-manager/SQL-database-file-system-provider)
-* [Google Drive file system provider](https://blazor.syncfusion.com/documentation/file-manager/Google-Drive-file-system-provider)
-* [Firebase Real time Database file system provider](https://blazor.syncfusion.com/documentation/file-manager/Firebase-Real-time-Database-file-system-provider)
+* [Physical file system provider](https://help.syncfusion.com/file-manager-sdk/blazor/file-system-provider)
+* [Azure cloud file system Provider](https://help.syncfusion.com/file-manager-sdk/blazor/azure-cloud-file-system-provider)
+* [Amazon S3 cloud file provider](https://help.syncfusion.com/file-manager-sdk/blazor/amazon-s3-cloud-file-provider)
+* [SharePoint file provider](https://help.syncfusion.com/file-manager-sdk/blazor/sharepoint-file-provider)
+* [File Transfer Protocol file system provider](https://help.syncfusion.com/file-manager-sdk/blazor/file-transfer-protocol-file-system-provider)
+* [SQL database file system provider](https://help.syncfusion.com/file-manager-sdk/blazor/sql-database-file-system-provider)
+* [Google Drive file system provider](https://help.syncfusion.com/file-manager-sdk/blazor/google-drive-file-system-provider)
+* [Firebase Real time Database file system provider](https://help.syncfusion.com/file-manager-sdk/blazor/firebase-real-time-database-file-system-provider)

@@ -15,8 +15,6 @@ The navigation pane in the File Manager Control displays the folder hierarchy in
 
 You may use this template to show additional metadata, custom icons, or other UI elements alongside the folder name.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-core/navigation-pane-template/tagHelper %}
@@ -25,15 +23,3 @@ You may use this template to show additional metadata, custom icons, or other UI
 {% include code-snippet/file-manager-sdk/asp-net-core/navigation-pane-template/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/navigation-pane-template/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/navigation-pane-template/HomeController_mvc.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

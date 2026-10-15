@@ -15,8 +15,6 @@ The default appearance of the File Manager can be customized with your own icon 
 
 The following example demonstrates how to add a custom icon in the largeicons view.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-core/show-thumbnail/tagHelper %}
@@ -25,20 +23,6 @@ The following example demonstrates how to add a custom icon in the largeicons vi
 {% include code-snippet/file-manager-sdk/asp-net-core/show-thumbnail/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/show-thumbnail/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/show-thumbnail/HomeController_mvc.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 The output will look like the image below.
 

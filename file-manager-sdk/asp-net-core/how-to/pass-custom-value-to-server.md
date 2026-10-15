@@ -15,27 +15,15 @@ The File Manager control allows seamless backend server interaction by passing c
 
 ## 1. Setting up the File Manager and provider
 
-{% if page.publishingplatform == "aspnet-core" %}
+To create a basic File Manager control, start by following the easy steps in the [`Getting Started`](https://help.syncfusion.com/file-manager-sdk/asp-net-core/getting-started) guide. This will allow you to manage files and folders on your system, whether they are stored physically or in the cloud.
 
-To create a basic File Manager control, start by following the easy steps in the [`Getting Started`](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/getting-started) guide. This will allow you to manage files and folders on your system, whether they are stored physically or in the cloud.
-
-For connecting the File Manager to a physical file system, check out the [`Physical file provider`](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/file-system-provider#physical-file-system-provider) section. This part of the documentation will help you configure it correctly.
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-To create a basic File Manager control, start by following the easy steps in the [`Getting Started`](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/getting-started) guide. This will allow you to manage files and folders on your system, whether they are stored physically or in the cloud.
-
-For connecting the File Manager to a physical file system, check out the [`Physical file provider`](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/file-system-provider#physical-file-system-provider) section. This part of the documentation will help you configure it correctly.
-
-{% endif %}
+For connecting the File Manager to a physical file system, check out the [`Physical file provider`](https://help.syncfusion.com/file-manager-sdk/asp-net-core/file-system-provider#physical-file-system-provider) section. This part of the documentation will help you configure it correctly.
 
 ## 2. Handling File Operations 
 
 After setting the File Manager control with the physical file system provider, you can handle file operations by passing custom values to the server. To pass custom values during the **Read**, **Delete**, **Rename**, **Create**, **Move**, **Copy**, **Details**, **Search** and **Upload** operations, utilize the **beforeSend** event of the File Manager control. This event allows you to modify the request before it is sent to the server. You can add custom headers to the request to pass additional information to the server.
 
 The `onBeforeSend` function is designed to enhance security by adding an authorization header to every outgoing AJAX request. Before a request is sent, this function is called, and it attaches the **Authorization** header with the value **User1** to the request. This ensures that the server can verify the request's authenticity and handle it accordingly.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 ```ts
 <div class="file-container">
@@ -58,31 +46,7 @@ The `onBeforeSend` function is designed to enhance security by adding an authori
 </script>
 
 ```
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
-```ts
-<div class="sample-container">
-    <!--Replace the hosted port number in the place of "{port}"-->
-    @Html.EJS().FileManager("filemanager").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
-    {
-        Url = "http://localhost:{port}/api/FileManager/FileOperations",
-        GetImageUrl = "http://localhost:{port}/api/FileManager/GetImage",
-        UploadUrl = "http://localhost:{port}/api/FileManager/Upload",
-        DownloadUrl = "http://localhost:{port}/api/FileManager/Download"
-    }).BeforeSend("beforeSend").Render()
-    <!-- end of File Manager control -->
-</div>
-
-<script>
-function beforeSend(args){
-  args.ajaxSettings.beforeSend = function (args) {
-    args.httpRequest.setRequestHeader('Authorization', 'User1');
-  };
-}
-</script>
-```
-
-{% endif %}
 
 In server-side, `FileOperations` and `Upload` methods access the **Authorization** header from the incoming HTTP request and perform the necessary operations.
 
@@ -115,8 +79,6 @@ public class FileManagerController : Controller
 
 For the **download** operation, use the **beforeDownload** event, setting **useFormPost** as false to use a fetch request to send the custom header in beforesend event. Here an **Authorization** header is appended to fetch request headers with the value **User1**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 ```ts
 <div class="file-container">
     <!-- Initialize FileManager -->
@@ -141,32 +103,7 @@ function beforeDownload(args){
 </script>
 
 ```
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-```ts
-<div class="sample-container">
-    <!--Replace the hosted port number in the place of "{port}"-->
-    @Html.EJS().FileManager("filemanager").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
-    {
-        Url = "http://localhost:{port}/api/FileManager/FileOperations",
-        GetImageUrl = "http://localhost:{port}/api/FileManager/GetImage",
-        UploadUrl = "http://localhost:{port}/api/FileManager/Upload",
-        DownloadUrl = "http://localhost:{port}/api/FileManager/Download"
-    }).BeforeDownload("beforeDownload").Render()
-    <!-- end of File Manager control -->
-</div>
 
-<script>
-function beforeDownload(args){
-  args.useFormPost = false;
-  if (args.ajaxSettings) {
-    args.ajaxSettings.beforeSend = function (args) {
-      args.fetchRequest.headers.append('Authorization', 'User1');
-    };
-  }
-}
-</script>
-```
-{% endif %}
 
 In server-side, `Download` method access the **Authorization** header from the incoming HTTP request and perform the necessary operations.
 
@@ -184,7 +121,6 @@ public object Download([FromBody] FileManagerDirectoryContent args)
 
 For the **GetImage** operation, use the **beforeImageLoad** event. Inside this event, set **useImageAsUrl** to false to instruct the FileManager not to load the image directly via its URL but instead to use a fetch request. Here, attach the **Authorization** header with the value **User1** within the beforeSend event of the ajaxSettings.
 
-{% if page.publishingplatform == "aspnet-core" %}
 ```ts
 
 <div class="file-container">
@@ -213,36 +149,6 @@ For the **GetImage** operation, use the **beforeImageLoad** event. Inside this e
 </script>
 
 ```
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-```ts
-<div class="sample-container">
-    <!--Replace the hosted port number in the place of "{port}"-->
-    @Html.EJS().FileManager("filemanager").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
-    {
-        Url = "http://localhost:{port}/api/FileManager/FileOperations",
-        GetImageUrl = "http://localhost:{port}/api/FileManager/GetImage",
-        UploadUrl = "http://localhost:{port}/api/FileManager/Upload",
-        DownloadUrl = "http://localhost:{port}/api/FileManager/Download"
-    }).BeforeImageLoad ("beforeImageLoad").Render()
-    <!-- end of File Manager control -->
-</div>
-
-<script>
-    function beforeImageLoad(args) {
-        // Add custom parameter in image URL
-        args.useImageAsUrl = false;
-        // Check if ajaxSettings are present in the arguments
-        if (args.ajaxSettings) {
-            (args.ajaxSettings).beforeSend = function (args) {
-            // Append Authorization header with value 'User1' to fetchRequest headers
-            args.fetchRequest.headers.append('Authorization', 'User1');
-            };
-        }
-    }
-</script>
-```
-{% endif %}
 
 In server-side, `GetImage` method access the **Authorization** header from the incoming HTTP request and perform the necessary operations.
 ```typescript

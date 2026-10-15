@@ -105,24 +105,11 @@ The following syntax represent how to allow or deny permission based on file or 
 
 The following example demonstrate the File Manager rendered with access control support.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-core/access-control/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/access-control/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 The output will look like the image below when writing to the documents folder.
 

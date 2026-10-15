@@ -16,8 +16,6 @@ The File Manager allows multiple file selection through the `allowMultiSelection
 
 The example below demonstrates how the File Manager allows multiple file selection using the `allowMultiSelection` property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-core/multiple-selection/tagHelper %}
@@ -26,19 +24,6 @@ The example below demonstrates how the File Manager allows multiple file selecti
 {% include code-snippet/file-manager-sdk/asp-net-core/multiple-selection/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/multiple-selection/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/multiple-selection/HomeController_mvc.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 The output will look like the image below.
 
@@ -49,8 +34,6 @@ The output will look like the image below.
 The File Manager supports selecting files and folders in specific ranges through mouse drag, similar to File Explorer. This is particularly useful in scenarios where users need to select a large group of files quickly without manually clicking each one. 
 
 ### Enabling Range Selection
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 To enable range selection, you need to set the [enableRangeSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_EnableRangeSelection) property to `true` and ensure that multi-selection is allowed using the [allowMultiSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AllowMultiSelection) property.
 
@@ -63,27 +46,11 @@ To enable range selection, you need to set the [enableRangeSelection](https://he
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-To enable range selection, you need to set the [enableRangeSelection](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.filemanager.filemanager.html#Syncfusion_EJ2_FileManager_FileManager_EnableRangeSelection) property to `true` and ensure that multi-selection is allowed using the [allowMultiSelection](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.filemanager.filemanager.html#Syncfusion_EJ2_FileManager_FileManager_AllowMultiSelection) property.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/range-selection/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/range-selection/HomeController_mvc.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 The output will look like the image below.
 
 ![File Manager rangeselection](./images/rangeselection.png)
 
 ## Disable Multi selection
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 Setting the [`allowMultiSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.filemanager.filemanager.html#Syncfusion_EJ2_FileManager_FileManager_AllowMultiSelection) property to false will prevent you from selecting multiple files or folders with standard selection methods. However, you can still select multiple items if checkboxes are visible. To fully disable all multi-selection capabilities, you must also set the [`showItemCheckBoxes`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.filemanager.filemanager.html#Syncfusion_EJ2_FileManager_FileManager_ShowItemCheckBoxes) property to false. This ensures that you cannot use checkboxes for multiple selections.
 
@@ -92,18 +59,6 @@ Setting the [`allowMultiSelection`](https://help.syncfusion.com/cr/aspnetcore-js
 {% include code-snippet/file-manager-sdk/asp-net-core/disablemultiselection/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-Setting the [`allowMultiSelection`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.filemanager.filemanager.html#Syncfusion_EJ2_FileManager_FileManager_AllowMultiSelection) property to false will prevent you from selecting multiple files or folders with standard selection methods. However, you can still select multiple items if checkboxes are visible. To fully disable all multi-selection capabilities, you must also set the [`showItemCheckBoxes`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.filemanager.filemanager.html#Syncfusion_EJ2_FileManager_FileManager_ShowItemCheckBoxes) property to false. This ensures that you cannot use checkboxes for multiple selections.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/disablemultiselection/razor %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
 
 The output will look like the image below.
 
