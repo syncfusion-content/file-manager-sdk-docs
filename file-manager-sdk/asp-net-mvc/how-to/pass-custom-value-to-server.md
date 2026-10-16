@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Pass a custom value to the server in ASP.NET MVC File Manager | Syncfusion
+title: Pass custom value to server in ASP.NET MVC File Manager | Syncfusion
 description: Learn how to pass a custom value to the server in the ASP.NET MVC File Manager for authentication, logging, or role-based access on each request.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
 
 # How to pass a custom value to the server in ASP.NET MVC File Manager
 
-The File Manager control allows seamless backend server interaction by passing custom values. This enhances the functionality and security of file operations, particularly helpful for tasks like authentication, logging, or user role-based processing. In multi-user systems, it ensures file access permissions and actions are user-specific and secure. You can manage user-specific operations such as **Read**, **Delete**, **Rename**, **Create**, **Move**, **Copy**, **Details**, **Search**, **Upload**, **Download**, and **GetImage** using custom headers or query parameters. This guide demonstrates implementing these features using the **beforeSend**, **beforeDownload** and **beforeImageLoad** events. Let's explore how to achieve this in [`Physical file system provider`](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider).
+The File Manager control allows seamless back end server interaction by passing custom values. This enhances the functionality and security of file operations, particularly helpful for tasks like authentication, logging, or user role-based processing. In multi-user systems, it ensures file access permissions and actions are user-specific and secure. You can manage user-specific operations such as **Read**, **Delete**, **Rename**, **Create**, **Move**, **Copy**, **Details**, **Search**, **Upload**, **Download**, and **GetImage** using custom headers or query parameters. This guide demonstrates implementing these features using the **beforeSend**, **beforeDownload** and **beforeImageLoad** events. Let's explore how to achieve this in [`Physical file system provider`](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider).
 
 ## 1. Setting up the File Manager and provider
 

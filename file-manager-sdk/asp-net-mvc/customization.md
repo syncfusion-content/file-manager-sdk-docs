@@ -4,7 +4,6 @@ title: Customization in ASP.NET MVC File Manager | Syncfusion
 description: Learn how to customize the ASP.NET MVC File Manager context menu, toolbar, navigation pane, upload, and tooltip using built-in APIs.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
@@ -208,7 +207,7 @@ For every operation in File Manager, ajax request will be sent to the server whi
 
 ![FileManager enable persistence](images/enable_persistence.png)
 
-N> The files of the current folder opened in the File Manager can be refreshed programatically by calling `refreshFiles` method
+N> The files of the current folder opened in the File Manager can be refreshed programmatically by calling `refreshFiles` method
 
 ## Specifying the current path of the File Manager
 

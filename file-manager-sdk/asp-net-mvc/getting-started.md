@@ -4,7 +4,6 @@ title: Getting Started with ASP.NET MVC File Manager | Syncfusion
 description: Learn how to get started with the ASP.NET MVC File Manager and explore setup, configuration, and core feature examples.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---

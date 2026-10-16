@@ -4,7 +4,6 @@ title: Views in ASP.NET MVC File Manager | Syncfusion
 description: Learn how to switch between Large Icons and Details views in the ASP.NET MVC File Manager for flexible file browsing.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
@@ -21,7 +20,7 @@ The File Manager has two types of `views` to display the files and folders.
 
 ## LargeIcons View
 
-By default, File Manager is rendered with the largeicons view. The following example demonstrates this.
+By default, File Manager is rendered with the large icons view. The following example demonstrates this.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -51,7 +50,7 @@ The large icons view layout can be customized using the `largeIconsTemplate` pro
 
 ## Details View
 
-The default appearance of the File Manager can be changed from largeicons to details view by using the `view` property. In the Details view, the files are displayed in a sorted list order. This file list comprises of several columns of information about the files such as **Name**, **Date Modified**, **Type**, and **Size**. The following example demonstrates the File Manager with details view.
+The default appearance of the File Manager can be changed from large icons to details view by using the `view` property. In the Details view, the files are displayed in a sorted list order. This file list comprises of several columns of information about the files such as **Name**, **Date Modified**, **Type**, and **Size**. The following example demonstrates the File Manager with details view.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

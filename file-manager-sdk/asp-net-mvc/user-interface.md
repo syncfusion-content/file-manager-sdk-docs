@@ -4,7 +4,6 @@ title: User Interface in ASP.NET MVC File Manager | Syncfusion
 description: Learn how to use the ASP.NET MVC File Manager UI with view, toolbar, breadcrumb, context menu, and navigation pane modules for file browsing.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---

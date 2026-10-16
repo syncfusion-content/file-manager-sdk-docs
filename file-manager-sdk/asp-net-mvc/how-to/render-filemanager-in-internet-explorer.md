@@ -4,7 +4,6 @@ title: Render ASP.NET MVC File Manager in Internet Explorer | Syncfusion
 description: Learn how to render the ASP.NET MVC File Manager in Internet Explorer by adding the required polyfill script before the component scripts.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---

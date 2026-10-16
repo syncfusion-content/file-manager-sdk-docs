@@ -4,7 +4,6 @@ title: Localization in ASP.NET MVC File Manager | Syncfusion
 description: Learn how to localize the ASP.NET MVC File Manager to any culture by defining locale-specific texts and messages beyond the default English locale.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
