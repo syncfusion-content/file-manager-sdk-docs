@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Add a custom item to the toolbar in ASP.NET Core File Manager | Syncfusion
+title: Add custom toolbar item in ASP.NET Core File Manager | Syncfusion
 description: Learn how to add a custom item to the toolbar in the ASP.NET Core File Manager to extend built-in actions with custom controls.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---

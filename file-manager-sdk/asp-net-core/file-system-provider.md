@@ -4,7 +4,6 @@ title: File System Provider in ASP.NET Core File Manager | Syncfusion
 description: Learn how to connect the ASP.NET Core File Manager to physical, Azure, Amazon S3, Google Drive, Firebase, and other file system providers.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
@@ -268,9 +267,9 @@ After configuring the connection, just build and run the project. Now, the proje
 
 N> To learn more about file actions that can be performed with SQL database file system provider, refer to this [link](https://github.com/SyncfusionExamples/sql-server-database-aspcore-file-provider#key-features).
 
-## NodeJS file system provider
+## Node.js file system provider
 
-In ASP.NET Core, NodeJS file system provider allows the users to manage the files and folders in a physical file system. It provides methods for performing all basic file operations like creating a folder, copy, move, delete, and download files and folders in the file system. We can use the NodeJS file system provider either by installing the [ej2-filemanager-node-filesystem](https://www.npmjs.com/package/@syncfusion/ej2-filemanager-node-filesystem) package or by cloning the [file system provider](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem) from GitHub.
+In ASP.NET Core, Node.js file system provider allows the users to manage the files and folders in a physical file system. It provides methods for performing all basic file operations like creating a folder, copy, move, delete, and download files and folders in the file system. We can use the Node.js file system provider either by installing the [ej2-filemanager-node-filesystem](https://www.npmjs.com/package/@syncfusion/ej2-filemanager-node-filesystem) package or by cloning the [file system provider](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem) from GitHub.
 
 ### Using ej2-filemanager-node-filesystem package
 
@@ -317,7 +316,7 @@ set PORT=3000 && node filesystem-server.js -d D:/Projects
 
 N> By default, the service will run `8090` port.
 
-Now, just mapping the **ajaxSettings** property of the File Manager control to the appropriate file operation methods in the filesystem-server.js file will allows to manage the physical file system with NodeJS file system provider.
+Now, just mapping the **ajaxSettings** property of the File Manager control to the appropriate file operation methods in the filesystem-server.js file will allows to manage the physical file system with Node.js file system provider.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -327,7 +326,7 @@ Now, just mapping the **ajaxSettings** property of the File Manager control to t
 {% endhighlight %}
 {% endtabs %}
 
-N> To learn more about file actions that can be performed with NodeJS file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem#key-features).
+N> To learn more about file actions that can be performed with Node.js file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem#key-features).
 
 ## Google Drive file system provider
 

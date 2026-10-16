@@ -4,7 +4,6 @@ title: File Operations in ASP.NET Core File Manager | Syncfusion
 description: Learn how to perform file operations in the ASP.NET Core File Manager, including read, create, delete, rename, copy, move, upload, and download.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
@@ -43,10 +42,10 @@ In the following example, directory upload is enabled/disabled on DropDownButton
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/asp-net-core/directory-upload/tagHelper %}
+{% include code-snippet/file-manager-sdk/asp-net-core/directory-upload/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController_core.cs" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/asp-net-core/directory-upload/HomeController_core.cs %}
+{% include code-snippet/file-manager-sdk/asp-net-core/directory-upload/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1024,7 +1023,7 @@ To perform the download operation, initialize the `DownloadUrl` property in a [`
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/asp-net-core/file-download-url/tagHelper %}
+{% include code-snippet/file-manager-sdk/asp-net-core/file-download-url/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1035,7 +1034,7 @@ To perform the upload operation, initialize the `UploadUrl` property in a [`Ajax
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/asp-net-core/file-upload-url/tagHelper %}
+{% include code-snippet/file-manager-sdk/asp-net-core/file-upload-url/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1045,7 +1044,7 @@ To perform the image preview support in the File Manager control, need to initia
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/asp-net-core/image-preview/tagHelper %}
+{% include code-snippet/file-manager-sdk/asp-net-core/image-preview/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 

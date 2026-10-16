@@ -4,12 +4,11 @@ title: Render ASP.NET Core File Manager in Internet Explorer | Syncfusion
 description: Learn how to render the ASP.NET Core File Manager in Internet Explorer by adding the required polyfill script before the component scripts.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
 
-# Render File Manager in Internet Explorer
+# Render ASP.NET Core File Manager in Internet Explorer
 
 In the Internet Explorer browser, ES6 promise polyfills are required to run the File Manager control. Click this  [`link`](https://ej2.syncfusion.com/aspnetcore/documentation/browser) to learn more about the EJ2 controls' browser compatibility.
 

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Adding custom item to context menu in ASP.NET Core File Manager | Syncfusion
+title: Add custom context menu item in ASP.NET Core File Manager | Syncfusion
 description: Learn how to add a custom item to the context menu in the ASP.NET Core File Manager with custom icons and click handlers.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---

@@ -4,7 +4,6 @@ title: Use nested File Manager in ASP.NET Core | Syncfusion
 description: Learn how to integrate the ASP.NET Core File Manager within components such as Tab and Dialog to build flexible and interactive application layouts.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
@@ -18,7 +17,7 @@ File Manager can be rendered inside other controls like Tab, Dialog, and more.
 
 ## Adding File Manager inside the dialog
 
-The following example shows the File Manager control rendered inside the dialog. Click the browse button in the Uploader element to open the File Manager inside the Dialog control.
+The following example shows the File Manager control rendered inside the dialog. Click the browse button in the Upload element to open the File Manager inside the Dialog control.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

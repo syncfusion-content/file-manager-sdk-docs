@@ -4,7 +4,6 @@ title: Upload in ASP.NET Core File Manager | Syncfusion
 description: Learn how to upload files in the ASP.NET Core File Manager with chunk uploads, directory uploads, and drag-and-drop support.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
@@ -82,7 +81,7 @@ The File Manager control provides support for external drag-and-drop functionali
 
 To completely prevent the external drag-and-drop upload functionality (i.e., disallowing users from dragging and dropping files from outside into the File Manager), you can set the [dropArea](https://ej2.syncfusion.com/documentation/api/uploader/index-default#droparea) property to null. This can be done by accessing the File Manager instance via its class methods.
 
->**Note:** Setting [allowDragAndDrop](https://ej2.syncfusion.com/documentation/api/file-manager/#allowdraganddrop) property to false will not prevent the file upload operation through external drag and drop. It will only prevent drag and drop action within the File Manager control.
+>**Note:** Setting [allowDragAndDrop](https://ej2.syncfusion.com/documentation/api/file-manager/index-default#allowdraganddrop) property to false will not prevent the file upload operation through external drag and drop. It will only prevent drag and drop action within the File Manager control.
 
 The following example demonstrates the uploadSettings customizations.
 

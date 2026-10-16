@@ -4,7 +4,6 @@ title: Getting Started with ASP.NET Core File Manager | Syncfusion
 description: Learn how to get started with the ASP.NET Core File Manager and explore setup, configuration, and core feature examples.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
@@ -118,7 +117,7 @@ Open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.EJ2` Ta
 
 ## Add stylesheet and script resources
 
-Here, the theme and script are is referred using CDN inside the `<head>` of thhe **~/Pages/Shared/_Layout.cshtml** file as follows,
+Here, the theme and script are is referred using CDN inside the `<head>` of the **~/Pages/Shared/_Layout.cshtml** file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}

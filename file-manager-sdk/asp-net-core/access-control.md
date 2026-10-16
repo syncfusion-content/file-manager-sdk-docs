@@ -4,7 +4,6 @@ title: Access Control in ASP.NET Core File Manager | Syncfusion
 description: Learn how to configure access control in the ASP.NET Core File Manager with role-based permissions and restricted file operations.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
