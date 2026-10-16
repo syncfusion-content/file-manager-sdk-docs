@@ -61,21 +61,6 @@ The following dependent components are used within the Blazor File Manager:
 | Split Button | Rendered for toolbar items with a dropdown action, such as the **Upload** and **View** (details/large icons switcher) toolbar items. | [Split Button Accessibility](https://blazor.syncfusion.com/documentation/split-button/accessibility) |
 | Spinner | Rendered to indicate the loading state while the File Manager content is being read from the file system provider. | [Spinner Accessibility](https://blazor.syncfusion.com/documentation/spinner/accessibility) |
 
-### How dependent components contribute to File Manager accessibility
-
-* **Toolbar**: The toolbar items follow the WAI-ARIA toolbar pattern and support full keyboard navigation. Disabled items communicate their state through `aria-disabled`, popup items (such as the upload and view switcher sub-menus) are exposed through `aria-haspopup` and `aria-expanded`, and the active item is tracked for assistive technologies.
-* **Splitter**: The splitter panes expose their expand/collapse state and orientation through ARIA attributes, and each splitter bar is keyboard focusable, so keyboard-only and screen reader users can resize or collapse the navigation and preview panes.
-* **TreeView**: The navigation pane tree nodes use `role="tree"`, `aria-level`, `aria-expanded`, and `aria-selected` to expose the folder hierarchy, and support dedicated tree keyboard navigation for expanding, collapsing, and moving between folders.
-* **Breadcrumb**: The path bar exposes the current folder path to assistive technologies and supports keyboard navigation to move between path levels, including the overflow items.
-* **Grid**: In the Details view, the file list is rendered as a grid with `aria-colcount`, `aria-colindex`, `aria-sort`, and related ARIA attributes so that screen readers can announce column headers, sorted state, and row content. The grid also provides its own keyboard navigation for moving between rows and cells.
-* **Context Menu**: The context menu follows the WAI-ARIA menu pattern, opens on both right-click and keyboard shortcut (<kbd>Shift</kbd>+<kbd>F10</kbd>/<kbd>Context Menu</kbd> key), and its items are fully navigable with arrow keys, ensuring keyboard-only users can access every file operation.
-* **Dialog**: All File Manager dialogs (such as new folder, rename, and delete confirmation) trap the focus within the dialog while open, are exposed as modals through `aria-modal`, `aria-labelledby`, and `aria-describedby`, and restore focus to the initiating element when closed.
-* **Uploader**: The upload dialog's file list and buttons are exposed through appropriate roles and labels, and upload progress and status information is communicated programmatically so that assistive technology users can follow the upload process.
-* **Tooltip**: Tooltips for truncated file names and toolbar items appear on focus as well as on hover, so keyboard-only and screen reader users also receive the same information as mouse users.
-* **Button**: The dialog action buttons (such as create, cancel, and delete) expose their state to assistive technologies and are reachable through keyboard navigation within the dialogs.
-* **Split Button**: The toolbar's dropdown items follow the WAI-ARIA split button pattern; the primary action and the dropdown arrow can be operated separately with the keyboard, and the popup state is communicated through `aria-haspopup`, `aria-expanded`, and `aria-owns`.
-* **Spinner**: The loading indicator is exposed to assistive technologies so that screen reader users are informed when the File Manager content is being loaded.
-
 ## WAI-ARIA attributes
 
 The Blazor File Manager component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) patterns to meet the accessibility. The following ARIA attributes are used in the Blazor File Manager component:
