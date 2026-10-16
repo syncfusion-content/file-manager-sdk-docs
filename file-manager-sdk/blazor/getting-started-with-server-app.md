@@ -220,4 +220,4 @@ dotnet run
 
 1. [Getting Started with Blazor Web App](https://blazor.syncfusion.com/documentation/getting-started/blazor-web-app)
 2. [Getting Started with Blazor WebAssembly App](https://blazor.syncfusion.com/documentation/getting-started/blazor-webassembly-app)
-3. [Getting Started with Blazor File Manager Data Binding](https://blazor.syncfusion.com/documentation/file-manager/data-binding)
+3. [Getting Started with Blazor File Manager Data Binding](https://help.syncfusion.com/file-manager-sdk/blazor/data-binding)

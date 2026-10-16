@@ -290,4 +290,4 @@ The [OnMenuClick](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileMa
 
 ## See Also
 
-[Adding Custom Item To Context Menu](https://blazor.syncfusion.com/documentation/file-manager/how-to/adding-custom-item-to-context-menu)
+[Adding Custom Item To Context Menu](https://help.syncfusion.com/file-manager-sdk/blazor/how-to/adding-custom-item-to-context-menu)

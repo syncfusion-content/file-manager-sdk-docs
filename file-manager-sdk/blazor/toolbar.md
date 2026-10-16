@@ -104,4 +104,4 @@ The [ToolbarItemClicked](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor
 
 ## See Also
 
-[Adding Custom Item To Toolbar](https://blazor.syncfusion.com/documentation/file-manager/how-to/add-custom-tool-bar)
+[Adding Custom Item To Toolbar](https://help.syncfusion.com/file-manager-sdk/blazor/how-to/add-custom-tool-bar)

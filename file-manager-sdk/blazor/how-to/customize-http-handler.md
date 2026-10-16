@@ -150,7 +150,7 @@ You can create a Blazor server application with Windows authentication using Vis
 
 Include the [Microsoft.AspNetCore.Authentication.JWTBearer](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer) package for generating user tokens.
 
-Initialize the Blazor File Manager component in the **~/Pages/Index.razor** file using the [Getting Started with Blazor File Manager Component](https://blazor.syncfusion.com/documentation/file-manager/getting-started-with-web-app) documentation.
+Initialize the Blazor File Manager component in the **~/Pages/Index.razor** file using the [Getting Started with Blazor File Manager Component](https://help.syncfusion.com/file-manager-sdk/blazor/getting-started-with-web-app) documentation.
 
 ### Implementing JWT Token Generation and Authorization
 
@@ -252,7 +252,7 @@ To authorize the Blazor File Manager component server response, generate a user 
 
 ## Create service application for File Manager action
 
-Create a new **ASP Core web application** with the required Blazor File Manager service models and controller, or clone the required service provider from the [file-system-provider](https://blazor.syncfusion.com/documentation/file-manager/file-system-provider) documentation that contains the available file service provider.
+Create a new **ASP Core web application** with the required Blazor File Manager service models and controller, or clone the required service provider from the [file-system-provider](https://help.syncfusion.com/file-manager-sdk/blazor/file-system-provider) documentation that contains the available file service provider.
 
 To demonstrate behavior with a physical service provider, include the [Microsoft.AspNetCore.Authentication.JWTBearer](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer), [Microsoft.IdentityModel.Tokens](https://www.nuget.org/packages/Microsoft.IdentityModel.Tokens) and [System.IdentityModel.Tokens.JWT](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt) packages for accessing the authorized token value on the service application.
 

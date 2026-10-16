@@ -4,7 +4,6 @@ title: Getting Started with ASP.NET Core File Manager | Syncfusion
 description: Learn how to get started with the ASP.NET Core File Manager and explore setup, configuration, and core feature examples.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
@@ -118,7 +117,7 @@ Open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.EJ2` Ta
 
 ## Add stylesheet and script resources
 
-Here, the theme and script are is referred using CDN inside the `<head>` of thhe **~/Pages/Shared/_Layout.cshtml** file as follows,
+Here, the theme and script are is referred using CDN inside the `<head>` of the **~/Pages/Shared/_Layout.cshtml** file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -330,9 +329,9 @@ N> The File Manager can be rendered with `local service` for sending ajax reques
 
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
-* [Ajax Settings Configuration (uploadUrl, downloadUrl, getImageUrl)](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/file-operations#ajax-settings-configuration)
-* [Overview](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/user-interface#file-manager-overview)
-* [File Manager Views](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/views)
-* [File Manager File Operations](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/file-operations)
-* [File Manager Upload](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/upload)
-* [File Manager Customization](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/customization)
+* [Ajax Settings Configuration (uploadUrl, downloadUrl, getImageUrl)](https://help.syncfusion.com/file-manager-sdk/asp-net-core/file-operations#ajax-settings-configuration)
+* [Overview](https://help.syncfusion.com/file-manager-sdk/asp-net-core/user-interface#file-manager-overview)
+* [File Manager Views](https://help.syncfusion.com/file-manager-sdk/asp-net-core/views)
+* [File Manager File Operations](https://help.syncfusion.com/file-manager-sdk/asp-net-core/file-operations)
+* [File Manager Upload](https://help.syncfusion.com/file-manager-sdk/asp-net-core/upload)
+* [File Manager Customization](https://help.syncfusion.com/file-manager-sdk/asp-net-core/customization)

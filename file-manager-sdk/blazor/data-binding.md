@@ -625,7 +625,7 @@ To render the root-level folder, specify the ParentID as null, or there is no ne
 {% endhighlight %}
 {% endtabs %}
 
-N> [Also see the demo here](https://blazor.syncfusion.com/demos/file-manager/flat-data).
+N> [Also see the demo here](https://blazor.syncfusion.com/demos/file-manager/flat-data?theme=fluent2).
 
 ### Injected service
 

@@ -283,6 +283,6 @@ The Blazor File Manager component allows you to easily perform drag and drop fil
 
 ## See also
 
-* [Set min and max file size in upload](https://blazor.syncfusion.com/documentation/file-manager/how-to/upload-large-files)
+* [Set min and max file size in upload](https://help.syncfusion.com/file-manager-sdk/blazor/how-to/upload-large-files)
 
-* [Restrict drag and drop upload](https://blazor.syncfusion.com/documentation/file-manager/how-to/restrict-drag-and-drop-upload)
+* [Restrict drag and drop upload](https://help.syncfusion.com/file-manager-sdk/blazor/how-to/restrict-drag-and-drop-upload)

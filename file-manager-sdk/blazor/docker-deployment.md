@@ -25,7 +25,7 @@ You can deploy the published image directly, or build a custom Docker image from
 
 ## Prerequisites
 
-Install [Docker](https://www.docker.com/products/container-runtime#/download) in your environment:
+Install [Docker](https://www.docker.com/products/container-runtime/#/download) in your environment:
 
 - On Windows, install [Docker Desktop for Windows](https://docs.docker.com/desktop/setup/install/windows-install/).
 - On macOS, install [Docker Desktop for macOS](https://docs.docker.com/desktop/setup/install/mac-install/).
