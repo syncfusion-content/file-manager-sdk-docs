@@ -20,19 +20,6 @@ File Manager can be rendered inside other controls like Tab, Dialog, and more.
 
 The following example shows the File Manager control rendered inside the dialog. Click the browse button in the Uploader element to open the File Manager inside the Dialog control.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/file-dialog/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController_core.cs" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/file-dialog/HomeController_core.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-mvc/file-dialog/razor %}
@@ -41,8 +28,6 @@ The following example shows the File Manager control rendered inside the dialog.
 {% include code-snippet/file-manager-sdk/asp-net-mvc/file-dialog/HomeController_mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 The initial output will look like the image below.
 
@@ -56,19 +41,6 @@ After clicking the file browser button, the File Manager is rendered within a di
 
 The following example demonstrates the File Manager control placed inside the content area of a tab element.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/file-tab/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/file-tab/HomeController_mvc.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-mvc/file-tab/razor %}
@@ -77,9 +49,6 @@ The following example demonstrates the File Manager control placed inside the co
 {% include code-snippet/file-manager-sdk/asp-net-mvc/file-tab/HomeController_mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 The initial view output will look like the image below.
 

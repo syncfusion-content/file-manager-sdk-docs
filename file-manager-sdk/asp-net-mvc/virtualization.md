@@ -22,16 +22,6 @@ In order to enable `virtualization`, you must set the `EnableVirtualization` pro
 
 The example below shows a large collection of files in the **Documents** and **Text Documents** folders.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/virtualization/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-mvc/virtualization/razor %}
@@ -40,9 +30,6 @@ The example below shows a large collection of files in the **Documents** and **T
 {% include code-snippet/file-manager-sdk/asp-net-mvc/virtualization/HomeController_mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 The output will look like the image below.
 

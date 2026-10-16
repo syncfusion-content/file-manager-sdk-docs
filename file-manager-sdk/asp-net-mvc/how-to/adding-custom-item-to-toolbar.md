@@ -11,22 +11,9 @@ appliesto: UI Component Suite, File Manager SDK
 
 # How to add a custom item to the toolbar in ASP.NET MVC File Manager
 
-You can modify the items displayed in the toolbar by utilizing the [toolbarItems](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ToolbarItems.html) API. To display both default and customized items, it's essential to assign a unique **name** to each item. Additionally, you have the flexibility to alter the default items by adjusting properties such as **tooltipText, iconCss, Text, suffixIcon** and more. This level of customization allows you to tailor the toolbar to your specific requirements and design preferences. The names used in the code example below serve as unique identifiers for default toolbar items, while custom items can be assigned any unique name value to distinguish them from the defaults.
+You can modify the items displayed in the toolbar by utilizing the [toolbarItems](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_ToolbarItems) API. To display both default and customized items, it's essential to assign a unique **name** to each item. Additionally, you have the flexibility to alter the default items by adjusting properties such as **tooltipText, iconCss, Text, suffixIcon** and more. This level of customization allows you to tailor the toolbar to your specific requirements and design preferences. The names used in the code example below serve as unique identifiers for default toolbar items, while custom items can be assigned any unique name value to distinguish them from the defaults.
 
 For instance, here's an example of how to add a custom checkbox to the toolbar using the **template** property. Here we have modified the default `New Folder` item and added a custom toolbar item for selection.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/how-to/toolbar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController_core.cs" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/how-to/toolbar/HomeController_core.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -36,8 +23,6 @@ For instance, here's an example of how to add a custom checkbox to the toolbar u
 {% include code-snippet/file-manager-sdk/asp-net-mvc/how-to/toolbar/HomeController_mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 The output will look like the image below.
 
