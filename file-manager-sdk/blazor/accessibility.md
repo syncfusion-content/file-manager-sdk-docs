@@ -40,7 +40,7 @@ The accessibility compliance for the Blazor File Manager component is outlined b
 
 <div><img src="https://cdn.syncfusion.com/content/images/landing-page/no.png" alt="No"> - The component does not meet the requirement.</div>
 
-## Accessibility of dependent components
+## Accessibility of the dependent components
 
 The Blazor File Manager is a composite component that renders a file system-like interface. It is built by integrating several Syncfusion Blazor components, and each of these components implements its own dedicated accessibility support for WAI-ARIA, keyboard interaction, and screen reader compatibility. The accessibility experience of the File Manager as a whole is therefore the combined accessibility behavior of these dependent components.
 
