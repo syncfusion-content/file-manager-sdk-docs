@@ -57,6 +57,10 @@ The following dependent components are used within the Blazor File Manager:
 | Context Menu | Rendered when right-clicking a file, folder, or empty area of the File Manager to expose file operations. | [Context Menu Accessibility](https://blazor.syncfusion.com/documentation/context-menu/accessibility) |
 | Dialog | Rendered for dialogs such as the new folder, rename, upload confirmation, delete confirmation, and file preview dialogs. | [Dialog Accessibility](https://blazor.syncfusion.com/documentation/dialog/accessibility) |
 | Uploader | Rendered inside the upload dialog to upload files to the current folder. | [Uploader Accessibility](https://blazor.syncfusion.com/documentation/uploader/accessibility) |
+| Tooltip | Rendered to display tooltips for file and folder names, toolbar items, and other truncated content in the File Manager. | [Tooltip Accessibility](https://blazor.syncfusion.com/documentation/tooltip/accessibility) |
+| Button | Rendered inside File Manager dialogs (such as the create, rename, and delete confirmation dialog buttons) and for the upload dialog actions. | [Button Accessibility](https://blazor.syncfusion.com/documentation/button/accessibility) |
+| Split Button | Rendered for toolbar items with a dropdown action, such as the **Upload** and **View** (details/large icons switcher) toolbar items. | [Split Button Accessibility](https://blazor.syncfusion.com/documentation/split-button/accessibility) |
+| Spinner | Rendered to indicate the loading state while the File Manager content is being read from the file system provider. | [Spinner Accessibility](https://blazor.syncfusion.com/documentation/spinner/accessibility) |
 
 ### How dependent components contribute to File Manager accessibility
 
@@ -69,6 +73,10 @@ The following dependent components are used within the Blazor File Manager:
 * **Context Menu**: The context menu follows the WAI-ARIA menu pattern, opens on both right-click and keyboard shortcut (<kbd>Shift</kbd>+<kbd>F10</kbd>/<kbd>Context Menu</kbd> key), and its items are fully navigable with arrow keys, ensuring keyboard-only users can access every file operation.
 * **Dialog**: All File Manager dialogs (such as new folder, rename, and delete confirmation) trap the focus within the dialog while open, are exposed as modals through `aria-modal`, `aria-labelledby`, and `aria-describedby`, and restore focus to the initiating element when closed.
 * **Uploader**: The upload dialog's file list and buttons are exposed through appropriate roles and labels, and upload progress and status information is communicated programmatically so that assistive technology users can follow the upload process.
+* **Tooltip**: Tooltips for truncated file names and toolbar items appear on focus as well as on hover, so keyboard-only and screen reader users also receive the same information as mouse users.
+* **Button**: The dialog action buttons (such as create, cancel, and delete) expose their state to assistive technologies and are reachable through keyboard navigation within the dialogs.
+* **Split Button**: The toolbar's dropdown items follow the WAI-ARIA split button pattern; the primary action and the dropdown arrow can be operated separately with the keyboard, and the popup state is communicated through `aria-haspopup`, `aria-expanded`, and `aria-owns`.
+* **Spinner**: The loading indicator is exposed to assistive technologies so that screen reader users are informed when the File Manager content is being loaded.
 
 ## WAI-ARIA attributes
 
