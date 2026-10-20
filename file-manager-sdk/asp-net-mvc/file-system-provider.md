@@ -4,7 +4,6 @@ title: File System Provider in ASP.NET MVC File Manager | Syncfusion
 description: Learn how to connect the ASP.NET MVC File Manager to physical, Azure, Amazon S3, Google Drive, Firebase, and other file system providers.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
@@ -43,18 +42,6 @@ After cloning, just open the project in Visual Studio and restore the NuGet pack
 
 After setting the root directory of the file system, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager control to the appropriate controller methods allows to manage the files in the physical file system.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/file-system-provider/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="File-system-provider.cs" %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-mvc/file-system-provider/razor %}
@@ -62,9 +49,6 @@ After setting the root directory of the file system, just build and run the proj
 {% highlight c# tabtitle="File-system-provider.cs" %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 N> To learn more about file actions that can be performed with Physical file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider#key-features)
 
@@ -98,18 +82,6 @@ N> Also, assign the same *blobPath URL* and *filePath URL* in [**AzureFileOperat
 
 After setting the blob container references, build and run the project. The project will be hosted at `http://localhost:{port}`. Mapping the **ajaxSettings** property of the File Manager control to the appropriate controller methods allows to manage the Azure blob storage.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/azure-file-system/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Azure-file-system.cs" %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-mvc/azure-file-system/razor %}
@@ -117,9 +89,6 @@ After setting the blob container references, build and run the project. The proj
 {% highlight c# tabtitle="Azure-file-system.cs" %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 N> To learn more about file actions that can be performed with Azure cloud file system provider, refer to this [link](https://github.com/SyncfusionExamples/azure-aspcore-file-provider#key-features)
 
@@ -129,7 +98,7 @@ The Amazon ***S3*** (*Simple Storage Service*) cloud file system provider allows
 
 ```typescript
 
-git clone https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider.git  amazon-s3-aspcore-file-provider.git
+git clone https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider.git amazon-s3-aspcore-file-provider
 
 ```
 
@@ -145,18 +114,6 @@ After cloning, open the project in Visual Studio and restore the NuGet packages.
 
 After registering the Amazon client account details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager control to the appropriate controller methods allows to manage the Amazon ***S3*** (*Simple Storage Service*) bucket's objects storage.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/amazon-file-system/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Amazon-file-system.cs" %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-mvc/amazon-file-system/razor %}
@@ -164,9 +121,6 @@ After registering the Amazon client account details, just build and run the proj
 {% highlight c# tabtitle="Amazon-file-system.cs" %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 N> To learn more about the file actions that can be performed with Amazon S3 Cloud File System provider, refer to this [link](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider#key-features).
 
@@ -223,18 +177,6 @@ Replace "<--User Site Name-->", "<--User Drive ID-->", "tenantId", "clientId", a
 
 After configuring the SharePoint file provider, build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager control to the appropriate controller methods allows to manage the files in the Microsoft SharePoint.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/share-point-provider/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Share-point-provider.cs" %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-mvc/share-point-provider/razor %}
@@ -242,8 +184,6 @@ After configuring the SharePoint file provider, build and run the project. Now, 
 {% highlight c# tabtitle="Share-point-provider.cs" %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 N> **Note:** To learn more about the file actions that can be performed with SharePoint file provider, refer to this [link](https://github.com/SyncfusionExamples/sharepoint-aspcore-file-provider#key-features)
 
@@ -253,7 +193,7 @@ In ASP.NET Core, File Transfer Protocol file system provider allows the users to
 
 ```typescript
 
-git clone https://github.com/SyncfusionExamples/ftp-aspcore-file-provider.git  ftp-aspcore-file-provider.git
+git clone https://github.com/SyncfusionExamples/ftp-aspcore-file-provider.git ftp-aspcore-file-provider
 
 ```
 
@@ -267,18 +207,6 @@ After cloning, open the project in Visual Studio and restore the NuGet packages.
 
 After registering the File Transfer Protocol details, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager control to the appropriate controller methods allows you to manage the FTP’s objects storage.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/ftp-file-system/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Ftp-file-system.cs" %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-mvc/ftp-file-system/razor %}
@@ -286,9 +214,6 @@ After registering the File Transfer Protocol details, just build and run the pro
 {% highlight c# tabtitle="Ftp-file-system.cs" %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 N> To learn more about the file actions that can be performed with File Transfer Protocol file system provider, refer to this [link](https://github.com/SyncfusionExamples/ftp-aspcore-file-provider#key-features).
 
@@ -332,18 +257,6 @@ N> Refer to this [FileManager.mdf](https://github.com/SyncfusionExamples/sql-ser
 
 After configuring the connection, just build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager control to the appropriate controller methods allows to manage the files in the SQL database table.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/sql-file-system/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Sql-file-system.cs" %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-mvc/sql-file-system/razor %}
@@ -351,15 +264,12 @@ After configuring the connection, just build and run the project. Now, the proje
 {% highlight c# tabtitle="Sql-file-system.cs" %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 N> To learn more about file actions that can be performed with SQL database file system provider, refer to this [link](https://github.com/SyncfusionExamples/sql-server-database-aspcore-file-provider#key-features).
 
-## NodeJS file system provider
+## Node.js file system provider
 
-In ASP.NET Core, NodeJS file system provider allows the users to manage the files and folders in a physical file system. It provides methods for performing all basic file operations like creating a folder, copy, move, delete, and download files and folders in the file system. We can use the NodeJS file system provider either by installing the [ej2-filemanager-node-filesystem](https://www.npmjs.com/package/@syncfusion/ej2-filemanager-node-filesystem) package or by cloning the [file system provider](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem) from GitHub.
+In ASP.NET Core, Node.js file system provider allows the users to manage the files and folders in a physical file system. It provides methods for performing all basic file operations like creating a folder, copy, move, delete, and download files and folders in the file system. We can use the Node.js file system provider either by installing the [ej2-filemanager-node-filesystem](https://www.npmjs.com/package/@syncfusion/ej2-filemanager-node-filesystem) package or by cloning the [file system provider](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem) from GitHub.
 
 ### Using ej2-filemanager-node-filesystem package
 
@@ -406,19 +316,7 @@ set PORT=3000 && node filesystem-server.js -d D:/Projects
 
 N> By default, the service will run `8090` port.
 
-Now, just mapping the **ajaxSettings** property of the File Manager control to the appropriate file operation methods in the filesystem-server.js file will allows to manage the physical file system with NodeJS file system provider.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/node-js/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Node-js.cs" %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Now, just mapping the **ajaxSettings** property of the File Manager control to the appropriate file operation methods in the filesystem-server.js file will allows to manage the physical file system with Node.js file system provider.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -427,11 +325,8 @@ Now, just mapping the **ajaxSettings** property of the File Manager control to t
 {% highlight c# tabtitle="Node-js.cs" %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-
-
-N> To learn more about file actions that can be performed with NodeJS file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem#key-features).
+N> To learn more about file actions that can be performed with Node.js file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem#key-features).
 
 ## Google Drive file system provider
 
@@ -439,13 +334,13 @@ In ASP.NET Core, Google Drive file system provider allows the users to manage th
 
 ```typescript
 
-git clone https://github.com/SyncfusionExamples/google-drive-aspcore-file-provider  google-drive-aspcore-file-provider
+git clone https://github.com/SyncfusionExamples/google-drive-aspcore-file-provider google-drive-aspcore-file-provider
 
 cd google-drive-aspcore-file-provider
 
 ```
 
-Google Drive file system provider use the [Google Drive APIs](https://developers.google.com/drive/api/v3/reference/) to read the file in the file system and uses the [OAuth 2.0](https://developers.google.com/identity/protocols/oauth2) protocol for authentication and authorization. To authenticate from the client end, obtain OAuth 2.0 client credentials from the `Google API Console`. To learn more about generating the client credentials from the Google API Console, refer to this [link](https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow).
+Google Drive file system provider use the [Google Drive APIs](https://developers.google.com/workspace/drive/api/reference/rest/v3) to read the file in the file system and uses the [OAuth 2.0](https://developers.google.com/identity/protocols/oauth2) protocol for authentication and authorization. To authenticate from the client end, obtain OAuth 2.0 client credentials from the `Google API Console`. To learn more about generating the client credentials from the Google API Console, refer to this [link](https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow).
 
 After generating the client secret data, copy the JSON data to the following specified JSON files in the cloned location.
 
@@ -455,18 +350,6 @@ After generating the client secret data, copy the JSON data to the following spe
 
 After updating the credentials, just build and run the project. Now, the project will be hosted in `http://localhost:{port}`, and it will ask to log on to the Gmail account created the client secret credentials. Then, provide permission to access the Google Drive files by clicking the allow access button in the page. Now, just mapping the **ajaxSettings** property of the File Manager control to the appropriate controller methods will allows to manage the files from the Google Drive.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/google-drive-file-system/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Google-drive-file-system.cs" %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-mvc/google-drive-file-system/razor %}
@@ -474,9 +357,6 @@ After updating the credentials, just build and run the project. Now, the project
 {% highlight c# tabtitle="Google-drive-file-system.cs" %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 N> To learn more about file actions that can be performed with Google Drive file system provider, refer to this [link](https://github.com/SyncfusionExamples/google-drive-aspcore-file-provider#key-features).
 
@@ -603,18 +483,6 @@ In the above code,
 
 After configuring the Firebase Realtime Database service link, build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager control to the appropriate controller methods allows to manage the files in the Firebase Realtime Database.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/fire-base/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Fire-base.cs" %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-mvc/fire-base/razor %}
@@ -622,9 +490,6 @@ After configuring the Firebase Realtime Database service link, build and run the
 {% highlight c# tabtitle="Fire-base.cs" %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 N> To learn more about the file actions that can be performed with Firebase Realtime Database file system provider, refer to this [link](https://github.com/SyncfusionExamples/firebase-realtime-database-aspcore-file-provider#key-features).
 
@@ -652,7 +517,7 @@ npm install @syncfusion/ej2-filemanager-ibm-cos-node-file-provider
 
 ```typescript
 
-git clone  https://github.com/SyncfusionExamples/filemanager-ibm-cos-node-file-provider.git
+git clone https://github.com/SyncfusionExamples/filemanager-ibm-cos-node-file-provider.git
 
 ```
 
@@ -670,18 +535,6 @@ N> By default, the service will run `8090` port.
 
 Now, just mapping the **ajaxSettings** property of the File Manager control to the appropriate file operation methods in the index.js file will allow to manage the IBM Cloud Object Storage.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/ibm-js/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Ibm-js.cs" %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-mvc/ibm-js/razor %}
@@ -689,8 +542,5 @@ Now, just mapping the **ajaxSettings** property of the File Manager control to t
 {% highlight c# tabtitle="Ibm-js.cs" %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 N> To learn more about the file actions that can be performed with IBM Cloud Object Storage file provider, refer to this [link](https://github.com/SyncfusionExamples/filemanager-ibm-cos-node-file-provider#key-features).
