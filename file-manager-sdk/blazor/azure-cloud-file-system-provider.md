@@ -24,7 +24,7 @@ Before you integrate Azure Blob Storage with the Blazor File Manager, ensure you
 
 ## Setting Up Azure Blob Storage
 
-- Sign in to the [Azure Portal](https://portal.azure.com/) and [create a storage account](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal) with Blob service enabled.
+- Sign in to the [Azure Portal](https://portal.azure.com/#home) and [create a storage account](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal) with Blob service enabled.
 - [Create a Blob Container](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal?tabs=azure-portal#create-a-container) (example: files). See Azure docs for [container naming rules](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction#naming-and-referencing-containers-blobs-and-metadata).
 
 ## Backend Setup
@@ -32,7 +32,7 @@ Before you integrate Azure Blob Storage with the Blazor File Manager, ensure you
 Clone the [Azure File Provider](https://github.com/SyncfusionExamples/azure-aspcore-file-provider) using the following command,
 
 ```bash
-git clone https://github.com/SyncfusionExamples/ej2-azure-aspcore-file-provider ej2-azure-aspcore-file-provider
+git clone https://github.com/SyncfusionExamples/azure-aspcore-file-provider.git ej2-azure-aspcore-file-provider
 ```
 
 N> This Azure Blob Storage provider for the Blazor File Manager is intended for demonstration and evaluation only. Before using it in production, consult your security team and complete a security review.
@@ -74,7 +74,7 @@ public AzureProviderController(IHostingEnvironment hostingEnvironment)
 
 ## Configuring Blazor File Manager UI
 
-To configure Blazor File Manager component, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), then search and install **Syncfusion.Blazor.FileManager** and **Syncfusion.Blazor.Themes**. Integrate the Blazor FileManager component by pasting the below code in your .razor file of the Blazor application. Click this [link](https://blazor.syncfusion.com/documentation/file-manager/getting-started-with-web-app) for more details.
+To configure Blazor File Manager component, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), then search and install **Syncfusion.Blazor.FileManager** and **Syncfusion.Blazor.Themes**. Integrate the Blazor FileManager component by pasting the below code in your .razor file of the Blazor application. Click this [link](https://help.syncfusion.com/file-manager-sdk/blazor/getting-started-with-web-app) for more details.
 
 Now, build and run the Azure File Service provider project. It will be hosted in `http://localhost:{port}`. Map the [FileManagerAjaxSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerAjaxSettings.html) of the Blazor File Manager component to the AzureProvider controller endpoints (Url, UploadUrl, DownloadUrl, GetImageUrl) to manage blobs in your Azure Blob Storage container.
 

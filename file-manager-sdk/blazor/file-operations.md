@@ -1322,7 +1322,7 @@ GetImage operation triggers on the server side and find the related code details
 
 ```
 
-N> Refer to the [Providers](https://blazor.syncfusion.com/documentation/file-manager/file-system-provider) for more details.
+N> Refer to the [Providers](https://help.syncfusion.com/file-manager-sdk/blazor/file-system-provider) for more details.
 
 ## Request and Response Contents Format
 

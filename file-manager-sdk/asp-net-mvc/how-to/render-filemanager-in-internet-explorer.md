@@ -4,14 +4,13 @@ title: Render ASP.NET MVC File Manager in Internet Explorer | Syncfusion
 description: Learn how to render the ASP.NET MVC File Manager in Internet Explorer by adding the required polyfill script before the component scripts.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
 
 # Render File Manager in Internet Explorer
 
-In the Internet Explorer browser, ES6 promise polyfills are required to run the File Manager control. Click this  [`link`](https://ej2.syncfusion.com/aspnetcore/documentation/browser/?no-cache=1) to learn more about the EJ2 controls' browser compatibility.
+In the Internet Explorer browser, ES6 promise polyfills are required to run the File Manager control. Click this  [`link`](https://ej2.syncfusion.com/aspnetmvc/documentation/browser) to learn more about the EJ2 controls' browser compatibility.
 
 To render the File Manager control in the Internet Explorer browser, add the ES6 promise polyfill script above the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 Scripts in the `layout` page.
 
@@ -26,19 +25,6 @@ To render the File Manager control in the Internet Explorer browser, add the ES6
 
 After adding the script file in the `layout` page, render the File Manager control. The following example shows how to render the File Manager in IE browser.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/filemanager-in-ie/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController_core.cshtml" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/filemanager-in-ie/HomeController_core.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-mvc/filemanager-in-ie/razor %}
@@ -47,9 +33,6 @@ After adding the script file in the `layout` page, render the File Manager contr
 {% include code-snippet/file-manager-sdk/asp-net-mvc/filemanager-in-ie/Layout_mvc.cshtml %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 The output will look like the image below.
 

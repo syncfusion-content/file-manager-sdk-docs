@@ -4,7 +4,6 @@ title: Localization in ASP.NET Core File Manager | Syncfusion
 description: Learn how to localize the ASP.NET Core File Manager to any culture by defining locale-specific texts and messages beyond the default English locale.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
@@ -111,8 +110,6 @@ The File Manager can be localized to any culture by defining its texts and messa
 
 The example below shows how to add the German culture locale(`de-DE`)
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-core/locale/tagHelper %}
@@ -122,29 +119,13 @@ The example below shows how to add the German culture locale(`de-DE`)
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/locale/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/locale/HomeController_mvc.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 The output will look like the image below.
 
 ![Localization](./images/localization.png)
 
 ## Rendering component in right-to-left direction
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-It is possible to render the File Manager in right-to-left direction by setting the [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~EnableRtl.html) API to true.
+It is possible to render the File Manager in right-to-left direction by setting the [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_EnableRtl) API to true.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -153,20 +134,3 @@ It is possible to render the File Manager in right-to-left direction by setting 
 {% endtabs %}
 
 ![Right to Left Support in ASP.NET Core FileManager](./images/enable_rtl.PNG)
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-It is possible to render the File Manager in right-to-left direction by setting the [EnableRtl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_EnableRtl) API to true.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/rtl/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/rtl/HomeController_mvc.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![FileManager enablertl](images/enable_rtl.png)
-
-{% endif %}
