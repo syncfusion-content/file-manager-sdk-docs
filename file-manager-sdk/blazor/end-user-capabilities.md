@@ -46,7 +46,7 @@ The Context Menu appears on user interaction such as right-click. The Blazor Fil
 
 Context menu can be customized using the [ContextMenuSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerContextMenuSettings.html), [MenuOpened](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_MenuOpened), and [OnMenuClick](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.FileManagerEvents-1.html#Syncfusion_Blazor_FileManager_FileManagerEvents_1_OnMenuClick) events.
 
-Refer [Context Menu](https://blazor.syncfusion.com/documentation/file-manager/context-menu) section to know more about the menu items present in Context Menu.
+Refer [Context Menu](https://help.syncfusion.com/file-manager-sdk/blazor/context-menu) section to know more about the menu items present in Context Menu.
 
 ![Blazor File Manager with Context Menu](./images/blazor-filemanager-contextmenu.webp)
 
@@ -124,7 +124,7 @@ The [FileSelected](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileM
 
 ### Create, Rename, Delete a File or Folder
 
-In the Blazor File Manager component, you can perform the [**create**](https://blazor.syncfusion.com/documentation/file-manager/file-operations#creating-files-and-folders), [**rename**](https://blazor.syncfusion.com/documentation/file-manager/file-operations#renaming-files-and-folders), and [**delete**](https://blazor.syncfusion.com/documentation/file-manager/file-operations#deleting-files-and-folders) operation for the files and folder with the help of the Toolbar items button or by using Context Menu items.
+In the Blazor File Manager component, you can perform the [**create**](https://help.syncfusion.com/file-manager-sdk/blazor/file-operations#creating-files-and-folders), [**rename**](https://help.syncfusion.com/file-manager-sdk/blazor/file-operations#renaming-files-and-folders), and [**delete**](https://help.syncfusion.com/file-manager-sdk/blazor/file-operations#deleting-files-and-folders) operation for the files and folder with the help of the Toolbar items button or by using Context Menu items.
 
 Refer to the [Toolbar](./file-operations.md#toolbar) and [Context Menu](./context-menu.md#context-menu-in-blazor-filemanager-component) sections to learn more about the items that are present in the Toolbar and Context Menu.
 
@@ -134,17 +134,17 @@ Refer to the [Toolbar](./file-operations.md#toolbar) and [Context Menu](./contex
 
 ### Moving File or Folder
 
-In the Blazor File Manager component, you can [**move**](https://blazor.syncfusion.com/documentation/file-manager/file-operations#moving-files-and-folders) desired files or folders by using the **cut** or **copy** items button in the Toolbar, or by using the Context Menu. Additionally, you can move files or folders by utilizing the drag and drop functionality, which requires enabling the [AllowDragAndDrop](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.SfFileManager-1.html#Syncfusion_Blazor_FileManager_SfFileManager_1_AllowDragAndDrop) property to **true**. 
+In the Blazor File Manager component, you can [**move**](https://help.syncfusion.com/file-manager-sdk/blazor/file-operations#moving-files-and-folders) desired files or folders by using the **cut** or **copy** items button in the Toolbar, or by using the Context Menu. Additionally, you can move files or folders by utilizing the drag and drop functionality, which requires enabling the [AllowDragAndDrop](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.FileManager.SfFileManager-1.html#Syncfusion_Blazor_FileManager_SfFileManager_1_AllowDragAndDrop) property to **true**. 
 
-To learn more, you can refer to the [Toolbar](https://blazor.syncfusion.com/documentation/file-manager/toolbar), [Context Menu](https://blazor.syncfusion.com/documentation/file-manager/context-menu), and [Drag and Drop](https://blazor.syncfusion.com/documentation/file-manager/drag-and-drop) sections.
+To learn more, you can refer to the [Toolbar](https://help.syncfusion.com/file-manager-sdk/blazor/toolbar), [Context Menu](https://help.syncfusion.com/file-manager-sdk/blazor/context-menu), and [Drag and Drop](https://help.syncfusion.com/file-manager-sdk/blazor/drag-and-drop) sections.
 
 ![Moving file or folder in Blazor FileManager](images/blazor-filemanager-drag-and-drop.webp)
 
 ### Upload or Download a File
 
-In the Blazor File Manager component, you can perform the [upload](https://blazor.syncfusion.com/documentation/file-manager/file-operations#uploading-files) or [download](https://blazor.syncfusion.com/documentation/file-manager/file-operations#downloading-files) operations with the help of the Toolbar items button or by using Context Menu items.
+In the Blazor File Manager component, you can perform the [upload](https://help.syncfusion.com/file-manager-sdk/blazor/file-operations#uploading-files) or [download](https://help.syncfusion.com/file-manager-sdk/blazor/file-operations#downloading-files) operations with the help of the Toolbar items button or by using Context Menu items.
 
-Refer to the [Toolbar](https://blazor.syncfusion.com/documentation/file-manager/file-operations#toolbar) and [Context Menu](https://blazor.syncfusion.com/documentation/file-manager/context-menu) sections to learn more about the items that are present in the Toolbar and Context Menu.
+Refer to the [Toolbar](https://help.syncfusion.com/file-manager-sdk/blazor/toolbar) and [Context Menu](https://help.syncfusion.com/file-manager-sdk/blazor/context-menu) sections to learn more about the items that are present in the Toolbar and Context Menu.
 
 ![Upload a file in Blazor FileManger](./images/blazor-filemanager-upload-operation.webp)
 
@@ -152,9 +152,9 @@ Refer to the [Toolbar](https://blazor.syncfusion.com/documentation/file-manager/
 
 ### Upload Files or Folders via context menu
 
-In the Blazor File Manager component, you can perform the files or folder [upload](https://blazor.syncfusion.com/documentation/file-manager/file-operations#uploading-files) operations with the help of Context Menu items by switching between the Files or Folder from Upload menu item.
+In the Blazor File Manager component, you can perform the files or folder [upload](https://help.syncfusion.com/file-manager-sdk/blazor/file-operations#uploading-files) operations with the help of Context Menu items by switching between the Files or Folder from Upload menu item.
 
-Refer to the [Context Menu](https://blazor.syncfusion.com/documentation/file-manager/context-menu) sections to learn more about the items that are present in Context Menu.
+Refer to the [Context Menu](https://help.syncfusion.com/file-manager-sdk/blazor/context-menu) sections to learn more about the items that are present in Context Menu.
 
 ![Upload a file in Blazor FileManger](./images/blazor-filemanager-fileupload.webp)
 
@@ -162,7 +162,7 @@ Refer to the [Context Menu](https://blazor.syncfusion.com/documentation/file-man
 
 ### Searching Files and Folders
 
-In the Blazor File Manager component, you are able to [search](https://blazor.syncfusion.com/documentation/file-manager/file-operations#searching-files-and-folders) for the wanted files and folders using the default input search functionality option.
+In the Blazor File Manager component, you are able to [search](https://help.syncfusion.com/file-manager-sdk/blazor/file-operations#searching-files-and-folders) for the wanted files and folders using the default input search functionality option.
 
 ![Searching files and folders in Blazor FileManger](./images/blazor-filemanager-search-operation.webp)
 
@@ -170,6 +170,6 @@ In the Blazor File Manager component, you are able to [search](https://blazor.sy
 
 You can perform the **cut**, **copy**(https://blazor.syncfusion.com/documentation/file-manager/file-operations#copying-files-and-folders), and **paste** operation for the files and folders in the Blazor File Manager component with the help of the Toolbar items button or by using Context Menu items.
 
-Refer to the [Toolbar](https://blazor.syncfusion.com/documentation/file-manager/file-operations#toolbar)and [Context Menu](https://blazor.syncfusion.com/documentation/file-manager/context-menu) sections to learn more about the items that are present in the Toolbar and Context Menu.
+Refer to the [Toolbar](https://help.syncfusion.com/file-manager-sdk/blazor/toolbar)and [Context Menu](https://help.syncfusion.com/file-manager-sdk/blazor/context-menu) sections to learn more about the items that are present in the Toolbar and Context Menu.
 
 ![File operations in Blazor FileManager](./images/blazor-filemanager-cut-copy-paste.webp)

@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Virtualization in ASP.NET MVC File Manager | Syncfusion
-description: Learn how to enable virtualization in the ASP.NET MVC File Manager for dynamically loading large folders in Details and Large Icons views without performance loss.
+description: Learn how to enable virtualization in ASP.NET MVC File Manager to dynamically load large folders in Details and Large Icons views without performance loss.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
@@ -22,16 +21,6 @@ In order to enable `virtualization`, you must set the `EnableVirtualization` pro
 
 The example below shows a large collection of files in the **Documents** and **Text Documents** folders.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/virtualization/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-mvc/virtualization/razor %}
@@ -40,9 +29,6 @@ The example below shows a large collection of files in the **Documents** and **T
 {% include code-snippet/file-manager-sdk/asp-net-mvc/virtualization/HomeController_mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 The output will look like the image below.
 

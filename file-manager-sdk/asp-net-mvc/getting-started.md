@@ -4,7 +4,6 @@ title: Getting Started with ASP.NET MVC File Manager | Syncfusion
 description: Learn how to get started with the ASP.NET MVC File Manager and explore setup, configuration, and core feature examples.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
@@ -107,9 +106,9 @@ N> The File Manager can be rendered with `local service` for sending ajax reques
 
 ## See also
 
-* [Ajax Settings Configuration (uploadUrl, downloadUrl, getImageUrl)](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/file-operations#ajax-settings-configuration)
-* [Overview](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/user-interface#file-manager-overview)
-* [File Manager Views](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/views)
-* [File Manager File Operations](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/file-operations)
-* [File Manager Upload](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/upload)
-* [File Manager Customization](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/customization)
+* [Ajax Settings Configuration (uploadUrl, downloadUrl, getImageUrl)](https://help.syncfusion.com/file-manager-sdk/asp-net-mvc/file-operations#ajax-settings-configuration)
+* [Overview](https://help.syncfusion.com/file-manager-sdk/asp-net-mvc/user-interface#file-manager-overview)
+* [File Manager Views](https://help.syncfusion.com/file-manager-sdk/asp-net-mvc/views)
+* [File Manager File Operations](https://help.syncfusion.com/file-manager-sdk/asp-net-mvc/file-operations)
+* [File Manager Upload](https://help.syncfusion.com/file-manager-sdk/asp-net-mvc/upload)
+* [File Manager Customization](https://help.syncfusion.com/file-manager-sdk/asp-net-mvc/customization)

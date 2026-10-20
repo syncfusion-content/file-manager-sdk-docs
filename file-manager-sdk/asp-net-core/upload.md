@@ -4,7 +4,6 @@ title: Upload in ASP.NET Core File Manager | Syncfusion
 description: Learn how to upload files in the ASP.NET Core File Manager with chunk uploads, directory uploads, and drag-and-drop support.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
@@ -23,7 +22,7 @@ When set to `true`, this property enables directory upload in the File Manager, 
 
 >Note: When `directoryUpload` is set to `true`, only folders can be uploaded. When it is set to `false`, only individual files can be uploaded. Simultaneous uploading of files and folders is not supported.
 
-To learn more about the folder upload actions, refer to this [link](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/file-operations#folder-upload-support)
+To learn more about the folder upload actions, refer to this [link](https://help.syncfusion.com/file-manager-sdk/asp-net-core/file-operations#folder-upload-support)
 
 ## Sequential Upload
 
@@ -37,7 +36,7 @@ The screenshot below shows that each file begins uploading only after the previo
 
 ![File Manager with sequentialUpload](./images/filemanager-sequentialupload.png)
 
-To learn more about the folder upload actions, refer to this [link](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/file-operations#folder-upload-support)
+To learn more about the folder upload actions, refer to this [link](https://help.syncfusion.com/file-manager-sdk/asp-net-core/file-operations#folder-upload-support)
 
 ## Chunk Upload
 
@@ -80,26 +79,14 @@ By setting the `allowedExtensions` property, you restrict the file types that ca
 
 The File Manager control provides support for external drag-and-drop functionality for uploading files by dragging it from local file system to File Manager.
 
-To completely prevent the external drag-and-drop upload functionality (i.e., disallowing users from dragging and dropping files from outside into the File Manager), you can set the [dropArea](https://ej2.syncfusion.com/documentation/api/uploader#droparea) property to null. This can be done by accessing the File Manager instance via its class methods.
+To completely prevent the external drag-and-drop upload functionality (i.e., disallowing users from dragging and dropping files from outside into the File Manager), you can set the [dropArea](https://ej2.syncfusion.com/documentation/api/uploader/index-default#droparea) property to null. This can be done by accessing the File Manager instance via its class methods.
 
->**Note:** Setting [allowDragAndDrop](https://ej2.syncfusion.com/documentation/api/file-manager#allowdraganddrop) property to false will not prevent the file upload operation through external drag and drop. It will only prevent drag and drop action within the File Manager control.
+>**Note:** Setting [allowDragAndDrop](https://ej2.syncfusion.com/documentation/api/file-manager/index-default#allowdraganddrop) property to false will not prevent the file upload operation through external drag and drop. It will only prevent drag and drop action within the File Manager control.
 
 The following example demonstrates the uploadSettings customizations.
-
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-core/upload-feature-cs1/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/upload-feature-cs1/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

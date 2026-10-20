@@ -4,7 +4,6 @@ title: Drag and Drop in ASP.NET MVC File Manager | Syncfusion
 description: Learn how to enable drag and drop in the ASP.NET MVC File Manager to move or upload files between folders using built-in drag events.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 appliesto: UI Component Suite, File Manager SDK
 ---
@@ -21,19 +20,6 @@ The events triggered in drag and drop support are:
 * `fileDragStop` - Triggers when the file/folder is about to be dropped at the target.
 * `fileDropped` - Triggers when the file/folder is dropped.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/drag-and-drop/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController_core.cs" %}
-{% include code-snippet/file-manager-sdk/asp-net-mvc/drag-and-drop/HomeController_core.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager-sdk/asp-net-mvc/drag-and-drop/razor %}
@@ -42,9 +28,6 @@ The events triggered in drag and drop support are:
 {% include code-snippet/file-manager-sdk/asp-net-mvc/drag-and-drop/HomeController_mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 The output will look like the image below.
 
