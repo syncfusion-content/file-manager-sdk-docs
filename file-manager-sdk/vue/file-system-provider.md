@@ -149,25 +149,51 @@ provide('filemanager',  [DetailsView, NavigationPane, Toolbar]);
 
 ## Amazon S3 cloud file provider
 
-The Amazon ***S3*** (*Simple Storage Service*) cloud file provider allows the users to access and manage a server hosted file system as collection of objects stored in the Amazon S3 Bucket. To get started, clone the [amazon-s3-aspcore-file-provider](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider) using the following command
+### Introduction to Amazon S3
 
-```ts
+Amazon Simple Storage Service (Amazon S3) is AWS's object storage service for storing and retrieving any amount of data. S3 is durable, scalable, and pay-as-you-go. In this guide the [Vue File Manager](https://www.syncfusion.com/vue-components/vue-file-manager) connects to S3 through an ASP.NET Core backend so you can securely browse and perform file operations in the Vue File Manager component.
 
-git clone https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider.git  amazon-s3-aspcore-file-provider.git
+### Prerequisites
 
+Before you integrate Amazon S3 with the Vue File Manager, ensure you have:
+ - An AWS Account
+ - A configured S3 Bucket
+ - AWS credentials: `awsAccessKeyId`, `awsSecretAccessKeyId`, `bucketRegion`, `awsRegion`, `rootPath`.
+
+### Setting Up Amazon S3
+
+ - Open the [AWS Management Console guide](https://docs.aws.amazon.com/awsconsolehelpdocs/) and log into AWS Console -> Navigate to S3.
+ - Proceed by clicking `Create Bucket`. A bucket is a container for objects. An object is a file and any metadata that describes that file. The Amazon S3 provider requires a top-level root folder in your bucket to place all required files and subfolders inside this root. Click this [link](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-buckets-s3.html) for more details.
+ - Provide a DNS-compliant bucket name. Click this [link](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html) for more details.
+ - Choose the AWS region. Click this [link](https://docs.aws.amazon.com/general/latest/gr/s3.html) for more details.
+
+### Backend Setup
+
+Clone the [Amazon S3 File Provider](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider) using the following command,
+
+```bash
+git clone https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider.git ej2-amazon-s3-aspcore-file-provider
 ```
 
-> **Note:** To learn more about creating and configuring an Amazon S3 bucket, refer to this [link](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-configure-bucket.html).
+N> This Amazon S3 provider for the Vue File Manager is intended for demonstration and evaluation only. Before using it consult your security team and complete a security review.
 
-After cloning, open the project in Visual Studio and restore the NuGet packages. Now, register Amazon S3 client account details like *awsAccessKeyId*, *awsSecretKeyId* and *awsRegion* details in **RegisterAmazonS3** method in the FileManager controller to perform the file operations.
+To initialize a local service with the above-mentioned file operations, create a folder named `Controllers` in the server project. Then, create a `.cs` file in the `Controllers` folder and add the required file operation code from [AmazonS3ProviderController.cs](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Controllers/AmazonS3ProviderController.cs). You can also find the method-level details for this provider in the same repository.
 
-```ts
+### Registering S3 Credentials in the Provider
 
- void RegisterAmazonS3(string bucketName, string awsAccessKeyId, string awsSecretAccessKey, string bucketRegion)
+After cloning, open the project in Visual Studio and restore the NuGet packages. Then, register the Amazon S3 client details (for example, **bucketName**, **awsAccessKeyId**, **awsSecretAccessKeyId**, **awsRegion** and **rootPath**) in the `RegisterAmazonS3` method in the `AmazonS3ProviderController.cs` file.
 
+```csharp
+this.operation.RegisterAmazonS3("<---bucketName--->", "<---awsAccessKeyId--->", "<---awsSecretAccessKey--->", "<---region--->", "<---rootPath--->");
 ```
 
-After registering the Amazon client account details,  build and run the project. Now, the project will be hosted in `http://localhost:{port}` and  mapping the **ajaxSettings** property of the [Vue File Manager](https://www.syncfusion.com/vue-components/vue-file-manager) component to the appropriate controller methods allows to manage the Amazon ***S3*** (*Simple Storage Service*) bucket's objects storage.
+The `rootPath` parameter specifies the folder path within the Amazon S3 bucket that is used as the File Manager root directory. A valid bucket-relative path must be provided during registration. All File Manager operations are restricted to the configured path and its contents.
+
+N> Specify the path relative to the bucket root. The configured folder must already exist in the bucket and contain at least one object or subfolder.
+
+### Configuring File Manager UI
+
+After registering the Amazon client account details, build and run the project. The application will be hosted at `http://localhost:{port}`. Map the **ajaxSettings** property of the File Manager component to the appropriate controller methods to manage objects stored in the Amazon ***S3*** (*Simple Storage Service*) bucket.
 
 ```
 
@@ -199,7 +225,20 @@ provide('filemanager',  [DetailsView, NavigationPane, Toolbar]);
 
 ```
 
-> **Note:** To learn more about the file actions that can be performed with Amazon S3 Cloud File provider, refer to this [link](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider#key-features)
+To perform file operations (Read, Create, Rename, Delete, Get file details, Search, Copy, Move, Upload, Download, GetImage) in the Vue File Manager component using the Amazon S3 cloud file provider, initialize the Amazon S3 cloud file provider in the controller.
+
+### Supported File Operations
+
+We have enabled below list of features that can be performed using Amazon File Service provider,
+
+|Operation | Function |
+|---|---|
+| Upload | [Directory upload](https://ej2.syncfusion.com/vue/documentation/api/file-manager/uploadsettings#directoryupload)<br/>[Sequential upload](https://ej2.syncfusion.com/vue/documentation/api/file-manager/uploadsettings#sequentialupload)<br/>[Chunk Size](https://ej2.syncfusion.com/vue/documentation/api/file-manager/uploadsettings#chunksize)<br/>[Auto upload](https://ej2.syncfusion.com/vue/documentation/api/file-manager/uploadsettings#autoupload) |
+| Access Control | [Setting rules to files/folders](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Models/AmazonS3FileProvider.cs#L67)<br/>[Supported rules](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Models/Base/AccessDetails.cs#L65) |
+
+Additionally, you can check out all the necessary file operation method details for this provider in the same GitHub repository. To access the live Amazon S3 File Provider demo refer to this [link](https://ej2.syncfusion.com/vue/demos/#/fluent2/file-manager/amazon-s3-provider)
+
+N> To learn more about the file actions that can be performed with Amazon S3 cloud file provider, refer to this [link](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider#key-features).
 
 ## SharePoint file provider
 
