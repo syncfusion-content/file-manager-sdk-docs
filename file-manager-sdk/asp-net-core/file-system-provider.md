@@ -96,7 +96,7 @@ N> To learn more about file actions that can be performed with Azure cloud file 
 
 ### Introduction to Amazon S3
 
-Amazon Simple Storage Service (Amazon S3) is AWS's object storage service for storing and retrieving any amount of data. S3 is durable, scalable, and pay-as-you-go. In this guide the file manager connects to S3 through an ASP.NET Core backend so you can securely browse and perform file operations in the ASP.NET Core File Manager component.
+Amazon Simple Storage Service (Amazon S3) is AWS's object storage service for storing and retrieving any amount of data. S3 is durable, scalable, and pay-as-you-go. In this guide the file manager connects to S3 through an ASP.NET Core backend so you can securely browse and perform file operations in the ASP.NET Core File Manager control.
 
 ### Prerequisites
 
@@ -148,7 +148,7 @@ After registering the Amazon client account details, build and run the project. 
 {% endhighlight %}
 {% endtabs %}
 
-To perform file operations (Read, Create, Rename, Delete, Get file details, Search, Copy, Move, Upload, Download, GetImage) in the ASP.NET Core File Manager component using the Amazon S3 cloud file provider, initialize the Amazon S3 cloud file provider in the controller.
+To perform file operations (Read, Create, Rename, Delete, Get file details, Search, Copy, Move, Upload, Download, GetImage) in the ASP.NET Core File Manager control using the Amazon S3 cloud file provider, initialize the Amazon S3 cloud file provider in the controller.
 
 ### Supported File Operations
 
