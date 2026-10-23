@@ -587,15 +587,7 @@ N> The Azure AD application and the OneDrive storage account must belong to the 
 
 ### Backend Setup
 
-Clone the OneDrive File Provider using the following command,
-
-```bash
-
-git clone https://github.com/SyncfusionExamples/onedrive-aspcore-file-provider onedrive-aspcore-file-provider
-
-cd onedrive-aspcore-file-provider
-
-```
+Clone the OneDrive File Provider (`onedrive-aspcore-file-provider`) to your local machine and open the project in Visual Studio.
 
 N> This OneDrive provider for the ASP.NET Core File Manager control is intended for demonstration and evaluation only. Before using it, consult your security team and complete a security review.
 
@@ -651,13 +643,24 @@ The `DriveId` and `RootFolderId` values can be retrieved using the [Microsoft Gr
 
 After registering the OneDrive account details, build and run the project. The application will be hosted at `http://localhost:{port}`. Map the **ajaxSettings** property of the File Manager control to the appropriate controller methods to manage the files and folders in the Microsoft OneDrive.
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager-sdk/asp-net-core/onedrive-file-system/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="OneDrive-file-system.cs" %}
-{% endhighlight %}
-{% endtabs %}
+```cshtml
+
+<div class=" control-section">
+    <div class="sample-container">
+        <!--  Initialize File Manager control with OneDrive file system -->
+        <!--Replace the hosted port number in the place of "{port}"-->
+        <ejs-filemanager id="filemanager">
+            <e-filemanager-ajaxsettings
+                    url="http://localhost:{port}/api/OneDriveProvider/OneDriveFileOperations",
+                    getImageUrl="http://localhost:{port}/api/OneDriveProvider/OneDriveGetImage",
+                    downloadUrl="http://localhost:{port}/api/OneDriveProvider/OneDriveDownload",
+                    uploadUrl="http://localhost:{port}/api/OneDriveProvider/OneDriveUpload">
+            </e-filemanager-ajaxsettings>
+        </ejs-filemanager>
+    </div>
+</div>
+
+```
 
 ### Supported File Operations
 
@@ -678,4 +681,3 @@ The following list of file operations can be performed using the OneDrive file s
 | Access Control | Setting rules to files/folders.<br/>Supported rules |
 
 
-N> To learn more about the file actions that can be performed with OneDrive file system provider, refer to this [link](https://github.com/SyncfusionExamples/onedrive-aspcore-file-provider#key-features).

@@ -718,15 +718,7 @@ Before you integrate OneDrive with the TypeScript File Manager control, ensure y
 
 ### Backend Setup
 
-Clone the OneDrive File Provider using the following command,
-
-```bash
-
-git clone https://github.com/SyncfusionExamples/onedrive-aspcore-file-provider onedrive-aspcore-file-provider
-
-cd onedrive-aspcore-file-provider
-
-```
+Clone the OneDrive File Provider (`onedrive-aspcore-file-provider`) to your local machine and open the project in Visual Studio.
 
 > **Note:** This OneDrive provider for the TypeScript File Manager control is intended for demonstration and evaluation only. Before using it, consult your security team and complete a security review.
 
@@ -820,4 +812,3 @@ The following list of file operations can be performed using the OneDrive file s
 | Access Control | Setting rules to files/folders.<br/>Supported rules |
 
 
-> **Note:** To learn more about the file actions that can be performed with OneDrive file system provider, refer to this [link](https://github.com/SyncfusionExamples/onedrive-aspcore-file-provider#key-features)
