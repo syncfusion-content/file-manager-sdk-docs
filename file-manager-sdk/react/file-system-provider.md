@@ -704,7 +704,15 @@ Before you integrate OneDrive with the React File Manager component, ensure you 
 
 ### Backend Setup
 
-Clone the OneDrive File Provider (`onedrive-aspcore-file-provider`) to your local machine and open the project in Visual Studio.
+Clone the OneDrive File Provider using the following command,
+
+```bash
+
+git clone https://github.com/SyncfusionExamples/onedrive-aspcore-file-provider onedrive-aspcore-file-provider
+
+cd onedrive-aspcore-file-provider
+
+```
 
 > **Note:** This OneDrive provider for the React File Manager component is intended for demonstration and evaluation only. Before using it, consult your security team and complete a security review.
 
