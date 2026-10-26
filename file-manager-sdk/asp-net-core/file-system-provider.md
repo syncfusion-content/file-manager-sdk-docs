@@ -550,7 +550,7 @@ N> To learn more about the file actions that can be performed with IBM Cloud Obj
 
 ### Introduction to OneDrive
 
-Microsoft OneDrive is a cloud storage service from Microsoft that lets you store, share, and sync files across devices. In this guide, the File Manager connects to OneDrive through the Microsoft Graph API using an ASP.NET Core backend, so you can securely browse and perform file operations in the ASP.NET Core File Manager control. The OneDrive file system provider works on an ID basis where each file and folder has a unique ID.
+Microsoft OneDrive is a cloud storage service from Microsoft that lets you store, share, and sync files across devices. In this guide, the File Manager connects to OneDrive through the Microsoft Graph API using an ASP.NET Core back end, so you can securely browse and perform file operations in the ASP.NET Core File Manager control. The OneDrive file system provider works on an ID basis where each file and folder has a unique ID.
 
 ### Prerequisites
 
@@ -585,7 +585,7 @@ N> The Azure AD application and the OneDrive storage account must belong to the 
 
    ![OneDrive Graph API permissions](images/onedrive-graph-permissions.png)
 
-### Backend Setup
+### Back end Setup
 
 Clone the OneDrive File Provider using the following command,
 

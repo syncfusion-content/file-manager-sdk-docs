@@ -4,7 +4,6 @@ title: File System Provider in TypeScript File Manager | Syncfusion
 description: Learn how to connect the TypeScript File Manager to physical, Azure, Amazon S3, Google Drive, Firebase, and other file system providers.
 control: File Manager
 platform: file-manager-sdk
-publishingplatform: file-manager-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/file-manager-sdk
 appliesto: UI Component Suite, File Manager SDK
@@ -681,7 +680,7 @@ filemanagerInstance.appendTo('#filemanager');
 
 ### Introduction to OneDrive
 
-Microsoft OneDrive is a cloud storage service from Microsoft that lets you store, share, and sync files across devices. In this guide, the File Manager connects to OneDrive through the Microsoft Graph API using an ASP.NET Core backend, so you can securely browse and perform file operations in the TypeScript File Manager control. The OneDrive file system provider works on an ID basis where each file and folder has a unique ID.
+Microsoft OneDrive is a cloud storage service from Microsoft that lets you store, share, and sync files across devices. In this guide, the File Manager connects to OneDrive through the Microsoft Graph API using an ASP.NET Core back end, so you can securely browse and perform file operations in the TypeScript File Manager control. The OneDrive file system provider works on an ID basis where each file and folder has a unique ID.
 
 ### Prerequisites
 
@@ -716,7 +715,7 @@ Before you integrate OneDrive with the TypeScript File Manager control, ensure y
 
    ![OneDrive Graph API permissions](images/onedrive-graph-permissions.png)
 
-### Backend Setup
+### Back end Setup
 
 Clone the OneDrive File Provider using the following command,
 

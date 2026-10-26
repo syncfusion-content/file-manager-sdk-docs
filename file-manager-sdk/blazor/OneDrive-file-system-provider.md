@@ -10,11 +10,11 @@ appliesto: UI Component Suite, File Manager SDK
 
 # OneDrive Provider in Blazor File Manager
 
-### Introduction to OneDrive
+## Introduction to OneDrive
 
-Microsoft OneDrive is a cloud storage service from Microsoft that lets you store, share, and sync files across devices. In this guide, the File Manager connects to OneDrive through the Microsoft Graph API using an ASP.NET Core backend, so you can securely browse and perform file operations in the Blazor File Manager component. The OneDrive file system provider works on an ID basis where each file and folder has a unique ID.
+Microsoft OneDrive is a cloud storage service from Microsoft that lets you store, share, and sync files across devices. In this guide, the File Manager connects to OneDrive through the Microsoft Graph API using an ASP.NET Core back end, so you can securely browse and perform file operations in the Blazor File Manager component. The OneDrive file system provider works on an ID basis where each file and folder has a unique ID.
 
-### Prerequisites
+## Prerequisites
 
 Before you integrate OneDrive with the Blazor File Manager component, ensure you have:
 
@@ -26,7 +26,7 @@ Before you integrate OneDrive with the Blazor File Manager component, ensure you
 
 N> The Azure AD application and the OneDrive storage account must belong to the **same directory (tenant)**. The provider authenticates as the application principal and accesses the drive under that tenant.
 
-### Setting Up OneDrive
+## Setting Up OneDrive
 
 **Create an app registration in Azure Active Directory**
 
@@ -47,7 +47,7 @@ N> The Azure AD application and the OneDrive storage account must belong to the 
 
    ![OneDrive Graph API permissions](images/onedrive-graph-permissions.png)
 
-### Backend Setup
+## Back end Setup
 
 Clone the OneDrive File Provider using the following command,
 
@@ -61,7 +61,7 @@ cd onedrive-aspcore-file-provider
 
 N> This OneDrive provider for the Blazor File Manager component is intended for demonstration and evaluation only. Before using it, consult your security team and complete a security review.
 
-### Registering OneDrive Credentials in the Provider
+## Registering OneDrive Credentials in the Provider
 
 After cloning, open the project in Visual Studio and restore the NuGet packages. Then, register the OneDrive account details (**TenantId**, **ClientId**, **ClientSecret**, **DriveId** and **RootFolderId**) in the `appsettings.json` file used by the `OneDriveProviderController`. The controller is already configured to read the credentials provided in the `appsettings.json` file, and the application will automatically initialize the OneDrive service.
 
@@ -109,7 +109,7 @@ The `DriveId` and `RootFolderId` values can be retrieved using the [Microsoft Gr
 
    ```
 
-### Configuring File Manager UI
+## Configuring File Manager UI
 
 After registering the OneDrive account details, build and run the project. The application will be hosted at `http://localhost:{port}`. Map the **ajaxSettings** property of the Blazor File Manager component to the appropriate controller methods to manage the files and folders in the Microsoft OneDrive.
 
