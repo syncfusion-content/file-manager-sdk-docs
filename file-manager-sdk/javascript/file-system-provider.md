@@ -782,12 +782,12 @@ The `DriveId` and `RootFolderId` values can be retrieved using the [Microsoft Gr
 
 After registering the OneDrive account details, build and run the project. The application will be hosted at `http://localhost:{port}`. Map the [`ajaxSettings`](../api/file-manager#ajaxsettings) property of the File Manager control to the appropriate controller methods to manage the files and folders in the Microsoft OneDrive.
 
-```ts
+```js
 
-let hostUrl = 'http://localhost:{port}/';
+var hostUrl = 'http://localhost:{port}/';
 
 // Initializing File Manager with OneDrive service configuration.
-let filemanagerInstance: FileManager = new FileManager({
+var filemanagerInstance = new ej.filemanager.FileManager({
     ajaxSettings: {
         // Replace the hosted port number in the place of "{port}"
         url: hostUrl + "api/OneDriveProvider/OneDriveFileOperations",
