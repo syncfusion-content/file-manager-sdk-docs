@@ -784,23 +784,3 @@ export default App;
 ```
 
 {% endraw %}
-
-### Supported File Operations
-
-The following list of file operations can be performed using the OneDrive file system provider:
-
-|Operation | Function |
-|---|---|
-| Read | Reads the files and folders from OneDrive, including navigation breadcrumbs and item metadata. |
-| Details | Gets the file or folder details such as Type, Size, Location, and Modified date. |
-| Download | Downloads the selected file or folder as a ZIP archive from OneDrive. |
-| Upload | Uploads one or more files to OneDrive. Supports [directory upload](https://ej2.syncfusion.com/react/documentation/api/file-manager/uploadsettingsmodel#directoryupload), [sequential upload](https://ej2.syncfusion.com/react/documentation/api/file-manager/uploadsettingsmodel#sequentialupload), [chunk upload](https://ej2.syncfusion.com/react/documentation/api/file-manager/uploadsettingsmodel#chunksize), drag-and-drop, and multiple file uploads.|
-| Create | Creates a new folder at the selected location. |
-| Delete | Deletes the selected folders or files. |
-| Copy | Copies the selected files or folders to a target location, with conflict handling. |
-| Move | Moves the selected files or folders to a desired location, with conflict handling. |
-| Rename | Renames a folder or file. |
-| Search | Searches for files and folders using a text query within the current context. |
-| Access Control | Setting rules to files/folders.<br/>Supported rules |
-
-
