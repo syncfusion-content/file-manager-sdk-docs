@@ -769,11 +769,12 @@ After registering the OneDrive account details, build and run the project. The a
 ```typescript
 
 import { Component } from '@angular/core';
-import { FileManagerModule } from '@syncfusion/ej2-angular-filemanager';
+import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager';
 
 @Component({
     selector: 'app-root',
     imports: [FileManagerModule],
+    providers: [NavigationPaneService, ToolbarService, DetailsViewService],
     standalone: true,
     styleUrls: ['./app.component.css'],
     template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' height="375px">
