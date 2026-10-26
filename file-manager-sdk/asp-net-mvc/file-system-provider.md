@@ -653,18 +653,18 @@ After registering the OneDrive account details, build and run the project. The a
 
 ```cshtml
 
-<div class=" control-section">
+<div class="control-section">
     <div class="sample-container">
         <!--  Initialize File Manager control with OneDrive file system -->
         <!--Replace the hosted port number in the place of "{port}"-->
-        <ejs-filemanager id="filemanager">
-            <e-filemanager-ajaxsettings
-                    url="http://localhost:{port}/api/OneDriveProvider/OneDriveFileOperations",
-                    getImageUrl="http://localhost:{port}/api/OneDriveProvider/OneDriveGetImage",
-                    downloadUrl="http://localhost:{port}/api/OneDriveProvider/OneDriveDownload",
-                    uploadUrl="http://localhost:{port}/api/OneDriveProvider/OneDriveUpload">
-            </e-filemanager-ajaxsettings>
-        </ejs-filemanager>
+        @Html.EJS().FileManager("filemanager").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
+        {
+            Url = "http://localhost:{port}/api/OneDriveProvider/OneDriveFileOperations",
+            GetImageUrl = "http://localhost:{port}/api/OneDriveProvider/OneDriveGetImage",
+            UploadUrl = "http://localhost:{port}/api/OneDriveProvider/OneDriveUpload",
+            DownloadUrl = "http://localhost:{port}/api/OneDriveProvider/OneDriveDownload"
+        }).Render()
+        <!-- end of File Manager control -->
     </div>
 </div>
 
