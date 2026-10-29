@@ -351,5 +351,5 @@ With your agent connected, ask for something the component can do, for example "
 
 ## See also
 
-* [WebMCP overview](https://help.syncfusion.com/file-manager-sdk/ai-tools/webmcp-tools) explains how a component registers tools and how an agent calls them.
+* [WebMCP overview](../ai-tools/webmcp-tools) explains how a component registers tools and how an agent calls them.
 * [WebMCP Supported Syncfusion Blazor Components](https://blazor.syncfusion.com/documentation/webmcp/components) lists the built-in tools you can call from an agent prompt.
