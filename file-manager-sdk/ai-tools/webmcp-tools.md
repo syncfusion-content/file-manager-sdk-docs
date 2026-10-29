@@ -142,7 +142,7 @@ Vague Prompt Example:
 
 ## Limitations
 
-- **Only able to perform operations in the File Manager for the public API methods available operations** — WebMCP actions are limited to the operations exposed through the File Manager's public API methods.
+- **Public API operations only** — WebMCP tools can only perform the operations exposed through the File Manager's public API methods.
 - **Prompt clarity affects result quality** — The AI interprets your request literally, so output quality depends directly on how clearly the prompt is written.
 - **Experimental status** — WebMCP is a preview standard. APIs and browser support may change as the specification evolves.
 
