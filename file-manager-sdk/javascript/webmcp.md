@@ -51,7 +51,7 @@ The WebMCP extension is now configured and ready to interact with WebMCP-enabled
 
 ## Integrating WebMCP tools
 
-Follow these steps to integrate WebMCP support into Syncfusion® JavaScript (ES5) controls. The following example uses the File Manager control.
+Follow these steps to integrate WebMCP support into the Syncfusion® JavaScript (ES5) File Manager control.
 
 ### Step 1: Create an application
 

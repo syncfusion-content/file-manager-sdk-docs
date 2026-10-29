@@ -51,7 +51,7 @@ The WebMCP extension is now configured and ready to interact with WebMCP-enabled
 
 ## Integrating WebMCP tools
 
-Follow these steps to integrate WebMCP support into Syncfusion® Angular components. The following example uses the File Manager component.
+Follow these steps to integrate WebMCP support into the Syncfusion® Angular File Manager component.
 
 ### Step 1: Create an application
 
