@@ -219,7 +219,7 @@ filemanagerInstance.appendTo('#filemanager');
 
 ## File Manager WebMCP tools
 
-The Syncfusion® File Manager control exposes 7 tools that enable AI agents to browse files, manage file operations, control the user interface, perform navigation, and automate common file management workflows. Explore the Syncfusion® TypeScript File Manager control with WebMCP integration through this [demo](https://demos.syncfusion.com/file-manager-sdk/webmcp/index.html).
+The Syncfusion® File Manager control exposes 7 tools that enable AI agents to browse files, manage file operations, control the user interface, perform navigation, and automate common file management workflows. Explore the Syncfusion® TypeScript File Manager control with WebMCP integration through this [demo](https://demos.syncfusion.com/file-manager-sdk/web-mcp/index.html).
 
 | Tool Name | Description |
 |-----------|-------------|
@@ -241,7 +241,7 @@ The Syncfusion® File Manager control exposes 7 tools that enable AI agents to b
 
 ## Explore the demo
 
-Explore the Syncfusion® TypeScript File Manager control with WebMCP integration through this [demo](https://demos.syncfusion.com/file-manager-sdk/webmcp/index.html).
+Explore the Syncfusion® TypeScript File Manager control with WebMCP integration through this [demo](https://demos.syncfusion.com/file-manager-sdk/web-mcp/index.html).
 
 ## Next steps
 

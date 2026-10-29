@@ -243,7 +243,7 @@ const beforeWebMcpToolExecute = (args) => {
 
 ## File Manager WebMCP tools
 
-The Syncfusion® File Manager component exposes 7 tools that enable AI agents to browse files, manage file operations, control the user interface, perform navigation, and automate common file management workflows. Explore the Syncfusion® Vue File Manager component with WebMCP integration through this [demo](https://demos.syncfusion.com/file-manager-sdk/webmcp/index.html).
+The Syncfusion® File Manager component exposes 7 tools that enable AI agents to browse files, manage file operations, control the user interface, perform navigation, and automate common file management workflows. Explore the Syncfusion® Vue File Manager component with WebMCP integration through this [demo](https://demos.syncfusion.com/file-manager-sdk/web-mcp/index.html).
 
 | Tool Name | Description |
 |-----------|-------------|
@@ -265,7 +265,7 @@ The Syncfusion® File Manager component exposes 7 tools that enable AI agents to
 
 ## Explore the demo
 
-Explore the Syncfusion® Vue File Manager component with WebMCP integration through this [demo](https://demos.syncfusion.com/file-manager-sdk/webmcp/index.html).
+Explore the Syncfusion® Vue File Manager component with WebMCP integration through this [demo](https://demos.syncfusion.com/file-manager-sdk/web-mcp/index.html).
 
 ## Next steps
 
