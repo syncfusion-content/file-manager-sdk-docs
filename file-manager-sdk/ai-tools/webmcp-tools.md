@@ -1,12 +1,10 @@
 ---
 layout: post
-title: WebMCP Tools for File Manager | Syncfusion
-description: Learn how WebMCP enables AI agents to browse, manage, and automate file operations in the Syncfusion File Manager through structured tools.
-control: File Manager
+title: WebMCP Tools for File Manager - Syncfusion
+description: Learn here about the WebMCP tools that enable AI agents to browse, manage, and automate file operations in the Syncfusion File Manager.
 platform: file-manager-sdk
+control: File Manager
 documentation: ug
-domainurl: https://help.syncfusion.com/file-manager-sdk
-appliesto: UI Component Suite, File Manager SDK
 ---
 
 # WebMCP Tools for File Manager
