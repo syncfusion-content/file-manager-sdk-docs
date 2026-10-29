@@ -61,9 +61,7 @@ Create an application and integrate the Syncfusion® JavaScript (ES5) File Manag
 
 Import the WebMCP module and inject it into the control to make WebMCP functionality available.
 
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
-
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -91,8 +89,7 @@ Import the WebMCP module and inject it into the control to make WebMCP functiona
     </body>
 </html>
 
-{% endhighlight %}
-{% endtabs %}
+```
 
 ### Step 3: Register control tools
 
@@ -108,9 +105,7 @@ For example, a File Manager control may expose tools such as:
 
 An AI assistant can discover these tools and invoke them based on user prompts.
 
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
-
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -139,8 +134,7 @@ An AI assistant can discover these tools and invoke them based on user prompts.
     </body>
 </html>
 
-{% endhighlight %}
-{% endtabs %}
+```
 
 ### Step 4: Customize tool registration
 
@@ -152,11 +146,7 @@ Use the `webMcpSettings` property to customize how WebMCP tools are exposed to A
 | `tools` | List of tool names to expose. Any supported tools not included in this list will not be registered. |
 | `exposeTo` | List of trusted domains that are allowed to interact with the control through WebMCP. |
 
-{% raw %}
-
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
-
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -190,10 +180,7 @@ Use the `webMcpSettings` property to customize how WebMCP tools are exposed to A
     </body>
 </html>
 
-{% endhighlight %}
-{% endtabs %}
-
-{% endraw %}
+```
 
 > Use the `exposeTo` property to restrict WebMCP access to trusted domains. This helps prevent unauthorized WebMCP clients from interacting with your control tools.
 
@@ -208,11 +195,7 @@ The `beforeWebMcpToolExecute` event is triggered before a tool is executed. This
 
 > AI-generated requests should always be validated before executing write operations. Restrict access using `exposeTo` and perform additional authorization checks within `beforeWebMcpToolExecute` when modifying application data.
 
-{% raw %}
-
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
-
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -258,10 +241,7 @@ The `beforeWebMcpToolExecute` event is triggered before a tool is executed. This
     </body>
 </html>
 
-{% endhighlight %}
-{% endtabs %}
-
-{% endraw %}
+```
 
 ## File Manager WebMCP tools
 

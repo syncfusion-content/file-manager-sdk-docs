@@ -61,9 +61,7 @@ Create an application using the Essential® JS 2 webpack quickstart and add the 
 
 Import the WebMCP module and inject it into the control to make WebMCP functionality available.
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-
+```ts
 import { FileManager, Toolbar, NavigationPane, DetailsView, WebMcpFileManager } from '@syncfusion/ej2-filemanager';
 
 FileManager.Inject(Toolbar, NavigationPane, DetailsView, WebMcpFileManager);
@@ -80,8 +78,7 @@ let filemanagerInstance: FileManager = new FileManager({
 
 filemanagerInstance.appendTo('#filemanager');
 
-{% endhighlight %}
-{% endtabs %}
+```
 
 ### Step 3: Register control tools
 
@@ -97,9 +94,7 @@ For example, a File Manager control may expose tools such as:
 
 An AI assistant can discover these tools and invoke them based on user prompts.
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-
+```ts
 import { FileManager, Toolbar, NavigationPane, DetailsView, WebMcpFileManager } from '@syncfusion/ej2-filemanager';
 
 FileManager.Inject(Toolbar, NavigationPane, DetailsView, WebMcpFileManager);
@@ -117,8 +112,7 @@ let filemanagerInstance: FileManager = new FileManager({
 
 filemanagerInstance.appendTo('#filemanager');
 
-{% endhighlight %}
-{% endtabs %}
+```
 
 ### Step 4: Customize tool registration
 
@@ -130,11 +124,7 @@ Use the `webMcpSettings` property to customize how WebMCP tools are exposed to A
 | `tools` | List of tool names to expose. Any supported tools not included in this list will not be registered. |
 | `exposeTo` | List of trusted domains that are allowed to interact with the control through WebMCP. |
 
-{% raw %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-
+```ts
 import { FileManager, Toolbar, NavigationPane, DetailsView, WebMcpFileManager } from '@syncfusion/ej2-filemanager';
 
 FileManager.Inject(Toolbar, NavigationPane, DetailsView, WebMcpFileManager);
@@ -157,10 +147,7 @@ let filemanagerInstance: FileManager = new FileManager({
 
 filemanagerInstance.appendTo('#filemanager');
 
-{% endhighlight %}
-{% endtabs %}
-
-{% endraw %}
+```
 
 > Use the `exposeTo` property to restrict WebMCP access to trusted domains. This helps prevent unauthorized WebMCP clients from interacting with your control tools.
 
@@ -175,11 +162,7 @@ The `beforeWebMcpToolExecute` event is triggered before a tool is executed. This
 
 > AI-generated requests should always be validated before executing write operations. Restrict access using `exposeTo` and perform additional authorization checks within `beforeWebMcpToolExecute` when modifying application data.
 
-{% raw %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-
+```ts
 import { FileManager, Toolbar, NavigationPane, DetailsView, WebMcpFileManager } from '@syncfusion/ej2-filemanager';
 
 FileManager.Inject(Toolbar, NavigationPane, DetailsView, WebMcpFileManager);
@@ -212,10 +195,7 @@ let filemanagerInstance: FileManager = new FileManager({
 
 filemanagerInstance.appendTo('#filemanager');
 
-{% endhighlight %}
-{% endtabs %}
-
-{% endraw %}
+```
 
 ## File Manager WebMCP tools
 
