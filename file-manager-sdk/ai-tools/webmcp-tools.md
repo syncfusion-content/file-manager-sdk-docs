@@ -148,5 +148,10 @@ Vague Prompt Example:
 
 ## See Also
 
-- [Official WebMCP Specification](https://github.com/WICG/webmcp)
-- [Chrome Developer Documentation](https://developer.chrome.com/docs/ai/webmcp)
+- [Official WebMCP Specification](https://github.com/webmachinelearning/webmcp)
+- [Chrome Developer Documentation](https://developer.chrome.com/docs/ai/webmcp/)
+- [WebMCP Integration for React File Manager](https://help.syncfusion.com/file-manager-sdk/react/webmcp)
+- [WebMCP Integration for Angular File Manager](https://help.syncfusion.com/file-manager-sdk/angular/webmcp)
+- [WebMCP Integration for Vue File Manager](https://help.syncfusion.com/file-manager-sdk/vue/webmcp)
+- [WebMCP Integration for TypeScript File Manager](https://help.syncfusion.com/file-manager-sdk/typescript/webmcp)
+- [WebMCP Integration for JavaScript File Manager](https://help.syncfusion.com/file-manager-sdk/javascript/webmcp)
