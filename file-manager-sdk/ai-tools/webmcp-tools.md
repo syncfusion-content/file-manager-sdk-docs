@@ -73,11 +73,11 @@ WebMCP integrates seamlessly into Syncfusion File Manager applications across al
 
 ### Supported Platforms
 
-- [WebMCP Integration for React File Manager](https://help.syncfusion.com/file-manager-sdk/react/webmcp) — React-based File Manager
-- [WebMCP Integration for Angular File Manager](https://help.syncfusion.com/file-manager-sdk/angular/webmcp) — Angular-based File Manager
-- [WebMCP Integration for Vue File Manager](https://help.syncfusion.com/file-manager-sdk/vue/webmcp) — Vue.js-based File Manager
-- [WebMCP Integration for TypeScript File Manager](https://help.syncfusion.com/file-manager-sdk/typescript/webmcp) — TypeScript/ES6 File Manager
-- [WebMCP Integration for JavaScript File Manager](https://help.syncfusion.com/file-manager-sdk/javascript/webmcp) — Vanilla JavaScript/ES5 File Manager
+- [WebMCP Integration for React File Manager](../react/webmcp) — React-based File Manager
+- [WebMCP Integration for Angular File Manager](../angular/webmcp) — Angular-based File Manager
+- [WebMCP Integration for Vue File Manager](../vue/webmcp) — Vue.js-based File Manager
+- [WebMCP Integration for TypeScript File Manager](../typescript/webmcp) — TypeScript/ES6 File Manager
+- [WebMCP Integration for JavaScript File Manager](../javascript/webmcp) — Vanilla JavaScript/ES5 File Manager
 
 ## Common Use Cases
 
