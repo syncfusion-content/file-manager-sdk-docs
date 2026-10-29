@@ -70,16 +70,16 @@ Import the WebMCP module and inject it into the component to make WebMCP functio
 </template>
 
 <script setup>
+import { provide } from 'vue';
 import {
   FileManagerComponent as EjsFilemanager,
-  FileManager,
   NavigationPane,
   DetailsView,
   Toolbar,
   WebMcpFileManager
 } from '@syncfusion/ej2-vue-filemanager';
 
-FileManager.Inject(NavigationPane, DetailsView, Toolbar, WebMcpFileManager);
+provide('filemanager', [NavigationPane, DetailsView, Toolbar, WebMcpFileManager]);
 </script>
 
 {% endhighlight %}
@@ -108,16 +108,16 @@ An AI assistant can discover these tools and invoke them based on user prompts.
 </template>
 
 <script setup>
+import { provide } from 'vue';
 import {
   FileManagerComponent as EjsFilemanager,
-  FileManager,
   NavigationPane,
   DetailsView,
   Toolbar,
   WebMcpFileManager
 } from '@syncfusion/ej2-vue-filemanager';
 
-FileManager.Inject(NavigationPane, DetailsView, Toolbar, WebMcpFileManager);
+provide('filemanager', [NavigationPane, DetailsView, Toolbar, WebMcpFileManager]);
 </script>
 
 {% endhighlight %}
@@ -144,16 +144,16 @@ Use the `webMcpSettings` property to customize how WebMCP tools are exposed to A
 </template>
 
 <script setup>
+import { provide } from 'vue';
 import {
   FileManagerComponent as EjsFilemanager,
-  FileManager,
   NavigationPane,
   DetailsView,
   Toolbar,
   WebMcpFileManager
 } from '@syncfusion/ej2-vue-filemanager';
 
-FileManager.Inject(NavigationPane, DetailsView, Toolbar, WebMcpFileManager);
+provide('filemanager', [NavigationPane, DetailsView, Toolbar, WebMcpFileManager]);
 
 const hostUrl = 'https://physical-service.syncfusion.com/';
 const ajaxSettings = {
@@ -199,16 +199,16 @@ The `beforeWebMcpToolExecute` event is triggered before a tool is executed. This
 </template>
 
 <script setup>
+import { provide } from 'vue';
 import {
   FileManagerComponent as EjsFilemanager,
-  FileManager,
   NavigationPane,
   DetailsView,
   Toolbar,
   WebMcpFileManager
 } from '@syncfusion/ej2-vue-filemanager';
 
-FileManager.Inject(NavigationPane, DetailsView, Toolbar, WebMcpFileManager);
+provide('filemanager', [NavigationPane, DetailsView, Toolbar, WebMcpFileManager]);
 
 const hostUrl = 'https://physical-service.syncfusion.com/';
 const ajaxSettings = {

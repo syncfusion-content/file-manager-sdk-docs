@@ -68,7 +68,10 @@ import { Component } from '@angular/core';
 import {
   FileManager,
   FileManagerAllModule,
-  WebMcpFileManager
+  WebMcpFileManager,
+  NavigationPaneService,
+  ToolbarService,
+  DetailsViewService
 } from '@syncfusion/ej2-angular-filemanager';
 
 FileManager.Inject(WebMcpFileManager);
@@ -77,6 +80,7 @@ FileManager.Inject(WebMcpFileManager);
   selector: 'app-root',
   standalone: true,
   imports: [FileManagerAllModule],
+  providers: [NavigationPaneService, ToolbarService, DetailsViewService],
   template: `
   <ejs-filemanager id="filemanager" [ajaxSettings]="ajaxSettings">
   </ejs-filemanager>
@@ -116,7 +120,10 @@ import { Component } from '@angular/core';
 import {
   FileManager,
   FileManagerAllModule,
-  WebMcpFileManager
+  WebMcpFileManager,
+  NavigationPaneService,
+  ToolbarService,
+  DetailsViewService
 } from '@syncfusion/ej2-angular-filemanager';
 
 FileManager.Inject(WebMcpFileManager);
@@ -125,6 +132,7 @@ FileManager.Inject(WebMcpFileManager);
   selector: 'app-root',
   standalone: true,
   imports: [FileManagerAllModule],
+  providers: [NavigationPaneService, ToolbarService, DetailsViewService],
   template: `
   <ejs-filemanager id="filemanager" [ajaxSettings]="ajaxSettings" [enableWebMcp]="true">
   </ejs-filemanager>
@@ -162,7 +170,10 @@ import { Component } from '@angular/core';
 import {
   FileManager,
   FileManagerAllModule,
-  WebMcpFileManager
+  WebMcpFileManager,
+  NavigationPaneService,
+  ToolbarService,
+  DetailsViewService
 } from '@syncfusion/ej2-angular-filemanager';
 
 FileManager.Inject(WebMcpFileManager);
@@ -171,6 +182,7 @@ FileManager.Inject(WebMcpFileManager);
   selector: 'app-root',
   standalone: true,
   imports: [FileManagerAllModule],
+  providers: [NavigationPaneService, ToolbarService, DetailsViewService],
   template: `
   <ejs-filemanager id="filemanager" [ajaxSettings]="ajaxSettings" [enableWebMcp]="true" [webMcpSettings]="webMcpSettings">
   </ejs-filemanager>
@@ -218,7 +230,10 @@ import { Component } from '@angular/core';
 import {
   FileManager,
   FileManagerAllModule,
-  WebMcpFileManager
+  WebMcpFileManager,
+  NavigationPaneService,
+  ToolbarService,
+  DetailsViewService
 } from '@syncfusion/ej2-angular-filemanager';
 
 FileManager.Inject(WebMcpFileManager);
@@ -227,6 +242,7 @@ FileManager.Inject(WebMcpFileManager);
   selector: 'app-root',
   standalone: true,
   imports: [FileManagerAllModule],
+  providers: [NavigationPaneService, ToolbarService, DetailsViewService],
   template: `
   <ejs-filemanager id="filemanager" [ajaxSettings]="ajaxSettings" [enableWebMcp]="true" [webMcpSettings]="webMcpSettings"
     (beforeWebMcpToolExecute)="beforeWebMcpToolExecute($event)">
