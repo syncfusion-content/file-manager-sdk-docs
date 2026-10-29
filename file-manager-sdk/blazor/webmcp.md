@@ -100,61 +100,38 @@ Call `GetWebMcpToolsAsync` to list the tools the component registered.
 
 Pass a list of names to `GetWebMcpToolsAsync` to inspect specific tools only.
 
-## Monitor and control tool execution
+## Supported tools
 
-The `OnWebMcpExecute` event is triggered before a tool is executed. Set `ShowConfirmationDialog` to `true` on the event args to show a confirmation dialog before write operations run.
+The Blazor File Manager exposes the following tools through WebMCP.
 
-{% tabs %}
-{% highlight razor tabtitle="FileManager.razor" %}
-
-@page "/"
-@using Syncfusion.Blazor.FileManager;
-@using System.Text.Json;
-
-<SfFileManager TValue="FileManagerDirectoryContent"
-               EnableWebMcp="true"
-               @ref="FileManager"
-               ID="FM">
-    <FileManagerEvents TValue="FileManagerDirectoryContent" OnWebMcpExecute="BeforeMcpHandler"></FileManagerEvents>
-    <FileManagerAjaxSettings Url="https://physical-service.syncfusion.com/api/FileManager/FileOperations"
-                             UploadUrl="https://physical-service.syncfusion.com/api/FileManager/Upload"
-                             DownloadUrl="https://physical-service.syncfusion.com/api/FileManager/Download"
-                             GetImageUrl="https://physical-service.syncfusion.com/api/FileManager/GetImage">
-    </FileManagerAjaxSettings>
-    <FileManagerWebMcpSettings Name="Testing">
-    </FileManagerWebMcpSettings>
-</SfFileManager>
-
-@code {
-    private SfFileManager<FileManagerDirectoryContent>? FileManager;
-
-    private async Task BeforeMcpHandler(FileManagerWebMcpExecuteEventArgs args)
-    {
-        args.ShowConfirmationDialog = true;
-        if (FileManager is null)
-        {
-            args.Result = JsonSerializer.Serialize(new { Error = "FileManager instance not available." });
-            return;
-        }
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-## File Manager WebMCP tools
-
-The Syncfusion® Blazor File Manager component exposes 7 tools that enable AI agents to browse files, manage file operations, control the user interface, perform navigation, and automate common file management workflows.
+### Read Tools
 
 | Tool Name | Description |
-|-----------|-------------|
+|---|---|
 | getSelectedFiles | Returns the list of currently selected files and folders, including metadata such as name, ID, type, size, and modification details |
-| manageFileSystemItems | Creates folders, renames files or folders, and deletes one or more file system items |
-| manageFileUploadAndDownload | Opens the upload workflow or downloads one or more selected files |
-| navigateAndOpenFiles | Navigates backward, opens files or folders, and refreshes the current file view |
-| searchAndFilterFiles | Applies filters to files and folders based on specified criteria |
-| manageUserInterface | Enables or disables menu and toolbar items, closes dialogs, and refreshes the layout |
-| manageSelection | Selects all items or clears the current selection |
+| selectAll | Selects all the files and folders in the current directory |
+| filterFiles | Applies filters to files and folders based on specified criteria |
+| refreshFiles | Refreshes the file and folder items in the current file view |
+| refreshLayout | Refreshes the File Manager layout |
+| openFile | Opens the selected file or folder |
+| traverseBackward | Navigates to the parent directory of the current path |
+| clearSelection | Clears the currently selected files and folders |
+
+### Write Tools
+
+| Tool Name | Description |
+|---|---|
+| createFolder | Creates a new folder in the current directory |
+| renameFile | Renames the selected file or folder |
+| deleteFiles | Deletes one or more selected files and folders |
+| uploadFiles | Opens the upload dialog to upload files to the current directory |
+| downloadFiles | Downloads one or more selected files |
+| disableMenuItems | Disables one or more context menu items |
+| enableMenuItems | Enables one or more context menu items |
+| disableToolbarItems | Disables one or more toolbar items |
+| enableToolbarItems | Enables one or more toolbar items |
+
+> Write tool execution can be audited or cancelled in the `OnWebMcpExecute` event. Set `ShowConfirmationDialog` on the event args to `true` to show a confirmation dialog before write operations run.
 
 ## Try a first prompt
 
