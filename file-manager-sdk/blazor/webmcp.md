@@ -343,46 +343,6 @@ For a built-in write tool, set `ShowConfirmationDialog` and leave the work to th
 
 `GetWebMcpToolsAsync(IEnumerable<string>? toolNames = null)` returns the registered tools as `IWebMcpTool` items with `Name`, `Description`, and `InputSchema`. Use it to confirm which tools an agent can see.
 
-{% tabs %}
-{% highlight razor tabtitle="FileManager.razor" %}
-
-@page "/"
-@using Syncfusion.Blazor.FileManager;
-
-<SfFileManager TValue="FileManagerDirectoryContent"
-               EnableWebMcp="true"
-               @ref="FileManager"
-               ID="FM">
-    <FileManagerAjaxSettings Url="https://physical-service.syncfusion.com/api/FileManager/FileOperations"
-                             UploadUrl="https://physical-service.syncfusion.com/api/FileManager/Upload"
-                             DownloadUrl="https://physical-service.syncfusion.com/api/FileManager/Download"
-                             GetImageUrl="https://physical-service.syncfusion.com/api/FileManager/GetImage">
-    </FileManagerAjaxSettings>
-    <FileManagerWebMcpSettings Name="Testing">
-    </FileManagerWebMcpSettings>
-</SfFileManager>
-
-@code {
-    private SfFileManager<FileManagerDirectoryContent>? FileManager;
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (!firstRender || FileManager is null)
-        {
-            return;
-        }
-        var tools = await FileManager.GetWebMcpToolsAsync();
-        Console.WriteLine($"WebMCP Tool Count: {tools.Count}");
-        foreach (var tool in tools)
-        {
-            Console.WriteLine($"Tool Name: {tool.Name}, Description: {tool.Description}");
-        }
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 ## Try a first prompt
 
 With your agent connected, ask for something the component can do, for example "Create a folder named Reports in the current directory." The agent picks the matching tool, the component runs it, and the File Manager changes on screen.
