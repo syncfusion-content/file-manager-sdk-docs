@@ -13,7 +13,6 @@ appliesto: UI Component Suite, File Manager SDK
 
 WebMCP enables AI agents to discover and interact with Syncfusion® JavaScript controls through a standardized tool interface. By enabling WebMCP, AI-powered applications can securely discover control capabilities, read data, perform actions, and automate workflows through a standardized interface.
 
-This section demonstrates how to integrate WebMCP with the Syncfusion® TypeScript File Manager control. The same approach can be used with other supported controls such as Grid, Scheduler, Chart, and more.
 
 ## WebMCP Overview
 
@@ -23,9 +22,9 @@ Instead of relying on DOM inspection or simulating user interactions, AI assista
 
 Once connected, an AI assistant can perform tasks such as:
 
-- Sort or filter Grid data.
-- Update Spreadsheet cells.
-- Create Scheduler events.
+- Browse and open files and folders.
+- Upload or download files.
+- Create, rename, and delete file system items.
 - Perform control-specific actions through natural language prompts.
 
 > WebMCP is currently an experimental browser capability and requires a Chromium-based browser with WebMCP support enabled. Availability and required browser flags may change as the specification evolves.
@@ -248,7 +247,7 @@ Explore the Syncfusion® TypeScript File Manager control with WebMCP integration
 
 After successfully enabling WebMCP, you can:
 
-- Integrate WebMCP with other Syncfusion® JavaScript controls such as Grid, Scheduler, Chart, and Rich Text Editor.
+- Integrate WebMCP with other Syncfusion® JavaScript controls.
 - Build AI-powered workflows that interact directly with application data and UI elements.
 - Create secure and controlled tool execution pipelines using custom validation logic.
 
