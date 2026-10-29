@@ -142,7 +142,7 @@ Vague Prompt Example:
 
 ## Limitations
 
-- **Operates on the connected file system** — WebMCP actions are performed through the file provider configured for the File Manager. Custom provider operations depend on the provider's supported actions.
+- **Only able to perform operations in the File Manager for the public API methods available operations** — WebMCP actions are limited to the operations exposed through the File Manager's public API methods.
 - **Prompt clarity affects result quality** — The AI interprets your request literally, so output quality depends directly on how clearly the prompt is written.
 - **Experimental status** — WebMCP is a preview standard. APIs and browser support may change as the specification evolves.
 
@@ -150,8 +150,3 @@ Vague Prompt Example:
 
 - [Official WebMCP Specification](https://github.com/WICG/webmcp)
 - [Chrome Developer Documentation](https://developer.chrome.com/docs/ai/webmcp)
-- [WebMCP Integration for React File Manager](../react/webmcp)
-- [WebMCP Integration for Angular File Manager](../angular/webmcp)
-- [WebMCP Integration for Vue File Manager](../vue/webmcp)
-- [WebMCP Integration for TypeScript File Manager](../typescript/webmcp)
-- [WebMCP Integration for JavaScript File Manager](../javascript/webmcp)
