@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WebMCP tool integration for JavaScript (ES5) File Manager | Syncfusion
-description: Learn how to integrate WebMCP with the Syncfusion JavaScript (ES5) File Manager control to enable AI interaction, configure tools, manage access, and monitor execution.
+description: Learn how to integrate WebMCP with the Syncfusion JavaScript (ES5) File Manager control to enable AI interaction, configure tools, and monitor execution.
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
@@ -9,10 +9,9 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 appliesto: UI Component Suite, File Manager SDK
 ---
 
-# WebMCP Tools Integration for Syncfusion® JavaScript (ES5) File Manager Control
+# WebMCP Tools Integration for Syncfusion® JavaScript File Manager
 
 WebMCP enables AI agents to discover and interact with Syncfusion® JavaScript (ES5) controls through a standardized tool interface. By enabling WebMCP, AI-powered applications can securely discover control capabilities, read data, perform actions, and automate workflows through a standardized interface.
-
 
 ## WebMCP Overview
 
@@ -68,6 +67,9 @@ Import the WebMCP module and inject it into the control to make WebMCP functiona
         <title>Essential JS 2</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <link href="https://cdn.syncfusion.com/ej2/34.2.2/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+        <!-- Essential JS 2 all script -->
+        <script src="https://cdn.syncfusion.com/ej2/34.2.2/dist/ej2.min.js" type="text/javascript"></script>
     </head>
     <body>
         <div>
@@ -112,6 +114,9 @@ An AI assistant can discover these tools and invoke them based on user prompts.
         <title>Essential JS 2</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <link href="https://cdn.syncfusion.com/ej2/34.2.2/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+        <!-- Essential JS 2 all script -->
+        <script src="https://cdn.syncfusion.com/ej2/34.2.2/dist/ej2.min.js" type="text/javascript"></script>
     </head>
     <body>
         <div>
@@ -153,6 +158,9 @@ Use the `webMcpSettings` property to customize how WebMCP tools are exposed to A
         <title>Essential JS 2</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <link href="https://cdn.syncfusion.com/ej2/34.2.2/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+        <!-- Essential JS 2 all script -->
+        <script src="https://cdn.syncfusion.com/ej2/34.2.2/dist/ej2.min.js" type="text/javascript"></script>
     </head>
     <body>
         <div>
@@ -202,6 +210,9 @@ The `beforeWebMcpToolExecute` event is triggered before a tool is executed. This
         <title>Essential JS 2</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <link href="https://cdn.syncfusion.com/ej2/34.2.2/bootstrap5.3.css" rel="stylesheet" type="text/css" />
+        <!-- Essential JS 2 all script -->
+        <script src="https://cdn.syncfusion.com/ej2/34.2.2/dist/ej2.min.js" type="text/javascript"></script>
     </head>
     <body>
         <div>
@@ -279,4 +290,4 @@ After successfully enabling WebMCP, you can:
 
 ## See also
 
-- [WebMCP Supported Syncfusion JavaScript Controls](https://ej2.syncfusion.com/javascript/documentation/webmcp/components)
+- [WebMCP Supported Syncfusion JavaScript Controls](https://ej2.syncfusion.com/javascript/documentation/webmcp/controls)

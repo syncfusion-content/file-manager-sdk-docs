@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WebMCP tool integration for Vue File Manager | Syncfusion
-description: Learn how to integrate WebMCP with the Syncfusion Vue File Manager component to enable AI interaction, configure tools, manage access, and monitor execution.
+description: Learn how to integrate WebMCP with the Syncfusion Vue File Manager component to enable AI interaction, configure tools, and monitor execution.
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
@@ -12,7 +12,6 @@ appliesto: UI Component Suite, File Manager SDK
 # WebMCP Tools Integration for Syncfusion® Vue File Manager Component
 
 WebMCP enables AI agents to discover and interact with Syncfusion® Vue components through a standardized tool interface. By enabling WebMCP, AI-powered applications can securely discover component capabilities, read data, perform actions, and automate workflows through a standardized interface.
-
 
 ## WebMCP Overview
 

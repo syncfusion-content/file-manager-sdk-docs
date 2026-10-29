@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WebMCP tool integration for Angular File Manager | Syncfusion
-description: Learn how to integrate WebMCP with the Syncfusion Angular File Manager component to enable AI interaction, configure tools, manage access, and monitor execution.
+description: Learn how to integrate WebMCP with the Syncfusion Angular File Manager component to enable AI interaction, configure tools, and monitor execution.
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
@@ -9,10 +9,9 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 appliesto: UI Component Suite, File Manager SDK
 ---
 
-# WebMCP Tools Integration for Syncfusion® Angular File Manager Component
+# WebMCP Tools Integration for Syncfusion® Angular File Manager
 
 WebMCP enables AI agents to discover and interact with Syncfusion® Angular components through a standardized tool interface. By enabling WebMCP, AI-powered applications can securely discover component capabilities, read data, perform actions, and automate workflows through a standardized interface.
-
 
 ## WebMCP Overview
 

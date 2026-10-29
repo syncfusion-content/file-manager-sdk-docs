@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WebMCP tool integration for React File Manager | Syncfusion
-description: Learn how to integrate WebMCP with the Syncfusion React File Manager component to enable AI interaction, configure tools, manage access, and monitor execution.
+description: Learn how to integrate WebMCP with the Syncfusion React File Manager component to enable AI interaction, configure tools, and monitor execution.
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
@@ -12,7 +12,6 @@ appliesto: UI Component Suite, File Manager SDK
 # WebMCP Tools Integration for Syncfusion® React File Manager Component
 
 WebMCP enables AI agents to discover and interact with Syncfusion® React components through a standardized tool interface. By enabling WebMCP, AI-powered applications can securely discover component capabilities, read data, perform actions, and automate workflows through a standardized interface.
-
 
 ## WebMCP Overview
 
@@ -61,7 +60,7 @@ Create a React Vite application and integrate the Syncfusion® React File Manage
 
 Import the WebMCP module and inject it into the component to make WebMCP functionality available.
 
-```tsx
+```ts
 import { FileManagerComponent, Inject, NavigationPane, DetailsView, Toolbar, WebMcpFileManager } from '@syncfusion/ej2-react-filemanager';
 
 function App() {
@@ -98,7 +97,7 @@ For example, a File Manager component may expose tools such as:
 
 An AI assistant can discover these tools and invoke them based on user prompts.
 
-```tsx
+```ts
 import { FileManagerComponent, Inject, NavigationPane, DetailsView, Toolbar, WebMcpFileManager } from '@syncfusion/ej2-react-filemanager';
 
 function App() {
@@ -131,7 +130,7 @@ Use the `webMcpSettings` property to customize how WebMCP tools are exposed to A
 | `tools` | List of tool names to expose. Any supported tools not included in this list will not be registered. |
 | `exposeTo` | List of trusted domains that are allowed to interact with the component through WebMCP. |
 
-```tsx
+```ts
 import { FileManagerComponent, Inject, NavigationPane, DetailsView, Toolbar, WebMcpFileManager } from '@syncfusion/ej2-react-filemanager';
 
 function App() {
@@ -172,7 +171,7 @@ The `beforeWebMcpToolExecute` event is triggered before a tool is executed. This
 
 > AI-generated requests should always be validated before executing write operations. Restrict access using `exposeTo` and perform additional authorization checks within `beforeWebMcpToolExecute` when modifying application data.
 
-```tsx
+```ts
 import { FileManagerComponent, Inject, NavigationPane, DetailsView, Toolbar, WebMcpFileManager } from '@syncfusion/ej2-react-filemanager';
 
 function App() {

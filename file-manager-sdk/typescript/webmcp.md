@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WebMCP tool integration for TypeScript File Manager | Syncfusion
-description: Learn how to integrate WebMCP with the Syncfusion TypeScript File Manager control to enable AI interaction, configure tools, manage access, and monitor execution.
+description: Learn how to integrate WebMCP with the Syncfusion JavaScript File Manager control to enable AI interaction, configure tools, and monitor execution.
 control: File Manager
 platform: file-manager-sdk
 documentation: ug
@@ -9,10 +9,9 @@ domainurl: https://help.syncfusion.com/file-manager-sdk
 appliesto: UI Component Suite, File Manager SDK
 ---
 
-# WebMCP Tools Integration for Syncfusion® TypeScript File Manager Control
+# WebMCP Tools Integration for Syncfusion® JavaScript File Manager
 
 WebMCP enables AI agents to discover and interact with Syncfusion® JavaScript controls through a standardized tool interface. By enabling WebMCP, AI-powered applications can securely discover control capabilities, read data, perform actions, and automate workflows through a standardized interface.
-
 
 ## WebMCP Overview
 
@@ -51,11 +50,11 @@ The WebMCP extension is now configured and ready to interact with WebMCP-enabled
 
 ## Integrating WebMCP tools
 
-Follow these steps to integrate WebMCP support into the Syncfusion® TypeScript File Manager control.
+Follow these steps to integrate WebMCP support into the Syncfusion® JavaScript File Manager control.
 
 ### Step 1: Create an application
 
-Create an application using the Essential® JS 2 webpack quickstart and add the Syncfusion® TypeScript File Manager control by following the [Getting Started with TypeScript File Manager](https://help.syncfusion.com/file-manager-sdk/typescript/getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
+Create an application using the Essential® JS 2 webpack quickstart and add the Syncfusion® JavaScript File Manager control by following the [Getting Started with TypeScript File Manager](https://help.syncfusion.com/file-manager-sdk/typescript/getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
 
 ### Step 2: Enable WebMCP support
 
@@ -199,7 +198,7 @@ filemanagerInstance.appendTo('#filemanager');
 
 ## File Manager WebMCP tools
 
-The Syncfusion® File Manager control exposes 7 tools that enable AI agents to browse files, manage file operations, control the user interface, perform navigation, and automate common file management workflows. Explore the Syncfusion® TypeScript File Manager control with WebMCP integration through this [demo](https://demos.syncfusion.com/file-manager-sdk/web-mcp/index.html).
+The Syncfusion® File Manager control exposes 7 tools that enable AI agents to browse files, manage file operations, control the user interface, perform navigation, and automate common file management workflows. Explore the Syncfusion® JavaScript File Manager control with WebMCP integration through this [demo](https://demos.syncfusion.com/file-manager-sdk/web-mcp/index.html).
 
 | Tool Name | Description |
 |-----------|-------------|
@@ -221,7 +220,7 @@ The Syncfusion® File Manager control exposes 7 tools that enable AI agents to b
 
 ## Explore the demo
 
-Explore the Syncfusion® TypeScript File Manager control with WebMCP integration through this [demo](https://demos.syncfusion.com/file-manager-sdk/web-mcp/index.html).
+Explore the Syncfusion® JavaScript File Manager control with WebMCP integration through this [demo](https://demos.syncfusion.com/file-manager-sdk/web-mcp/index.html).
 
 ## Next steps
 
@@ -233,4 +232,4 @@ After successfully enabling WebMCP, you can:
 
 ## See also
 
-- [WebMCP Supported Syncfusion JavaScript Controls](https://ej2.syncfusion.com/documentation/webmcp/components)
+- [WebMCP Supported Syncfusion JavaScript Controls](https://ej2.syncfusion.com/documentation/webmcp/controls)
