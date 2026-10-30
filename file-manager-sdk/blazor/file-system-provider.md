@@ -22,3 +22,4 @@ The following file providers are added in Blazor File Manager component.
 * [SQL database file system provider](https://help.syncfusion.com/file-manager-sdk/blazor/sql-database-file-system-provider)
 * [Google Drive file system provider](https://help.syncfusion.com/file-manager-sdk/blazor/google-drive-file-system-provider)
 * [Firebase Real time Database file system provider](https://help.syncfusion.com/file-manager-sdk/blazor/firebase-real-time-database-file-system-provider)
+* [OneDrive file system provider](https://help.syncfusion.com/file-manager-sdk/blazor/OneDrive-file-system-provider)
