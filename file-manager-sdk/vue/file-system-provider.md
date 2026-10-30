@@ -152,7 +152,7 @@ provide('filemanager',  [DetailsView, NavigationPane, Toolbar]);
 
 ### Introduction to Amazon S3
 
-Amazon Simple Storage Service (Amazon S3) is AWS's object storage service for storing and retrieving any amount of data. S3 is durable, scalable, and pay-as-you-go. In this guide the [Vue File Manager](https://www.syncfusion.com/vue-components/vue-file-manager) connects to S3 through an ASP.NET Core backend so you can securely browse and perform file operations in the Vue File Manager component.
+Amazon Simple Storage Service (Amazon S3) is AWS's object storage service for storing and retrieving any amount of data. S3 is durable, scalable, and pay-as-you-go. In this guide the [Vue File Manager](https://www.syncfusion.com/vue-components/vue-file-manager) connects to S3 through an ASP.NET Core back end so you can securely browse and perform file operations in the Vue File Manager component.
 
 ### Prerequisites
 
@@ -168,7 +168,7 @@ Before you integrate Amazon S3 with the Vue File Manager, ensure you have:
  - Provide a DNS-compliant bucket name. Click this [link](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html) for more details.
  - Choose the AWS region. Click this [link](https://docs.aws.amazon.com/general/latest/gr/s3.html) for more details.
 
-### Backend Setup
+### Back end Setup
 
 Clone the [Amazon S3 File Provider](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider) using the following command,
 
@@ -845,7 +845,7 @@ Before you integrate OneDrive with the Vue File Manager component, ensure you ha
 
 ### Back end Setup
 
-Clone the OneDrive File Provider using the following command,
+Clone the [OneDrive File Provider](https://github.com/SyncfusionExamples/onedrive-aspcore-file-provider) using the following command,
 
 ```bash
 
@@ -939,3 +939,5 @@ provide('filemanager',  [DetailsView, NavigationPane, Toolbar]);
 </style>
 
 ```
+
+N> To learn more about file actions that can be performed with OneDrive file system provider, refer to this [link](https://github.com/SyncfusionExamples/onedrive-aspcore-file-provider#key-features).
