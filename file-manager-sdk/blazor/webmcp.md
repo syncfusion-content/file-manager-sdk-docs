@@ -23,8 +23,7 @@ Before you begin, ensure you have:
 
 Set `EnableWebMcp` to `true`. Optionally set `Name` on the component's `FileManagerWebMcpSettings` tag so tool names stay unique on the page.
 
-{% tabs %}
-{% highlight razor tabtitle="FileManager.razor" %}
+```cshtml
 
 @page "/"
 @using Syncfusion.Blazor.FileManager;
@@ -46,8 +45,7 @@ Set `EnableWebMcp` to `true`. Optionally set `Name` on the component's `FileMana
     private SfFileManager<FileManagerDirectoryContent>? FileManager;
 }
 
-{% endhighlight %}
-{% endtabs %}
+```
 
 `EnableWebMcp` turns registration on. `Name` becomes the prefix for the tool names. If you omit it, the component `ID` is used, then a generated ID.
 
@@ -57,8 +55,7 @@ Set `EnableWebMcp` to `true`. Optionally set `Name` on the component's `FileMana
 
 Call `GetWebMcpToolsAsync` to list the tools the component registered.
 
-{% tabs %}
-{% highlight razor tabtitle="FileManager.razor" %}
+```cshtml
 
 @page "/"
 @using Syncfusion.Blazor.FileManager;
@@ -97,8 +94,7 @@ Call `GetWebMcpToolsAsync` to list the tools the component registered.
     }
 }
 
-{% endhighlight %}
-{% endtabs %}
+```
 
 Pass a list of names to `GetWebMcpToolsAsync` to inspect specific tools only.
 
@@ -112,14 +108,14 @@ The Blazor File Manager ships built-in WebMCP tools for reading and for write op
 
 | Tool Name | Description |
 | --------- | ----------- |
-| getSelectedFiles | Returns the list of currently selected files and folders, including metadata such as name, ID, type, size, and modification details |
-| selectAll | Selects all files and folders in the current view |
-| filterFiles | Applies filters to files and folders based on specified criteria |
-| refreshFiles | Refreshes the current file view |
-| refreshLayout | Refreshes the File Manager layout |
-| openFile | Opens the selected file or folder |
-| traverseBackward | Navigates backward to the parent folder |
-| clearSelection | Clears the current selection |
+| getSelectedFiles | Returns the files and folders currently selected in the File Manager |
+| selectAll | Selects every item in the current folder |
+| filterFiles | Filters the visible items by name using the server-side filter action |
+| refreshFiles | Refreshes the contents of the current folder |
+| refreshLayout | Reflows the File Manager layout after a settings change |
+| openFile | Opens a file in image preview or navigates into a folder by its unique ID |
+| traverseBackward | Moves up one folder |
+| clearSelection | Deselects every selected item |
 
 ### Write Tools
 
@@ -127,13 +123,13 @@ The Blazor File Manager ships built-in WebMCP tools for reading and for write op
 | --------- | ----------- |
 | createFolder | Creates a new folder in the current directory |
 | renameFile | Renames a file or folder |
-| deleteFiles | Deletes one or more selected files or folders |
-| uploadFiles | Opens the upload dialog to upload files |
-| downloadFiles | Downloads one or more selected files |
-| disableMenuItems | Disables one or more context menu items |
-| enableMenuItems | Enables one or more context menu items |
-| disableToolbarItems | Disables one or more toolbar items |
-| enableToolbarItems | Enables one or more toolbar items |
+| deleteFiles | Permanently deletes one or more files or folders |
+| uploadFiles | Opens the File Manager upload dialog (browser file picker) |
+| downloadFiles | Triggers a server download for the specified files or folders |
+| disableMenuItems | Disables one or more context-menu items by name |
+| enableMenuItems | Re-enables one or more context-menu items by name |
+| disableToolbarItems | Disables one or more toolbar items by name |
+| enableToolbarItems | Re-enables one or more toolbar items by name |
 
 ## Configure tools
 
@@ -149,10 +145,9 @@ A built-in tool is selected with `Command`. The properties below apply to every 
 | `InputSchema` | Object schema for the tool's arguments. Required for custom tools. Pass an object whose `type` is `object`, not a JSON string | Built-in schema |
 | `Enabled` | Whether the tool is registered with the browser | `true` |
 
-The registered name is `{Prefix}_{Tool}`. The prefix is the `Name` on `FileManagerWebMcpSettings`, or the component `ID` when `Name` is empty. Use PascalCase for that name. The tool part is the built-in command, or the `Name` you set on a custom tool. With `Name="Testing"`, `CreateFolder` is registered as `Testing_CreateFolder`, and a custom tool named `FileSummary` is registered as `Testing_FileSummary`. Match that full string, or use `EndsWith("_CreateFolder")`, so a partial suffix does not match another tool. Call `GetWebMcpToolsAsync` and read `Name` if you need the exact value for an instance.
+The registered name is `{Prefix}_{Tool}`. The prefix is the `Name` on `FileManagerWebMcpSettings`, or the component `ID` when `Name` is empty. Use PascalCase for that name. The tool part is the built-in command, or the `Name` you set on a custom tool. With `Name="Testing"`, `CreateFolder` is registered as `Testing_CreateFolder`, and a custom tool named `GetCurrentFolderPath` is registered as `Testing_GetCurrentFolderPath`. Match that full string, or use `EndsWith("_CreateFolder")`, so a partial suffix does not match another tool. Call `GetWebMcpToolsAsync` and read `Name` if you need the exact value for an instance.
 
-{% tabs %}
-{% highlight razor tabtitle="FileManager.razor" %}
+```cshtml
 
 @page "/"
 @using Syncfusion.Blazor.FileManager;
@@ -172,8 +167,8 @@ The registered name is `{Prefix}_{Tool}`. The prefix is the `Name` on `FileManag
             <FileManagerWebMcpTool Command="FileManagerWebMcpToolCommand.CreateFolder"
                                    Enabled="false" />
             <FileManagerWebMcpTool Command="@FileManagerWebMcpToolCommand.Custom"
-                                   Name="fileSummary"
-                                   Description="Summarize files in the current folder by extension."
+                                   Name="GetCurrentFolderPath"
+                                   Description="Return the path of the folder currently open in the File Manager."
                                    InputSchema="@EmptySchema"
                                    Enabled="true" />
         </FileManagerWebMcpTools>
@@ -183,28 +178,20 @@ The registered name is `{Prefix}_{Tool}`. The prefix is the `Name` on `FileManag
 @code {
     private SfFileManager<FileManagerDirectoryContent>? FileManager;
 
-    private object EmptySchema { get; set; } = new
-    {
-        type = "object",
-        properties = new { }
-    };
+    private string EmptySchema = """{"type":"object","properties":{}}""";
 
     private async Task BeforeMcpHandler(FileManagerWebMcpExecuteEventArgs args)
     {
     }
 }
 
-{% endhighlight %}
-{% endtabs %}
-
-![Blazor File Manager - configured WebMCP tools](images/blazor-filemanager-configured-webmcp-tools.png)
+```
 
 ## Custom tools
 
 Set `Command` to `Custom` to expose an action the component does not provide. A custom tool needs a `Name`, a `Description`, and an `InputSchema`. Handle the call in `OnWebMcpExecute`, match `args.Name`, and set `args.Result`.
 
-{% tabs %}
-{% highlight razor tabtitle="FileManager.razor" %}
+```cshtml
 
 @page "/"
 @using Syncfusion.Blazor.FileManager;
@@ -233,11 +220,7 @@ Set `Command` to `Custom` to expose an action the component does not provide. A 
 @code {
     private SfFileManager<FileManagerDirectoryContent>? FileManager;
 
-    private object EmptySchema { get; set; } = new
-    {
-        type = "object",
-        properties = new { }
-    };
+    private string EmptySchema = """{"type":"object","properties":{}}""";
 
     private async Task BeforeMcpHandler(FileManagerWebMcpExecuteEventArgs args)
     {
@@ -278,8 +261,7 @@ Set `Command` to `Custom` to expose an action the component does not provide. A 
     }
 }
 
-{% endhighlight %}
-{% endtabs %}
+```
 
 ![Blazor File Manager - custom WebMCP tool result](images/blazor-filemanager-custom-webmcp-tool-result.png)
 
@@ -297,8 +279,7 @@ The order of work for each call is:
 
 For a built-in write tool, set `ShowConfirmationDialog` and leave the work to the component. Do not change data in the event for that call. The component runs its handler only after the user accepts.
 
-{% tabs %}
-{% highlight razor tabtitle="FileManager.razor" %}
+```cshtml
 
 @page "/"
 @using Syncfusion.Blazor.FileManager;
@@ -323,21 +304,22 @@ For a built-in write tool, set `ShowConfirmationDialog` and leave the work to th
 
     private async Task BeforeMcpHandler(FileManagerWebMcpExecuteEventArgs args)
     {
-        if (args.Name.EndsWith("DeleteFiles") && !UserCanEditFiles)
+        if (args.Name.EndsWith("deleteFiles") && !UserCanEditFiles)
         {
             args.Cancel = true;
             return;
         }
-
-        if (args.Name.EndsWith("DeleteFiles") || args.Name.EndsWith("RenameFile") || args.Name.EndsWith("CreateFolder"))
+ 
+        if (args.Name.EndsWith("deleteFiles") || args.Name.EndsWith("renameFile") || args.Name.EndsWith("createFolder"))
         {
             args.ShowConfirmationDialog = true;
         }
     }
 }
 
-{% endhighlight %}
-{% endtabs %}
+```
+
+![Blazor File Manager - Control tool execution](images/blazor-filemanager-Control-tool-execution.png)
 
 ## Inspect tools
 
@@ -352,4 +334,3 @@ With your agent connected, ask for something the component can do, for example "
 ## See also
 
 * [WebMCP overview](../ai-tools/webmcp-tools) explains how a component registers tools and how an agent calls them.
-* [WebMCP Supported Syncfusion Blazor Components](https://blazor.syncfusion.com/documentation/webmcp/components) lists the built-in tools you can call from an agent prompt.
