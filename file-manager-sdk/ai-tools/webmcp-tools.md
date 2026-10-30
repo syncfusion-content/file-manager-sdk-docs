@@ -7,9 +7,9 @@ control: File Manager
 documentation: ug
 ---
 
-# WebMCP Tools for File Manager
+# WebMCP Tools for File Manager SDK
 
-WebMCP (Model Context Protocol) brings AI automation capabilities directly into the Syncfusion® File Manager. Instead of AI agents attempting to read the DOM or simulate user clicks, web pages explicitly declare their capabilities through structured tool definitions — giving agents reliable, deterministic ways to interact with applications.
+**WebMCP** (Model Context Protocol) brings AI automation capabilities directly into the Syncfusion® File Manager. Instead of AI agents attempting to read the DOM or simulate user clicks, web pages explicitly declare their capabilities through structured tool definitions — giving agents reliable, deterministic ways to interact with applications.
 
 ## What is WebMCP?
 

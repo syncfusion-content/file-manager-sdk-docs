@@ -13,6 +13,8 @@ appliesto: UI Component Suite, File Manager SDK
 
 WebMCP enables AI agents to discover and interact with Syncfusion® Vue components through a standardized tool interface. By enabling WebMCP, AI-powered applications can securely discover component capabilities, read data, perform actions, and automate workflows through a standardized interface.
 
+This section demonstrates how to integrate WebMCP with the Syncfusion® Vue File Manager component. The same approach can be used with other supported components such as Grid, Scheduler, Chart, and more.
+
 ## WebMCP Overview
 
 WebMCP allows AI assistants running in the browser to interact directly with Syncfusion® components through natural language prompts.
@@ -122,9 +124,9 @@ Use the `webMcpSettings` property to customize how WebMCP tools are exposed to A
 
 | Property | Description |
 |-----------|-------------|
-| `name` | Prefix applied to registered tool names. If name: `sales` is specified, a tool such as `getSelectedFiles` may be registered as `sales_getSelectedFiles`, allowing multiple component instances to coexist without tool name conflicts. |
+| `name` | Prefix applied to registered tool names. If name: `explorer` is specified, a tool such as `getSelectedFiles` may be registered as `explorer_getSelectedFiles`, allowing multiple component instances to coexist without tool name conflicts. |
 | `tools` | List of tool names to expose. Any supported tools not included in this list will not be registered. |
-| `exposeTo` | List of trusted domains that are allowed to interact with the component through WebMCP. |
+| `esposedTo` | List of trusted domains that are allowed to interact with the component through WebMCP. |
 
 ```html
 <template>
@@ -152,15 +154,15 @@ const ajaxSettings = {
   url: hostUrl + 'api/FileManager/FileOperations'
 };
 const webMcpSettings = {
-  name: 'docs',
+  name: 'explorer',
   tools: ['getSelectedFiles', 'manageFileSystemItems', 'manageFileUploadAndDownload'],
-  exposeTo: ['https://www.syncfusion.com/']
+  esposedTo: ['https://www.syncfusion.com/']
 };
 </script>
 
 ```
 
-> Use the `exposeTo` property to restrict WebMCP access to trusted domains. This helps prevent unauthorized WebMCP clients from interacting with your component tools.
+> Use the `esposedTo` property to restrict WebMCP access to trusted domains. This helps prevent unauthorized WebMCP clients from interacting with your component tools.
 
 ### Step 5: Monitor and control tool execution
 
@@ -171,7 +173,7 @@ The `beforeWebMcpToolExecute` event is triggered before a tool is executed. This
 - Cancel tool execution when necessary.
 - Apply custom business rules and security policies.
 
-> AI-generated requests should always be validated before executing write operations. Restrict access using `exposeTo` and perform additional authorization checks within `beforeWebMcpToolExecute` when modifying application data.
+> AI-generated requests should always be validated before executing write operations. Restrict access using `esposedTo` and perform additional authorization checks within `beforeWebMcpToolExecute` when modifying application data.
 
 ```html
 <template>
@@ -200,9 +202,9 @@ const ajaxSettings = {
   url: hostUrl + 'api/FileManager/FileOperations'
 };
 const webMcpSettings = {
-  name: 'docs',
+  name: 'explorer',
   tools: ['getSelectedFiles', 'manageFileSystemItems', 'manageFileUploadAndDownload'],
-  exposeTo: ['https://www.syncfusion.com/']
+  esposedTo: ['https://www.syncfusion.com/']
 };
 const beforeWebMcpToolExecute = (args) => {
   // Example business rule
@@ -238,7 +240,7 @@ The Syncfusion® File Manager component exposes 7 tools that enable AI agents to
 
 - Expose only the tools required by your application.
 - Use the `name` property when multiple component instances exist on the same page.
-- Configure `exposeTo` to limit access to trusted domains.
+- Configure `esposedTo` to limit access to trusted domains.
 - Monitor tool activity through the `beforeWebMcpToolExecute` event.
 - Apply application-specific validation before executing tool operations.
 
