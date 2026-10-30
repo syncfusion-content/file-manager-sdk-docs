@@ -626,7 +626,7 @@ N> The Azure AD application and the OneDrive storage account must belong to the 
 
 ### Back end Setup
 
-Clone the OneDrive File Provider using the following command,
+Clone the [OneDrive File Provider](https://github.com/SyncfusionExamples/onedrive-aspcore-file-provider) using the following command,
 
 ```bash
 
@@ -708,3 +708,5 @@ After registering the OneDrive account details, build and run the project. The a
 </div>
 
 ```
+
+N> To learn more about file actions that can be performed with OneDrive file system provider, refer to this [link](https://github.com/SyncfusionExamples/onedrive-aspcore-file-provider#key-features).

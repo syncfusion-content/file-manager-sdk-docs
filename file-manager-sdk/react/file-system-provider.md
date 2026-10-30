@@ -747,7 +747,7 @@ Before you integrate OneDrive with the React File Manager component, ensure you 
 
 ### Back end Setup
 
-Clone the OneDrive File Provider using the following command,
+Clone the [OneDrive File Provider](https://github.com/SyncfusionExamples/onedrive-aspcore-file-provider) using the following command,
 
 ```bash
 
@@ -835,3 +835,5 @@ export default App;
 ```
 
 {% endraw %}
+
+N> To learn more about file actions that can be performed with OneDrive file system provider, refer to this [link](https://github.com/SyncfusionExamples/onedrive-aspcore-file-provider#key-features).

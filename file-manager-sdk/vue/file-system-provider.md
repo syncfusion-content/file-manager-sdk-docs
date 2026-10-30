@@ -845,7 +845,7 @@ Before you integrate OneDrive with the Vue File Manager component, ensure you ha
 
 ### Back end Setup
 
-Clone the OneDrive File Provider using the following command,
+Clone the [OneDrive File Provider](https://github.com/SyncfusionExamples/onedrive-aspcore-file-provider) using the following command,
 
 ```bash
 
@@ -939,3 +939,5 @@ provide('filemanager',  [DetailsView, NavigationPane, Toolbar]);
 </style>
 
 ```
+
+N> To learn more about file actions that can be performed with OneDrive file system provider, refer to this [link](https://github.com/SyncfusionExamples/onedrive-aspcore-file-provider#key-features).
