@@ -154,7 +154,7 @@ Use the `webMcpSettings` property to customize how WebMCP tools are exposed to A
 |-----------|-------------|
 | `name` | Prefix applied to registered tool names. If name: `explorer` is specified, a tool such as `getSelectedFiles` may be registered as `explorer_getSelectedFiles`, allowing multiple component instances to coexist without tool name conflicts. |
 | `tools` | List of tool names to expose. Any supported tools not included in this list will not be registered. |
-| `esposedTo` | List of trusted domains that are allowed to interact with the component through WebMCP. |
+| `exposedTo` | List of trusted domains that are allowed to interact with the component through WebMCP. |
 
 ```typescript
 import { Component } from '@angular/core';
@@ -190,13 +190,13 @@ export class AppComponent {
   public webMcpSettings: object = {
     name: 'explorer',
     tools: ['getSelectedFiles', 'manageFileSystemItems', 'manageFileUploadAndDownload'],
-    esposedTo: ['https://www.syncfusion.com/']
+    exposedTo: ['https://www.syncfusion.com/']
   };
 }
 
 ```
 
-> Use the `esposedTo` property to restrict WebMCP access to trusted domains. This helps prevent unauthorized WebMCP clients from interacting with your component tools.
+> Use the `exposedTo` property to restrict WebMCP access to trusted domains. This helps prevent unauthorized WebMCP clients from interacting with your component tools.
 
 ### Step 5: Monitor and control tool execution
 
@@ -207,7 +207,7 @@ The `beforeWebMcpToolExecute` event is triggered before a tool is executed. This
 - Cancel tool execution when necessary.
 - Apply custom business rules and security policies.
 
-> AI-generated requests should always be validated before executing write operations. Restrict access using `esposedTo` and perform additional authorization checks within `beforeWebMcpToolExecute` when modifying application data.
+> AI-generated requests should always be validated before executing write operations. Restrict access using `exposedTo` and perform additional authorization checks within `beforeWebMcpToolExecute` when modifying application data.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -244,7 +244,7 @@ export class AppComponent {
   public webMcpSettings: object = {
     name: 'explorer',
     tools: ['getSelectedFiles', 'manageFileSystemItems', 'manageFileUploadAndDownload'],
-    esposedTo: ['https://www.syncfusion.com/']
+    exposedTo: ['https://www.syncfusion.com/']
   };
   public beforeWebMcpToolExecute(args: any): void {
     // Example business rule
@@ -278,7 +278,7 @@ The Syncfusion® File Manager component exposes 7 tools that enable AI agents to
 
 - Expose only the tools required by your application.
 - Use the `name` property when multiple component instances exist on the same page.
-- Configure `esposedTo` to limit access to trusted domains.
+- Configure `exposedTo` to limit access to trusted domains.
 - Monitor tool activity through the `beforeWebMcpToolExecute` event.
 - Apply application-specific validation before executing tool operations.
 

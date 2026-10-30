@@ -142,7 +142,7 @@ A built-in tool is selected with `Command`. The properties below apply to every 
 | `Command` | Built-in command to configure, or `Custom` for your own tool | `None` |
 | `Name` | Registered tool name. Required for custom tools. Optional override for built-in tools. Use PascalCase, for example `CreateFolder` | Generated |
 | `Description` | Text the agent reads to decide when to call the tool | Built-in text |
-| `InputSchema` | Object schema for the tool's arguments. Required for custom tools. Pass an object whose `type` is `object`, not a JSON string | Built-in schema |
+| `InputSchema` | JSON Schema for the tool's input as a JSON string | Built-in schema |
 | `Enabled` | Whether the tool is registered with the browser | `true` |
 
 The registered name is `{Prefix}_{Tool}`. The prefix is the `Name` on `FileManagerWebMcpSettings`, or the component `ID` when `Name` is empty. Use PascalCase for that name. The tool part is the built-in command, or the `Name` you set on a custom tool. With `Name="Testing"`, `CreateFolder` is registered as `Testing_CreateFolder`, and a custom tool named `GetCurrentFolderPath` is registered as `Testing_GetCurrentFolderPath`. Match that full string, or use `EndsWith("_CreateFolder")`, so a partial suffix does not match another tool. Call `GetWebMcpToolsAsync` and read `Name` if you need the exact value for an instance.
