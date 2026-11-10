@@ -132,6 +132,7 @@ Use the `webMcpSettings` property to customize how WebMCP tools are exposed to A
 | `tools` | List of tool names to expose. Any supported tools not included in this list will not be registered. |
 | `exposedTo` | List of trusted domains that are allowed to interact with the component through WebMCP. |
 
+{% raw %}
 ```ts
 import { FileManagerComponent, Inject, NavigationPane, DetailsView, Toolbar, WebMcpFileManager } from '@syncfusion/ej2-react-filemanager';
 
@@ -159,6 +160,7 @@ function App() {
 export default App;
 
 ```
+{% endraw %}
 
 > Use the `exposedTo` property to restrict WebMCP access to trusted domains. This helps prevent unauthorized WebMCP clients from interacting with your component tools.
 
@@ -173,6 +175,7 @@ The `beforeWebMcpToolExecute` event is triggered before a tool is executed. This
 
 > AI-generated requests should always be validated before executing write operations. Restrict access using `exposedTo` and perform additional authorization checks within `beforeWebMcpToolExecute` when modifying application data.
 
+ {% raw %}
 ```ts
 import { FileManagerComponent, Inject, NavigationPane, DetailsView, Toolbar, WebMcpFileManager } from '@syncfusion/ej2-react-filemanager';
 
@@ -212,6 +215,7 @@ function App() {
 export default App;
 
 ```
+{% endraw %}
 
 ## File Manager WebMCP tools
 
