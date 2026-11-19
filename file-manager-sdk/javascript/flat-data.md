@@ -67,6 +67,249 @@ To render the root-level folder, specify the `parentId` as null, or there is no 
 {% previewsample "https://help.syncfusion.com/code-snippet/file-manager-sdk/javascript/flat-data-cs" %}
 {% endif %}
 
+## Folder hierarchy using hasChild
+
+The [`hasChild`](https://ej2.syncfusion.com/javascript/documentation/api/file-manager/filedata#haschild) property of the [`fileData`](../api/file-manager/fileData) interface is essential when working with flat data in the File Manager. It defines whether a folder contains child folders (subfolders). When binding data through the [`fileSystemData`](../api/file-manager#filesystemdata) property, the File Manager relies on this property to determine whether to render an expand/collapse indicator (arrow icon) next to a folder in the navigation pane (TreeView).
+
+### How hasChild influences folder rendering and expansion
+
+* **When `hasChild` is `true`**: The navigation pane displays an expand arrow next to the folder node. Clicking the expand arrow allows the user to expand the folder node to see and navigate to nested subfolders within the tree hierarchy.
+* **When `hasChild` is `false` (or omitted)**: The folder is treated as a leaf node with no subfolders, and no expand indicator is displayed next to it in the navigation pane.
+* **Applies specifically to subfolders, not files**: The navigation pane tree view only renders the directory hierarchy (folders). Files are displayed exclusively in the content view (Large Icons or Details View). Therefore, a folder that contains only files should have `hasChild` set to `false`, since it has no child folders to display in the tree.
+
+### When to set hasChild explicitly
+
+In a flat data structure, all items (root folders, subfolders, and files) exist at the same level in an array. The component evaluates `hasChild` on each folder item to render expand indicators efficiently without recursively scanning the entire array:
+
+1. **Root-level folders**: Set `hasChild: true` on any root folder (`parentId: null`) that contains one or more child folders.
+2. **Parent folders with nested subfolders**: Explicitly specify `hasChild: true` for any folder that contains child folders.
+3. **Leaf folders and folders containing only files**: Set `hasChild: false` for folders that do not contain subfolders, even if they contain files.
+4. **File items**: For files (`isFile: true`), `hasChild` should be `false`.
+5. **Dynamic data operations**: When folders are created, deleted, moved, or pasted, keep the `hasChild` property of the affected parent folder synchronized in the flat data collection. For example, when adding the first subfolder to an empty folder, update the parent folder's `hasChild` property to `true`.
+
+### Common configuration scenarios and UI issues
+
+Improper configuration of `hasChild` can cause misleading visual states and broken navigation behavior in the navigation pane:
+
+| Scenario | Improper Configuration | Resulting UI Issue | Correct Configuration |
+|---|---|---|---|
+| Folder containing subfolders | `hasChild: false` or omitted | The expand icon is missing in the navigation pane. Users cannot expand the folder in the tree view to browse its subfolders, even though the subfolders exist in the data and are visible in the content view. | Set `hasChild: true` on the parent folder. |
+| Folder with no subfolders (or only files) | `hasChild: true` | An expand icon is rendered next to the folder in the navigation pane. When a user clicks it, no child nodes appear, and the expand icon may disappear or leave an empty branch, causing a confusing user experience. | Set `hasChild: false` on the folder. |
+| Folder containing only files | `hasChild: true` | Files do not appear in the navigation pane tree view. Marking `hasChild: true` incorrectly implies there are subfolders, resulting in a phantom expand icon. | Set `hasChild: false` because `hasChild` indicates subfolder presence, not file presence. |
+| Dynamic addition or deletion of subfolders | `hasChild` not updated on the parent folder | Adding the first subfolder does not show an expand icon, or deleting the last subfolder leaves a non-functional expand icon. | Update `hasChild` on the parent folder when modifying its child folders. |
+
+> **Note:** By keeping `hasChild` synchronized with the underlying data hierarchy, developers can ensure accurate folder hierarchy visualization and provide a consistent, intuitive browsing experience.
+
+### Sample
+
+The following sample demonstrates the usage of the `hasChild` property with flat data:
+
+{% if page.publishingplatform == "typescript" %}
+
+```typescript
+import { FileManager, Toolbar, NavigationPane, DetailsView, ContextMenu, FileData } from '@syncfusion/ej2-filemanager';
+
+FileManager.Inject(Toolbar, NavigationPane, DetailsView, ContextMenu);
+
+// Sample flat data demonstrating hasChild configuration
+let fileData: FileData[] = [
+    {
+        id: '0',
+        name: 'Files',
+        parentId: null,
+        isFile: false,
+        type: 'folder',
+        filterPath: '',
+        hasChild: true, // Root folder contains subfolders ('Documents', 'Pictures')
+        dateCreated: new Date("2023-11-15T19:02:02.3419426+05:30"),
+        dateModified: new Date("2024-01-08T18:16:38.4384894+05:30"),
+        size: 1779448
+    },
+    {
+        id: '1',
+        name: 'Documents',
+        parentId: '0',
+        isFile: false,
+        type: 'folder',
+        filterPath: '\\',
+        hasChild: false, // Contains only files, no subfolders
+        dateCreated: new Date("2023-11-15T19:02:02.3419426+05:30"),
+        dateModified: new Date("2024-01-08T16:55:20.9464164+05:30"),
+        size: 680786
+    },
+    {
+        id: '2',
+        name: 'Pictures',
+        parentId: '0',
+        isFile: false,
+        type: 'folder',
+        filterPath: '\\',
+        hasChild: true, // Contains a subfolder ('Employees')
+        dateCreated: new Date("2023-11-15T19:02:02.3419426+05:30"),
+        dateModified: new Date("2024-01-08T16:55:20.9464164+05:30"),
+        size: 228465
+    },
+    {
+        id: '3',
+        name: 'Employees',
+        parentId: '2',
+        isFile: false,
+        type: 'folder',
+        filterPath: '\\Pictures\\',
+        hasChild: false, // Leaf subfolder with only files
+        dateCreated: new Date("2023-11-15T19:02:02.3419426+05:30"),
+        dateModified: new Date("2024-01-08T16:55:20.9464164+05:30"),
+        size: 237568
+    },
+    {
+        id: '4',
+        name: 'Overview.docx',
+        parentId: '1',
+        isFile: true,
+        type: '.docx',
+        filterPath: '\\Documents\\',
+        hasChild: false, // File item
+        dateCreated: new Date("2023-11-15T19:02:02.3419426+05:30"),
+        dateModified: new Date("2024-01-08T16:55:20.9464164+05:30"),
+        size: 12403
+    },
+    {
+        id: '5',
+        name: 'Profile.png',
+        parentId: '3',
+        isFile: true,
+        type: '.png',
+        filterPath: '\\Pictures\\Employees\\',
+        hasChild: false, // File item
+        dateCreated: new Date("2023-11-15T19:02:02.3419426+05:30"),
+        dateModified: new Date("2024-01-08T16:55:20.9464164+05:30"),
+        size: 53248
+    }
+];
+
+let fileObject: FileManager = new FileManager({
+    fileSystemData: [].slice.call(fileData) as { [key: string]: Object }[],
+    toolbarSettings: {
+        items: ['NewFolder', 'Cut', 'Copy', 'Paste', 'Delete', 'Rename', 'SortBy', 'Refresh', 'Selection', 'View', 'Details'],
+        visible: true
+    },
+    contextMenuSettings: {
+        file: ['Cut', 'Copy', '|', 'Delete', 'Rename', '|', 'Details'],
+        folder: ['Open', '|', 'Cut', 'Copy', 'Paste', '|', 'Delete', 'Rename', '|', 'Details'],
+        layout: ['SortBy', 'View', 'Refresh', '|', 'Paste', '|', 'NewFolder', '|', 'Details', '|', 'SelectAll'],
+        visible: true
+    },
+    height: '380px'
+});
+fileObject.appendTo('#filemanager');
+```
+
+{% elsif page.publishingplatform == "javascript" %}
+
+```javascript
+// Sample flat data demonstrating hasChild configuration
+var fileData = [
+    {
+        id: '0',
+        name: 'Files',
+        parentId: null,
+        isFile: false,
+        type: 'folder',
+        filterPath: '',
+        hasChild: true, // Root folder contains subfolders ('Documents', 'Pictures')
+        dateCreated: new Date("2023-11-15T19:02:02.3419426+05:30"),
+        dateModified: new Date("2024-01-08T18:16:38.4384894+05:30"),
+        size: 1779448
+    },
+    {
+        id: '1',
+        name: 'Documents',
+        parentId: '0',
+        isFile: false,
+        type: 'folder',
+        filterPath: '\\',
+        hasChild: false, // Contains only files, no subfolders
+        dateCreated: new Date("2023-11-15T19:02:02.3419426+05:30"),
+        dateModified: new Date("2024-01-08T16:55:20.9464164+05:30"),
+        size: 680786
+    },
+    {
+        id: '2',
+        name: 'Pictures',
+        parentId: '0',
+        isFile: false,
+        type: 'folder',
+        filterPath: '\\',
+        hasChild: true, // Contains a subfolder ('Employees')
+        dateCreated: new Date("2023-11-15T19:02:02.3419426+05:30"),
+        dateModified: new Date("2024-01-08T16:55:20.9464164+05:30"),
+        size: 228465
+    },
+    {
+        id: '3',
+        name: 'Employees',
+        parentId: '2',
+        isFile: false,
+        type: 'folder',
+        filterPath: '\\Pictures\\',
+        hasChild: false, // Leaf subfolder with only files
+        dateCreated: new Date("2023-11-15T19:02:02.3419426+05:30"),
+        dateModified: new Date("2024-01-08T16:55:20.9464164+05:30"),
+        size: 237568
+    },
+    {
+        id: '4',
+        name: 'Overview.docx',
+        parentId: '1',
+        isFile: true,
+        type: '.docx',
+        filterPath: '\\Documents\\',
+        hasChild: false, // File item
+        dateCreated: new Date("2023-11-15T19:02:02.3419426+05:30"),
+        dateModified: new Date("2024-01-08T16:55:20.9464164+05:30"),
+        size: 12403
+    },
+    {
+        id: '5',
+        name: 'Profile.png',
+        parentId: '3',
+        isFile: true,
+        type: '.png',
+        filterPath: '\\Pictures\\Employees\\',
+        hasChild: false, // File item
+        dateCreated: new Date("2023-11-15T19:02:02.3419426+05:30"),
+        dateModified: new Date("2024-01-08T16:55:20.9464164+05:30"),
+        size: 53248
+    }
+];
+
+var fileObject = new ej.filemanager.FileManager({
+    fileSystemData: fileData,
+    toolbarSettings: {
+        items: ['NewFolder', 'Cut', 'Copy', 'Paste', 'Delete', 'Rename', 'SortBy', 'Refresh', 'Selection', 'View', 'Details'],
+        visible: true
+    },
+    contextMenuSettings: {
+        file: ['Cut', 'Copy', '|', 'Delete', 'Rename', '|', 'Details'],
+        folder: ['Open', '|', 'Cut', 'Copy', 'Paste', '|', 'Delete', 'Rename', '|', 'Details'],
+        layout: ['SortBy', 'View', 'Refresh', '|', 'Paste', '|', 'NewFolder', '|', 'Details', '|', 'SelectAll'],
+        visible: true
+    },
+    height: '380px'
+});
+fileObject.appendTo('#filemanager');
+```
+
+{% endif %}
+
+You can explore a live working example in this [StackBlitz sample](https://stackblitz.com/edit/8nmrp7n5-cehzh6s8?file=index.js).
+
+### API reference
+
+For complete API details, refer to:
+
+* [`hasChild` Property](https://ej2.syncfusion.com/javascript/documentation/api/file-manager/filedata#haschild)
+
 ## Rendering flat JSON data from Google Drive
 
 In the following topic, we can learn about reading files from Google API using the File Manager's action events. This eliminates the need to define [`ajaxSettings`](../api/file-manager#ajaxsettings) url.
