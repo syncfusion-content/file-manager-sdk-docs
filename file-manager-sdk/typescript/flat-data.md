@@ -69,7 +69,7 @@ To render the root-level folder, specify the `parentId` as null, or there is no 
 
 ## Folder hierarchy using hasChild
 
-The [`hasChild`](https://ej2.syncfusion.com/javascript/documentation/api/file-manager/filedata#haschild) property of the [`fileData`](../api/file-manager/fileData) interface is essential when working with flat data in the File Manager. It defines whether a folder contains child folders (subfolders). When binding data through the [`fileSystemData`](../api/file-manager#filesystemdata) property, the File Manager relies on this property to determine whether to render an expand/collapse indicator (arrow icon) next to a folder in the navigation pane (TreeView).
+The [`hasChild`](../api/file-manager/fileData#haschild) property of the [`fileData`](../api/file-manager/fileData) interface is essential when working with flat data in the File Manager. It defines whether a folder contains child folders (subfolders). When binding data through the [`fileSystemData`](../api/file-manager#filesystemdata) property, the File Manager relies on this property to determine whether to render an expand/collapse indicator (arrow icon) next to a folder in the navigation pane (TreeView).
 
 ### How hasChild influences folder rendering and expansion
 
@@ -306,7 +306,7 @@ fileObject.appendTo('#filemanager');
 
 For complete API details, refer to:
 
-* [`hasChild` Property](https://ej2.syncfusion.com/javascript/documentation/api/file-manager/filedata#haschild)
+* [`hasChild` Property](../api/file-manager/fileData#haschild)
 
 ## Rendering flat JSON data from Google Drive
 
