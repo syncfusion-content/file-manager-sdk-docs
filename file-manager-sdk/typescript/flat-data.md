@@ -67,6 +67,39 @@ To render the root-level folder, specify the `parentId` as null, or there is no 
 {% previewsample "https://help.syncfusion.com/code-snippet/file-manager-sdk/typescript/flat-data-cs" %}
 {% endif %}
 
+## Folder hierarchy using hasChild
+
+The [`hasChild`](../api/file-manager/fileData#haschild) property of the [`fileData`](../api/file-manager/fileData) interface is essential when working with flat data in the File Manager. It defines whether a folder contains child folders (subfolders). When binding data through the [`fileSystemData`](../api/file-manager#filesystemdata) property, the File Manager relies on this property to determine whether to render an expand/collapse indicator (arrow icon) next to a folder in the navigation pane (TreeView).
+
+### How hasChild influences folder rendering and expansion
+
+* **When `hasChild` is `true`**: The navigation pane displays an expand arrow next to the folder node. Clicking the expand arrow allows the user to expand the folder node to see and navigate to nested subfolders within the tree hierarchy.
+* **When `hasChild` is `false` (or omitted)**: The folder is treated as a leaf node with no subfolders, and no expand indicator is displayed next to it in the navigation pane.
+* **Applies specifically to subfolders, not files**: The navigation pane tree view only renders the directory hierarchy (folders). Files are displayed exclusively in the content view (Large Icons or Details View). Therefore, a folder that contains only files should have `hasChild` set to `false`, since it has no child folders to display in the tree.
+
+### When to set hasChild explicitly
+
+In a flat data structure, all items (root folders, subfolders, and files) exist at the same level in an array. The component evaluates `hasChild` on each folder item to render expand indicators efficiently without recursively scanning the entire array:
+
+1. **Root-level folders**: Set `hasChild: true` on any root folder (`parentId: null`) that contains one or more child folders.
+2. **Parent folders with nested subfolders**: Explicitly specify `hasChild: true` for any folder that contains child folders.
+3. **Leaf folders and folders containing only files**: Set `hasChild: false` for folders that do not contain subfolders, even if they contain files.
+4. **File items**: For files (`isFile: true`), `hasChild` should be `false`.
+5. **Dynamic data operations**: When folders are created, deleted, moved, or pasted, keep the `hasChild` property of the affected parent folder synchronized in the flat data collection. For example, when adding the first subfolder to an empty folder, update the parent folder's `hasChild` property to `true`.
+
+### Common configuration scenarios and UI issues
+
+Improper configuration of `hasChild` can cause misleading visual states and broken navigation behavior in the navigation pane:
+
+| Scenario | Improper Configuration | Resulting UI Issue | Correct Configuration |
+|---|---|---|---|
+| Folder containing subfolders | `hasChild: false` or omitted | The expand icon is missing in the navigation pane. Users cannot expand the folder in the tree view to browse its subfolders, even though the subfolders exist in the data and are visible in the content view. | Set `hasChild: true` on the parent folder. |
+| Folder with no subfolders (or only files) | `hasChild: true` | An expand icon is rendered next to the folder in the navigation pane. When a user clicks it, no child nodes appear, and the expand icon may disappear or leave an empty branch, causing a confusing user experience. | Set `hasChild: false` on the folder. |
+| Folder containing only files | `hasChild: true` | Files do not appear in the navigation pane tree view. Marking `hasChild: true` incorrectly implies there are subfolders, resulting in a phantom expand icon. | Set `hasChild: false` because `hasChild` indicates subfolder presence, not file presence. |
+| Dynamic addition or deletion of subfolders | `hasChild` not updated on the parent folder | Adding the first subfolder does not show an expand icon, or deleting the last subfolder leaves a non-functional expand icon. | Update `hasChild` on the parent folder when modifying its child folders. |
+
+> **Note:** By keeping `hasChild` synchronized with the underlying data hierarchy, developers can ensure accurate folder hierarchy visualization and provide a consistent, intuitive browsing experience.
+
 ## Rendering flat JSON data from Google Drive
 
 In the following topic, we can learn about reading files from Google API using the File Manager's action events. This eliminates the need to define [`ajaxSettings`](../api/file-manager#ajaxsettings) url.
