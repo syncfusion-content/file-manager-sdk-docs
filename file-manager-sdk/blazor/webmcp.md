@@ -111,6 +111,7 @@ The Blazor File Manager ships built-in WebMCP tools for reading and for write op
 | getSelectedFiles | Returns the files and folders currently selected in the File Manager |
 | selectAll | Selects every item in the current folder |
 | filterFiles | Filters the visible items by name using the server-side filter action |
+| getAllFiles | Counts the direct children of the current folder cache or a supplied path. Returns only the count and normalized path; it does not return file names or contents |
 | refreshFiles | Refreshes the contents of the current folder |
 | refreshLayout | Reflows the File Manager layout after a settings change |
 | openFile | Opens a file in image preview or navigates into a folder by its unique ID |
@@ -130,6 +131,7 @@ The Blazor File Manager ships built-in WebMCP tools for reading and for write op
 | enableMenuItems | Re-enables one or more context-menu items by name |
 | disableToolbarItems | Disables one or more toolbar items by name |
 | enableToolbarItems | Re-enables one or more toolbar items by name |
+| goToPage | Changes the visible page. Requires `AllowPaging="true"` and a rendered file list; the page must be within the current page count |
 
 ## Configure tools
 
@@ -330,6 +332,10 @@ For a built-in write tool, set `ShowConfirmationDialog` and leave the work to th
 With your agent connected, ask for something the component can do, for example "Create a folder named Reports in the current directory." The agent picks the matching tool, the component runs it, and the File Manager changes on screen.
 
 ![Blazor File Manager - folder creation by WebMCP tool](images/blazor-filemanager-webmcp-create-folder.png)
+
+## Explore the demo
+
+Explore the [Blazor File Manager Feature Tour samples](https://blazor.syncfusion.com/products/blazor/filemanager/webmcp).
 
 ## See also
 
