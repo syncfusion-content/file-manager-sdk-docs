@@ -58,7 +58,7 @@ The following dependent components are used within the Blazor File Manager:
 | Uploader | Used to perform the upload operation in the File Manager. | [Uploader Accessibility](https://blazor.syncfusion.com/documentation/file-upload/accessibility) |
 | Tooltip | Used to display tooltips in the File Manager. | [Tooltip Accessibility](https://blazor.syncfusion.com/documentation/tooltip/accessibility) |
 | Button | Rendered inside the move dialog. | [Button Accessibility](https://blazor.syncfusion.com/documentation/button/accessibility) |
-| Drop Down Button | Rendered for toolbar items with a dropdown action, such as the **Upload** and **View** (details/large icons switcher) toolbar items. | [Drop Down Button Accessibility](https://blazor.syncfusion.com/documentation/drop-down-menu/accessibility) |
+| Drop Down Button | Rendered for toolbar items with a dropdown action, such as the **SortBy** and **View** (details/large icons switcher) toolbar items. | [Drop Down Button Accessibility](https://blazor.syncfusion.com/documentation/drop-down-menu/accessibility) |
 | Check Box | Rendered in the Large Icons view for selecting files and folders. | [Check Box Accessibility](https://blazor.syncfusion.com/documentation/check-box/accessibility) |
 | Pager | Rendered only in the Large Icons view when pagination is enabled. | [Pager Accessibility](https://blazor.syncfusion.com/documentation/pager/accessibility) |
 
