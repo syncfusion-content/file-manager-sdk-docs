@@ -108,7 +108,7 @@ Example: "Go back to the previous folder and filter files larger than 10 MB."
 
 ## Supported Features
 
-The File Manager's individual WebMCP tools are organized into the following categories:
+WebMCP tools for the File Manager are organized into the following categories:
 
 | Category | Tools | Example |
 |----------|-------|---------|

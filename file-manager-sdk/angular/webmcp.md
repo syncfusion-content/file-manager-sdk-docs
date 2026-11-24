@@ -103,7 +103,11 @@ Set the `enableWebMcp` property to `true` to register the component's available 
 
 When `enableWebMcp` is enabled, supported component tools are automatically registered with the WebMCP runtime and become discoverable by authorized WebMCP clients.
 
-For example, a File Manager component may expose tools such as `getSelectedFiles`, `getCurrentPath`, and `createFolder`.
+For example, a File Manager component may expose tools such as:
+
+- getSelectedFiles
+- getCurrentPath
+- createFolder
 
 An AI assistant can discover these tools and invoke them based on user prompts.
 

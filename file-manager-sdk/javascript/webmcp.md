@@ -101,7 +101,11 @@ Set the `enableWebMcp` property to `true` to register the control's available to
 
 When `enableWebMcp` is enabled, supported control tools are automatically registered with the WebMCP runtime and become discoverable by authorized WebMCP clients.
 
-For example, a File Manager control may expose tools such as `getSelectedFiles`, `getCurrentPath`, and `createFolder`.
+For example, a File Manager control may expose tools such as:
+
+- getSelectedFiles
+- getCurrentPath
+- createFolder
 
 An AI assistant can discover these tools and invoke them based on user prompts.
 
