@@ -335,7 +335,7 @@ With your agent connected, ask for something the component can do, for example "
 
 ## Explore the demo
 
-Explore the [Blazor File Manager Feature Tour samples](https://blazor.syncfusion.com/products/blazor/filemanager/webmcp).
+Explore the Syncfusion® Blazor File Manager component with WebMCP integration through this [demo](https://blazor.syncfusion.com/products/blazor/filemanager/webmcp).
 
 ## See also
 
