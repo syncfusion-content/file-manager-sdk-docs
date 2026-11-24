@@ -34,6 +34,12 @@ The FileManager can be populated with local data that contains the array of `fil
 
 To render the root-level folder, specify the `parentId` as null, or there is no need to specify the `parentId` in the array of `fileData` interface objects.
 
+In addition to [`parentId`](../api/file-manager/fileData#parentid), the following properties of the [`fileData`](../api/file-manager/fileData) interface are used to maintain and render the folder hierarchy correctly:
+
+* [`hasChild`](../api/file-manager/fileData#haschild) - Indicates whether a folder contains child folders and determines whether the expand/collapse icon is displayed in the navigation pane. Setting this to `true` renders the expand arrow next to the folder node in the tree view; set it to `false` (or omit) for leaf folders and folders containing only files.
+* [`filterPath`](../api/file-manager/fileData#filterpath) - Specifies the parent folder path used to organize and filter items within the hierarchy.
+* [`isFile`](../api/file-manager/fileData#isfile) - Indicates whether the item represents a file (`true`) or a folder (`false`).
+
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
