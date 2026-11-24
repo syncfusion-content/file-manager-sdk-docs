@@ -73,6 +73,7 @@ WebMCP integrates seamlessly into Syncfusion File Manager applications across al
 
 ### Supported Platforms
 
+- [WebMCP Integration for Blazor File Manager](../blazor/webmcp) — Blazor-based File Manager
 - [WebMCP Integration for React File Manager](../react/webmcp) — React-based File Manager
 - [WebMCP Integration for Angular File Manager](../angular/webmcp) — Angular-based File Manager
 - [WebMCP Integration for Vue File Manager](../vue/webmcp) — Vue.js-based File Manager

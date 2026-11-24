@@ -331,6 +331,10 @@ With your agent connected, ask for something the component can do, for example "
 
 ![Blazor File Manager - folder creation by WebMCP tool](images/blazor-filemanager-webmcp-create-folder.png)
 
+## Explore the demo
+
+Explore the Syncfusion® Blazor File Manager component with WebMCP integration through this [demo](https://blazor.syncfusion.com/products/blazor/filemanager/webmcp).
+
 ## See also
 
 * [WebMCP overview](../ai-tools/webmcp-tools) explains how a component registers tools and how an agent calls them.
