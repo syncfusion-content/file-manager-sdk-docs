@@ -276,7 +276,7 @@ The Syncfusion® File Manager component exposes 19 tools that enable AI agents t
 | navigateBackward | Navigates to the parent folder. |
 | openFile | Opens the specified file or navigates into the folder with the given ID. |
 | refreshFiles | Refreshes the current file list. |
-| refreshLayout | Reflows the File Manager layout after a settings change. |
+| refreshLayout | Updates the File Manager layout after a settings change. |
 | searchFiles | Applies the provided filter to the file list, or clears the filter when no filter data is provided. |
 | enableToolbarItems | Re-enables one or more toolbar items by name. |
 | disableToolbarItems | Disables one or more toolbar items by name. |
