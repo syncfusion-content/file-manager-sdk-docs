@@ -266,25 +266,25 @@ The Syncfusion® File Manager component exposes 19 tools that enable AI agents t
 
 | Tool Name | Description |
 |-----------|-------------|
-| getSelectedFiles | Retrieve the currently selected files and folders. |
-| getCurrentPath | Read the current folder path. |
-| createFolder | Create a folder in the current folder. |
-| renameItem | Rename a file or folder by ID. |
-| deleteItems | Delete files and folders by ID. |
-| uploadFiles | Open the upload dialog. |
-| downloadFiles | Download files by ID. Data leaves the browser. |
-| navigateBackward | Go to the parent folder. |
-| openFile | Open a file or folder by ID. |
-| refreshFiles | Refresh the file list. |
-| refreshLayout | Refresh the layout. |
-| searchFiles | Apply or clear a file filter. |
-| enableToolbarItems | Enable toolbar items. |
-| disableToolbarItems | Disable toolbar items. |
-| enableMenuItems | Enable menu items. |
-| disableMenuItems | Disable menu items. |
-| closeDialog | Close the open File Manager dialog. |
-| selectAll | Select every item in the current folder. |
-| clearSelection | Clear the current selection. |
+| getSelectedFiles | Returns the currently selected files and folders with metadata such as name, ID, type, size, and modification details. |
+| getCurrentPath | Returns the path of the currently open folder. |
+| createFolder | Creates a new folder in the current directory. |
+| renameItem | Renames a file or folder. |
+| deleteItems | Permanently deletes one or more files or folders. |
+| uploadFiles | Opens the File Manager upload dialog (browser file picker). |
+| downloadFiles | Triggers a server download for the specified files or folders. |
+| navigateBackward | Navigates to the parent folder. |
+| openFile | Opens the specified file or navigates into the folder with the given ID. |
+| refreshFiles | Refreshes the current file list. |
+| refreshLayout | Reflows the File Manager layout after a settings change. |
+| searchFiles | Applies the provided filter to the file list, or clears the filter when no filter data is provided. |
+| enableToolbarItems | Re-enables one or more toolbar items by name. |
+| disableToolbarItems | Disables one or more toolbar items by name. |
+| enableMenuItems | Re-enables one or more context-menu items by name. |
+| disableMenuItems | Disables one or more context-menu items by name. |
+| closeDialog | Closes the currently open File Manager dialog. |
+| selectAll | Selects every file and folder in the current folder. |
+| clearSelection | Deselects all currently selected files and folders. |
 
 ## Best practices
 
