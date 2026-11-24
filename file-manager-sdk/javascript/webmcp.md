@@ -101,11 +101,7 @@ Set the `enableWebMcp` property to `true` to register the control's available to
 
 When `enableWebMcp` is enabled, supported control tools are automatically registered with the WebMCP runtime and become discoverable by authorized WebMCP clients.
 
-For example, a File Manager control may expose tools such as:
-
-- getSelectedFiles
-- manageFileSystemItems
-- manageFileUploadAndDownload
+For example, a File Manager control may expose tools such as `getSelectedFiles`, `getCurrentPath`, and `createFolder`.
 
 An AI assistant can discover these tools and invoke them based on user prompts.
 
@@ -175,7 +171,7 @@ Use the `webMcpSettings` property to customize how WebMCP tools are exposed to A
                 enableWebMcp: true,
                 webMcpSettings: {
                     name: 'explorer',
-                    tools: ['getSelectedFiles', 'manageFileSystemItems', 'manageFileUploadAndDownload'],
+                    tools: ['getSelectedFiles', 'getCurrentPath', 'createFolder'],
                     exposedTo: ['https://www.syncfusion.com/']
                 },
                 ajaxSettings: {
@@ -227,7 +223,7 @@ The `beforeWebMcpToolExecute` event is triggered before a tool is executed. This
                 enableWebMcp: true,
                 webMcpSettings: {
                     name: 'explorer',
-                    tools: ['getSelectedFiles', 'manageFileSystemItems', 'manageFileUploadAndDownload'],
+                    tools: ['getSelectedFiles', 'getCurrentPath', 'createFolder'],
                     exposedTo: ['https://www.syncfusion.com/']
                 },
                 ajaxSettings: {
@@ -238,7 +234,7 @@ The `beforeWebMcpToolExecute` event is triggered before a tool is executed. This
                 },
                 beforeWebMcpToolExecute: function (args) {
                     // Example business rule
-                    if (args.toolName.indexOf('manageFileSystemItems') !== -1) {
+                    if (args.toolName.indexOf('createFolder') !== -1 || args.toolName.indexOf('renameItem') !== -1 || args.toolName.indexOf('deleteItems') !== -1) {
                         var hour = new Date().getHours();
                         if (hour < 9 || hour > 17) {
                             args.cancel = true;
@@ -258,17 +254,29 @@ The `beforeWebMcpToolExecute` event is triggered before a tool is executed. This
 
 ## File Manager WebMCP tools
 
-The Syncfusion® File Manager control exposes 7 tools that enable AI agents to browse files, manage file operations, control the user interface, perform navigation, and automate common file management workflows. Explore the Syncfusion® JavaScript (ES5) File Manager control with WebMCP integration through this [demo](https://demos.syncfusion.com/file-manager-sdk/web-mcp/index.html).
+The Syncfusion® File Manager control exposes 19 tools that enable AI agents to browse files, manage file operations, control the user interface, perform navigation, and automate common file management workflows. Explore the Syncfusion® JavaScript (ES5) File Manager control with WebMCP integration through this [demo](https://demos.syncfusion.com/file-manager-sdk/web-mcp/index.html).
 
 | Tool Name | Description |
 |-----------|-------------|
-| getSelectedFiles | Returns the list of currently selected files and folders, including metadata such as name, ID, type, size, and modification details |
-| manageFileSystemItems | Creates folders, renames files or folders, and deletes one or more file system items |
-| manageFileUploadAndDownload | Opens the upload workflow or downloads one or more selected files |
-| navigateAndOpenFiles | Navigates backward, opens files or folders, and refreshes the current file view |
-| searchAndFilterFiles | Applies filters to files and folders based on specified criteria |
-| manageUserInterface | Enables or disables menu and toolbar items, closes dialogs, and refreshes the layout |
-| manageSelection | Selects all items or clears the current selection |
+| getSelectedFiles | Retrieve the currently selected files and folders. |
+| getCurrentPath | Read the current folder path. |
+| createFolder | Create a folder in the current folder. |
+| renameItem | Rename a file or folder by ID. |
+| deleteItems | Delete files and folders by ID. |
+| uploadFiles | Open the upload dialog. |
+| downloadFiles | Download files by ID. Data leaves the browser. |
+| navigateBackward | Go to the parent folder. |
+| openFile | Open a file or folder by ID. |
+| refreshFiles | Refresh the file list. |
+| refreshLayout | Refresh the layout. |
+| searchFiles | Apply or clear a file filter. |
+| enableToolbarItems | Enable toolbar items. |
+| disableToolbarItems | Disable toolbar items. |
+| enableMenuItems | Enable menu items. |
+| disableMenuItems | Disable menu items. |
+| closeDialog | Close the open File Manager dialog. |
+| selectAll | Select every item in the current folder. |
+| clearSelection | Clear the current selection. |
 
 ## Best practices
 
