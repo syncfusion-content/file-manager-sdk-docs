@@ -58,8 +58,8 @@ The following dependent components are used within the Blazor File Manager:
 | Uploader | Rendered inside the upload dialog to perform the upload operation. | [Uploader Accessibility](https://blazor.syncfusion.com/documentation/file-upload/accessibility) |
 | Tooltip | Used to display tooltips in the File Manager. | [Tooltip Accessibility](https://blazor.syncfusion.com/documentation/tooltip/accessibility) |
 | Button | Rendered inside the move dialog. | [Button Accessibility](https://blazor.syncfusion.com/documentation/button/accessibility) |
-| DropDownButton | Rendered for toolbar items with a dropdown action, such as the SortBy and View (details/large icons switcher) toolbar items. | [Drop Down Button Accessibility](https://blazor.syncfusion.com/documentation/drop-down-menu/accessibility) |
-| CheckBox | Rendered in the Large Icons view for selecting files and folders, as the checkbox column in Details view, and for the Apply all option in the upload retry dialog. | [Check Box Accessibility](https://blazor.syncfusion.com/documentation/check-box/accessibility) |
+| DropDownButton | Rendered for toolbar items with a dropdown action, such as the SortBy and View (details/large icons switcher) toolbar items. | [DropDownButton Accessibility](https://blazor.syncfusion.com/documentation/drop-down-menu/accessibility) |
+| CheckBox | Rendered in the Large Icons view for selecting files and folders, as the checkbox column in Details view, and for the Apply all option in the upload retry dialog. | [CheckBox Accessibility](https://blazor.syncfusion.com/documentation/check-box/accessibility) |
 | Pager | Rendered in the Large Icons view when pagination is enabled. In Details view, paging is provided by the Grid's built-in pager. | [Pager Accessibility](https://blazor.syncfusion.com/documentation/pager/accessibility) |
 
 ## WAI-ARIA attributes
