@@ -40,6 +40,27 @@ The accessibility compliance for the Blazor File Manager component is outlined b
 
 <div><img src="https://cdn.syncfusion.com/content/images/landing-page/no.png" alt="No"> - The component does not meet the requirement.</div>
 
+## Accessibility support for dependent components
+
+The Blazor File Manager is a composite component that renders a file system-like interface. It integrates several Syncfusion Blazor components, each of which implements WAI-ARIA patterns and provides keyboard interaction and screen reader support. As a result, the File Manager's overall accessibility experience combines the accessibility features of these dependent components.
+
+The following dependent components are used within the Blazor File Manager:
+
+| **Dependent component** | **Location in the File Manager** | **Accessibility documentation** |
+| --- | --- | --- |
+| Toolbar | Rendered at the top of the File Manager for file operations such as new folder, upload, cut, copy, paste, delete, download, and view switching. | [Toolbar Accessibility](https://blazor.syncfusion.com/documentation/toolbar/accessibility) |
+| Splitter | Separates the navigation pane (TreeView) and the content pane, and allows users to resize each pane. | [Splitter Accessibility](https://blazor.syncfusion.com/documentation/splitter/accessibility) |
+| TreeView | Rendered in the navigation (left) pane to display the folder hierarchy. | [TreeView Accessibility](https://blazor.syncfusion.com/documentation/treeview/accessibility) |
+| TextBox | Rendered as the search input at the top-right of the File Manager for searching files and folders in the current folder and its subfolders. | [TextBox Accessibility](https://blazor.syncfusion.com/documentation/textbox/accessibility) |
+| Grid | Rendered in the content pane when the File Manager is in Details view. | [Grid Accessibility](https://help.syncfusion.com/grid-sdk/blazor/data-grid/accessibility) |
+| Context Menu | Rendered when a user right-clicks a file, folder, or empty area in the File Manager to access file operations. | [Context Menu Accessibility](https://blazor.syncfusion.com/documentation/context-menu/accessibility) |
+| Dialog | Rendered for operations such as creating folders, renaming items, confirming deletions, uploading files, showing details or error messages and previewing images. | [Dialog Accessibility](https://blazor.syncfusion.com/documentation/dialog/accessibility) |
+| Uploader | Rendered inside the upload dialog to perform the upload operation. | [Uploader Accessibility](https://blazor.syncfusion.com/documentation/file-upload/accessibility) |
+| Tooltip | Used to display tooltips in the File Manager. | [Tooltip Accessibility](https://blazor.syncfusion.com/documentation/tooltip/accessibility) |
+| Dropdown Menu | Rendered for toolbar items with a dropdown action, such as the SortBy and View (details/large icons switcher) toolbar items. | [Dropdown Menu Accessibility](https://blazor.syncfusion.com/documentation/drop-down-menu/accessibility) |
+| CheckBox | Rendered in the Large Icons view for selecting files and folders, as the checkbox column in Details view, and for the Apply all option in the upload retry dialog. | [CheckBox Accessibility](https://blazor.syncfusion.com/documentation/check-box/accessibility) |
+| Pager | Rendered in the Large Icons view when pagination is enabled. In Details view, paging is provided by the Grid's built-in pager. | [Pager Accessibility](https://blazor.syncfusion.com/documentation/pager/accessibility) |
+
 ## WAI-ARIA attributes
 
 The Blazor File Manager component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) patterns to meet the accessibility. The following ARIA attributes are used in the Blazor File Manager component:
