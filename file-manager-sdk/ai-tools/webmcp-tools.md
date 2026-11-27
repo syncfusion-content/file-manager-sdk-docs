@@ -73,6 +73,7 @@ WebMCP integrates seamlessly into Syncfusion File Manager applications across al
 
 ### Supported Platforms
 
+- [WebMCP Integration for Blazor File Manager](../blazor/webmcp) — Blazor-based File Manager
 - [WebMCP Integration for React File Manager](../react/webmcp) — React-based File Manager
 - [WebMCP Integration for Angular File Manager](../angular/webmcp) — Angular-based File Manager
 - [WebMCP Integration for Vue File Manager](../vue/webmcp) — Vue.js-based File Manager
@@ -111,12 +112,13 @@ WebMCP tools for the File Manager are organized into the following categories:
 
 | Category | Tools | Example |
 |----------|-------|---------|
-| Selection | getSelectedFiles, manageSelection | Read selected items and control selection |
-| File System Operations | manageFileSystemItems | Create folders, rename and delete items |
-| Transfer | manageFileUploadAndDownload | Upload and download files |
-| Navigation | navigateAndOpenFiles | Move between folders, open and refresh views |
-| Search & Filter | searchAndFilterFiles | Apply criteria-based filters |
-| User Interface | manageUserInterface | Enable or disable menu and toolbar items |
+| Selection | getSelectedFiles, selectAll, clearSelection | Read selected items and control selection |
+| Current Path | getCurrentPath | Read the current folder path |
+| File System Operations | createFolder, renameItem, deleteItems | Create folders, rename and delete items |
+| Transfer | uploadFiles, downloadFiles | Upload and download files |
+| Navigation | navigateBackward, openFile, refreshFiles | Move between folders, open items and refresh the file list |
+| Search & Filter | searchFiles | Apply or clear a file filter |
+| User Interface | enableToolbarItems, disableToolbarItems, enableMenuItems, disableMenuItems, closeDialog, refreshLayout | Enable or disable menu and toolbar items, close dialogs and refresh layout |
 
 For the complete tool reference, see the [WebMCP Tools](../react/webmcp#file-manager-webmcp-tools) section in the platform integration guides.
 
