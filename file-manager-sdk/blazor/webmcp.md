@@ -111,6 +111,7 @@ The Blazor File Manager ships built-in WebMCP tools for reading and for write op
 | getSelectedFiles | Returns the files and folders currently selected in the File Manager |
 | selectAll | Selects every item in the current folder |
 | filterFiles | Filters the visible items by name using the server-side filter action |
+| getAllFiles | Counts the direct children of the current folder cache or a supplied path. Returns only the count and normalized path; it does not return file names or contents |
 | refreshFiles | Refreshes the contents of the current folder |
 | refreshLayout | Reflows the File Manager layout after a settings change |
 | openFile | Opens a file in image preview or navigates into a folder by its unique ID |
@@ -130,6 +131,7 @@ The Blazor File Manager ships built-in WebMCP tools for reading and for write op
 | enableMenuItems | Re-enables one or more context-menu items by name |
 | disableToolbarItems | Disables one or more toolbar items by name |
 | enableToolbarItems | Re-enables one or more toolbar items by name |
+| goToPage | Changes the visible page. Requires `AllowPaging="true"` and a rendered file list; the page must be within the current page count |
 
 ## Configure tools
 
